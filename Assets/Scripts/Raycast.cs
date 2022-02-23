@@ -1,15 +1,14 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
-using Microsoft.Unity.VisualStudio.Editor;
+using UnityEditorInternal;
 using UnityEngine;
 
 public class Raycast : MonoBehaviour
 {
     [SerializeField] float m_distance;
     [SerializeField] Camera fpsCam;
-    [SerializeField] private Color m_colorInteract;
-    Pointeur _Pointeur;
+    [SerializeField] private GameObject m_curTarget;
 
     void FixedUpdate()
     {
@@ -23,17 +22,19 @@ public class Raycast : MonoBehaviour
         {
             if (hit.transform.gameObject.CompareTag("Pickable_Object"))
             {
-                _Pointeur = transform.GetComponent<Pointeur>();
-                if (_Pointeur != null)
-                {
-                    // _Pointeur.GetComponent<Image>().Color = m_colorInteract;
-                }
-            
-
+                m_curTarget = hit.transform.gameObject;
+                m_curTarget.GetComponent<Outline>().enabled = true;
             }
-
-
+            else
+            {
+                m_curTarget.GetComponent<Outline>().enabled = false;
+            }
         }
+        else
+        {
+            m_curTarget.GetComponent<Outline>().enabled = false;
+        }
+
         
     }
 }

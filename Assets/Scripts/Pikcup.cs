@@ -24,7 +24,7 @@ public class Pikcup : MonoBehaviour
             else
             {
                 curTarget.GetComponent<Outline>().enabled = false;
-                curTarget = null;
+                // curTarget = null;
             }
 
             if (Input.GetMouseButtonDown(1) && curTarget != null)
