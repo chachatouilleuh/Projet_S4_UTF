@@ -6,31 +6,31 @@ using UnityEngine;
 
 public class Pikcup : MonoBehaviour
 {
-    public GameObject go;
-    [SerializeField] private float m_distance;
+    public GameObject curTarget;
+    ///[SerializeField] private float m_distance;
 
     private void Update()
     {
+        Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.forward) * Mathf.Infinity, Color.yellow);
+
         RaycastHit hit;
-        if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out hit, m_distance))
+        if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out hit, Mathf.Infinity))
         {
             if (hit.transform.gameObject.CompareTag("Pickable_Object"))
             {
-                go = hit.transform.gameObject;
-                go.GetComponent<Outline>().enabled = true;
+                curTarget = hit.transform.gameObject;
+                curTarget.GetComponent<Outline>().enabled = true;
             }
             else
             {
-                go.GetComponent<Outline>().enabled = false;
-                go = null;
+                curTarget.GetComponent<Outline>().enabled = false;
+                curTarget = null;
             }
 
-            if (Input.GetMouseButtonDown(1) && go != null)
+            if (Input.GetMouseButtonDown(1) && curTarget != null)
             {
-                Destroy(go);
+                Destroy(curTarget);
             }
         }
-        
-        Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.forward) * m_distance);
     }
 }
