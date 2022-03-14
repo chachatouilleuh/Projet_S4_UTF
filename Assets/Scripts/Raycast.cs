@@ -7,6 +7,7 @@ using UnityEngine;
 public class Raycast : MonoBehaviour
 {
     [SerializeField] float m_distance;
+    [SerializeField] float m_moveStrength;
     [SerializeField] Camera fpsCam;
     [SerializeField] private GameObject m_curTarget;
 
@@ -37,7 +38,58 @@ public class Raycast : MonoBehaviour
         {
             m_curTarget.GetComponent<Outline>().enabled = false;
         }
-
         
+        if (Input.GetMouseButton(0))
+        {
+            if (m_heldObj == null)
+            {
+                if (Physics.Raycast(fpsCam.transform.position, fpsCam.transform.forward, out hit, m_distance))
+                {
+                    PickUpObject(hit.transform.gameObject);
+                }
+            }
+
+            else
+            {
+                DropObject();
+            }
+        }
+
+        if (m_heldObj != null)
+        {
+            MoveObject();
+        }
+    }
+
+    void PickUpObject(GameObject p_pickObj)
+    {
+        if (p_pickObj.GetComponent<Rigidbody>())
+        {
+            Rigidbody rb = p_pickObj.GetComponent<Rigidbody>();
+            rb.useGravity = false;
+            rb.drag = 10;
+
+            rb.transform.parent = m_holdParent;
+            m_heldObj = p_pickObj;
+        }
+    }
+
+    void MoveObject()
+    {
+        if (Vector3.Distance(m_heldObj.transform.position, m_holdParent.position) > 0.1f)
+        {
+            Vector3 moveDirection = (m_holdParent.position - m_heldObj.transform.position);
+            m_heldObj.GetComponent<Rigidbody>().AddForce(moveDirection * m_moveStrength);
+        }
+    }
+
+    void DropObject()
+    {
+        Rigidbody rb = m_heldObj.GetComponent<Rigidbody>();
+        rb.useGravity = true;
+        rb.drag = 1;
+
+        m_heldObj.transform.parent = null;
+        m_heldObj = null;
     }
 }
