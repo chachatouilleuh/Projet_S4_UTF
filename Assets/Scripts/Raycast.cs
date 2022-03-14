@@ -10,6 +10,9 @@ public class Raycast : MonoBehaviour
     [SerializeField] Camera fpsCam;
     [SerializeField] private GameObject m_curTarget;
 
+    [SerializeField] private Transform m_holdParent;
+    [SerializeField] private GameObject m_heldObj;
+
     void FixedUpdate()
     {
         // Vector3 m_direction = new Vector3(1f, 0f, 1f);

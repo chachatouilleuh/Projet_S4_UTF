@@ -555,7 +555,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 606f8d7a8033b5c4b863b994ed3a142e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_distance: 2
+  m_distance: 6
   fpsCam: {fileID: 1460642858}
   m_curTarget: {fileID: 1966514195}
 --- !u!43 &1266015093
