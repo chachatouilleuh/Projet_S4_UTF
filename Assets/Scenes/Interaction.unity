@@ -260,12 +260,16 @@ PrefabInstance:
       value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 467244602731419402, guid: 11aaea5348574644a9eb4f4504fcce3f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.61
+      objectReference: {fileID: 0}
+    - target: {fileID: 467244602731419402, guid: 11aaea5348574644a9eb4f4504fcce3f, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -0.42
       objectReference: {fileID: 0}
     - target: {fileID: 467244602731419402, guid: 11aaea5348574644a9eb4f4504fcce3f, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 3
+      value: 2.73
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 670333526599144156, guid: 11aaea5348574644a9eb4f4504fcce3f, type: 3}
@@ -564,7 +568,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_distance: 4
-  m_moveStrength: 100
+  m_moveStrength: 150
   fpsCam: {fileID: 1460642858}
   m_curTarget: {fileID: 1966514195}
   m_holdParent: {fileID: 1987260145}
