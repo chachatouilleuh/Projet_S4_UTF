@@ -6,23 +6,22 @@ using UnityEngine;
 
 public class Raycast : MonoBehaviour
 {
-    [SerializeField] float m_distance;
-    [SerializeField] float m_moveStrength;
-    [SerializeField] Camera fpsCam;
+    [SerializeField, Tooltip("le layer de l'objet")] private LayerMask Pickable_Object;
+    [SerializeField, Tooltip("la caméra du perso")] Camera fpsCam;
+    [SerializeField, Tooltip("la range pour pick l'objet")] private float m_distance;
     [SerializeField] private GameObject m_curTarget;
 
-    [SerializeField] private Transform m_holdParent;
-    [SerializeField] private GameObject m_heldObj;
-
+    private Rigidbody m_rigidbody;
+    private Collider m_collider;
     void FixedUpdate()
     {
         // Vector3 m_direction = new Vector3(1f, 0f, 1f);
-        // Ray interactRay = new Ray(transform.position, m_direction);
+        Ray pickupRay = new Ray(fpsCam.transform.position, fpsCam.transform.forward);
         Debug.DrawRay(fpsCam.transform.position, fpsCam.transform.forward * m_distance, Color.green);
-        
+
         RaycastHit hit;
 
-        if (Physics.Raycast(fpsCam.transform.position, fpsCam.transform.forward, out hit, m_distance))
+        if (Physics.Raycast(pickupRay, out hit, m_distance, Pickable_Object))
         {
             if (hit.transform.gameObject.CompareTag("Pickable_Object"))
             {
@@ -38,58 +37,5 @@ public class Raycast : MonoBehaviour
         {
             m_curTarget.GetComponent<Outline>().enabled = false;
         }
-        
-        if (Input.GetMouseButton(0))
-        {
-            if (m_heldObj == null)
-            {
-                if (Physics.Raycast(fpsCam.transform.position, fpsCam.transform.forward, out hit, m_distance))
-                {
-                    PickUpObject(hit.transform.gameObject);
-                }
-            }
-
-            else
-            {
-                DropObject();
-            }
-        }
-
-        if (m_heldObj != null)
-        {
-            MoveObject();
-        }
-    }
-
-    void PickUpObject(GameObject p_pickObj)
-    {
-        if (p_pickObj.GetComponent<Rigidbody>())
-        {
-            Rigidbody rb = p_pickObj.GetComponent<Rigidbody>();
-            rb.useGravity = false;
-            rb.drag = 10;
-
-            rb.transform.parent = m_holdParent;
-            m_heldObj = p_pickObj;
-        }
-    }
-
-    void MoveObject()
-    {
-        if (Vector3.Distance(m_heldObj.transform.position, m_holdParent.position) > 0.1f)
-        {
-            Vector3 moveDirection = (m_holdParent.position - m_heldObj.transform.position);
-            m_heldObj.GetComponent<Rigidbody>().AddForce(moveDirection * m_moveStrength);
-        }
-    }
-
-    void DropObject()
-    {
-        Rigidbody rb = m_heldObj.GetComponent<Rigidbody>();
-        rb.useGravity = true;
-        rb.drag = 1;
-
-        m_heldObj.transform.parent = null;
-        m_heldObj = null;
     }
 }
