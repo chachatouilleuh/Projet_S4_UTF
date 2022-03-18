@@ -24,7 +24,7 @@ public class Raycast : MonoBehaviour
 
         RaycastHit hit;
 
-        if (Physics.Raycast(pickupRay, out hit, m_distance, Pickable_Object))
+        if (Physics.Raycast(pickupRay, out hit, m_distance, Pickable_Object ))
         {
             if (hit.transform.gameObject)
             {
