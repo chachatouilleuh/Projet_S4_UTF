@@ -7,7 +7,7 @@ using UnityEngine.Serialization;
 
 public class Raycast : MonoBehaviour
 {
-    [SerializeField, Tooltip("le layer de l'objet")] private LayerMask Pickable_Object;
+    [SerializeField, Tooltip("le layer de l'objet")] private LayerMask m_pickable_Object;
     [SerializeField, Tooltip("la caméra du perso")] Camera fpsCam;
     [SerializeField, Tooltip("la range pour pick l'objet")] private float m_distance;
     [SerializeField, Tooltip("recup le transform de la 'main'")] private Transform m_hand;
@@ -15,7 +15,7 @@ public class Raycast : MonoBehaviour
 
     private Rigidbody m_rigidbody;
     private Collider m_collider;
-    void FixedUpdate()
+    void Update()
     {
         // Vector3 m_direction = new Vector3(1f, 0f, 1f);
 
@@ -24,7 +24,7 @@ public class Raycast : MonoBehaviour
 
         RaycastHit hit;
 
-        if (Physics.Raycast(pickupRay, out hit, m_distance, Pickable_Object ))
+        if (Physics.Raycast(pickupRay, out hit, m_distance, m_pickable_Object ))
         {
             if (hit.transform.gameObject)
             {
@@ -43,21 +43,19 @@ public class Raycast : MonoBehaviour
 
         if (Input.GetMouseButtonDown(0))
         {
-            Debug.Log("je clique");
-            if (Physics.Raycast(pickupRay, out hit, m_distance, Pickable_Object))
+            if (Physics.Raycast(pickupRay, out hit, m_distance, m_pickable_Object))
             {
                 if (!m_rigidbody)
                 {
-                    Debug.Log("je prend l'objet");
                     m_rigidbody = hit.rigidbody;
                     m_collider = hit.collider;
-
+        
                     m_rigidbody.isKinematic = true;
                     m_collider.enabled = false;
                 }
                 return;
             }
-
+        
             if (m_rigidbody)
             {
                 m_rigidbody.isKinematic = false;
@@ -67,7 +65,7 @@ public class Raycast : MonoBehaviour
                 m_collider = null;
             }
         }
-
+        
         if (m_rigidbody)
         {
             m_rigidbody.position = m_hand.position;

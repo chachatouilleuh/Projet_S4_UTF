@@ -587,9 +587,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 606f8d7a8033b5c4b863b994ed3a142e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Pickable_Object:
+  m_pickable_Object:
     serializedVersion: 2
-    m_Bits: 192
+    m_Bits: 0
   fpsCam: {fileID: 20437472682476688}
   m_distance: 4
   m_hand: {fileID: 467244602731419402}
@@ -609,6 +609,8 @@ MonoBehaviour:
   m_layerProbes:
     serializedVersion: 2
     m_Bits: 128
+  fpsCam: {fileID: 20437472682476688}
+  m_distance: 4
   m_inventaire: []
 --- !u!1 &1963958859065967600
 GameObject:
