@@ -18,8 +18,9 @@ public class Raycast : MonoBehaviour
     void FixedUpdate()
     {
         // Vector3 m_direction = new Vector3(1f, 0f, 1f);
-        Ray pickupRay = new Ray(fpsCam.transform.position, fpsCam.transform.forward);
+
         Debug.DrawRay(fpsCam.transform.position, fpsCam.transform.forward * m_distance, Color.green);
+        Ray pickupRay = new Ray(fpsCam.transform.position, fpsCam.transform.forward * m_distance);
 
         RaycastHit hit;
 
@@ -42,10 +43,12 @@ public class Raycast : MonoBehaviour
 
         if (Input.GetMouseButtonDown(0))
         {
+            Debug.Log("je clique");
             if (Physics.Raycast(pickupRay, out hit, m_distance, Pickable_Object))
             {
                 if (!m_rigidbody)
                 {
+                    Debug.Log("je prend l'objet");
                     m_rigidbody = hit.rigidbody;
                     m_collider = hit.collider;
 
