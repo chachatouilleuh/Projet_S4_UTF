@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - Pickable_Object
+  - Probes_Object
   layers:
   - Default
   - TransparentFX
@@ -13,7 +14,7 @@ TagManager:
   - Water
   - UI
   - Pickable_Object
-  - 
+  - Probes_Object
   - 
   - 
   - 

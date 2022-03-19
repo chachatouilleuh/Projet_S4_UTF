@@ -24,9 +24,9 @@ public class Raycast : MonoBehaviour
 
         RaycastHit hit;
 
-        if (Physics.Raycast(pickupRay, out hit, m_distance, m_pickable_Object ))
+        if (Physics.Raycast(pickupRay, out hit, m_distance))
         {
-            if (hit.transform.gameObject)
+            if (hit.transform.gameObject.CompareTag("Pickable_Object") || hit.transform.gameObject.CompareTag("Probes_Object"))
             {
                 m_curTarget = hit.transform.gameObject;
                 m_curTarget.GetComponent<Outline>().enabled = true;
@@ -38,7 +38,7 @@ public class Raycast : MonoBehaviour
         }
         else
         {
-            m_curTarget.GetComponent<Outline>().enabled = false;
+            // m_curTarget.GetComponent<Outline>().enabled = false;
         }
 
         if (Input.GetMouseButtonDown(0))
