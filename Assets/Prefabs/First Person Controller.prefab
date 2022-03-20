@@ -589,7 +589,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_pickable_Object:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 64
   fpsCam: {fileID: 20437472682476688}
   m_distance: 4
   m_hand: {fileID: 467244602731419402}
@@ -609,6 +609,9 @@ MonoBehaviour:
   m_layerProbes:
     serializedVersion: 2
     m_Bits: 128
+  m_layerLock:
+    serializedVersion: 2
+    m_Bits: 256
   fpsCam: {fileID: 20437472682476688}
   m_distance: 4
   m_inventaire: []

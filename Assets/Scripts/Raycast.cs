@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Packages.QuickOutline.Scripts;
 using UnityEditorInternal;
 using UnityEngine;
 using UnityEngine.Serialization;
@@ -26,7 +27,7 @@ public class Raycast : MonoBehaviour
 
         if (Physics.Raycast(pickupRay, out hit, m_distance))
         {
-            if (hit.transform.gameObject.CompareTag("Pickable_Object") || hit.transform.gameObject.CompareTag("Probes_Object"))
+            if (hit.transform.gameObject.CompareTag("Pickable_Object") || hit.transform.gameObject.CompareTag("Probes_Object") || hit.transform.gameObject.CompareTag("Lock_Object"))
             {
                 m_curTarget = hit.transform.gameObject;
                 m_curTarget.GetComponent<Outline>().enabled = true;
@@ -34,11 +35,17 @@ public class Raycast : MonoBehaviour
             else
             {
                 m_curTarget.GetComponent<Outline>().enabled = false;
+                return;
             }
+
         }
         else
         {
-            // m_curTarget.GetComponent<Outline>().enabled = false;
+            if (m_curTarget == null)
+            {
+                return;
+            }
+            m_curTarget.GetComponent<Outline>().enabled = false;
         }
 
         if (Input.GetMouseButtonDown(0))

@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Pickable_Object
   - Probes_Object
+  - Lock_Object
   layers:
   - Default
   - TransparentFX
@@ -15,7 +16,7 @@ TagManager:
   - UI
   - Pickable_Object
   - Probes_Object
-  - 
+  - Lock_Object
   - 
   - 
   - 
