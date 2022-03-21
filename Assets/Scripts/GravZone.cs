@@ -2,45 +2,72 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Diagnostics;
+using System.Linq;
+using System.Security.Policy;
 using UnityEngine;
 using Debug = UnityEngine.Debug;
 
 public class GravZone : MonoBehaviour
 {
-    [SerializeField, Tooltip("Gravité inversée")]
+    [Header("Gravity Properties")]
+    [SerializeField, Tooltip("Canceled")]
+    private bool m_noForce;
+    [SerializeField, Tooltip("Intensified")]
+    private bool m_addForce;
+    [SerializeField, Tooltip("Inversed")]
     private bool m_invertForce;
-    [SerializeField, Tooltip("Force exercée par la gravité")]
+    [SerializeField, Tooltip("Force applied")]
     private float m_force = 0f;
-    
+
     private void OnTriggerStay(Collider other)
     {
-        if (m_invertForce)
+        if (m_noForce)
         {
-            other.attachedRigidbody.AddForce(Vector3.up * m_force);
+            other.attachedRigidbody.useGravity = false;
         }
-        else
+        else if (m_addForce)
         {
             other.attachedRigidbody.AddForce(Vector3.down * m_force);
         }
-    }
-
-    private void OnTriggerEnter(Collider other)
-    {
-        Debug.Log("Entrée dans le champ");
-        if (other.attachedRigidbody)
+        else if (m_invertForce)
         {
-            //other.attachedRigidbody.useGravity = false;
-            
-            other.transform.Rotate(1, 1, 1, Space.Self);
+            other.attachedRigidbody.AddForce(Vector3.up * m_force);
         }
     }
-
+    
     private void OnTriggerExit(Collider other)
     {
-        Debug.Log("Sortie du champ");
         if (other.attachedRigidbody)
         {
-            //other.attachedRigidbody.useGravity = true;
+            if (m_noForce)
+            {
+                other.attachedRigidbody.useGravity = true;
+            }
+        }
+    }
+    
+    private static int Truth(params bool[] booleans)
+    {
+        return booleans.Count(b => b);
+    }
+    
+    private void Start()
+    {
+        if (Truth(m_noForce, m_addForce, m_invertForce) > 1)
+        {
+            Debug.LogWarning($"{this}: Multiples properties issue");
+        }
+        else if (Truth(m_noForce, m_addForce, m_invertForce) < 1)
+        {
+            Debug.LogWarning($"{this}: No property ticked");
+        }
+        
+        if (m_addForce || m_invertForce)
+        {
+            if (m_force <= 0)
+            {
+                Debug.LogWarning($"{this}: The force is less than or equal to 0");
+            }
         }
     }
 }
