@@ -471,6 +471,7 @@ GameObject:
   - component: {fileID: 114497868231759342}
   - component: {fileID: 114762042097486276}
   - component: {fileID: 5481406095767772786}
+  - component: {fileID: 3209797721612514188}
   - component: {fileID: 259347118876018682}
   m_Layer: 0
   m_Name: First Person Controller
@@ -587,13 +588,31 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 606f8d7a8033b5c4b863b994ed3a142e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Pickable_Object:
+  m_oultine_Object:
     serializedVersion: 2
-    m_Bits: 192
+    m_Bits: 448
   fpsCam: {fileID: 20437472682476688}
   m_distance: 4
   m_hand: {fileID: 467244602731419402}
   m_curTarget: {fileID: 0}
+--- !u!114 &3209797721612514188
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1773623360729482}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e514d1ed977515240ab20b6f27df9a9c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_pickable_Object:
+    serializedVersion: 2
+    m_Bits: 64
+  fpsCam: {fileID: 20437472682476688}
+  m_distance: 4
+  m_hand: {fileID: 467244602731419402}
 --- !u!114 &259347118876018682
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -609,6 +628,11 @@ MonoBehaviour:
   m_layerProbes:
     serializedVersion: 2
     m_Bits: 128
+  m_layerLock:
+    serializedVersion: 2
+    m_Bits: 256
+  fpsCam: {fileID: 20437472682476688}
+  m_distance: 4
   m_inventaire: []
 --- !u!1 &1963958859065967600
 GameObject:

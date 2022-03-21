@@ -15,10 +15,10 @@ GameObject:
   - component: {fileID: 7674083983061313611}
   - component: {fileID: 7674083983061313620}
   - component: {fileID: 7674083983061313614}
-  - component: {fileID: 2631737889692988343}
-  m_Layer: 7
-  m_Name: Probes
-  m_TagString: Pickable_Object
+  - component: {fileID: 555355583506945898}
+  m_Layer: 8
+  m_Name: Lock
+  m_TagString: Lock_Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -374,7 +374,7 @@ MonoBehaviour:
   precomputeOutline: 0
   bakeKeys: []
   bakeValues: []
---- !u!114 &2631737889692988343
+--- !u!114 &555355583506945898
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -383,7 +383,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 7674083983061313621}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 43e2d72d2bb9e5a47a677903ac4429bd, type: 3}
+  m_Script: {fileID: 11500000, guid: 09c7a91f319d5f74181a740dcf5bc8d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_probes: {fileID: 11400000, guid: 0039566b57b91f847aaeeea18e41d196, type: 2}
+  m_keyNeed: {fileID: 0}
