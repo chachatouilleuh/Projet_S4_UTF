@@ -10,11 +10,11 @@ using Debug = UnityEngine.Debug;
 public class GravZone : MonoBehaviour
 {
     [Header("Gravity Properties")]
-    [SerializeField, Tooltip("Canceled")]
+    [SerializeField, Tooltip("Everything is floating")]
     private bool m_noForce;
-    [SerializeField, Tooltip("Intensified")]
+    [SerializeField, Tooltip("Pushing things down")]
     private bool m_addForce;
-    [SerializeField, Tooltip("Inversed")]
+    [SerializeField, Tooltip("Pushing things up")]
     private bool m_invertForce;
     [SerializeField, Tooltip("Force applied")]
     private float m_force = 0f;
