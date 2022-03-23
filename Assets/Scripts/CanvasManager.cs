@@ -4,112 +4,111 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.Serialization;
 
-public class CanvaManager : MonoBehaviour
+public class CanvasManager : MonoBehaviour
 {
-    public SceneManager sceneManager;
+    private SceneManager sceneManager;
     
-    public GameObject Accueil, MainMenu, Options, LoadScreen, MenuIngame,OptionsIngame ;
+    public GameObject Accueil, MainMenu, Options, LoadScreen, MenuIngame, OptionsIngame ;
 
-    private bool accueilOpen = true;
-    private bool mainMenuOpen, optionsOpen, loadScreenOpen, menuIngameOpen, optionsIngameOpen ;
-  
-    //__________________________________________________________________//
+    private bool m_accueilOpen = true;
+    private bool m_mainMenuOpen, m_optionsOpen, m_loadScreenOpen, m_menuIngameOpen, m_optionsIngameOpen;
 
     // OPEN/CLOSE CANVAS
-
+    
+    void Update()
+    {
+        if (m_accueilOpen)
+        {
+            if (Input.anyKey)
+            {
+                OpenAccueil();
+                OpenMainMenu();
+            }
+        }
+    }
     public void OpenAccueil()
     {
-        if(accueilOpen == false)
+        if (!m_accueilOpen)
         {
             Accueil.SetActive(true);
+            m_accueilOpen = true;
         }
-
-        if (accueilOpen == true)
+        else
         {
             Accueil.SetActive(false);
+            m_accueilOpen = false;
         }
     }
     
     public void OpenMainMenu()
     {   
-        if (mainMenuOpen == false)
+        if (!m_mainMenuOpen)
         {
             MainMenu.SetActive(true);
+            m_mainMenuOpen = true;
         }
-
-        if (mainMenuOpen == true)
+        else
         {
             MainMenu.SetActive(false);
+            m_mainMenuOpen = false;
         }
     }
     
-    public void OpenOption()
+    public void OpenOptions()
     {
-        if (optionsOpen == false)
+        if (!m_optionsOpen)
         {
             Options.SetActive(true);
+            m_optionsOpen = true;
         }
-
-        if (optionsOpen == true)
+        else
         {
             Options.SetActive(false);
+            m_optionsOpen = false;
         }
     }
     
     public void OpenLoadScreen()
     {
-        if (loadScreenOpen == false)
+        if (!m_loadScreenOpen)
         {
             LoadScreen.SetActive(true);
+            m_loadScreenOpen = true;
         }
-
-        if (loadScreenOpen == true)
+        else
         {
             LoadScreen.SetActive(false);
+            m_loadScreenOpen = false;
         }
     }
     
     public void OpenMenuIngame()
     {
-        if (menuIngameOpen == false)
+        if (!m_menuIngameOpen)
         {
             MenuIngame.SetActive(true);
+            m_menuIngameOpen = true;
         }
-
-        if (menuIngameOpen == true)
+        else
         {
             MenuIngame.SetActive(false);
+            m_menuIngameOpen = false;
         }
     }
-    public void OpenOtionsIngame()
+    public void OpenOptionsIngame()
     {
-        if (optionsIngameOpen == false)
+        if (!m_optionsIngameOpen)
         {
             OptionsIngame.SetActive(true);
+            m_optionsIngameOpen = true;
         }
-
-        if (optionsIngameOpen == true)
+        else
         {
             OptionsIngame.SetActive(false);
+            m_optionsIngameOpen = false;
         }
     }
-
-    //__________________________________________________________________//
     
-    // ICONE MANAGER
-    
-    //public GameObject HideButton, ShowButton;
-    //private bool HideIcons;
-    
-    // public void FixedUpdate(){
-    //     if(HideButton != null && ShowButton != null)
-    //     {
-    //         if (HideIcons != true){
-    //                 HideButton.SetActive(true);
-    //                 ShowButton.SetActive(false); 
-    //             }  
-    //         }       
-    // }
     
     //__________________________________________________________________//
     

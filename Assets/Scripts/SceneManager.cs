@@ -1,8 +1,5 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using UnityEngine.Serialization;
 
 [System.Serializable]
 public class SceneManager : MonoBehaviour
@@ -11,25 +8,17 @@ public class SceneManager : MonoBehaviour
     
     public void OpenMenuScene()
     {
-        UnityEngine.SceneManagement.SceneManager.LoadScene (sceneName:"Menu");
-        //if (checkpoint == 5){
-            //OpenCredits();
-        //}
+        UnityEngine.SceneManagement.SceneManager.LoadScene (sceneName:"MenuTest");
     }
 
     public void OpenCredits()
     {
         UnityEngine.SceneManagement.SceneManager.LoadScene (sceneName:"Credits");
     }
-
-    public void OpenMenuIngameScene()
-    {
-        UnityEngine.SceneManagement.SceneManager.LoadScene (sceneName:"Menu Ingame");
-    }
-
+    
     public void OpenGameScene()
     {
-        UnityEngine.SceneManagement.SceneManager.LoadScene (sceneName:"Playground");
+        UnityEngine.SceneManagement.SceneManager.LoadScene (sceneName:"Interaction");
     }
     
     //__________________________________________________________________//
