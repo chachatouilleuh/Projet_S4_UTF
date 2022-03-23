@@ -10,66 +10,90 @@ public class CanvaManager : MonoBehaviour
     
     public GameObject Accueil, MainMenu, Options, LoadScreen, MenuIngame,OptionsIngame ;
 
+    private bool accueilOpen = true;
+    private bool mainMenuOpen, optionsOpen, loadScreenOpen, menuIngameOpen, optionsIngameOpen ;
+  
     //__________________________________________________________________//
-    
-    // OPEN CANVAS
-    
-    public void AccueilActive()
+
+    // OPEN/CLOSE CANVAS
+
+    public void OpenAccueil()
     {
-        Accueil.SetActive(true);
+        if(accueilOpen == false)
+        {
+            Accueil.SetActive(true);
+        }
+
+        if (accueilOpen == true)
+        {
+            Accueil.SetActive(false);
+        }
     }
     
-    public void MainMenuActive()
-    {
-        MainMenu.SetActive(true);
+    public void OpenMainMenu()
+    {   
+        if (mainMenuOpen == false)
+        {
+            MainMenu.SetActive(true);
+        }
+
+        if (mainMenuOpen == true)
+        {
+            MainMenu.SetActive(false);
+        }
     }
     
-    public void OptionActive()
+    public void OpenOption()
     {
-        Options.SetActive(true);
+        if (optionsOpen == false)
+        {
+            Options.SetActive(true);
+        }
+
+        if (optionsOpen == true)
+        {
+            Options.SetActive(false);
+        }
     }
     
-    public void LoadScreenActive()
+    public void OpenLoadScreen()
     {
-        LoadScreen.SetActive(true);
+        if (loadScreenOpen == false)
+        {
+            LoadScreen.SetActive(true);
+        }
+
+        if (loadScreenOpen == true)
+        {
+            LoadScreen.SetActive(false);
+        }
     }
     
-    public void MenuIngameActive()
+    public void OpenMenuIngame()
     {
-        MenuIngame.SetActive(true);
+        if (menuIngameOpen == false)
+        {
+            MenuIngame.SetActive(true);
+        }
+
+        if (menuIngameOpen == true)
+        {
+            MenuIngame.SetActive(false);
+        }
     }
-    public void OtionsIngameActive()
+    public void OpenOtionsIngame()
     {
-        OptionsIngame.SetActive(true);
+        if (optionsIngameOpen == false)
+        {
+            OptionsIngame.SetActive(true);
+        }
+
+        if (optionsIngameOpen == true)
+        {
+            OptionsIngame.SetActive(false);
+        }
     }
 
-    //__________________________________________________________________//
-    
-    // CLOSE CANVAS
-    public void CloseOptions()
-    {
-        Options.SetActive(false);
-    }
-
-    public void CloseMainMenu()
-    {
-        MainMenu.SetActive(false);
-    }
-
-    public void CloseMenuIngame()
-    {
-        MenuIngame.SetActive(false);
-    }
-    public void CloseOptionsIngame()
-    {
-        OptionsIngame.SetActive(false);
-    }
-
-    public void CloseLoadScreen()
-    {
-        LoadScreen.SetActive(false);
-    }
-    
     //__________________________________________________________________//
     
     // ICONE MANAGER
