@@ -7,6 +7,7 @@ TagManager:
   - Pickable_Object
   - Probes_Object
   - Lock_Object
+  - PressPlate_Object
   layers:
   - Default
   - TransparentFX
@@ -17,7 +18,7 @@ TagManager:
   - Pickable_Object
   - Probes_Object
   - Lock_Object
-  - 
+  - PressPlate_Object
   - 
   - 
   - 

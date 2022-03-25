@@ -590,7 +590,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_oultine_Object:
     serializedVersion: 2
-    m_Bits: 448
+    m_Bits: 960
   fpsCam: {fileID: 20437472682476688}
   m_distance: 4
   m_curTarget: {fileID: 0}
@@ -609,9 +609,13 @@ MonoBehaviour:
   m_pickable_Object:
     serializedVersion: 2
     m_Bits: 64
+  m_pressPlate:
+    serializedVersion: 2
+    m_Bits: 512
   fpsCam: {fileID: 20437472682476688}
   m_distance: 4
   m_hand: {fileID: 467244602731419402}
+  m_gotBox: 0
 --- !u!114 &259347118876018682
 MonoBehaviour:
   m_ObjectHideFlags: 0
