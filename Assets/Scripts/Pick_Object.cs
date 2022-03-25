@@ -26,6 +26,7 @@ public class Pick_Object : MonoBehaviour
                     m_collider = hit.collider;
         
                     m_rigidbody.isKinematic = true;
+                    m_rigidbody.useGravity = true;
                     m_collider.enabled = false;
                 }
                 return;
