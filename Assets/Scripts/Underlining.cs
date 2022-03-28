@@ -1,80 +1,52 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
 public class Underlining : MonoBehaviour
 {
 
-    [SerializeField , Tooltip ("le texte à mettre")] public TMP_Text textComponent;
-    public bool isLangUnderlined;
-    public bool isSubUnderlined;
-
-    private void Update()
+    [SerializeField , Tooltip ("le texte a mettre")] private TMP_Text textComponent;
+    [SerializeField, Tooltip("check underlined")] private bool m_isUnderlined;
+    [SerializeField, Tooltip("check type")] private bool m_typeLang;
+    
+    public void Underlined()
     {
-        //if (Input.GetMouseButtonDown(0))
-        //{
-        //    switch (isLangUnderlined)
-        //    {
-        //        case true:
-        //            //do thing A goes here...
-        //            textComponent.fontStyle ^= FontStyles.Underline;
-        //            isLangUnderlined = false;
-        //            //PlayerPrefs.SetInt("Language", 0);
-        //            break;
-
-        //        case false:
-        //            //Add Underline
-        //            textComponent.fontStyle = FontStyles.Underline;
-        //            isLangUnderlined = true;
-        //            //PlayerPrefs.SetInt("Language", 1);
-
-        //    }
-        //}
-
-        // Language
-        if (!isLangUnderlined)
+        if (m_isUnderlined)
         {
-            if (Input.GetMouseButtonDown(0))
+            //Remove Underline
+            textComponent.fontStyle ^= FontStyles.Underline;
+            m_isUnderlined = false;
+            
+            // Check type and set ON/OFF
+            if (m_typeLang)
             {
-                //Remove Underline
-                textComponent.fontStyle ^= FontStyles.Underline;
-                isLangUnderlined = false;
-                //PlayerPrefs.SetInt("Language", 0);
+                PlayerPrefs.SetInt("lang", 0);
+                Debug.Log(PlayerPrefs.GetInt ("lang"));
             }
+            else
+            {
+                PlayerPrefs.SetInt("sub", 0);
+                Debug.Log(PlayerPrefs.GetInt ("sub"));
+            }
+            
         }
         else
         {
-            if (Input.GetMouseButtonDown(0))
+            //Add Underline
+            textComponent.fontStyle = FontStyles.Underline;
+            m_isUnderlined = true;
+            //PlayerPrefs.SetInt("Language", 1);
+            // Check type and set ON/OFF
+            
+            if (m_typeLang)
             {
-                //Add Underline
-                textComponent.fontStyle = FontStyles.Underline;
-                isLangUnderlined = true;
-                //PlayerPrefs.SetInt("Language", 1);
+                PlayerPrefs.SetInt("language", 1);
+                Debug.Log(PlayerPrefs.GetInt("lang"));
+            }
+            else
+            {
+                PlayerPrefs.SetInt("sub", 1);
+                Debug.Log(PlayerPrefs.GetInt("sub"));
             }
         }
-
-        // Subtitles
-        
-        if (!isSubUnderlined)
-        {
-            if (Input.GetMouseButtonDown(0))
-            {
-                //Remove Underline
-                textComponent.fontStyle ^= FontStyles.Underline;
-                isSubUnderlined = false;
-                //PlayerPrefs.SetInt("Sub", 0);
-            }
-        }
-        else
-        {
-            if (Input.GetMouseButtonDown(0))
-            {
-                //Add Underline
-                textComponent.fontStyle = FontStyles.Underline;
-                isSubUnderlined = true;
-                //PlayerPrefs.SetInt("Sub", 1);
-            }
-        }  
     }
 }
