@@ -2,13 +2,22 @@ using UnityEngine;
 
 public class Pick_Object : MonoBehaviour
 {
-    [SerializeField, Tooltip("le layer de l'objet")] private LayerMask m_pickable_Object;
-    [SerializeField, Tooltip("la caméra du perso")] Camera fpsCam;
-    [SerializeField, Tooltip("la range pour pick l'objet")] private float m_distance;
-    [SerializeField, Tooltip("recup le transform de la 'main'")] private Transform m_hand;
+    [SerializeField, Tooltip("le layer de l'objet")]
+    private LayerMask m_pickable_Object;
+    
+    [SerializeField, Tooltip("la caméra du perso")]
+    Camera fpsCam;
+    
+    [SerializeField, Tooltip("la range pour pick l'objet")]
+    private float m_distance;
+    
+    [SerializeField, Tooltip("recup le transform de la 'main'")]
+    private Transform m_hand;
     
     private Rigidbody m_rigidbody;
     private Collider m_collider;
+
+    public bool m_isHolding;
     
     private void Update()
     {
@@ -28,6 +37,8 @@ public class Pick_Object : MonoBehaviour
                     m_rigidbody.isKinematic = true;
                     m_rigidbody.useGravity = true;
                     m_collider.enabled = false;
+
+                    m_isHolding = true;
                 }
                 return;
             }
@@ -39,6 +50,8 @@ public class Pick_Object : MonoBehaviour
             
                 m_rigidbody = null;
                 m_collider = null;
+
+                m_isHolding = false;
             }
         }
         
