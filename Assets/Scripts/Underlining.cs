@@ -3,50 +3,128 @@ using TMPro;
 
 public class Underlining : MonoBehaviour
 {
+ 
+    // Les Textes 
+    [SerializeField , Tooltip ("le texte a souligner")] private TMP_Text textA;
+    [SerializeField, Tooltip("le texte avec qui switcher")] private TMP_Text textB;
 
-    [SerializeField , Tooltip ("le texte a mettre")] private TMP_Text textComponent;
-    [SerializeField, Tooltip("check underlined")] private bool m_isUnderlined;
-    [SerializeField, Tooltip("check type")] private bool m_typeLang;
-    
-    public void Underlined()
+    // Les Checks
+    [SerializeField, Tooltip("check A")] private bool m_A;
+    [SerializeField, Tooltip("check B")] private bool m_B;
+    [SerializeField, Tooltip("check type")] private bool m_typeLanguage;
+
+    // Les langues & soustitres
+    [SerializeField, Tooltip("check A")] private int m_lang;
+    [SerializeField, Tooltip("check B")] private int m_sub;
+
+    private bool m_double = false;
+
+    private void Awake()
     {
-        if (m_isUnderlined)
+            // souligne A au début
+            textA.fontStyle = FontStyles.Underline;
+            m_A = true;
+            m_B = false;
+    }
+
+    private void CheckUnderlining()
+    {
+        //si A et B sont pas soulignés
+        if (!m_A && !m_B)
         {
-            //Remove Underline
-            textComponent.fontStyle ^= FontStyles.Underline;
-            m_isUnderlined = false;
-            
-            // Check type and set ON/OFF
-            if (m_typeLang)
+            m_double = true;
+            m_A = true;
+        }
+
+        //si A et B sont soulignés
+        else if (m_A && m_B)
+        {
+            m_double = true;
+            m_A = false;
+        }     
+    }
+
+    public void Underline()
+    {
+        CheckUnderlining();
+
+        if (!m_double)
+        {
+            // Si le gameobject cliqué est A et donc pas B
+            if (m_A && !m_B)
             {
-                PlayerPrefs.SetInt("lang", 0);
-                Debug.Log(PlayerPrefs.GetInt ("lang"));
+                // le texte A se souligne
+                textA.fontStyle ^= FontStyles.Underline;
+
+                // le texte B se désouligne
+                textB.fontStyle = FontStyles.Underline;
+
+                m_A = false;
+                m_B = true;
             }
-            else
+
+
+            // Si le gameobject cliqué est B et donc pas A
+            else if (m_B && !m_A)
             {
-                PlayerPrefs.SetInt("sub", 0);
-                Debug.Log(PlayerPrefs.GetInt ("sub"));
+                // le texte A se désouligne
+                textA.fontStyle = FontStyles.Underline;
+
+                // le texte B se souligne
+                textB.fontStyle ^= FontStyles.Underline;
+
+                m_B = false;
+                m_A = true;
             }
+        }
+
+        // J'assigne le sous-titre ou la langue en question
+        if (m_typeLanguage)
+        {
+            SetLanguage();
+        }
+        else
+        {
+            SetSubtitles();
+        }
+        
+    }
+
+    // je change la valeur de la langue
+    private void SetLanguage()
+    {
+        m_lang = PlayerPrefs.GetInt("lang");
+        
+        if(m_lang == 0)
+        {
+            PlayerPrefs.SetInt("lang", 1); 
+            Debug.Log(PlayerPrefs.GetInt("lang"));
             
         }
         else
         {
-            //Add Underline
-            textComponent.fontStyle = FontStyles.Underline;
-            m_isUnderlined = true;
-            //PlayerPrefs.SetInt("Language", 1);
-            // Check type and set ON/OFF
-            
-            if (m_typeLang)
-            {
-                PlayerPrefs.SetInt("language", 1);
-                Debug.Log(PlayerPrefs.GetInt("lang"));
-            }
-            else
-            {
-                PlayerPrefs.SetInt("sub", 1);
-                Debug.Log(PlayerPrefs.GetInt("sub"));
-            }
-        }
+            PlayerPrefs.SetInt("lang", 0);
+            Debug.Log(PlayerPrefs.GetInt("lang"));
+        }   
     }
+
+    // Je change la valeur des soustitres
+    private void SetSubtitles()
+    {
+        m_sub = PlayerPrefs.GetInt("sub");
+
+        if(m_sub == 0)
+        {
+            PlayerPrefs.SetInt("sub", 1);
+            Debug.Log(PlayerPrefs.GetInt("sub"));
+        }
+
+        else
+        {
+            PlayerPrefs.SetInt("sub", 0);
+            Debug.Log(PlayerPrefs.GetInt("sub"));
+        }  
+    }
+
+
 }
