@@ -15,19 +15,19 @@ public class SnapObjects : MonoBehaviour
     [SerializeField, Tooltip("Get transform of the empty object")]
     private Transform m_snapPoint;
 
-    private Rigidbody m_rigidbody;
-    
+    [SerializeField, Tooltip("layer de l'objet a poser")]
+    private LayerMask m_layerBox;
+
     private void OnTriggerStay(Collider other)
     {
-        Debug.Log(m_hasCube.m_isHolding ? "Has cube" : "Has no cube");
-        
         if (m_hasCube.m_isHolding) m_cubeDetect.GetComponent<Outline>().enabled = true;
-
-        if (m_rigidbody)
+        
+        if ((m_layerBox.value & (1 << other.gameObject.layer)) > 0)
         {
-            m_rigidbody.position = m_snapPoint.position;
-            m_rigidbody.rotation = m_snapPoint.rotation;
-            m_rigidbody.isKinematic = true;
+            other.transform.position = m_snapPoint.position;
+            other.transform.rotation = m_snapPoint.rotation;
+
+            other.GetComponent<Rigidbody>().isKinematic = true;
         }
     }
 
