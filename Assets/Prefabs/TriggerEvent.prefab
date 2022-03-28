@@ -350,7 +350,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3e1d655fbae46434b883f974fa077552, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_triggeredEvent: {fileID: 11400000, guid: fa86e6405becf7a4d9cf8d8c86a64655, type: 2}
+  m_triggeredEvent: {fileID: 0}
   m_layer:
     serializedVersion: 2
     m_Bits: 264
