@@ -23,27 +23,18 @@ public class Underlining : MonoBehaviour
     {
             // souligne A au début
             textA.fontStyle = FontStyles.Underline;
+          
+        // mettre la condition pour la sélection de base du soulignage en fonction de la langue
             m_A = true;
             m_B = false;
     }
 
-    private void CheckUnderlining()
+    private void Update()
     {
-        //si A et B sont pas soulignés
-        if (!m_A && !m_B)
-        {
-            m_double = true;
-            m_A = true;
-        }
-
-        //si A et B sont soulignés
-        else if (m_A && m_B)
-        {
-            m_double = true;
-            m_A = false;
-        }     
+        m_lang = PlayerPrefs.GetInt("lang");
     }
 
+  
     public void Underline()
     {
         CheckUnderlining();
@@ -61,6 +52,17 @@ public class Underlining : MonoBehaviour
 
                 m_A = false;
                 m_B = true;
+
+
+                // J'assigne le sous-titre ou la langue en question
+                if (m_typeLanguage)
+                {
+                    SetLanguage();
+                }
+                else
+                {
+                    SetSubtitles();
+                }
             }
 
 
@@ -75,37 +77,54 @@ public class Underlining : MonoBehaviour
 
                 m_B = false;
                 m_A = true;
+
+
+                // J'assigne le sous-titre ou la langue en question
+                if (m_typeLanguage)
+                {
+                    SetLanguage();
+                }
+                else
+                {
+                    SetSubtitles();
+                }
             }
+        }  
+    }
+
+     private void CheckUnderlining()
+    {
+        //si A et B sont pas soulignés
+        if (!m_A && !m_B)
+        {
+            m_double = true;
+            m_A = true;
         }
 
-        // J'assigne le sous-titre ou la langue en question
-        if (m_typeLanguage)
+        //si A et B sont soulignés
+        else if (m_A && m_B)
         {
-            SetLanguage();
-        }
-        else
-        {
-            SetSubtitles();
-        }
-        
+            m_double = true;
+            m_A = false;
+        }     
     }
 
     // je change la valeur de la langue
     private void SetLanguage()
     {
-        m_lang = PlayerPrefs.GetInt("lang");
-        
-        if(m_lang == 0)
+        if (m_lang == 0)
         {
-            PlayerPrefs.SetInt("lang", 1); 
-            Debug.Log(PlayerPrefs.GetInt("lang"));
-            
+            PlayerPrefs.SetInt("lang", 1);
+            Debug.Log("Set Language : Je suis en français maintenant");
+
         }
         else
         {
             PlayerPrefs.SetInt("lang", 0);
-            Debug.Log(PlayerPrefs.GetInt("lang"));
-        }   
+            Debug.Log("Set Language : Je suis en anglais maintenant");
+        }
+
+        Debug.Log(m_lang);
     }
 
     // Je change la valeur des soustitres
@@ -116,13 +135,11 @@ public class Underlining : MonoBehaviour
         if(m_sub == 0)
         {
             PlayerPrefs.SetInt("sub", 1);
-            Debug.Log(PlayerPrefs.GetInt("sub"));
         }
 
         else
         {
             PlayerPrefs.SetInt("sub", 0);
-            Debug.Log(PlayerPrefs.GetInt("sub"));
         }  
     }
 

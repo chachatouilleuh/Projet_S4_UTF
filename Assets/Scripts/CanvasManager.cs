@@ -6,17 +6,27 @@ using UnityEngine.Serialization;
 
 public class CanvasManager : MonoBehaviour
 {
-    private SceneManager sceneManager;
-    
-    public GameObject Accueil, MainMenu, Options, LoadScreen, MenuIngame, OptionsIngame ;
+    //private SceneManager sceneManager;
 
-    private bool m_accueilOpen = true;
+    [SerializeField, Tooltip("les canvas à assigner")] private GameObject Accueil, AccueilFr, MainMenu, MainMenuFr, Options, OptionsEn, OptionsFr, LoadScreen, MenuIngame, MenuIngameFr ;
+
+    private bool m_accueilOpen;
     private bool m_mainMenuOpen, m_optionsOpen, m_loadScreenOpen, m_menuIngameOpen, m_optionsIngameOpen;
-
-    // OPEN/CLOSE CANVAS
     
+    public int m_lang;
+
+    // INITIALISE LES VALEURS
+    private void Awake()
+    {
+        OpenAccueil();
+    }
+
+    // OPEN/CLOSE CANVAS ACCORDING TO LANGUAGE SELECTION
+
     void Update()
     {
+        m_lang = PlayerPrefs.GetInt("lang");
+
         if (m_accueilOpen)
         {
             if (Input.anyKey)
@@ -30,26 +40,45 @@ public class CanvasManager : MonoBehaviour
     {
         if (!m_accueilOpen)
         {
-            Accueil.SetActive(true);
+            if(m_lang == 0)
+            {
+                Accueil.SetActive(true);             
+            }
+            else
+            {
+                AccueilFr.SetActive(true);
+            }
             m_accueilOpen = true;
         }
         else
         {
             Accueil.SetActive(false);
+            AccueilFr.SetActive(false);
             m_accueilOpen = false;
         }
     }
     
     public void OpenMainMenu()
     {   
+        
         if (!m_mainMenuOpen)
         {
-            MainMenu.SetActive(true);
+
+            if (m_lang == 0)
+            {
+                MainMenu.SetActive(true);
+            }
+            else
+            {
+                MainMenuFr.SetActive(true);
+                
+            }
             m_mainMenuOpen = true;
         }
         else
         {
             MainMenu.SetActive(false);
+            MainMenuFr.SetActive(false);
             m_mainMenuOpen = false;
         }
     }
@@ -59,11 +88,24 @@ public class CanvasManager : MonoBehaviour
         if (!m_optionsOpen)
         {
             Options.SetActive(true);
+            
+            if (m_lang == 0)
+            {
+                OptionsEn.SetActive(true);
+            }
+            else
+            {
+                OptionsFr.SetActive(true);
+            }
+
             m_optionsOpen = true;
         }
         else
         {
             Options.SetActive(false);
+            OptionsEn.SetActive(false);
+            OptionsFr.SetActive(false);
+
             m_optionsOpen = false;
         }
     }
@@ -86,7 +128,15 @@ public class CanvasManager : MonoBehaviour
     {
         if (!m_menuIngameOpen)
         {
-            MenuIngame.SetActive(true);
+            if(m_lang == 0)
+            {
+                MenuIngame.SetActive(true);
+            }
+            else
+            {
+                MenuIngameFr.SetActive(true);
+            }
+            
             m_menuIngameOpen = true;
         }
         else
@@ -95,35 +145,56 @@ public class CanvasManager : MonoBehaviour
             m_menuIngameOpen = false;
         }
     }
-    public void OpenOptionsIngame()
+
+    // A voir si l'on fait une option différente
+
+    //public void OpenOptionsIngame()
+    //{
+    //    if (!m_optionsIngameOpen)
+    //    {
+    //        OptionsIngame.SetActive(true);
+    //        m_optionsIngameOpen = true;
+    //    }
+    //    else
+    //    {
+    //        OptionsIngame.SetActive(false);
+    //        m_optionsIngameOpen = false;
+    //    }
+    //}
+
+    //__________________________________________________________________//
+
+    // LANGUAGE CHANGING
+    public void ChangeLanguage()
     {
-        if (!m_optionsIngameOpen)
+        if (m_lang == 0)
         {
-            OptionsIngame.SetActive(true);
-            m_optionsIngameOpen = true;
+            OptionsEn.SetActive(true);
+            OptionsFr.SetActive(false);
+            Debug.Log("Je suis en anglais");
         }
         else
         {
-            OptionsIngame.SetActive(false);
-            m_optionsIngameOpen = false;
+            OptionsFr.SetActive(true);
+            OptionsEn.SetActive(false);
+            Debug.Log("Je suis en français");
         }
     }
-    
-    
+
     //__________________________________________________________________//
-    
+
     // CHECKPOINT
-    
+
     //public int checkpoint;
-    
+
     //private void Start()
     //{
     // Sauvegarde de valeurs entre scènes
     // Checkpoint au niveau 1 au lancement du jeu
-        
+
     //checkpoint = PlayerPrefs.GetInt("level",1);
     //PlayerPrefs.SetInt("level", 1);
-        
+
     //En fonction de la valeur du checkpoint, charger un canvas particulier
 
     //     if(Accueil != null)
@@ -142,11 +213,11 @@ public class CanvasManager : MonoBehaviour
     //         }
     //     }
     //}
-    
+
     //__________________________________________________________________//
-    
+
     // BACK BUTTON
-    
+
     // public void BackButton()
     // {
     //     if (checkpoint == 2)
