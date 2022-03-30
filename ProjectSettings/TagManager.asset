@@ -7,17 +7,18 @@ TagManager:
   - Pickable_Object
   - Probes_Object
   - Lock_Object
+  - PressPlate_Object
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Player
   - Water
   - UI
   - Pickable_Object
   - Probes_Object
   - Lock_Object
-  - 
+  - PressPlate_Object
   - 
   - 
   - 
