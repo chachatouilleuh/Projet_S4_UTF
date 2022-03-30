@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -13,8 +14,10 @@ namespace inventory.Object
 
         [SerializeField, Tooltip("inventaire")]
         private List<KeyType> m_inventaire = new List<KeyType>();
-    
 
+        [SerializeField, Tooltip("recup le script snapObjects")]
+        private SnapObjects m_snapObjects;
+        
         private void Update()
         {
             Ray pickupRay = new Ray(fpsCam.transform.position, fpsCam.transform.forward * m_distance);
@@ -49,7 +52,17 @@ namespace inventory.Object
                         }
                     }
                 }
-                
+            }
+        }
+
+        private void OnTriggerStay(Collider other)
+        {
+            if ((m_layerProbes.value & (1 << other.gameObject.layer)) > 0)
+            {
+                if (m_snapObjects.m_isActivate == true)
+                {
+                    Debug.Log("yaaaaaaaaaaa");
+                }
             }
         }
     }

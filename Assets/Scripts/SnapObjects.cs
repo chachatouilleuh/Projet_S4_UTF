@@ -18,6 +18,9 @@ public class SnapObjects : MonoBehaviour
     [SerializeField, Tooltip("layer de l'objet a poser")]
     private LayerMask m_layerBox;
 
+    [SerializeField, Tooltip("bool activate ou po")]
+    public bool m_isActivate;
+
     private void OnTriggerStay(Collider other)
     {
         if (m_hasCube.m_isHolding) m_cubeDetect.GetComponent<Outline>().enabled = true;
@@ -27,7 +30,10 @@ public class SnapObjects : MonoBehaviour
             other.transform.position = m_snapPoint.position;
             other.transform.rotation = m_snapPoint.rotation;
 
-            other.GetComponent<Rigidbody>().isKinematic = true;
+            // other.GetComponent<Rigidbody>().isKinematic = true;
+            other.gameObject.layer = 0;
+
+            m_isActivate = true;
         }
     }
 

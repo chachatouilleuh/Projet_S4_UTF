@@ -9,7 +9,7 @@ public class Raycast : MonoBehaviour
     [SerializeField] private GameObject m_curTarget;
     void Update()
     {
-        Debug.DrawRay(fpsCam.transform.position, fpsCam.transform.forward * m_distance, Color.green);
+        
         
         Ray pickupRay = new Ray(fpsCam.transform.position, fpsCam.transform.forward * m_distance);
         RaycastHit hit;
