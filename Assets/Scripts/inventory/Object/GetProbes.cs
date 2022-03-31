@@ -13,7 +13,7 @@ namespace inventory.Object
         [SerializeField, Tooltip("la range pour pick l'objet")] private float m_distance;
 
         [SerializeField, Tooltip("inventaire")]
-        private List<KeyType> m_inventaire = new List<KeyType>();
+        public List<KeyType> m_inventaire = new List<KeyType>();
 
         [SerializeField, Tooltip("recup le script snapObjects")]
         private SnapObjects m_snapObjects;
@@ -51,17 +51,6 @@ namespace inventory.Object
                             myLock.OpenLock(m_inventaire);
                         }
                     }
-                }
-            }
-        }
-
-        private void OnTriggerStay(Collider other)
-        {
-            if ((m_layerProbes.value & (1 << other.gameObject.layer)) > 0)
-            {
-                if (m_snapObjects.m_isActivate == true)
-                {
-                    Debug.Log("yaaaaaaaaaaa");
                 }
             }
         }
