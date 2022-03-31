@@ -14,24 +14,38 @@ public class Underlining : MonoBehaviour
     [SerializeField, Tooltip("check type")] private bool m_typeLanguage;
 
     // Les langues & soustitres
-    [SerializeField, Tooltip("check A")] private int m_lang;
-    [SerializeField, Tooltip("check B")] private int m_sub;
+    public static int m_lang;
+    [SerializeField, Tooltip("subtitles on/off")] private int m_sub;
 
-    private bool m_double = false;
+    private bool m_double;
 
     private void Awake()
     {
-            // souligne A au début
+            // souligne A au dÃ©but
             textA.fontStyle = FontStyles.Underline;
-          
-        // mettre la condition pour la sélection de base du soulignage en fonction de la langue
+            
+            //m_lang = PlayerPrefs.GetInt("lang");
             m_A = true;
             m_B = false;
+            
+        // mettre la condition pour la sÃ©lection de base du soulignage en fonction de la langue
+        // if (m_lang == 0)
+        // {
+        //     m_A = true;
+        //     m_B = false;
+        // }
+        // else
+        // {
+        //     m_A = false;
+        //     m_B = true;  
+        // }
+            
     }
 
     private void Update()
     {
         m_lang = PlayerPrefs.GetInt("lang");
+        
     }
 
   
@@ -41,13 +55,13 @@ public class Underlining : MonoBehaviour
 
         if (!m_double)
         {
-            // Si le gameobject cliqué est A et donc pas B
+            // Si le gameobject cliquÃ© est A et donc pas B
             if (m_A && !m_B)
             {
                 // le texte A se souligne
                 textA.fontStyle ^= FontStyles.Underline;
 
-                // le texte B se désouligne
+                // le texte B se dÃ©souligne
                 textB.fontStyle = FontStyles.Underline;
 
                 m_A = false;
@@ -66,10 +80,10 @@ public class Underlining : MonoBehaviour
             }
 
 
-            // Si le gameobject cliqué est B et donc pas A
+            // Si le gameobject cliquÃ© est B et donc pas A
             else if (m_B && !m_A)
             {
-                // le texte A se désouligne
+                // le texte A se dÃ©souligne
                 textA.fontStyle = FontStyles.Underline;
 
                 // le texte B se souligne
@@ -94,14 +108,14 @@ public class Underlining : MonoBehaviour
 
      private void CheckUnderlining()
     {
-        //si A et B sont pas soulignés
+        //si A et B sont pas soulignÃ©s
         if (!m_A && !m_B)
         {
             m_double = true;
             m_A = true;
         }
 
-        //si A et B sont soulignés
+        //si A et B sont soulignÃ©s
         else if (m_A && m_B)
         {
             m_double = true;
@@ -115,8 +129,7 @@ public class Underlining : MonoBehaviour
         if (m_lang == 0)
         {
             PlayerPrefs.SetInt("lang", 1);
-            Debug.Log("Set Language : Je suis en français maintenant");
-
+            Debug.Log("Set Language : Je suis en franï¿½ais maintenant");
         }
         else
         {
@@ -124,7 +137,9 @@ public class Underlining : MonoBehaviour
             Debug.Log("Set Language : Je suis en anglais maintenant");
         }
 
+        m_lang = PlayerPrefs.GetInt("lang");
         Debug.Log(m_lang);
+        
     }
 
     // Je change la valeur des soustitres

@@ -13,7 +13,6 @@ public class CanvasManager : MonoBehaviour
     private bool m_accueilOpen;
     private bool m_mainMenuOpen, m_optionsOpen, m_loadScreenOpen, m_menuIngameOpen, m_optionsIngameOpen;
     
-    public int m_lang;
 
     // INITIALISE LES VALEURS
     private void Awake()
@@ -25,7 +24,7 @@ public class CanvasManager : MonoBehaviour
 
     void Update()
     {
-        m_lang = PlayerPrefs.GetInt("lang");
+        
 
         if (m_accueilOpen)
         {
@@ -40,7 +39,7 @@ public class CanvasManager : MonoBehaviour
     {
         if (!m_accueilOpen)
         {
-            if(m_lang == 0)
+            if(Underlining.m_lang == 0)
             {
                 Accueil.SetActive(true);             
             }
@@ -64,7 +63,7 @@ public class CanvasManager : MonoBehaviour
         if (!m_mainMenuOpen)
         {
 
-            if (m_lang == 0)
+            if (Underlining.m_lang == 0)
             {
                 MainMenu.SetActive(true);
             }
@@ -89,7 +88,7 @@ public class CanvasManager : MonoBehaviour
         {
             Options.SetActive(true);
             
-            if (m_lang == 0)
+            if (Underlining.m_lang == 0)
             {
                 OptionsEn.SetActive(true);
             }
@@ -128,7 +127,7 @@ public class CanvasManager : MonoBehaviour
     {
         if (!m_menuIngameOpen)
         {
-            if(m_lang == 0)
+            if(Underlining.m_lang == 0)
             {
                 MenuIngame.SetActive(true);
             }
@@ -167,7 +166,7 @@ public class CanvasManager : MonoBehaviour
     // LANGUAGE CHANGING
     public void ChangeLanguage()
     {
-        if (m_lang == 0)
+        if (Underlining.m_lang == 0)
         {
             OptionsEn.SetActive(true);
             OptionsFr.SetActive(false);
