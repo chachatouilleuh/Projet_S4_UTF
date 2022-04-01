@@ -24,28 +24,14 @@ public class Underlining : MonoBehaviour
             // souligne A au début
             textA.fontStyle = FontStyles.Underline;
             
-            //m_lang = PlayerPrefs.GetInt("lang");
             m_A = true;
             m_B = false;
-            
-        // mettre la condition pour la sélection de base du soulignage en fonction de la langue
-        // if (m_lang == 0)
-        // {
-        //     m_A = true;
-        //     m_B = false;
-        // }
-        // else
-        // {
-        //     m_A = false;
-        //     m_B = true;  
-        // }
-            
+        
     }
 
     private void Update()
     {
         m_lang = PlayerPrefs.GetInt("lang");
-        
     }
 
   
@@ -136,7 +122,7 @@ public class Underlining : MonoBehaviour
             PlayerPrefs.SetInt("lang", 0);
             Debug.Log("Set Language : Je suis en anglais maintenant");
         }
-
+        
         m_lang = PlayerPrefs.GetInt("lang");
         Debug.Log(m_lang);
         
