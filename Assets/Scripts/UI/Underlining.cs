@@ -115,16 +115,16 @@ public class Underlining : MonoBehaviour
         if (m_lang == 0)
         {
             PlayerPrefs.SetInt("lang", 1);
-            Debug.Log("Set Language : Je suis en fran�ais maintenant");
+            //Debug.Log("Set Language : Je suis en fran�ais maintenant");
         }
         else
         {
             PlayerPrefs.SetInt("lang", 0);
-            Debug.Log("Set Language : Je suis en anglais maintenant");
+            //Debug.Log("Set Language : Je suis en anglais maintenant");
         }
         
         m_lang = PlayerPrefs.GetInt("lang");
-        Debug.Log(m_lang);
+        //Debug.Log(m_lang);
         
     }
 

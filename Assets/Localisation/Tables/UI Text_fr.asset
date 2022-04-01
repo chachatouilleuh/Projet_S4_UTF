@@ -43,19 +43,19 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 15334503141376
-    m_Localized: 'Volume musique :'
+    m_Localized: 'Volume musique:'
     m_Metadata:
       m_Items: []
   - m_Id: 15783062982656
-    m_Localized: 'volume effets sonores :'
+    m_Localized: 'volume effets sonores:'
     m_Metadata:
       m_Items: []
   - m_Id: 15950566707200
-    m_Localized: "Luminosit\xE9 :"
+    m_Localized: "Luminosit\xE9:"
     m_Metadata:
       m_Items: []
   - m_Id: 16023144943616
-    m_Localized: 'Langue :'
+    m_Localized: 'Langue:'
     m_Metadata:
       m_Items: []
   - m_Id: 16107941187584
@@ -69,7 +69,7 @@ MonoBehaviour:
       m_Items:
       - id: 2
   - m_Id: 16255480025088
-    m_Localized: 'Subtitles :'
+    m_Localized: 'Sous-titres:'
     m_Metadata:
       m_Items: []
   - m_Id: 16378188582912
@@ -78,7 +78,7 @@ MonoBehaviour:
       m_Items:
       - id: 1
   - m_Id: 16442315296768
-    m_Localized: no
+    m_Localized: Non
     m_Metadata:
       m_Items:
       - id: 0
