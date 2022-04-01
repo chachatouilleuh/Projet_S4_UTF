@@ -710,12 +710,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_cubeDetect: {fileID: 3665895190163166322}
-  m_hasCube: {fileID: 0}
+  m_hasCube: {fileID: 3209797721612514188, guid: 11aaea5348574644a9eb4f4504fcce3f, type: 3}
   m_snapPoint: {fileID: 3665895189346065064}
   m_layerBox:
     serializedVersion: 2
     m_Bits: 64
-  m_isActivate: 0
+  m_GetProbes: {fileID: 0}
+  m_activate: 0
 --- !u!114 &8710243670471101341
 MonoBehaviour:
   m_ObjectHideFlags: 0

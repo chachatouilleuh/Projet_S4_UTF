@@ -1,5 +1,4 @@
 using UnityEngine;
-using UnityEngine.Serialization;
 
 public class Pick_Object : MonoBehaviour
 {
@@ -7,7 +6,7 @@ public class Pick_Object : MonoBehaviour
     private LayerMask m_pickable_Object;
 
     [SerializeField, Tooltip("layer object collision problem")]
-    private LayerMask m_collsionLayer;
+    private LayerMask m_collisionLayer;
 
     [SerializeField, Tooltip("la caméra du perso")]
     Camera fpsCam;
@@ -17,6 +16,9 @@ public class Pick_Object : MonoBehaviour
     
     [SerializeField, Tooltip("la range pour poser l'objet")]
     private float m_distanceDrop;
+    
+    [SerializeField, Tooltip("Punch force")]
+    private float m_punch;
     
     [SerializeField, Tooltip("recup le transform de la 'main'")]
     private Transform m_hand;
@@ -52,7 +54,7 @@ public class Pick_Object : MonoBehaviour
                 return;
             }
 
-            if (Physics.Raycast(pickupRay, out hit, m_distanceDrop, m_collsionLayer))
+            if (Physics.Raycast(pickupRay, out hit, m_distanceDrop, m_collisionLayer))
             {
                 if (m_rigidbody)
                 {
@@ -78,6 +80,35 @@ public class Pick_Object : MonoBehaviour
                     m_isHolding = false;
                 }
             }
+        }
+        if (Input.GetMouseButtonDown(1))
+        {
+            if (Physics.Raycast(pickupRay, out hit, m_distanceDrop, m_collisionLayer))
+            {
+                if (m_rigidbody)
+                {
+                    // m_rigidbody.isKinematic = false;
+                    m_collider.enabled = true;
+            
+                    m_rigidbody = null;
+                    m_collider = null;
+            
+                    m_isHolding = false;
+                }
+            }
+            else
+            {
+                m_rigidbody.isKinematic = false;
+                m_collider.enabled = true;
+            
+                m_rigidbody.AddForce(m_hand.transform.forward * m_punch);
+
+                m_rigidbody = null;
+                m_collider = null;
+
+                m_isHolding = false;
+            }
+
         }
         
         if (m_rigidbody)

@@ -1,6 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
-using inventory;
 using UnityEngine;
 
 public class Plate : MonoBehaviour, IPlate

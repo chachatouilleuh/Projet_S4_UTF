@@ -1,8 +1,3 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
-using inventory;
-using inventory.Object;
 using Packages.QuickOutline.Scripts;
 using UnityEngine;
 
@@ -23,23 +18,25 @@ public class SnapObjects : MonoBehaviour
     [SerializeField, Tooltip("recup l'inventaire du player")]
     private GetProbes m_GetProbes;
 
-    [SerializeField, Tooltip("bool actif ou pas")]
+    [SerializeField, Tooltip("je peux poser une box ?")]
     private bool m_activate;
 
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerStay(Collider other)
     {
         if (m_hasCube.m_isHolding) m_cubeDetect.GetComponent<Outline>().enabled = true;
 
-        if (!m_activate)
-        {
             if ((m_layerBox.value & (1 << other.gameObject.layer)) > 0)
             {
-                other.transform.position = m_snapPoint.position;
-                other.transform.rotation = m_snapPoint.rotation;
+                if (!m_activate)
+                {
+                    other.transform.position = m_snapPoint.position;
+                    other.transform.rotation = m_snapPoint.rotation;
 
-                other.GetComponent<Rigidbody>().isKinematic = true;
-                other.gameObject.layer = 0;
-            
+                    other.GetComponent<Rigidbody>().isKinematic = true;
+                    other.gameObject.layer = 0;
+                    m_activate = true;
+                }
+
                 Plate myPlates = GetComponent<Plate>();
                 if (myPlates != null && myPlates.ActivePlate(out KeyType o_plates))
                 {
@@ -49,9 +46,7 @@ public class SnapObjects : MonoBehaviour
                     }
                 }
             }
-
-            m_activate = true;
-        }
+            
     }
 
     private void OnTriggerExit(Collider other)

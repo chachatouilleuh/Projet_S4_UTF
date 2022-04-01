@@ -1,8 +1,5 @@
 using UnityEngine;
-
-namespace inventory.Object
-{
-    public class Probes : MonoBehaviour, IProbes
+public class Probes : MonoBehaviour, IProbes
     {
         [SerializeField, Tooltip("Recup les données de la sonde")]
         private KeyType m_probes;
@@ -24,4 +21,3 @@ namespace inventory.Object
             return probesFound;
         }
     }
-}

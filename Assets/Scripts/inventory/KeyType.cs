@@ -1,9 +1,6 @@
 using UnityEngine;
 
-namespace inventory
-{
-    [CreateAssetMenu(fileName = "KeyType", menuName = "Object")]
+[CreateAssetMenu(fileName = "KeyType", menuName = "Object")]
     public class KeyType : ScriptableObject
     {
     }
-}

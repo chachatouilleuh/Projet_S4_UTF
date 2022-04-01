@@ -1,9 +1,6 @@
-using System;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace inventory.Object
-{
     public class GetProbes : MonoBehaviour
     {
         [SerializeField, Tooltip("le layer des sondes")] private LayerMask m_layerProbes;
@@ -45,7 +42,7 @@ namespace inventory.Object
                 {
                     if ((m_layerLock.value & (1 << hit.transform.gameObject.layer)) > 0)
                     {
-                        Lock.Lock myLock = hit.transform.gameObject.GetComponent<Lock.Lock>();
+                        Lock myLock = hit.transform.gameObject.GetComponent<Lock>();
                         if (myLock)
                         {
                             myLock.OpenLock(m_inventaire);
@@ -59,7 +56,7 @@ namespace inventory.Object
         {
             if ((m_layerLock.value & (1 << other.gameObject.layer)) > 0)
             {
-                Lock.Lock myLock = other.GetComponent<Lock.Lock>();
+                Lock myLock = other.GetComponent<Lock>();
                 if (myLock)
                 {
                     myLock.OpenLock(m_inventaire);
@@ -67,4 +64,3 @@ namespace inventory.Object
             }
         }
     }
-}
