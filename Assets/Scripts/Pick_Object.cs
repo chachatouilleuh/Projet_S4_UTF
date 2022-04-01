@@ -50,8 +50,6 @@ public class Pick_Object : MonoBehaviour
             {
                 m_rigidbody.isKinematic = false;
                 m_collider.enabled = true;
-            
-                m_rigidbody.AddForce(m_hand.transform.forward * m_punch);
 
                 m_rigidbody = null;
                 m_collider = null;
@@ -59,6 +57,20 @@ public class Pick_Object : MonoBehaviour
                 m_isHolding = false;
             }
         }
+        
+        if (Input.GetMouseButtonDown(1))
+        {
+            m_rigidbody.isKinematic = false;
+            m_collider.enabled = true;
+            
+            m_rigidbody.AddForce(m_hand.transform.forward * m_punch);
+
+            m_rigidbody = null;
+            m_collider = null;
+
+            m_isHolding = false;
+        }
+        
         
         if (m_rigidbody)
         {
