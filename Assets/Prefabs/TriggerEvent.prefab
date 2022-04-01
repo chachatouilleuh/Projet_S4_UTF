@@ -353,4 +353,4 @@ MonoBehaviour:
   m_triggeredEvent: {fileID: 0}
   m_layer:
     serializedVersion: 2
-    m_Bits: 264
+    m_Bits: 8
