@@ -16,10 +16,17 @@ TagManager:
   - Water
   - UI
   - Pickable_Object
+<<<<<<< HEAD
   - Probes_Object
   - Lock_Object
   - PressPlate_Object
   - 
+=======
+  - 
+  - 
+  - 
+  - Post_Process
+>>>>>>> Charly
   - 
   - 
   - 
@@ -44,4 +51,13 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Background
+    uniqueID: 1568698285
+    locked: 0
+  - name: Buttons
+    uniqueID: 3014644291
+    locked: 0
+  - name: Images
+    uniqueID: 4117445547
     locked: 0

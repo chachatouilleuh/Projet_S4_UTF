@@ -1,0 +1,116 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: UI Text_en
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: en
+  m_SharedData: {fileID: 11400000, guid: fe6eed3fc5b727a4ba2c1f9dfd35e83b, type: 2}
+  m_Metadata:
+    m_Items:
+    - id: 0
+    - id: 1
+    - id: 2
+    - id: 3
+    - id: 4
+  m_TableData:
+  - m_Id: 158794043392
+    m_Localized: Press any key
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12257041633280
+    m_Localized: Start New Game
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12483500494848
+    m_Localized: Continue
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12665671700480
+    m_Localized: Parameters
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12765127036928
+    m_Localized: Quit
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15334503141376
+    m_Localized: 'Music Volume:'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15783062982656
+    m_Localized: 'Sound Effects Volume:'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15950566707200
+    m_Localized: 'Luminosity:'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 16023144943616
+    m_Localized: 'Language:'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 16107941187584
+    m_Localized: English
+    m_Metadata:
+      m_Items:
+      - id: 4
+  - m_Id: 16178606821376
+    m_Localized: French
+    m_Metadata:
+      m_Items:
+      - id: 3
+  - m_Id: 16255480025088
+    m_Localized: 'Subtitles:'
+    m_Metadata:
+      m_Items:
+      - id: 2
+  - m_Id: 16378188582912
+    m_Localized: Yes
+    m_Metadata:
+      m_Items:
+      - id: 1
+  - m_Id: 16442315296768
+    m_Localized: No
+    m_Metadata:
+      m_Items:
+      - id: 0
+  - m_Id: 16578948943872
+    m_Localized: Close
+    m_Metadata:
+      m_Items: []
+  - m_Id: 16639548248064
+    m_Localized: 
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 1
+    00000000:
+      type: {class: SmartFormatTag, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_Entries: 00d05c46f40e0000
+    00000001:
+      type: {class: SmartFormatTag, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_Entries: 00d01c58e50e0000
+    00000002:
+      type: {class: SmartFormatTag, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_Entries: 00d01cc6c80e0000
+    00000003:
+      type: {class: SmartFormatTag, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_Entries: 00d01ce0b60e0000
+    00000004:
+      type: {class: SmartFormatTag, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_Entries: 00d01c6ca60e0000
