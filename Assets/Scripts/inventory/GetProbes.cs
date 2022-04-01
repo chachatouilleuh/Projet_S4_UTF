@@ -1,8 +1,6 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace inventory.Object
-{
     public class GetProbes : MonoBehaviour
     {
         [SerializeField, Tooltip("le layer des sondes")] private LayerMask m_layerProbes;
@@ -12,9 +10,11 @@ namespace inventory.Object
         [SerializeField, Tooltip("la range pour pick l'objet")] private float m_distance;
 
         [SerializeField, Tooltip("inventaire")]
-        private List<KeyType> m_inventaire = new List<KeyType>();
-    
+        public List<KeyType> m_inventaire = new List<KeyType>();
 
+        // [SerializeField, Tooltip("recup le script snapObjects")]
+        // private SnapObjects m_snapObjects;
+        
         private void Update()
         {
             Ray pickupRay = new Ray(fpsCam.transform.position, fpsCam.transform.forward * m_distance);
@@ -42,15 +42,25 @@ namespace inventory.Object
                 {
                     if ((m_layerLock.value & (1 << hit.transform.gameObject.layer)) > 0)
                     {
-                        Lock.Lock myLock = hit.transform.gameObject.GetComponent<Lock.Lock>();
+                        Lock myLock = hit.transform.gameObject.GetComponent<Lock>();
                         if (myLock)
                         {
                             myLock.OpenLock(m_inventaire);
                         }
                     }
                 }
-                
+            }
+        }
+
+        private void OnTriggerEnter(Collider other)
+        {
+            if ((m_layerLock.value & (1 << other.gameObject.layer)) > 0)
+            {
+                Lock myLock = other.GetComponent<Lock>();
+                if (myLock)
+                {
+                    myLock.OpenLock(m_inventaire);
+                }
             }
         }
     }
-}
