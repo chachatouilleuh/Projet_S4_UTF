@@ -15,8 +15,8 @@ namespace inventory.Object
         [SerializeField, Tooltip("inventaire")]
         public List<KeyType> m_inventaire = new List<KeyType>();
 
-        [SerializeField, Tooltip("recup le script snapObjects")]
-        private SnapObjects m_snapObjects;
+        // [SerializeField, Tooltip("recup le script snapObjects")]
+        // private SnapObjects m_snapObjects;
         
         private void Update()
         {
@@ -51,6 +51,18 @@ namespace inventory.Object
                             myLock.OpenLock(m_inventaire);
                         }
                     }
+                }
+            }
+        }
+
+        private void OnTriggerEnter(Collider other)
+        {
+            if ((m_layerLock.value & (1 << other.gameObject.layer)) > 0)
+            {
+                Lock.Lock myLock = other.GetComponent<Lock.Lock>();
+                if (myLock)
+                {
+                    myLock.OpenLock(m_inventaire);
                 }
             }
         }

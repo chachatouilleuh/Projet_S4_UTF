@@ -8,19 +8,19 @@ namespace inventory.Lock
     {
         [SerializeField, Tooltip("type de clés")]
         private KeyType m_keyNeed;
-    
+
         public void OpenLock(List<KeyType> p_playerKeys)
         {
             if (m_keyNeed)
             {
                 if (p_playerKeys == null || !p_playerKeys.Contains(m_keyNeed))
                 {
-                    Debug.Log($"La sonde {m_keyNeed.name} est nécessaire");
+                    Debug.Log($" {m_keyNeed.name} est nécessaire");
                     return;
                 }
             }
         
-            Debug.Log($"La sonde {m_keyNeed.name} est en cours d'analyse");
+            Debug.Log($" {m_keyNeed.name} est activé");
         }
     }
 }
