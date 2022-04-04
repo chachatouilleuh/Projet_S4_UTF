@@ -12,9 +12,6 @@ using UnityEngine;
         [SerializeField, Tooltip("inventaire")]
         public List<KeyType> m_inventaire = new List<KeyType>();
 
-        // [SerializeField, Tooltip("recup le script snapObjects")]
-        // private SnapObjects m_snapObjects;
-        
         private void Update()
         {
             Ray pickupRay = new Ray(fpsCam.transform.position, fpsCam.transform.forward * m_distance);

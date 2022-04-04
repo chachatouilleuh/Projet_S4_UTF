@@ -19,6 +19,7 @@ public class Lock : MonoBehaviour, ILock
                     return;
                 }
             }
-            Debug.Log("la porte s'ouvre");
+            // ouvre la porte
+            transform.position += new Vector3(0, 4, 0);
         }
     }
