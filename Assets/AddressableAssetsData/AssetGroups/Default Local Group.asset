@@ -21,7 +21,8 @@ MonoBehaviour:
     m_Address: Assets/Scenes/MenuTest_Profiles/Main Camera Profile.asset
     m_ReadOnly: 0
     m_SerializedLabels: []
-    m_mainAssetType: 
+    m_mainAssetType: UnityEngine.Rendering.PostProcessing.PostProcessProfile, Unity.Postprocessing.Runtime,
+      Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
     m_MainAsset: {fileID: 0}
     m_TargetAsset: {fileID: 0}
   m_ReadOnly: 0
