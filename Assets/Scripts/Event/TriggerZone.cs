@@ -15,7 +15,7 @@ public class TriggerZone : MonoBehaviour
     {
         if ((m_layer.value & (1 << other.gameObject.layer)) > 0)
         {
-            m_triggeredEvent.Raise();
+            m_triggeredEvent.Chouck();
         }
     }
 }

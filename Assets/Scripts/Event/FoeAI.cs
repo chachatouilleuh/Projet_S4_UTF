@@ -21,12 +21,12 @@ public class FoeAI : MonoBehaviour
     private void OnEnable()
     {
         m_agentAI = GetComponent<NavMeshAgent>();
-        m_triggeredEvent.onTriggered += HandleTriggerEvent;
+        m_triggeredEvent.onTrigger += HandleTriggerEvent;
     }
 
     private void OnDisable()
     {
-        m_triggeredEvent.onTriggered -= HandleTriggerEvent;
+        m_triggeredEvent.onTrigger -= HandleTriggerEvent;
     }
 
     private void HandleTriggerEvent()

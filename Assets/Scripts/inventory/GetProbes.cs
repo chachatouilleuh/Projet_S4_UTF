@@ -12,7 +12,7 @@ using UnityEngine;
         [SerializeField, Tooltip("inventaire")]
         public List<KeyType> m_inventaire = new List<KeyType>();
 
-        private void Update()
+        /*private void Update()
         {
             Ray pickupRay = new Ray(fpsCam.transform.position, fpsCam.transform.forward * m_distance);
             RaycastHit hit;
@@ -59,5 +59,5 @@ using UnityEngine;
                     myLock.OpenLock(m_inventaire);
                 }
             }
-        }
+        }*/
     }

@@ -18,12 +18,12 @@ public class BoxEvent : MonoBehaviour
 
     private void OnEnable()
     {
-        m_triggeredEvent.onTriggered += HandleTriggerEvent;
+        m_triggeredEvent.onTrigger += HandleTriggerEvent;
     }
 
     private void OnDisable()
     {
-        m_triggeredEvent.onTriggered -= HandleTriggerEvent;
+        m_triggeredEvent.onTrigger -= HandleTriggerEvent;
         
         if (m_boxEventCor != null)
         {

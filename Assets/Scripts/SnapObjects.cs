@@ -14,6 +14,9 @@ public class SnapObjects : MonoBehaviour
 
     [SerializeField, Tooltip("layer de l'objet a poser")]
     private LayerMask m_layerBox;
+    
+    [SerializeField, Tooltip("trigger de l'event")]
+    private Event m_triggeredEvent;
 
     [SerializeField, Tooltip("recup l'inventaire du player")]
     private GetProbes m_GetProbes;
@@ -43,6 +46,7 @@ public class SnapObjects : MonoBehaviour
                     if (!m_GetProbes.m_inventaire.Contains(o_plates))
                     {
                         m_GetProbes.m_inventaire.Add(o_plates);
+                        m_triggeredEvent.Raise(m_GetProbes.m_inventaire);
                     }
                 }
             }
