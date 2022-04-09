@@ -8,7 +8,7 @@ public class SceneManager : MonoBehaviour
     
     public void OpenMenuScene()
     {
-        UnityEngine.SceneManagement.SceneManager.LoadScene (sceneName:"MenuTest");
+        UnityEngine.SceneManagement.SceneManager.LoadScene (sceneName:"Menu");
     }
 
     public void OpenCredits()
@@ -18,7 +18,7 @@ public class SceneManager : MonoBehaviour
     
     public void OpenGameScene()
     {
-        UnityEngine.SceneManagement.SceneManager.LoadScene (sceneName:"Interaction");
+        UnityEngine.SceneManagement.SceneManager.LoadScene (sceneName:"3cProto");
     }
     
     //__________________________________________________________________//

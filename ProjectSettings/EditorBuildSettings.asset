@@ -9,14 +9,17 @@ EditorBuildSettings:
     path: 
     guid: 00000000000000000000000000000000
   - enabled: 1
-    path: Assets/Scenes/MenuTest.unity
+    path: Assets/Scenes/Menu.unity
     guid: c07366fb6998b07428de589bfdfe7afe
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 1
-    path: Assets/Scenes/Interaction.unity
-    guid: 584a4bed64c1fdb48bbb60ef33e9eb3c
-  - enabled: 1
-    path: Assets/Scenes/AnimTest.unity
-    guid: bfe1cfbe8f13f814185b270816a21f2a
+    path: Assets/Scenes/3cProto.unity
+    guid: b7bf80a032216104a97703931a482512
   m_configObjects:
     com.unity.addressableassets: {fileID: 11400000, guid: 35c4f535b2eccf04bbfe46283d3171b6, type: 2}
     com.unity.localization.settings: {fileID: 11400000, guid: 6fcf40fe94256454d92441bc7c9c7c4a, type: 2}
