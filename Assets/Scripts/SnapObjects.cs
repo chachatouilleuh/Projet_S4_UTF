@@ -3,11 +3,6 @@ using UnityEngine;
 
 public class SnapObjects : MonoBehaviour
 {
-    [SerializeField, Tooltip("Detection of the cube in the trigger")]
-    private GameObject m_cubeDetect;
-    
-    [SerializeField, Tooltip("m_isHolding form Pick_Object")]
-    private Pick_Object m_hasCube;
 
     [SerializeField, Tooltip("Get transform of the empty object")]
     private Transform m_snapPoint;
@@ -23,38 +18,50 @@ public class SnapObjects : MonoBehaviour
 
     [SerializeField, Tooltip("je peux poser une box ?")]
     private bool m_activate;
+    
+    
+    [SerializeField, Tooltip("animation de la plaque")]
+    private Animator m_animator;
 
+    private string m_openTriggerName = "Active";
+    private int m_openHash;
+
+    private void Awake()
+    {
+        if (m_animator == null)
+        {
+            m_animator = GetComponent<Animator>();
+            if (m_animator == null)
+            {
+                throw new System.ArgumentNullException();
+            }
+        }
+        m_openHash = Animator.StringToHash(m_openTriggerName);
+    }
+    
     private void OnTriggerStay(Collider other)
     {
-        if (m_hasCube.m_isHolding) m_cubeDetect.GetComponent<Outline>().enabled = true;
-
-            if ((m_layerBox.value & (1 << other.gameObject.layer)) > 0)
+        if ((m_layerBox.value & (1 << other.gameObject.layer)) > 0)
+        {
+            if (!m_activate)
             {
-                if (!m_activate)
-                {
-                    other.transform.position = m_snapPoint.position;
-                    other.transform.rotation = m_snapPoint.rotation;
+                other.transform.position = m_snapPoint.position;
+                other.transform.rotation = m_snapPoint.rotation;
+                other.gameObject.layer = 0;
+                m_activate = true;
+                m_animator?.SetTrigger(m_openHash);
+                other.GetComponent<Rigidbody>().isKinematic = true;
+            }
 
-                    other.GetComponent<Rigidbody>().isKinematic = true;
-                    other.gameObject.layer = 0;
-                    m_activate = true;
-                }
-
-                Plate myPlates = GetComponent<Plate>();
-                if (myPlates != null && myPlates.ActivePlate(out KeyType o_plates))
+            Plate myPlates = GetComponent<Plate>();
+            if (myPlates != null && myPlates.ActivePlate(out KeyType o_plates))
+            {
+                if (!m_GetProbes.m_inventaire.Contains(o_plates))
                 {
-                    if (!m_GetProbes.m_inventaire.Contains(o_plates))
-                    {
-                        m_GetProbes.m_inventaire.Add(o_plates);
-                        m_triggeredEvent.Raise(m_GetProbes.m_inventaire);
-                    }
+                    m_GetProbes.m_inventaire.Add(o_plates);
+                    m_triggeredEvent.Raise(m_GetProbes.m_inventaire);
                 }
             }
-            
-    }
-
-    private void OnTriggerExit(Collider other)
-    {
-        m_cubeDetect.GetComponent<Outline>().enabled = false;
+        }
     }
 }

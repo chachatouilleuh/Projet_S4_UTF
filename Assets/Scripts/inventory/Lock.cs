@@ -9,6 +9,12 @@ public class Lock : MonoBehaviour, ILock
         [SerializeField, Tooltip("type de clés")]
         private List<KeyType> m_keyNeed = new List<KeyType>();
 
+        [SerializeField, Tooltip("animation de la porte")]
+        private Animator m_animator;
+
+        private string m_openTriggerName = "Open";
+        private int m_openHash;
+
         private void OnEnable()
         {
             m_triggeredEvent.onTriggered += HandleTriggerEvent;
@@ -39,6 +45,21 @@ public class Lock : MonoBehaviour, ILock
                 }
             }
             // ouvre la porte
-            transform.position += new Vector3(0, 4, 0);
+            // transform.position += new Vector3(0, 4, 0);
+            m_animator?.SetTrigger(m_openHash);
+        }
+
+        private void Awake()
+        {
+            if (m_animator == null)
+            {
+                m_animator = GetComponent<Animator>();
+                if (m_animator == null)
+                {
+                    throw new System.ArgumentNullException();
+                }
+            }
+
+            m_openHash = Animator.StringToHash(m_openTriggerName);
         }
     }
