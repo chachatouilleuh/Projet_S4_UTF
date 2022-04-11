@@ -1,10 +1,11 @@
+using System;
 using UnityEngine;
 
 public class Plate : MonoBehaviour, IPlate
 {
     [SerializeField, Tooltip("recup KeyType")]
     private KeyType m_plates;
-    
+
     public bool ActivePlate(out KeyType o_plates)
     {
         bool plateActive = false;
