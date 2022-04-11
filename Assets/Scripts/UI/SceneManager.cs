@@ -20,7 +20,12 @@ public class SceneManager : MonoBehaviour
     {
         UnityEngine.SceneManagement.SceneManager.LoadScene (sceneName:"3cProto");
     }
-    
+
+    public void QuitApplication()
+    {
+        Application.Quit();
+        PlayerPrefs.DeleteAll();
+    }
     //__________________________________________________________________//
     
     // RESET 

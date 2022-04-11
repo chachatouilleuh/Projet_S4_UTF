@@ -20,7 +20,8 @@ MonoBehaviour:
   - m_GUID: ffd4f2e46447a2c47beb0b186d84bd61
     m_Address: Assets/Scenes/MenuTest_Profiles/Main Camera Profile.asset
     m_ReadOnly: 0
-    m_SerializedLabels: []
+    m_SerializedLabels:
+    - Locale-en
     m_mainAssetType: UnityEngine.Rendering.PostProcessing.PostProcessProfile, Unity.Postprocessing.Runtime,
       Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
     m_MainAsset: {fileID: 0}
