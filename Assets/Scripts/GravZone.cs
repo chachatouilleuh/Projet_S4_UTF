@@ -62,12 +62,7 @@ public class GravZone : MonoBehaviour
     
     private void Start()
     {
-        if (Truth(m_noForce, m_plusX, m_minusX, m_plusY, m_minusY, m_plusZ, m_minusZ) > 1)
-        {
-            Debug.LogWarning($"{this}: Multiples properties are ticked");
-            return;
-        }
-        else if (Truth(m_noForce, m_plusX, m_minusX, m_plusY, m_minusY, m_plusZ, m_minusZ) < 1)
+        if (Truth(m_noForce, m_plusX, m_minusX, m_plusY, m_minusY, m_plusZ, m_minusZ) < 1)
         {
             Debug.LogWarning($"{this}: No property ticked");
             return;
