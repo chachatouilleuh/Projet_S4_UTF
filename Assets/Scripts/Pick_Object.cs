@@ -22,6 +22,9 @@ public class Pick_Object : MonoBehaviour
     
     [SerializeField, Tooltip("recup le transform de la 'main'")]
     private Transform m_hand;
+
+    [SerializeField, Tooltip("canvas affiché")]
+    private GameObject m_infoDropthrow;
     
     private Rigidbody m_rigidbody;
     private Collider m_collider;
@@ -50,6 +53,7 @@ public class Pick_Object : MonoBehaviour
                     m_collider.enabled = false;
 
                     m_isHolding = true;
+                    m_infoDropthrow.SetActive(true);
                 }
                 return;
             }
@@ -65,6 +69,7 @@ public class Pick_Object : MonoBehaviour
                     m_collider = null;
             
                     m_isHolding = false;
+                    m_infoDropthrow.SetActive(false);
                 }
             }
             else
@@ -78,6 +83,7 @@ public class Pick_Object : MonoBehaviour
                     m_collider = null;
             
                     m_isHolding = false;
+                    m_infoDropthrow.SetActive(false);
                 }
             }
         }
@@ -94,6 +100,7 @@ public class Pick_Object : MonoBehaviour
                     m_collider = null;
             
                     m_isHolding = false;
+                    m_infoDropthrow.SetActive(false);
                 }
             }
             else
@@ -107,6 +114,7 @@ public class Pick_Object : MonoBehaviour
                 m_collider = null;
 
                 m_isHolding = false;
+                m_infoDropthrow.SetActive(false);
             }
 
         }

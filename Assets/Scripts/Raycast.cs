@@ -7,6 +7,9 @@ public class Raycast : MonoBehaviour
     [SerializeField, Tooltip("la caméra du perso")] Camera fpsCam;
     [SerializeField, Tooltip("la range pour pick l'objet")] private float m_distance;
     [SerializeField] private GameObject m_curTarget;
+
+    [SerializeField, Tooltip("canvas affiché")]
+    private GameObject m_infoCube;
     void Update()
     {
         
@@ -20,11 +23,12 @@ public class Raycast : MonoBehaviour
             {
                 m_curTarget = hit.transform.gameObject;
                 m_curTarget.GetComponent<Outline>().enabled = true;
+                m_infoCube.SetActive(true);
             }
             else
             {
                 m_curTarget.GetComponent<Outline>().enabled = false;
-                return;
+                m_infoCube.SetActive(false);
             }
 
         }
@@ -35,6 +39,7 @@ public class Raycast : MonoBehaviour
                 return;
             }
             m_curTarget.GetComponent<Outline>().enabled = false;
+            m_infoCube.SetActive(false);
         }
     }
 }
