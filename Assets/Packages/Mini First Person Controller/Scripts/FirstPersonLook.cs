@@ -37,6 +37,14 @@ namespace Packages.Mini_First_Person_Controller.Scripts
             // Rotate camera up-down and controller left-right from velocity.
             transform.localRotation = Quaternion.AngleAxis(-velocity.y, Vector3.right);
             character.localRotation = Quaternion.AngleAxis(velocity.x, Vector3.up);
+
+            if(CanvasManager.m_menuIngameOpen)
+            {
+                Cursor.lockState = CursorLockMode.None;
+            }
+            else
+                Cursor.lockState = CursorLockMode.Locked;
+            }
         }
     }
-}
+
