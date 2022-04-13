@@ -4,8 +4,7 @@ namespace Packages.Mini_First_Person_Controller.Scripts
 {
     public class FirstPersonLook : MonoBehaviour
     {
-        [SerializeField]
-        Transform character;
+        [SerializeField] Transform character;
         public float sensitivity = 2;
         public float smoothing = 1.5f;
 
@@ -38,13 +37,16 @@ namespace Packages.Mini_First_Person_Controller.Scripts
             transform.localRotation = Quaternion.AngleAxis(-velocity.y, Vector3.right);
             character.localRotation = Quaternion.AngleAxis(velocity.x, Vector3.up);
 
-            if(CanvasManager.m_menuIngameOpen)
+            if (CanvasManager.m_hudOpen)
             {
-                Cursor.lockState = CursorLockMode.None;
+                if (Input.GetKeyDown(KeyCode.Tab))
+                {
+                    Debug.Log("t'as appuyé sur tab");
+                    Cursor.lockState = CursorLockMode.Confined;
+                }
             }
-            else
-                Cursor.lockState = CursorLockMode.Locked;
-            }
+            
         }
     }
+}
 

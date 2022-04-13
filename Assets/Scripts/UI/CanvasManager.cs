@@ -8,10 +8,10 @@ public class CanvasManager : MonoBehaviour
 {
     //private SceneManager sceneManager;
 
-    [SerializeField, Tooltip("les canvas à assigner")] private GameObject Accueil, MainMenu, Options, LoadScreen, MenuIngame, HUD;
+    [SerializeField, Tooltip("les canvas à assigner")] private GameObject Accueil, MainMenu, Options, LoadScreen, MenuIngame, Hud;
 
-    public static bool m_menuIngameOpen;
-    private bool m_accueilOpen, m_mainMenuOpen, m_optionsOpen, m_loadScreenOpen, m_optionsIngameOpen, m_hudOpen;
+    public static bool m_hudOpen = true;
+    private bool m_accueilOpen, m_mainMenuOpen, m_optionsOpen, m_loadScreenOpen, m_optionsIngameOpen, m_menuIngameOpen;
     
 
     // INITIALISE LES VALEURS
@@ -33,15 +33,7 @@ public class CanvasManager : MonoBehaviour
                 OpenMainMenu();
             }
         }
-
-        if (m_hudOpen)
-        {
-            if (Input.GetKeyDown(KeyCode.Escape))
-            {
-                OpenAccueil();
-                OpenMainMenu();
-            }
-        }
+        
     }
     public void OpenAccueil()
     {
