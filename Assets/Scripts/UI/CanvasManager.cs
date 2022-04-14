@@ -8,23 +8,31 @@ public class CanvasManager : MonoBehaviour
 {
     //private SceneManager sceneManager;
 
-    [SerializeField, Tooltip("les canvas à assigner")] private GameObject Accueil, MainMenu, Options, LoadScreen, MenuIngame, Hud;
-
-    public static bool m_hudOpen = true;
-    private bool m_accueilOpen, m_mainMenuOpen, m_optionsOpen, m_loadScreenOpen, m_optionsIngameOpen, m_menuIngameOpen;
+    [SerializeField, Tooltip("les canvas à assigner")] private GameObject Accueil, MainMenu, Options, LoadScreen, HUD;
     
+    private bool m_accueilOpen, m_mainMenuOpen, m_optionsOpen, m_loadScreenOpen, m_optionsIngameOpen, m_hudOpen;
+    private Scene scene;
 
     // INITIALISE LES VALEURS
     private void Awake()
     {
-        OpenAccueil();
+        scene = UnityEngine.SceneManagement.SceneManager.GetActiveScene();
+        switch (scene.name)
+        {
+            case "Menu":
+                OpenAccueil();
+                break;
+            
+            case "UI INGAME":
+                OpenHUD();
+                break;
+        }
     }
 
     // OPEN/CLOSE CANVAS ACCORDING TO LANGUAGE SELECTION
 
     void Update()
     {
-        
         if (m_accueilOpen)
         {
             if (Input.anyKey)
@@ -33,7 +41,6 @@ public class CanvasManager : MonoBehaviour
                 OpenMainMenu();
             }
         }
-        
     }
     public void OpenAccueil()
     {
@@ -92,19 +99,21 @@ public class CanvasManager : MonoBehaviour
         }
     }
     
-    public void OpenMenuIngame()
+    public void OpenHUD()
     {
-        if (!m_menuIngameOpen)
+        if (!m_hudOpen)
         {
-            MenuIngame.SetActive(true);
-            m_menuIngameOpen = true;
+            HUD.SetActive(true);
+            m_hudOpen = true;
         }
         else
         {
-            MenuIngame.SetActive(false);
-            m_menuIngameOpen = false;
+            HUD.SetActive(false);
+            m_hudOpen = false;
         }
     }
+    
+    
 
     // A voir si l'on fait une option différente
 

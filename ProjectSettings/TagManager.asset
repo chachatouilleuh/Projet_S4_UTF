@@ -43,3 +43,6 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: In Game
+    uniqueID: 43139473
+    locked: 0

@@ -8,9 +8,13 @@ namespace Packages.Mini_First_Person_Controller.Scripts
         public float sensitivity = 2;
         public float smoothing = 1.5f;
 
+        [SerializeField, Tooltip("le hud est actif ou non")] private bool m_isOption;
+        [SerializeField, Tooltip("le canvas du pointeur à assigner")] private GameObject Pointeur;
+        
         Vector2 velocity;
         Vector2 frameVelocity;
-
+        
+        
 
         void Reset()
         {
@@ -33,19 +37,41 @@ namespace Packages.Mini_First_Person_Controller.Scripts
             velocity += frameVelocity;
             velocity.y = Mathf.Clamp(velocity.y, -90, 90);
 
-            // Rotate camera up-down and controller left-right from velocity.
-            transform.localRotation = Quaternion.AngleAxis(-velocity.y, Vector3.right);
-            character.localRotation = Quaternion.AngleAxis(velocity.x, Vector3.up);
 
-            if (CanvasManager.m_hudOpen)
+            if (!m_isOption)
             {
-                if (Input.GetKeyDown(KeyCode.Tab))
+                transform.localRotation = Quaternion.AngleAxis(-velocity.y, Vector3.right);
+                character.localRotation = Quaternion.AngleAxis(velocity.x, Vector3.up);
+            }
+
+            if (Input.GetKeyDown(KeyCode.Tab))
+            {
+                if (!m_isOption)
                 {
-                    Debug.Log("t'as appuyé sur tab");
+                    m_isOption = true;
                     Cursor.lockState = CursorLockMode.Confined;
+                    DeactivatePointeur();
+                }
+                else
+                {
+                    m_isOption = false;
+                    Cursor.lockState = CursorLockMode.Locked;
+                    DeactivatePointeur();
                 }
             }
-            
+
+        }
+        
+        public void DeactivatePointeur()
+        {
+            if (!m_isOption)
+            {
+                Pointeur.SetActive(true);
+            }
+            else
+            {
+                Pointeur.SetActive(false);
+            }
         }
     }
 }

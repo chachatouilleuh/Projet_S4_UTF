@@ -18,7 +18,7 @@ public class SceneManager : MonoBehaviour
     
     public void OpenGameScene()
     {
-        UnityEngine.SceneManagement.SceneManager.LoadScene (sceneName:"3cProto");
+        UnityEngine.SceneManagement.SceneManager.LoadScene (sceneName:"UI INGAME");
     }
 
     public void QuitApplication()
