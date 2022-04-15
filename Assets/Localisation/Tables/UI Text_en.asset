@@ -89,7 +89,27 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 16639548248064
-    m_Localized: 
+    m_Localized: Menu
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5090037995458560
+    m_Localized: Load game
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5097741719752704
+    m_Localized: Planet
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5097786649137152
+    m_Localized: Probes
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5097850431918080
+    m_Localized: Records
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5098025799962624
+    m_Localized: Characters
     m_Metadata:
       m_Items: []
   references:

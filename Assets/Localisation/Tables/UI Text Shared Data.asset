@@ -76,7 +76,27 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 16639548248064
-    m_Key: new entry
+    m_Key: Menu
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5090037995458560
+    m_Key: Load
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5097741719752704
+    m_Key: Planet
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5097786649137152
+    m_Key: Probes
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5097850431918080
+    m_Key: Records
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5098025799962624
+    m_Key: Characters
     m_Metadata:
       m_Items: []
   m_Metadata:

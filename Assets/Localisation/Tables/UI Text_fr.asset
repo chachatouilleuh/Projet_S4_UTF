@@ -86,6 +86,30 @@ MonoBehaviour:
     m_Localized: Fermer
     m_Metadata:
       m_Items: []
+  - m_Id: 16639548248064
+    m_Localized: Menu
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5090037995458560
+    m_Localized: Charger partie
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5097741719752704
+    m_Localized: "Plan\xE8te"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5097786649137152
+    m_Localized: Sondes
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5097850431918080
+    m_Localized: Messages
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5098025799962624
+    m_Localized: Personnages
+    m_Metadata:
+      m_Items: []
   references:
     version: 1
     00000000:
