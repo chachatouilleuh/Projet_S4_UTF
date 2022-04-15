@@ -33,8 +33,7 @@ public class Pick_Object : MonoBehaviour
     
     private void Update()
     {
-        Debug.DrawRay(fpsCam.transform.position, fpsCam.transform.forward * m_distanceDrop, Color.green);
-        
+
         Ray pickupRay = new Ray(fpsCam.transform.position, fpsCam.transform.forward * m_distance);
 
         RaycastHit hit;

@@ -21,24 +21,34 @@ public class Movement : MonoBehaviour
 
     [SerializeField, Tooltip("chara controller")] private CharacterController m_controller;
 
-    private void Update()
+    private void FixedUpdate()
     {
         Move();
-    }
-
-    private void Move()
-    {
         m_isGrounded = Physics.CheckSphere(transform.position, m_groundCheckDistance, m_groundMask);
-
         if (m_isGrounded && m_velocity.y < 0)
         {
             m_velocity.y = -2f;
         }
-            
+    }
+
+    private void Update()
+    {
+        if (m_isGrounded)
+        {
+            if (Input.GetKeyDown(KeyCode.Space))
+            {
+                Jump();
+            }
+        }
+    }
+
+    private void Move()
+    {
         float moveZ = Input.GetAxis("Vertical");
         float moveX = Input.GetAxis("Horizontal");
 
         m_moveDirection = new Vector3(moveX, 0, moveZ);
+        m_moveDirection = transform.TransformDirection(m_moveDirection);
 
         if (m_isGrounded)
         {
@@ -46,18 +56,13 @@ public class Movement : MonoBehaviour
             {
                 Walk();
             }
-            else if (m_moveDirection == Vector3.forward && Input.GetKey(KeyCode.LeftShift))
+            else if (m_moveDirection != Vector3.zero && Input.GetKey(KeyCode.LeftShift))
             {
                 Run();
             }
             else if(m_moveDirection == Vector3.zero)
             {
                 Idle();
-            }
-            
-            if (Input.GetKeyDown(KeyCode.Space))
-            {
-                Jump();
             }
         }
 
@@ -70,7 +75,6 @@ public class Movement : MonoBehaviour
 
     private void Idle()
     {
-        
     }
 
     private void Walk()

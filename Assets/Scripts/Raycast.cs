@@ -8,8 +8,7 @@ public class Raycast : MonoBehaviour
     [SerializeField, Tooltip("la range pour pick l'objet")] private float m_distance;
     [SerializeField] private GameObject m_curTarget;
 
-    [SerializeField, Tooltip("canvas affiché")]
-    private GameObject m_infoCube;
+    [SerializeField, Tooltip("canvas affiché")] private GameObject m_infoCube;
     void Update()
     {
         

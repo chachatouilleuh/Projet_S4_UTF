@@ -6,7 +6,7 @@ public class Look : MonoBehaviour
 {
     [SerializeField, Tooltip("transform du controller")] Transform m_character;
     [SerializeField, Tooltip("sensibilité de la cam")]private float m_sensitivity;
-    [SerializeField, Tooltip("smooth des movements de la cam")]private float m_moothing;
+    [SerializeField, Tooltip("smooth des movements de la cam")]private float m_smoothing;
 
     private Vector2 velocity;
     private Vector2 frameVelocity;
@@ -29,7 +29,7 @@ public class Look : MonoBehaviour
         // Get smooth velocity.
         Vector2 mouseDelta = new Vector2(Input.GetAxisRaw("Mouse X"), Input.GetAxisRaw("Mouse Y"));
         Vector2 rawFrameVelocity = Vector2.Scale(mouseDelta, Vector2.one * m_sensitivity);
-        frameVelocity = Vector2.Lerp(frameVelocity, rawFrameVelocity, 1 / m_moothing);
+        frameVelocity = Vector2.Lerp(frameVelocity, rawFrameVelocity, 1 / m_smoothing);
         velocity += frameVelocity;
         velocity.y = Mathf.Clamp(velocity.y, -90, 90);
 
