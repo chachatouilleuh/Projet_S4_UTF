@@ -5536,7 +5536,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh27358
+  m_Name: pb_Mesh21590
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -39873,7 +39873,7 @@ GameObject:
   - component: {fileID: 1386529267}
   - component: {fileID: 1386529266}
   - component: {fileID: 1386529265}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Central Platform
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -65441,6 +65441,34 @@ PrefabInstance:
     - target: {fileID: 7770494835427200575, guid: 72801394da7ef4d40ae65ab559d92c6d, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7808378221482916786, guid: 72801394da7ef4d40ae65ab559d92c6d, type: 3}
+      propertyPath: m_Name
+      value: FirstPersonCamera
+      objectReference: {fileID: 0}
+    - target: {fileID: 7808378221527397762, guid: 72801394da7ef4d40ae65ab559d92c6d, type: 3}
+      propertyPath: m_gravity
+      value: -9.81
+      objectReference: {fileID: 0}
+    - target: {fileID: 7808378221527397762, guid: 72801394da7ef4d40ae65ab559d92c6d, type: 3}
+      propertyPath: m_runSpeed
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7808378221527397762, guid: 72801394da7ef4d40ae65ab559d92c6d, type: 3}
+      propertyPath: m_jumpHeight
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7808378221527397762, guid: 72801394da7ef4d40ae65ab559d92c6d, type: 3}
+      propertyPath: m_groundMask.m_Bits
+      value: 1024
+      objectReference: {fileID: 0}
+    - target: {fileID: 7808378221527397762, guid: 72801394da7ef4d40ae65ab559d92c6d, type: 3}
+      propertyPath: m_groundCheckDistance
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7808378221527397772, guid: 72801394da7ef4d40ae65ab559d92c6d, type: 3}
+      propertyPath: m_SkinWidth
+      value: 0.0001
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 72801394da7ef4d40ae65ab559d92c6d, type: 3}

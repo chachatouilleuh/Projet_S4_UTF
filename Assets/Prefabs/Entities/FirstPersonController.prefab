@@ -2041,8 +2041,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_moveSpeed: 0
   m_walkSpeed: 5
-  m_runSpeed: 0
-  m_gravity: 0
+  m_runSpeed: 8
+  m_isGrounded: 0
+  m_groundCheckDistance: 0.1
+  m_groundMask:
+    serializedVersion: 2
+    m_Bits: 1024
+  m_gravity: -9.81
+  m_jumpHeight: 2
   m_controller: {fileID: 7808378221527397772}
 --- !u!1 &7075859143858323617
 GameObject:
@@ -2149,8 +2155,9 @@ GameObject:
   - component: {fileID: 7808378221482916787}
   - component: {fileID: 7808378221482916785}
   - component: {fileID: 7808378221482916784}
+  - component: {fileID: 8814104968263018261}
   m_Layer: 0
-  m_Name: Camera
+  m_Name: FirstPersonCamera
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2221,6 +2228,21 @@ AudioListener:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7808378221482916786}
   m_Enabled: 1
+--- !u!114 &8814104968263018261
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7808378221482916786}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 52c560c9ac3d7674ba04d612930d79ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_character: {fileID: 7770494835427200575}
+  m_sensitivity: 2
+  m_moothing: 1.5
 --- !u!1 &7817258904278132525
 GameObject:
   m_ObjectHideFlags: 0
