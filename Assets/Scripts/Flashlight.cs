@@ -12,6 +12,8 @@ public class Flashlight : MonoBehaviour
     [SerializeField, Tooltip("la range pour pick l'objet")] private float m_distance;
     [SerializeField] private GameObject m_curField;
     [SerializeField] private MeshCollider m_curFieldComp;
+
+    private float m_zoneIntensity;
     
 
     private void Start()
@@ -44,18 +46,19 @@ public class Flashlight : MonoBehaviour
             if (hit.transform.gameObject)
             {
                 m_curField = hit.transform.gameObject;
-                m_curFieldComp = m_curField.GetComponent<MeshCollider>();
+
                 Debug.Log(m_curFieldComp);
                 if (m_isOn)
                 {
                     Debug.Log("1");
-                    m_curFieldComp.enabled = false;
+                    m_zoneIntensity = m_curField.GetComponent<GravZone>().m_intensity;
+                    m_curField.GetComponent<GravZone>().m_intensity = 0;
                 }
                 
                 if(!m_isOn)
                 {
                     Debug.Log("2");
-                    m_curFieldComp.enabled = true;
+                    m_curField.GetComponent<GravZone>().m_intensity = m_zoneIntensity;
                 }
             }
         }
