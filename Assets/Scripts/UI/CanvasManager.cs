@@ -8,9 +8,9 @@ public class CanvasManager : MonoBehaviour
 {
     //private SceneManager sceneManager;
 
-    [SerializeField, Tooltip("les canvas à assigner")] private GameObject Accueil, MainMenu, Options, LoadScreen, HUD;
+    [SerializeField, Tooltip("les canvas à assigner")] private GameObject Accueil, MainMenu, Options, LoadScreen, HUD, Planet, Probes, Records, Characters;
     
-    private bool m_accueilOpen, m_mainMenuOpen, m_optionsOpen, m_loadScreenOpen, m_optionsIngameOpen, m_hudOpen;
+    private bool m_accueilOpen, m_mainMenuOpen, m_optionsOpen, m_loadScreenOpen, m_optionsIngameOpen, m_hudOpen, m_planetOpen, m_probesOpen, m_recordsOpen, m_charactersOpen;
     private Scene scene;
 
     // INITIALISE LES VALEURS
@@ -112,7 +112,88 @@ public class CanvasManager : MonoBehaviour
             m_hudOpen = false;
         }
     }
-    
+    public void OpenPlanet()
+    {
+        if (!m_planetOpen)
+        {
+            Planet.SetActive(true);
+            Probes.SetActive(false);
+            Records.SetActive(false);
+            Characters.SetActive(false);
+            
+            m_planetOpen = true;
+            
+        }
+        else
+        {
+            Planet.SetActive(false);
+            m_planetOpen = false;
+        }
+    }
+    public void OpenProbes()
+    {
+        if (!m_probesOpen)
+        {
+            Planet.SetActive(false);
+            Probes.SetActive(true);
+            Records.SetActive(false);
+            Characters.SetActive(false);
+            
+            m_probesOpen = true;
+        }
+        else
+        {
+            Probes.SetActive(false);
+            m_probesOpen = false;
+        }
+    }
+    public void OpenRecords()
+    {
+        if (!m_recordsOpen)
+        {
+            Planet.SetActive(false);
+            Probes.SetActive(false);
+            Records.SetActive(true);
+            Characters.SetActive(false);
+            
+            m_recordsOpen = true;
+        }
+        else
+        {
+            Records.SetActive(false);
+            m_recordsOpen = false;
+        }
+    }
+    public void OpenCharacters()
+    {
+        if (!m_charactersOpen)
+        {
+            Planet.SetActive(false);
+            Probes.SetActive(false);
+            Records.SetActive(false);
+            Characters.SetActive(true);
+            
+            m_charactersOpen = true;
+        }
+        else
+        {
+            Characters.SetActive(false);
+            m_charactersOpen = false;
+        }
+    }
+
+    public void ResetLoreCanvas()
+    {
+        Planet.SetActive(false);
+        Probes.SetActive(false);
+        Records.SetActive(false);
+        Characters.SetActive(false);
+
+        m_planetOpen = false;
+        m_probesOpen = false;
+        m_recordsOpen = false;
+        m_charactersOpen = false;
+    }
     
 
     // A voir si l'on fait une option différente

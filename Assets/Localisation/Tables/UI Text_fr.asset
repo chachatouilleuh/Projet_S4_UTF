@@ -110,6 +110,27 @@ MonoBehaviour:
     m_Localized: Personnages
     m_Metadata:
       m_Items: []
+  - m_Id: 5524212933332992
+    m_Localized: "Arcopa est r\xE9gie par les lois de notre univers, \xE0 savoir
+      : la vie, la mort, les \xE9toiles et les les plan\xE8tes qui gravitent tout
+      autour. Cependant, la plan\xE8te naine Arcopa-8 se diff\xE9rencie de la plan\xE8te
+      Terre. Il s'agit plus pr\xE9cis\xE9ment d'une lune parmi tant d'autres qui
+      orbitent autour de la g\xE9ante gazeuse Sigma B-113. Par ailleurs, son orbite
+      g\xE9ostationnaire a pour cons\xE9quence de la plonger dans l'obscurit\xE9
+      la plus totale.\n\nLes extr\xE9mit\xE9s de la plan\xE8te subissent des variations
+      climatiques extr\xEAmes, alternant entre fortes chaleurs et froid glacial.
+      Le d\xE9veloppement de la vie y est alors impossible.\n\nN\xE9anmoins, gr\xE2ce
+      \xE0 la protection g\xE9othermique de la g\xE9ante gazeuse, Arcopa-8 poss\xE8de
+      des zones temp\xE9r\xE9es. Malgr\xE9 l'obscurit\xE9 omnipr\xE9sente, la vie
+      a pu s'y d\xE9velopper. La flore a su s'adapter \xE0 cet environnement hostile
+      et a d\xE9velopp\xE9 des propri\xE9t\xE9s bioluminescentes.\n\nL'environnement
+      est principalement constitu\xE9 d'immenses for\xEAts primaires, de grottes,
+      de structures rocheuses ; le tout surplomb\xE9 par des falaises.  La gravit\xE9
+      fluctue anormalement, notamment \xE0 cause de son orbite qui alterne entre
+      le vide, Sigma -B113 et son \xE9toile. Il en r\xE9sulte la formation de cavit\xE9s
+      souterraines chaotiques par des lacs visqueux en l\xE9vitation.  "
+    m_Metadata:
+      m_Items: []
   references:
     version: 1
     00000000:

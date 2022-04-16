@@ -99,6 +99,10 @@ MonoBehaviour:
     m_Key: Characters
     m_Metadata:
       m_Items: []
+  - m_Id: 5524212933332992
+    m_Key: Arcopa Lore
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

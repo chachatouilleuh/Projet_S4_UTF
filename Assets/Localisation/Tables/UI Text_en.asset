@@ -112,6 +112,24 @@ MonoBehaviour:
     m_Localized: Characters
     m_Metadata:
       m_Items: []
+  - m_Id: 5524212933332992
+    m_Localized: "Arcopa takes place in our real universe, it is ruled by the same
+      laws : life, death, stars and planets that gravitate around. However, the planet
+      Arcopa-8 is very different from Earth. This is a moon, orbiting around a gaseous
+      giant named Sigma-B113. Its high GEO orbit means that half of the planet is
+      perpetually in darkness.\r\n\r\nThe outward side of the planet alternates between
+      icy cold and extreme heat, which prevents life from developing there.\r\n\r\nTherefore,
+      the part whose face is turned towards the planet is tempered, thanks to the
+      protection provided by the gaseous giant. Life has been able to develop there
+      richly whereas it is perpetually plunged into darkness. The only light that
+      can be found there comes from its flora, which has developed bioluminescent
+      properties.\r\n\r\nThe environment is mainly chaotic with large forests, overhanging
+      cliffs, caves and other rocky structures. Because of its orbit (whose position
+      fluctuates between being surrounded by its planet, its star, and the void)
+      there are many gravitational anomalies. They can manifest themselves by the
+      presence of underground lakes and levitating waters.\r"
+    m_Metadata:
+      m_Items: []
   references:
     version: 1
     00000000:
