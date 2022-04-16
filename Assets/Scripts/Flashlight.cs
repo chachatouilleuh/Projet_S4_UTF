@@ -62,5 +62,13 @@ public class Flashlight : MonoBehaviour
                 }
             }
         }
+        else
+        {
+            if (m_curField == null)
+            {
+                return;
+            }
+            m_curField.GetComponent<GravZone>().m_intensity = m_zoneIntensity;
+        }
     }
 }
