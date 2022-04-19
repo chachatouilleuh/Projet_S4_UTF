@@ -1,11 +1,11 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using Image = UnityEngine.UIElements.Image;
+
 
 public class ShowHide : MonoBehaviour
 {
-    [SerializeField, Tooltip("recup KeyType")] private Animator m_animator;
+    [SerializeField, Tooltip("l'animator controller")] private Animator m_animator;
     private int m_showOrHide;
 
     private void Awake()
@@ -25,3 +25,6 @@ public class ShowHide : MonoBehaviour
         }
     }
 }
+
+
+

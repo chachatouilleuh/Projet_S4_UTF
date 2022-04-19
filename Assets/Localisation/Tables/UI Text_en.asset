@@ -22,6 +22,7 @@ MonoBehaviour:
     - id: 2
     - id: 3
     - id: 4
+    - id: 5
   m_TableData:
   - m_Id: 158794043392
     m_Localized: Press any key
@@ -113,23 +114,36 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 5524212933332992
-    m_Localized: "Arcopa takes place in our real universe, it is ruled by the same
+    m_Localized: 'Arcopa takes place in our real universe, it is ruled by the same
       laws : life, death, stars and planets that gravitate around. However, the planet
       Arcopa-8 is very different from Earth. This is a moon, orbiting around a gaseous
       giant named Sigma-B113. Its high GEO orbit means that half of the planet is
-      perpetually in darkness.\r\n\r\nThe outward side of the planet alternates between
-      icy cold and extreme heat, which prevents life from developing there.\r\n\r\nTherefore,
+      perpetually in darkness.
+
+      
+
+      The outward side of the planet alternates
+      between icy cold and extreme heat, which prevents life from developing there.
+
+      
+
+      Therefore,
       the part whose face is turned towards the planet is tempered, thanks to the
       protection provided by the gaseous giant. Life has been able to develop there
       richly whereas it is perpetually plunged into darkness. The only light that
       can be found there comes from its flora, which has developed bioluminescent
-      properties.\r\n\r\nThe environment is mainly chaotic with large forests, overhanging
-      cliffs, caves and other rocky structures. Because of its orbit (whose position
-      fluctuates between being surrounded by its planet, its star, and the void)
-      there are many gravitational anomalies. They can manifest themselves by the
-      presence of underground lakes and levitating waters.\r"
+      properties.
+
+      
+
+      The environment is mainly chaotic with large forests,
+      overhanging cliffs, caves and other rocky structures. Because of its orbit
+      (whose position fluctuates between being surrounded by its planet, its star,
+      and the void) there are many gravitational anomalies. They can manifest themselves
+      by the presence of underground lakes and levitating waters.'
     m_Metadata:
-      m_Items: []
+      m_Items:
+      - id: 5
   references:
     version: 1
     00000000:
@@ -152,3 +166,7 @@ MonoBehaviour:
       type: {class: SmartFormatTag, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
         m_Entries: 00d01c6ca60e0000
+    00000005:
+      type: {class: SmartFormatTag, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_Entries: 00108e0d3ea01300

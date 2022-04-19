@@ -21,6 +21,7 @@ MonoBehaviour:
     - id: 1
     - id: 2
     - id: 3
+    - id: 4
   m_TableData:
   - m_Id: 158794043392
     m_Localized: Appuyez sur une touche
@@ -127,10 +128,11 @@ MonoBehaviour:
       est principalement constitu\xE9 d'immenses for\xEAts primaires, de grottes,
       de structures rocheuses ; le tout surplomb\xE9 par des falaises.  La gravit\xE9
       fluctue anormalement, notamment \xE0 cause de son orbite qui alterne entre
-      le vide, Sigma -B113 et son \xE9toile. Il en r\xE9sulte la formation de cavit\xE9s
-      souterraines chaotiques par des lacs visqueux en l\xE9vitation.  "
+      le vide, Sigma-B113 et son \xE9toile. Il en r\xE9sulte la formation de cavit\xE9s
+      souterraines chaotiques, engendr\xE9es par des lacs visqueux en l\xE9vitation.  "
     m_Metadata:
-      m_Items: []
+      m_Items:
+      - id: 4
   references:
     version: 1
     00000000:
@@ -149,3 +151,7 @@ MonoBehaviour:
       type: {class: SmartFormatTag, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
         m_Entries: 00d01c6ca60e0000
+    00000004:
+      type: {class: SmartFormatTag, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_Entries: 00108e0d3ea01300
