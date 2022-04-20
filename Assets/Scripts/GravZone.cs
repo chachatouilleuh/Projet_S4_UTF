@@ -26,9 +26,8 @@ public class GravZone : MonoBehaviour
     private bool m_plusZ;
     [SerializeField, Tooltip("Add force to -Z")]
     private bool m_minusZ;
-
-    [SerializeField, Tooltip("Force applied to rigidbody, about 15 to propel")]
-    private float m_intensity = 0f;
+    
+    public float m_intensity;
     
     [Header("Disabling gravity")]
     
