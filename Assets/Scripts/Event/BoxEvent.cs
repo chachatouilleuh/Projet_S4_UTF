@@ -16,6 +16,9 @@ public class BoxEvent : MonoBehaviour
     [SerializeField, Tooltip("temps avant de detruire objet")]
     private float m_SecondsWait;
 
+    [SerializeField, Tooltip("destroy object ?")]
+    private bool m_objetDestroy;
+
     private void OnEnable()
     {
         m_triggeredEvent.onTrigger += HandleTriggerEvent;
@@ -34,9 +37,12 @@ public class BoxEvent : MonoBehaviour
 
     private void HandleTriggerEvent()
     {
-        m_boxTriggered.GetComponent<Rigidbody>().useGravity = true;
-        
-        m_boxEventCor = StartCoroutine(Boxdestroy());
+        m_boxTriggered.GetComponent<Rigidbody>().isKinematic = false;
+
+        if (m_objetDestroy)
+        {
+            m_boxEventCor = StartCoroutine(Boxdestroy());
+        }
     }
 
     IEnumerator Boxdestroy()
