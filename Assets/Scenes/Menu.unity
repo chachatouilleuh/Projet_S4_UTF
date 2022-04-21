@@ -1999,7 +1999,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_audioMixer: {fileID: 24100000, guid: dbda88f07e9e9474a8053013f5393918, type: 2}
-  m_volume: {fileID: 0}
+  m_volume: {fileID: 1950451968}
   m_musicSlider: {fileID: 754381481}
   m_sfxSlider: {fileID: 824300371}
   m_luminositySlider: {fileID: 1095292499}
