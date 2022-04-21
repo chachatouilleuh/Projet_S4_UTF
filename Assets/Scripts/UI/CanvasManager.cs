@@ -1,3 +1,4 @@
+using Packages.Mini_First_Person_Controller.Scripts;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -37,6 +38,11 @@ public class CanvasManager : MonoBehaviour
                 OpenAccueil();
                 OpenMainMenu();
             }
+        }
+
+        if (FirstPersonLook.m_isOption == false)
+        {
+            ResetLoreCanvas();
         }
     }
     public void OpenAccueil()
@@ -119,6 +125,9 @@ public class CanvasManager : MonoBehaviour
             Characters.SetActive(false);
             
             m_planetOpen = true;
+            m_probesOpen = false;
+            m_recordsOpen = false;
+            m_charactersOpen = false;
             
         }
         else
@@ -136,7 +145,10 @@ public class CanvasManager : MonoBehaviour
             Records.SetActive(false);
             Characters.SetActive(false);
             
+            m_planetOpen = false;
             m_probesOpen = true;
+            m_recordsOpen = false;
+            m_charactersOpen = false;
         }
         else
         {
@@ -153,7 +165,10 @@ public class CanvasManager : MonoBehaviour
             Records.SetActive(true);
             Characters.SetActive(false);
             
+            m_planetOpen = false;
+            m_probesOpen = false;
             m_recordsOpen = true;
+            m_charactersOpen = false;
         }
         else
         {
@@ -170,6 +185,9 @@ public class CanvasManager : MonoBehaviour
             Records.SetActive(false);
             Characters.SetActive(true);
             
+            m_planetOpen = false;
+            m_probesOpen = false;
+            m_recordsOpen = false;
             m_charactersOpen = true;
         }
         else
@@ -191,6 +209,7 @@ public class CanvasManager : MonoBehaviour
         m_recordsOpen = false;
         m_charactersOpen = false;
     }
+    
     
 
     // A voir si l'on fait une option différente

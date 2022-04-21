@@ -1,3 +1,4 @@
+using Packages.Mini_First_Person_Controller.Scripts;
 using UnityEngine;
 
 public class Pick_Object : MonoBehaviour
@@ -33,96 +34,98 @@ public class Pick_Object : MonoBehaviour
     
     private void Update()
     {
-        Debug.DrawRay(fpsCam.transform.position, fpsCam.transform.forward * m_distanceDrop, Color.green);
-        
-        Ray pickupRay = new Ray(fpsCam.transform.position, fpsCam.transform.forward * m_distance);
-
-        RaycastHit hit;
-        
-        if (Input.GetMouseButtonDown(0))
+        if(FirstPersonLook.m_isOption == false)
         {
-            if (Physics.Raycast(pickupRay, out hit, m_distance, m_pickable_Object))
-            {
-                if (!m_rigidbody)
-                {
-                    m_rigidbody = hit.rigidbody;
-                    m_collider = hit.collider;
+            Debug.DrawRay(fpsCam.transform.position, fpsCam.transform.forward * m_distanceDrop, Color.green);
         
-                    m_rigidbody.isKinematic = true;
-                    m_rigidbody.useGravity = true;
-                    m_collider.enabled = false;
+            Ray pickupRay = new Ray(fpsCam.transform.position, fpsCam.transform.forward * m_distance);
 
-                    m_isHolding = true;
-                    m_infoDropthrow.SetActive(true);
-                }
-                return;
-            }
-
-            if (Physics.Raycast(pickupRay, out hit, m_distanceDrop, m_collisionLayer))
+            RaycastHit hit;
+        
+            if (Input.GetMouseButtonDown(0))
             {
-                if (m_rigidbody)
+                if (Physics.Raycast(pickupRay, out hit, m_distance, m_pickable_Object))
                 {
-                    // m_rigidbody.isKinematic = false;
-                    m_collider.enabled = true;
+                    if (!m_rigidbody)
+                    {
+                        m_rigidbody = hit.rigidbody;
+                        m_collider = hit.collider;
             
-                    m_rigidbody = null;
-                    m_collider = null;
-            
-                    m_isHolding = false;
-                    m_infoDropthrow.SetActive(false);
+                        m_rigidbody.isKinematic = true;
+                        m_rigidbody.useGravity = true;
+                        m_collider.enabled = false;
+
+                        m_isHolding = true;
+                        m_infoDropthrow.SetActive(true);
+                    }
+                    return;
+                }
+
+                if (Physics.Raycast(pickupRay, out hit, m_distanceDrop, m_collisionLayer))
+                {
+                    if (m_rigidbody)
+                    {
+                        // m_rigidbody.isKinematic = false;
+                        m_collider.enabled = true;
+                
+                        m_rigidbody = null;
+                        m_collider = null;
+                
+                        m_isHolding = false;
+                        m_infoDropthrow.SetActive(false);
+                    }
+                }
+                else
+                {
+                    if (m_rigidbody)
+                    {
+                        m_rigidbody.isKinematic = false;
+                        m_collider.enabled = true;
+                
+                        m_rigidbody = null;
+                        m_collider = null;
+                
+                        m_isHolding = false;
+                        m_infoDropthrow.SetActive(false);
+                    }
                 }
             }
-            else
+            if (Input.GetMouseButtonDown(1))
             {
-                if (m_rigidbody)
+                if (Physics.Raycast(pickupRay, out hit, m_distanceDrop, m_collisionLayer))
+                {
+                    if (m_rigidbody)
+                    {
+                        // m_rigidbody.isKinematic = false;
+                        m_collider.enabled = true;
+                
+                        m_rigidbody = null;
+                        m_collider = null;
+                
+                        m_isHolding = false;
+                        m_infoDropthrow.SetActive(false);
+                    }
+                }
+                else
                 {
                     m_rigidbody.isKinematic = false;
                     m_collider.enabled = true;
-            
+                
+                    m_rigidbody.AddForce(m_hand.transform.forward * m_punch);
+
                     m_rigidbody = null;
                     m_collider = null;
-            
+
                     m_isHolding = false;
                     m_infoDropthrow.SetActive(false);
                 }
             }
-        }
-        if (Input.GetMouseButtonDown(1))
-        {
-            if (Physics.Raycast(pickupRay, out hit, m_distanceDrop, m_collisionLayer))
-            {
-                if (m_rigidbody)
-                {
-                    // m_rigidbody.isKinematic = false;
-                    m_collider.enabled = true;
-            
-                    m_rigidbody = null;
-                    m_collider = null;
-            
-                    m_isHolding = false;
-                    m_infoDropthrow.SetActive(false);
-                }
-            }
-            else
-            {
-                m_rigidbody.isKinematic = false;
-                m_collider.enabled = true;
-            
-                m_rigidbody.AddForce(m_hand.transform.forward * m_punch);
-
-                m_rigidbody = null;
-                m_collider = null;
-
-                m_isHolding = false;
-                m_infoDropthrow.SetActive(false);
-            }
-
-        }
         
-        if (m_rigidbody)
-        {
-            m_rigidbody.position = m_hand.position;
-            m_rigidbody.rotation = m_hand.rotation;
+            if (m_rigidbody)
+            {
+                m_rigidbody.position = m_hand.position;
+                m_rigidbody.rotation = m_hand.rotation;
+            } 
         }
     }
 }

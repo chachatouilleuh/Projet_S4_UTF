@@ -22,5 +22,6 @@ public class Event : ScriptableObject
         onTrigger?.Invoke();
     }
 
+    
 
 }

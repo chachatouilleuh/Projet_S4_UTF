@@ -2,43 +2,49 @@ using UnityEngine;
 
 public class SlotManager : MonoBehaviour
 {
-    [SerializeField, Tooltip("les slots probes à assigner")] private GameObject ProbeSlot1, ProbeSlot2, ProbeSlot3, EmptyProbeSlot1, EmptyProbeSlot2, EmptyProbeSlot3, LoreSlot1, LoreSlot2, LoreSlot3 ;
-    [SerializeField, Tooltip("les slots probes à assigner")] private GameObject RecordSlot1, RecordSlot2, RecordSlot3, RecordSlot4, RecordSlot5, RecordSlot6, EmptyRecordSlot1, EmptyRecordSlot2, EmptyRecordSlot3, EmptyRecordSlot4, EmptyRecordSlot5, EmptyRecordSlot6;
-
+    [SerializeField, Tooltip("les slots probes à assigner")] private GameObject ProbeSlot1, ProbeSlot2, ProbeSlot3, EmptyProbeSlot1, EmptyProbeSlot2, EmptyProbeSlot3, LoreSlot0, LoreSlot1, LoreSlot2, LoreSlot3;
+    [SerializeField, Tooltip("les slots records à assigner")] private GameObject RecordSlot1, RecordSlot2, RecordSlot3, RecordSlot4, RecordSlot5, RecordSlot6, EmptyRecordSlot1, EmptyRecordSlot2, EmptyRecordSlot3, EmptyRecordSlot4, EmptyRecordSlot5, EmptyRecordSlot6;
+    [SerializeField, Tooltip("les slots probes à assigner")] private GameObject CharaLore1, CharaLore2, CharaLore3, CharaUnknown, CharaChimere ;
     [SerializeField, Tooltip("le nombre de sondes récupérées ")] private int m_probeCount;
     [SerializeField, Tooltip("le nombre de records récupérés ")] private int m_recordCount;
 
     private void Awake()
     {
-        // je get mon nombre de sondes et records récupérés
         m_probeCount = PlayerPrefs.GetInt("probeCount");
         m_recordCount = PlayerPrefs.GetInt("recordCount");
-
+        
+        OpenCharaLore1();
+        
         // je set au démarrage les conditions d'affichage en fontion du nombre de sondes récupérées
         switch (m_probeCount)
         {
             case 0:
+                LoreSlot0.SetActive(true);
                 EmptyProbeSlot1.SetActive(true);
                 EmptyProbeSlot2.SetActive(true);
                 EmptyProbeSlot3.SetActive(true);
+                CharaUnknown.SetActive(true);
                 break;
             
             case 1:
                 OpenLore1();
                 EmptyProbeSlot2.SetActive(true);
                 EmptyProbeSlot3.SetActive(true);
+                CharaUnknown.SetActive(true);
                 break;
             
             case 2:
                 OpenLore1();
                 ProbeSlot2.SetActive(true);
                 EmptyProbeSlot3.SetActive(true);
+                CharaUnknown.SetActive(true);
                 break;
             
             case 3:
                 OpenLore1();
                 ProbeSlot2.SetActive(true);
                 ProbeSlot3.SetActive(true);
+                CharaChimere.SetActive(true);
                 break;
         }
 
@@ -109,10 +115,16 @@ public class SlotManager : MonoBehaviour
 
     private void Update()
     {
-        // Si je récupère une sonde, mon affichage s'actualise
+        // j'actualise mon nombre de sondes et records récupérés
+        m_probeCount = PlayerPrefs.GetInt("probeCount");
+        m_recordCount = PlayerPrefs.GetInt("recordCount");
+        
+        // Si je récupère une sonde, mon affichage s'actualise 
         switch (m_probeCount)
         {
             case 1:
+                LoreSlot0.SetActive(false);
+                LoreSlot1.SetActive(true);
                 ProbeSlot1.SetActive(true);
                 EmptyProbeSlot1.SetActive(false);
                 break;
@@ -125,6 +137,8 @@ public class SlotManager : MonoBehaviour
             case 3:
                 ProbeSlot3.SetActive(true);
                 EmptyProbeSlot3.SetActive(false);
+                CharaUnknown.SetActive(false);
+                CharaChimere.SetActive(true);
                 break;
         }
 
@@ -185,4 +199,25 @@ public class SlotManager : MonoBehaviour
         LoreSlot3.SetActive(true);
     }
     
+    public void OpenCharaLore1()
+    {
+        CharaLore1.SetActive(true);
+        CharaLore2.SetActive(false);
+        CharaLore3.SetActive(false);
+    }
+    
+    public void OpenCharaLore2()
+    {
+        CharaLore1.SetActive(false);
+        CharaLore2.SetActive(true);
+        CharaLore3.SetActive(false);
+    }
+    
+    public void OpenCharaLore3()
+    {
+        CharaLore1.SetActive(false);
+        CharaLore2.SetActive(false);
+        CharaLore3.SetActive(true);
+    }
+
 }

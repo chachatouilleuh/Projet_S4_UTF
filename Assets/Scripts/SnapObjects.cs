@@ -1,4 +1,3 @@
-using Packages.QuickOutline.Scripts;
 using UnityEngine;
 
 public class SnapObjects : MonoBehaviour

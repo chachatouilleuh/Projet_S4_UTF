@@ -115,24 +115,19 @@ public class Underlining : MonoBehaviour
         if (m_lang == 0)
         {
             PlayerPrefs.SetInt("lang", 1);
-            //Debug.Log("Set Language : Je suis en fran�ais maintenant");
         }
         else
         {
             PlayerPrefs.SetInt("lang", 0);
-            //Debug.Log("Set Language : Je suis en anglais maintenant");
         }
         
         m_lang = PlayerPrefs.GetInt("lang");
-        //Debug.Log(m_lang);
-        
+
     }
 
     // Je change la valeur des soustitres
     private void SetSubtitles()
     {
-        m_sub = PlayerPrefs.GetInt("sub");
-
         if(m_sub == 0)
         {
             PlayerPrefs.SetInt("sub", 1);
@@ -141,7 +136,9 @@ public class Underlining : MonoBehaviour
         else
         {
             PlayerPrefs.SetInt("sub", 0);
-        }  
+        } 
+        
+        m_sub = PlayerPrefs.GetInt("sub");
     }
 
 

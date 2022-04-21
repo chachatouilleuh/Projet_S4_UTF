@@ -34,10 +34,6 @@ public class SliderManager : MonoBehaviour
             colorAdjustment.postExposure.value = 2f;
             m_colorAdjustment = colorAdjustment;
         }
-       
-
-  
-
 
         // Au lancement du jeu je vais recuperer les valeurs de mes sliders
         m_musicVolume = PlayerPrefs.GetFloat("music");

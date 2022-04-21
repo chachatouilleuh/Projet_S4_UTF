@@ -1,6 +1,6 @@
+using Packages.Mini_First_Person_Controller.Scripts;
 using UnityEngine;
-using UnityEngine.UI;
-using Image = UnityEngine.UIElements.Image;
+
 
 
 public class ShowHide : MonoBehaviour
@@ -20,6 +20,14 @@ public class ShowHide : MonoBehaviour
             m_animator?.SetBool("Up", true);
         }
         else
+        {
+            m_animator?.SetBool("Up", false);
+        }
+    }
+
+    private void Update()
+    {
+        if (FirstPersonLook.m_isOption == false)
         {
             m_animator?.SetBool("Up", false);
         }
