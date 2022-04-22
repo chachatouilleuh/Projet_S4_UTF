@@ -9,10 +9,16 @@ public class BoxEvent : MonoBehaviour
     [SerializeField, Tooltip("recup le gameobject")]
     private Rigidbody m_boxTriggered;
 
+    [SerializeField, Tooltip("layer pont")]
+    private LayerMask m_bridgeMask;
+
     private Coroutine m_boxEventCor;
 
     [SerializeField, Tooltip("temps avant de detruire objet")]
     private float m_SecondsWait;
+
+    [SerializeField, Tooltip("destroy object ?")]
+    private bool m_objetDestroy;
 
     private void OnEnable()
     {
@@ -32,9 +38,12 @@ public class BoxEvent : MonoBehaviour
 
     private void HandleTriggerEvent()
     {
-        m_boxTriggered.GetComponent<Rigidbody>().useGravity = true;
-        
-        m_boxEventCor = StartCoroutine(Boxdestroy());
+        m_boxTriggered.GetComponent<Rigidbody>().isKinematic = false;
+
+        if (m_objetDestroy)
+        {
+            m_boxEventCor = StartCoroutine(Boxdestroy());
+        }
     }
 
     IEnumerator Boxdestroy()
@@ -42,5 +51,13 @@ public class BoxEvent : MonoBehaviour
         yield return new WaitForSeconds(m_SecondsWait);
         
         Destroy(gameObject);
+    }
+
+    private void OnCollisionEnter(Collision p_collision)
+    {
+        if ((m_bridgeMask.value & (1 << p_collision.gameObject.layer)) > 0)
+        {
+            p_collision.gameObject.GetComponent<Rigidbody>().isKinematic = false;
+        }
     }
 }

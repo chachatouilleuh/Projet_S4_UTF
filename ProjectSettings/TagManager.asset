@@ -18,8 +18,8 @@ TagManager:
   - Lock_Object
   - PressPlate_Object
   - Ground_Object
-  - 
-  - 
+  - GravityField_Object
+  - Bridge_Object
   - 
   - 
   - 

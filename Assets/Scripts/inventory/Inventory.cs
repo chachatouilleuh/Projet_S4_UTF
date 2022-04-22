@@ -1,13 +1,14 @@
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-    public class GetProbes : MonoBehaviour
-    {
-        [SerializeField, Tooltip("le layer des sondes")] private LayerMask m_layerProbes;
-
-        [SerializeField, Tooltip("le layer des objet 'serrure'")] private LayerMask m_layerLock;
-        [SerializeField, Tooltip("la caméra du perso")] Camera fpsCam;
-        [SerializeField, Tooltip("la range pour pick l'objet")] private float m_distance;
+public class Inventory : MonoBehaviour
+{
+        // [SerializeField, Tooltip("le layer des sondes")] private LayerMask m_layerProbes;
+        //
+        // [SerializeField, Tooltip("le layer des objet 'serrure'")] private LayerMask m_layerLock;
+        // [SerializeField, Tooltip("la caméra du perso")] Camera fpsCam;
+        // [SerializeField, Tooltip("la range pour pick l'objet")] private float m_distance;
 
         [SerializeField, Tooltip("inventaire")]
         public List<KeyType> m_inventaire = new List<KeyType>();
@@ -60,4 +61,4 @@ using UnityEngine;
                 }
             }
         }*/
-    }
+}

@@ -13,7 +13,7 @@ public class SnapObjects : MonoBehaviour
     private Event m_triggeredEvent;
 
     [SerializeField, Tooltip("recup l'inventaire du player")]
-    private GetProbes m_GetProbes;
+    private Inventory m_Inventory;
 
     [SerializeField, Tooltip("je peux poser une box ?")]
     private bool m_activate;
@@ -55,10 +55,10 @@ public class SnapObjects : MonoBehaviour
             Plate myPlates = GetComponent<Plate>();
             if (myPlates != null && myPlates.ActivePlate(out KeyType o_plates))
             {
-                if (!m_GetProbes.m_inventaire.Contains(o_plates))
+                if (!m_Inventory.m_inventaire.Contains(o_plates))
                 {
-                    m_GetProbes.m_inventaire.Add(o_plates);
-                    m_triggeredEvent.Raise(m_GetProbes.m_inventaire);
+                    m_Inventory.m_inventaire.Add(o_plates);
+                    m_triggeredEvent.Raise(m_Inventory.m_inventaire);
                 }
             }
         }
