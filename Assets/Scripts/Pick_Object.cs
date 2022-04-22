@@ -127,5 +127,10 @@ public class Pick_Object : MonoBehaviour
                 m_rigidbody.rotation = m_hand.rotation;
             } 
         }
+        else
+        {
+            m_infoDropthrow.SetActive(false);
+            
+        }
     }
 }

@@ -5,6 +5,15 @@ public class CountUpdate : MonoBehaviour
     [SerializeField, Tooltip("recup le layer qui declenche")]
     private LayerMask m_layer;
 
+    //[SerializeField, Tooltip("le layer des sondes")]
+    //private LayerMask m_layerProbes;
+
+    //[SerializeField, Tooltip("la caméra du perso")]
+    //Camera fpsCam;
+
+    //[SerializeField, Tooltip("la range pour pick l'objet")]
+    //private float m_distance;
+
     [SerializeField, Tooltip("le gameobject est un record")]
     private bool m_isRecord;
 
@@ -16,6 +25,31 @@ public class CountUpdate : MonoBehaviour
 
     [SerializeField, Tooltip("le numéro du record (entre 1 et 6)")]
     private int m_recordNumber;
+
+    //private void Update()
+    //{
+    //    Ray pickupRay = new Ray(fpsCam.transform.position, fpsCam.transform.forward * m_distance);
+    //    RaycastHit hit;
+
+    //    if (Input.GetMouseButtonDown(0))
+    //    {
+    //        if (Physics.Raycast(pickupRay, out hit, m_distance, m_layerProbes))
+    //        {
+    //            if ((m_layer.value & (1 << hit.transform.gameObject.layer)) > 0)
+    //            {
+    //                if (m_isProbe)
+    //                {
+    //                    ProbeCountUpdate();
+    //                }
+    //                else if (m_isRecord)
+    //                {
+    //                    RecordCountUpdate();
+    //                }
+    //            }
+    //        }
+    //    }
+    //}
+
     private void OnTriggerEnter(Collider other)
     {
         if ((m_layer.value & (1 << other.gameObject.layer)) > 0)
