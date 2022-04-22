@@ -23,11 +23,14 @@ public class Movement : MonoBehaviour
 
     private void FixedUpdate()
     {
-        Move();
-        m_isGrounded = Physics.CheckSphere(transform.position, m_groundCheckDistance, m_groundMask);
-        if (m_isGrounded && m_velocity.y < 0)
+        if (Look.m_isOption == false)
         {
-            m_velocity.y = -2f;
+            Move();
+            m_isGrounded = Physics.CheckSphere(transform.position, m_groundCheckDistance, m_groundMask);
+            if (m_isGrounded && m_velocity.y < 0)
+            {
+                m_velocity.y = -2f;
+            }
         }
     }
 

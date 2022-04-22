@@ -13,7 +13,7 @@ namespace com.zibra.liquid
         public const string DisplayName = "Zibra AI - Liquids";
         public const string RootMenu = "Zibra AI/" + DisplayName + "/";
 
-        public static readonly string RootPath = "Assets/Plugins/Zibra/Liquids";
+        public static readonly string RootPath = "Assets/Packages/Zibra/Liquids";
 
         internal static readonly string WindowTabsPath = $"{RootPath}/Editor/Window/Tabs";
 
