@@ -42,7 +42,6 @@ namespace Packages.Mini_First_Person_Controller.Scripts
             }
             else
             {
-                //velocity.y = velocity.y;
                 transform.localRotation = Quaternion.AngleAxis(-velocity.y, Vector3.right);
                 character.localRotation = Quaternion.AngleAxis(velocity.x, Vector3.up);
             }

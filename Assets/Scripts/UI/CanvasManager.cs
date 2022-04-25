@@ -6,7 +6,7 @@ public class CanvasManager : MonoBehaviour
 {
     //private SceneManager sceneManager;
 
-    [SerializeField, Tooltip("les canvas à assigner")] private GameObject Accueil, MainMenu, Options, LoadScreen, HUD, Planet, Probes, Records, Characters;
+    [SerializeField, Tooltip("les canvas à assigner")] private GameObject Accueil, MainMenu, Options, LoadScreen, HUD, HUDBlur, Planet, Probes, Records, Characters;
     
     private bool m_accueilOpen, m_mainMenuOpen, m_optionsOpen, m_loadScreenOpen, m_optionsIngameOpen, m_hudOpen, m_planetOpen, m_probesOpen, m_recordsOpen, m_charactersOpen;
     private Scene scene;
@@ -43,7 +43,19 @@ public class CanvasManager : MonoBehaviour
         if (FirstPersonLook.m_isOption == false)
         {
             ResetLoreCanvas();
+            HUDBlur.SetActive(false);
         }
+        else if(m_optionsOpen)
+        {
+            HUDBlur.SetActive(false); 
+        }
+        else
+        {
+            HUDBlur.SetActive(true);
+        }
+        
+        
+        
     }
     public void OpenAccueil()
     {
