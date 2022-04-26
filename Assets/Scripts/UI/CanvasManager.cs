@@ -31,31 +31,35 @@ public class CanvasManager : MonoBehaviour
 
     void Update()
     {
-        if (m_accueilOpen)
+        switch (scene.name)
         {
-            if (Input.anyKey)
-            {
-                OpenAccueil();
-                OpenMainMenu();
-            }
+            case "Menu":
+                if (m_accueilOpen)
+                {
+                    if (Input.anyKey)
+                    {
+                        OpenAccueil();
+                        OpenMainMenu();
+                    }
+                }
+                break;
+            
+            case "UI INGAME":
+                if (FirstPersonLook.m_isOption == false)
+                {
+                    ResetLoreCanvas();
+                    HUDBlur.SetActive(false);
+                }
+                else if(m_optionsOpen)
+                {
+                    HUDBlur.SetActive(false); 
+                }
+                else
+                {
+                    HUDBlur.SetActive(true);
+                }
+                break;
         }
-
-        if (FirstPersonLook.m_isOption == false)
-        {
-            ResetLoreCanvas();
-            HUDBlur.SetActive(false);
-        }
-        else if(m_optionsOpen)
-        {
-            HUDBlur.SetActive(false); 
-        }
-        else
-        {
-            HUDBlur.SetActive(true);
-        }
-        
-        
-        
     }
     public void OpenAccueil()
     {

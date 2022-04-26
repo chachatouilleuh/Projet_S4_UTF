@@ -8,7 +8,7 @@ namespace Packages.Mini_First_Person_Controller.Scripts
         public float sensitivity = 2;
         public float smoothing = 1.5f;
 
-        [SerializeField, Tooltip("le hud est actif ou non")]
+        [Tooltip("le mode option est activé ou non")]
         public static bool m_isOption;
         [SerializeField, Tooltip("le canvas du pointeur à assigner")] private GameObject Pointeur;
         
