@@ -1,3 +1,4 @@
+using Packages.Mini_First_Person_Controller.Scripts.Components;
 using UnityEngine;
 
 public class Pick_Object : MonoBehaviour
@@ -122,6 +123,15 @@ public class Pick_Object : MonoBehaviour
         {
             m_rigidbody.position = m_hand.position;
             m_rigidbody.rotation = m_hand.rotation;
+        }
+
+        if (m_isHolding)
+        {
+            GetComponent<Jump>().enabled = false;
+        }
+        else
+        {
+            GetComponent<Jump>().enabled = true;
         }
     }
 }
