@@ -4,16 +4,16 @@ using UnityEngine;
 
 public class Inventory : MonoBehaviour
 {
-        // [SerializeField, Tooltip("le layer des sondes")] private LayerMask m_layerProbes;
-        //
-        // [SerializeField, Tooltip("le layer des objet 'serrure'")] private LayerMask m_layerLock;
-        // [SerializeField, Tooltip("la caméra du perso")] Camera fpsCam;
-        // [SerializeField, Tooltip("la range pour pick l'objet")] private float m_distance;
+        [SerializeField, Tooltip("le layer des sondes")] private LayerMask m_layerProbes;
+        
+        [SerializeField, Tooltip("le layer des objet 'serrure'")] private LayerMask m_layerLock;
+        [SerializeField, Tooltip("la caméra du perso")] Camera fpsCam;
+        [SerializeField, Tooltip("la range pour pick l'objet")] private float m_distance;
 
         [SerializeField, Tooltip("inventaire")]
         public List<KeyType> m_inventaire = new List<KeyType>();
 
-        /*private void Update()
+        private void Update()
         {
             Ray pickupRay = new Ray(fpsCam.transform.position, fpsCam.transform.forward * m_distance);
             RaycastHit hit;
@@ -49,16 +49,4 @@ public class Inventory : MonoBehaviour
                 }
             }
         }
-
-        private void OnTriggerEnter(Collider other)
-        {
-            if ((m_layerLock.value & (1 << other.gameObject.layer)) > 0)
-            {
-                Lock myLock = other.GetComponent<Lock>();
-                if (myLock)
-                {
-                    myLock.OpenLock(m_inventaire);
-                }
-            }
-        }*/
 }

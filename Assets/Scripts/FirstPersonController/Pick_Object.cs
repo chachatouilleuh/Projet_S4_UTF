@@ -1,3 +1,4 @@
+using Packages.Mini_First_Person_Controller.Scripts.Components;
 using UnityEngine;
 
 public class Pick_Object : MonoBehaviour
@@ -128,6 +129,15 @@ public class Pick_Object : MonoBehaviour
         else
         {
             m_infoDropthrow.SetActive(false);
+        }
+
+        if (m_isHolding)
+        {
+            GetComponent<Jump>().enabled = false;
+        }
+        else
+        {
+            GetComponent<Jump>().enabled = true;
         }
     }
 }
