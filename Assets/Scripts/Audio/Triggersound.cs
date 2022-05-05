@@ -2,8 +2,8 @@ using UnityEngine;
 
 public class TriggerSound : MonoBehaviour
 {
-    public AudioSource audiosource;
-    
+    [SerializeField, Tooltip("la source audio du trigger")]private AudioSource audiosource;
+
     [SerializeField, Tooltip("le son est deja joue")] private bool alreadyPlayed;
     
     [SerializeField, Tooltip("layer du player")] private LayerMask m_playerLayer;

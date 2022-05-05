@@ -1,8 +1,6 @@
 using Packages.Mini_First_Person_Controller.Scripts;
 using UnityEngine;
 
-
-
 public class ShowHide : MonoBehaviour
 {
     [SerializeField, Tooltip("l'animator controller")] private Animator m_animator;

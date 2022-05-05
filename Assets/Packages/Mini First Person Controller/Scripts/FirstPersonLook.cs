@@ -11,6 +11,7 @@ namespace Packages.Mini_First_Person_Controller.Scripts
         [Tooltip("le mode option est activé ou non")]
         public static bool m_isOption;
         [SerializeField, Tooltip("le canvas du pointeur à assigner")] private GameObject Pointeur;
+
         
         Vector2 velocity;
         Vector2 frameVelocity;
