@@ -1,5 +1,7 @@
 
+using System.Collections.Generic;
+
 public interface ITriggerZone
 {
-    bool ActiveTriggerZone(out KeyType o_triggerZone);
+    void ActiveTriggerZone(List<KeyType> p_playerProbes);
 }

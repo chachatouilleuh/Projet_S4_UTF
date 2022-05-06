@@ -1,14 +1,25 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 
 public class Inventory : MonoBehaviour
 {
-        [SerializeField, Tooltip("le layer des sondes")] private LayerMask m_layerProbes;
+        [SerializeField, Tooltip("le layer des sondes")] 
+        private LayerMask m_layerProbes;
+
+        [SerializeField, Tooltip("le layer du trigger")]
+        private LayerMask m_layerTrigger;
         
-        [SerializeField, Tooltip("le layer des objet 'serrure'")] private LayerMask m_layerLock;
-        [SerializeField, Tooltip("la caméra du perso")] Camera fpsCam;
-        [SerializeField, Tooltip("la range pour pick l'objet")] private float m_distance;
+        [SerializeField, Tooltip("le layer des objet 'serrure'")] 
+        private LayerMask m_layerLock;
+        
+        [SerializeField, Tooltip("la caméra du perso")] 
+        Camera fpsCam;
+        
+        [SerializeField, Tooltip("la range pour pick l'objet")] 
+        private float m_distance;
 
         [SerializeField, Tooltip("inventaire")]
         public List<KeyType> m_inventaire = new List<KeyType>();
@@ -46,6 +57,18 @@ public class Inventory : MonoBehaviour
                             myLock.OpenLock(m_inventaire);
                         }
                     }
+                }
+            }
+        }
+
+        private void OnTriggerStay(Collider other)
+        {
+            if ((m_layerTrigger.value & (1 << other.gameObject.layer)) > 0)
+            {
+                TriggerZone myTrigger = other.GetComponent<TriggerZone>();
+                if (myTrigger)
+                {
+                    myTrigger.ActiveTriggerZone(m_inventaire);
                 }
             }
         }

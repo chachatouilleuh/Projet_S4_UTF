@@ -14,29 +14,32 @@ public class TriggerZone : MonoBehaviour, ITriggerZone
     [SerializeField, Tooltip("la clé la")] 
     private KeyType m_key;
 
-    private void OnTriggerEnter(Collider other)
+    [SerializeField, Tooltip("tu as la sonde ou po ?")]
+    private bool m_probeNeeded;
+
+    private void OnTriggerStay(Collider other)
     {
         if ((m_layer.value & (1 << other.gameObject.layer)) > 0)
         {
-            m_triggeredEvent.Chouck();
+            if (m_probeNeeded)
+            {
+                m_triggeredEvent.Chouck();
+                // m_probeNeeded = false;
+            }
         }
     }
 
-    public bool ActiveTriggerZone(out KeyType o_triggerZone)
+    public void ActiveTriggerZone(List<KeyType> p_playerProbes)
     {
-        bool keyCheck = false;
-
-        if (m_key == null)
+        if (m_key)
         {
-            Debug.Log("pas la clé ");
-        }
-        else
-        {
-            keyCheck = true;
-            Debug.Log("tu as la clé demandé");
+            if (p_playerProbes == null || !p_playerProbes.Contains(m_key))
+            {
+                Debug.Log($"La sonde {m_key.name} est nécessaire");
+                return;
+            }
         }
 
-        o_triggerZone = m_key;
-        return keyCheck;
+        m_probeNeeded = true;
     }
 }
