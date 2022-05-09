@@ -21,7 +21,7 @@ public class CanvasManager : MonoBehaviour
                 OpenAccueil();
                 break;
             
-            case "UI INGAME":
+            case "Alpha":
                 OpenHUD();
                 break;
         }
@@ -44,7 +44,7 @@ public class CanvasManager : MonoBehaviour
                 }
                 break;
             
-            case "UI INGAME":
+            case "Alpha":
                 if (FirstPersonLook.m_isOption == false)
                 {
                     ResetLoreCanvas();
