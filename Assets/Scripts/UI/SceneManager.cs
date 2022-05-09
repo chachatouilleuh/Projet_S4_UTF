@@ -17,7 +17,7 @@ public class SceneManager : MonoBehaviour
     
     public void OpenGameScene()
     {
-        UnityEngine.SceneManagement.SceneManager.LoadScene (sceneName:"UI INGAME");
+        UnityEngine.SceneManagement.SceneManager.LoadScene (sceneName:"Alpha");
     }
 
     public void QuitApplication()

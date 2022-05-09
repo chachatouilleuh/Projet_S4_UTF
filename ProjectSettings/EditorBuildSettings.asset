@@ -17,10 +17,13 @@ EditorBuildSettings:
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/3cProto.unity
     guid: b7bf80a032216104a97703931a482512
   - enabled: 1
+    path: Assets/Scenes/Alpha.unity
+    guid: 668785b6d17f2a54392ef0e65e9d899e
+  - enabled: 0
     path: Assets/Scenes/UI INGAME.unity
     guid: 10db9f976ffc70342bfe9378027d5d0e
   m_configObjects:
