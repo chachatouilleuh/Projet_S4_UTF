@@ -130,14 +130,14 @@ public class Pick_Object : MonoBehaviour
         {
             m_infoDropthrow.SetActive(false);
         }
-
-        if (m_isHolding)
-        {
-            GetComponent<Jump>().enabled = false;
-        }
-        else
-        {
-            GetComponent<Jump>().enabled = true;
-        }
+        //
+        // if (m_isHolding)
+        // {
+        //     GetComponent<Jump>().enabled = false;
+        // }
+        // else
+        // {
+        //     GetComponent<Jump>().enabled = true;
+        // }
     }
 }
