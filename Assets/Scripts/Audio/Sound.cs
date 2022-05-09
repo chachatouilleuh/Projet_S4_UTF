@@ -13,7 +13,7 @@ public class Sound
     //[SerializeField, Tooltip("le nom du sfx en question"), Range(0f,1f )] private float volume;
     public float volume;
 
-    public AudioMixerGroup audioMixer;
+    public static AudioMixerGroup audioMixer;
 
     [HideInInspector]
     public AudioSource source;

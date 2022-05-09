@@ -12,7 +12,7 @@ public class AudioManager : MonoBehaviour
             s.source = gameObject.AddComponent<AudioSource>();
             s.source.clip = s.clip;
             s.source.volume = s.volume;
-            s.source.outputAudioMixerGroup = s.audioMixer;
+            s.source.outputAudioMixerGroup = Sound.audioMixer;
         }
     }
 
@@ -20,5 +20,11 @@ public class AudioManager : MonoBehaviour
     {
         Sound s = Array.Find(l_sounds, sounds => sounds.objectName == name);
         s.source.Play();
+    }
+
+    public void Stop(string name)
+    {
+        Sound s = Array.Find(l_sounds, sounds => sounds.objectName == name);
+        s.source.Stop();
     }
 }

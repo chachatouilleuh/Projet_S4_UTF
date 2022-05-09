@@ -2,15 +2,17 @@ using UnityEngine;
 
 public class TriggerSound : MonoBehaviour
 {
-    [SerializeField, Tooltip("la source audio du trigger")]private AudioSource audiosource;
-
+    private AudioSource m_audiosourceTrigger;
+    [SerializeField, Tooltip("le sfx open hud a jouer")] private AudioClip m_clipToPlay;
+    
     [SerializeField, Tooltip("le son est deja joue")] private bool alreadyPlayed;
     
     [SerializeField, Tooltip("layer du player")] private LayerMask m_playerLayer;
     
     private void Start()
     {
-        audiosource.Stop();
+        m_audiosourceTrigger = gameObject.GetComponent<AudioSource>();
+        //m_audiosourceTrigger.outputAudioMixerGroup = Sound.audioMixer;
         alreadyPlayed = false;
     }
     
@@ -18,7 +20,7 @@ public class TriggerSound : MonoBehaviour
     {
         if ((m_playerLayer.value & (1 << other.gameObject.layer)) > 0 && !alreadyPlayed)
         {
-            audiosource.Play();
+            m_audiosourceTrigger.PlayOneShot(m_clipToPlay);
             alreadyPlayed = true;
         }
     }
