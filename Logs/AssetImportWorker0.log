@@ -1072,3 +1072,4 @@ Received Import Request.
 Start importing Assets/Meshes/Stalagtite_Petite_LD.fbx using Guid(392eb0392eec9f749bef3cb784929c01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'af2649c609431b20abefa13232ef9093') in 0.025342 seconds 
   Import took 0.031548 seconds .
 
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
