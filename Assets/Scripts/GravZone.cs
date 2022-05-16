@@ -47,26 +47,34 @@ public class GravZone : MonoBehaviour
         if (m_noForce)
         {
             other.attachedRigidbody.useGravity = false;
+        }
+        if (m_plusX || m_plusZ || m_minusX || m_minusZ)
+        {
             if ((m_playerLayer.value & (1 << other.gameObject.layer)) > 0)
             {
                 other.gameObject.GetComponent<FirstPersonMovement>().enabled = false;
             }
         }
-
-
+    
+    
     }
-
+    
     private void OnTriggerExit(Collider other)
     {
         if (m_noForce)
         {
             other.attachedRigidbody.useGravity = true;
+ 
+        }
+        if (m_plusX || m_plusZ || m_minusX || m_minusZ)
+        {
             if ((m_playerLayer.value & (1 << other.gameObject.layer)) > 0)
             {
+                Debug.Log("oui");
                 other.gameObject.GetComponent<FirstPersonMovement>().enabled = true;
             }
         }
-
+    
     }
     
     private static int Truth(params bool[] booleans)
