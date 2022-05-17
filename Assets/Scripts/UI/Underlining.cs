@@ -15,7 +15,7 @@ public class Underlining : MonoBehaviour
 
     // Les langues & soustitres
     public static int m_lang;
-    [SerializeField, Tooltip("subtitles on/off")] private int m_sub;
+    public static int m_sub;
 
     private bool m_double;
 
@@ -32,6 +32,7 @@ public class Underlining : MonoBehaviour
     private void Update()
     {
         m_lang = PlayerPrefs.GetInt("lang");
+        m_sub = PlayerPrefs.GetInt("sub");
     }
 
   
@@ -136,7 +137,7 @@ public class Underlining : MonoBehaviour
         else
         {
             PlayerPrefs.SetInt("sub", 0);
-        } 
+        }
         
         m_sub = PlayerPrefs.GetInt("sub");
     }

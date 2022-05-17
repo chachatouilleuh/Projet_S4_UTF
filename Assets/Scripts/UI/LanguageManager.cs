@@ -14,13 +14,9 @@ public class LanguageManager : MonoBehaviour
     {
         m_language = Underlining.m_lang;
         
-        if (m_language >= 0 || m_language <= 1)
+        if (m_language == 0 || m_language == 1)
         {
             LocalizationSettings.SelectedLocale = LocalizationSettings.AvailableLocales.Locales[m_language]; 
-        }
-        else
-        {
-            throw new NotImplementedException();
         }
     }
 }
