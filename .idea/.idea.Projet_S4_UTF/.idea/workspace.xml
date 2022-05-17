@@ -6,31 +6,20 @@
   <component name="ChangeListManager">
     <list default="true" id="0fc66d80-fe43-4822-bfa1-f1116b040ede" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Projet_S4_UTF/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Projet_S4_UTF/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AddressableAssetsData/AddressableAssetSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddressableAssetsData/AddressableAssetSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Localisation/Tables/UI Text Shared Data.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Localisation/Tables/UI Text Shared Data.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Packages/TextMesh Pro/Fonts/LiberationSans SDF - Fallback.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Packages/TextMesh Pro/Fonts/LiberationSans SDF - Fallback.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Triggerdialogue.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Triggerdialogue.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/Dialogue.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/Dialogue.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddressableAssetsData/DefaultObject.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddressableAssetsData/DefaultObject.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Alpha.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Alpha.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/DialogueManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/DialogueManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/LanguageManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/LanguageManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/LaunchAnim.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/LaunchAnim.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/Underlining.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Underlining.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/ApiUpdaterCheck.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/ApiUpdaterCheck.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Logs/AssetImportWorker0-prev.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/AssetImportWorker0-prev.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/AssetImportWorker0.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/AssetImportWorker0.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/AssetImportWorker0.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-AssetImportWorker0.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/shadercompiler-AssetImportWorker0.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe0.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe1.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe2.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe3.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe4.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe5.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe6.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe7.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.probuilder/Settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.probuilder/Settings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TimelineSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TimelineSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe0.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe0.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe1.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe1.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe2.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe2.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe3.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe3.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe4.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe4.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe5.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe5.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe6.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe6.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe7.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe7.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -116,6 +105,7 @@
       <workItem from="1650527742771" duration="289000" />
       <workItem from="1652779703632" duration="1561000" />
       <workItem from="1652781554258" duration="18040000" />
+      <workItem from="1652801564834" duration="3812000" />
     </task>
     <servers />
   </component>
