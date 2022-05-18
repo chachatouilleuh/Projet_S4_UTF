@@ -13,7 +13,7 @@ public class ShowHide : MonoBehaviour
 
     public void ShowOrHide()
     {
-        if (m_animator.GetBool("Up") == false )
+        if (m_animator.GetBool("Up") == false)
         {
             m_animator?.SetBool("Up", true);
         }
