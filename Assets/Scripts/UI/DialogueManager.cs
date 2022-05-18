@@ -25,7 +25,7 @@ public class DialogueManager : MonoBehaviour
         {
             //get one letter
             char letter = logTextBox.text[i];
-            sentence = logTextBox.text;
+            //sentence = logTextBox.text;
             
             //Actualize on screen
             //logTextBox.text += Unwrite(sentence);
@@ -36,6 +36,7 @@ public class DialogueManager : MonoBehaviour
             
             i++;
             StartCoroutine(PauseBetweenChars(letter));
+            
         }
     }
 
@@ -47,6 +48,7 @@ public class DialogueManager : MonoBehaviour
 
     private string Write(char letter)
     {
+        logTextBox.text = "";
         actualText += letter;
         return actualText;
     }
