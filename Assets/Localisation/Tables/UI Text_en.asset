@@ -22,6 +22,7 @@ MonoBehaviour:
     - id: 2
     - id: 3
     - id: 4
+    - id: 5
   m_TableData:
   - m_Id: 158794043392
     m_Localized: Press any key
@@ -89,7 +90,140 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 16639548248064
-    m_Localized: 
+    m_Localized: Menu
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5090037995458560
+    m_Localized: Load game
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5097741719752704
+    m_Localized: Planet
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5097786649137152
+    m_Localized: Probes
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5097850431918080
+    m_Localized: Records
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5098025799962624
+    m_Localized: Characters
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5524212933332992
+    m_Localized: 'Arcopa takes place in our real universe, it is ruled by the same
+      laws : life, death, stars and planets that gravitate around. However, the planet
+      Arcopa-8 is very different from Earth. This is a moon, orbiting around a gaseous
+      giant named Sigma-B113. Its high GEO orbit means that half of the planet is
+      perpetually in darkness.
+
+
+
+      The outward side of the planet alternates
+      between icy cold and extreme heat, which prevents life from developing there.
+
+
+
+      Therefore,
+      the part whose face is turned towards the planet is tempered, thanks to the
+      protection provided by the gaseous giant. Life has been able to develop there
+      richly whereas it is perpetually plunged into darkness. The only light that
+      can be found there comes from its flora, which has developed bioluminescent
+      properties.
+
+
+
+      The environment is mainly chaotic with large forests,
+      overhanging cliffs, caves and other rocky structures. Because of its orbit
+      (whose position fluctuates between being surrounded by its planet, its star,
+      and the void) there are many gravitational anomalies. They can manifest themselves
+      by the presence of underground lakes and levitating waters.'
+    m_Metadata:
+      m_Items:
+      - id: 5
+  - m_Id: 7342848648024064
+    m_Localized: empty
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7356427241656320
+    m_Localized: left click to pick-up
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7357730990723072
+    m_Localized: left click to drop
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7357957009182720
+    m_Localized: right click to throw
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7361547371155456
+    m_Localized: Not a single probe collected yet.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7396911318175744
+    m_Localized: Evelyn Harper
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7397017849303040
+    m_Localized: Hawking
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7397065899249664
+    m_Localized: Chimaeras
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7399548889468928
+    m_Localized: Unknown
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7403557767483392
+    m_Localized: "Complete Name:.......Evelyn Harper.\r\nAge: \u2026\u2026\u2026\u2026\u2026\u2026\u2026.....34
+      years old.\r\nHeight: \u2026\u2026\u2026\u2026\u2026\u2026...174 cm.\r\nWeight:
+      \u2026\u2026\u2026\u2026\u2026\u2026.. 61 kg.\r\nGender: \u2026..................Female.\r\n\rSpecies:
+      \u2026..................Human.\r\n\r\nBonds & Rivalries:\r\nShe has no particular
+      ties, nor any rivals.\r\n\r\nLikes & Dislikes:\r\nShe loves to study living
+      things, wants to know everything about them, and she loathes failing to understand
+      things.\r\n\r\nMotivations & Goals:\r\nShe wants to make biological discoveries,
+      going to the farthest reaches of the galaxy to find species that can advance
+      humanity.\r\n\r\nStrengths & Flaws:\r\nShe always keeps a cool head in order
+      to understand a situation before letting her survival instinct guide her.\r\n\r\nWorst
+      Nightmares:\r\nTo die without having accomplished anything.\r\n\r\nMotto:\n
+      \"If it lives, I have to analyze it !"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7411555386658816
+    m_Localized: "Complete Name: \u2026..H0.K1N.G1-942, abbreviated \u201CHawking\u201D.\r\nAge:
+      \u2026\u2026\u2026\u2026\u2026\u2026\u2026.... 2 years old.\r\nHeight:  \u2026\u2026\u2026\u2026\u2026\u2026.
+      50 cm.\r\nWeight: \u2026\u2026\u2026\u2026\u2026\u2026. 16 kg.\r\nGender: \u2026..................Male
+      voice.\r\n\rSpecies: \u2026.................Robot.\r\n\nBonds & Rivalries:\r\nIt
+      is a robot created by a corporation to assist the people with whom it is associated,
+      so it has no rival.\r\n\r\nLikes & Dislikes:\r\nHe enjoys solving complex problems,
+      and does not like to deal with information that circumvents the laws of physics.\r\n\r\nMotivations
+      & Goals:\r\nHe is assigned to a mission, to help Evelyn in her research, his
+      goal is to retrieve the various information given to him, and to extract data
+      from it.\r\n\r\nStrengths & Flaws:\r\nHawking can analyze very large amounts
+      of data without any problems. However, it is moving slowly and is easy to catch
+      if it wants to flee.\r\n\r\nWorst Nightmares:\r\nBe turned off and be put away
+      in the back of a cupboard.\r\n\r\nMotto: \n \u201CI detect anomalies\u2026\u201D\r"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7418938095702016
+    m_Localized: "Complete Name:  \u2026.Unknown\r\nAge: \u2026\u2026\u2026\u2026\u2026\u2026\u2026.....Unknown\r\nHeight:
+      \u2026\u2026\u2026\u2026\u2026\u2026.. 300 cm on average\r\nWeight: \u2026\u2026\u2026...\u2026\u2026...180
+      kg on average\r\nGender: \u2026...................\rUnknown\n\rSpecies: \u2026..................Endemic
+      fauna of Arcopa-8.\r\n\r\nBonds & Rivalries:\r\nThey live in symbiosis with
+      the flora, but they violently attack anyone who damages their habitat.\r\n\r\nLikes
+      & Dislikes:\r\nThey like to play with their prey in groups, tormenting them
+      before finishing them off, they like to take remains back to their nests.\r\n\r\nMotivations
+      & Goals:\r\nCuriosity and understanding what it doesn\u2019t know.\r\n\r\nStrengths
+      & Flaws:\r\nApex predators, they are extremely powerful physically, and are
+      endowed with great intelligence as well as a capacity for reflection and mimicking.\r\n\r\nWorst
+      Nightmares:\r\nNest getting destroyed.\r\n\r\nMotto:\n\u201DAre these monsters
+      ?\u201D"
     m_Metadata:
       m_Items: []
   references:
@@ -114,3 +248,7 @@ MonoBehaviour:
       type: {class: SmartFormatTag, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
         m_Entries: 00d01c6ca60e0000
+    00000005:
+      type: {class: SmartFormatTag, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_Entries: 00108e0d3ea01300

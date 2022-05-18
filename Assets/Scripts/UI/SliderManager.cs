@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
-using UnityEngine.Rendering.PostProcessing;
+using UnityEngine.Rendering.Universal;
+using UnityEngine.Rendering;
 using UnityEngine.Audio;
 
 public class SliderManager : MonoBehaviour
@@ -9,9 +10,8 @@ public class SliderManager : MonoBehaviour
     [SerializeField, Tooltip("l'audio mixer de musique a mettre")] private AudioMixer m_audioMixer;
 
     // le post process pour la luminosite
-    [SerializeField, Tooltip("la camera qui a le post process")] private GameObject m_cam;
-    [SerializeField, Tooltip("le gameobject de post process a mettre")] private PostProcessVolume m_luminositySource;
-    [SerializeField, Tooltip("l'override de post process a mettre")] private ColorGrading m_colorGrading;
+    [SerializeField, Tooltip("le volume qui a le post process")] private GameObject m_volume;
+    private ColorAdjustments m_colorAdjustment;
 
     // les Sliders
     [SerializeField, Tooltip("le slider de la musique")] private Slider m_musicSlider;
@@ -26,11 +26,15 @@ public class SliderManager : MonoBehaviour
     private void Start()
     {
         // Je recupere le post process dans la camera et j'active sa modification
-        m_luminositySource = m_cam.GetComponent<PostProcessVolume>();
-        m_luminositySource.profile.TryGetSettings(out m_colorGrading);
-        m_colorGrading.enabled.value = true;
+        var m_luminositySource = m_volume.GetComponent<Volume>();
 
-        
+        if (m_luminositySource.profile.TryGet<ColorAdjustments>(out var colorAdjustment ))
+        {
+            colorAdjustment.postExposure.overrideState = true;
+            colorAdjustment.postExposure.value = 2f;
+            m_colorAdjustment = colorAdjustment;
+        }
+
         // Au lancement du jeu je vais recuperer les valeurs de mes sliders
         m_musicVolume = PlayerPrefs.GetFloat("music");
         m_sfxVolume = PlayerPrefs.GetFloat("sfx");
@@ -51,7 +55,7 @@ public class SliderManager : MonoBehaviour
         // Mes valeurs de volumes sont toujours egales a celles recuperees
         m_audioMixer.SetFloat("musicVolume", Mathf.Log10(m_musicVolume)*20);
         m_audioMixer.SetFloat("sfxVolume",Mathf.Log10(m_sfxVolume)*20);
-        m_colorGrading.postExposure.value = m_luminosity;
+        m_colorAdjustment.postExposure.value = m_luminosity;
         
 
         // Je remplace les valeurs recuperables
@@ -93,7 +97,7 @@ public class SliderManager : MonoBehaviour
     {
         PlayerPrefs.DeleteKey("luminosity");
 
-        m_colorGrading.postExposure.value = 0;
+        m_colorAdjustment.postExposure.value = 0;
         m_luminositySlider.value = 0;
     }
 }

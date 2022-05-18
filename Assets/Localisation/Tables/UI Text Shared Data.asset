@@ -76,7 +76,79 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 16639548248064
-    m_Key: new entry
+    m_Key: Menu
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5090037995458560
+    m_Key: Load
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5097741719752704
+    m_Key: Planet
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5097786649137152
+    m_Key: Probes
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5097850431918080
+    m_Key: Records
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5098025799962624
+    m_Key: Characters
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5524212933332992
+    m_Key: Arcopa Lore
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7342848648024064
+    m_Key: empty
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7356427241656320
+    m_Key: pick-up
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7357730990723072
+    m_Key: drop click
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7357957009182720
+    m_Key: throw click
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7361547371155456
+    m_Key: nothing collected
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7396911318175744
+    m_Key: Evelyn Harper
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7397017849303040
+    m_Key: Hawking
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7397065899249664
+    m_Key: Chimaeras
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7399548889468928
+    m_Key: Unknown
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7403557767483392
+    m_Key: Evelyn Lore
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7411555386658816
+    m_Key: Hawking Lore
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7418938095702016
+    m_Key: Chimaera Lore
     m_Metadata:
       m_Items: []
   m_Metadata:

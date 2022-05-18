@@ -1,5 +1,5 @@
+using Packages.Mini_First_Person_Controller.Scripts;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 [System.Serializable]
 public class SceneManager : MonoBehaviour
@@ -8,7 +8,8 @@ public class SceneManager : MonoBehaviour
     
     public void OpenMenuScene()
     {
-        UnityEngine.SceneManagement.SceneManager.LoadScene (sceneName:"MenuTest");
+        UnityEngine.SceneManagement.SceneManager.LoadScene (sceneName:"Menu");
+        FirstPersonLook.m_isOption = false;
     }
 
     public void OpenCredits()
@@ -18,9 +19,15 @@ public class SceneManager : MonoBehaviour
     
     public void OpenGameScene()
     {
-        UnityEngine.SceneManagement.SceneManager.LoadScene (sceneName:"Interaction");
+        UnityEngine.SceneManagement.SceneManager.LoadScene (sceneName:"Alpha");
+        FirstPersonLook.m_isOption = false;
     }
-    
+
+    public void QuitApplication()
+    {
+        Application.Quit();
+        PlayerPrefs.DeleteAll();
+    }
     //__________________________________________________________________//
     
     // RESET 

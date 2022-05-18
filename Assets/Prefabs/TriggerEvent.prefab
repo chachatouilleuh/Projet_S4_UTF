@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 4245884284111888031}
   - component: {fileID: 5252316306090547296}
   - component: {fileID: 1493990799930829571}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: TriggerEvent
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -354,3 +354,5 @@ MonoBehaviour:
   m_layer:
     serializedVersion: 2
     m_Bits: 8
+  m_key: {fileID: 0}
+  m_probeNeeded: 0

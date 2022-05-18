@@ -21,6 +21,7 @@ MonoBehaviour:
     - id: 1
     - id: 2
     - id: 3
+    - id: 4
   m_TableData:
   - m_Id: 158794043392
     m_Localized: Appuyez sur une touche
@@ -86,6 +87,138 @@ MonoBehaviour:
     m_Localized: Fermer
     m_Metadata:
       m_Items: []
+  - m_Id: 16639548248064
+    m_Localized: Menu
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5090037995458560
+    m_Localized: Charger partie
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5097741719752704
+    m_Localized: "Plan\xE8te"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5097786649137152
+    m_Localized: Sondes
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5097850431918080
+    m_Localized: Messages
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5098025799962624
+    m_Localized: Personnages
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5524212933332992
+    m_Localized: "Arcopa est r\xE9gie par les lois de notre univers, \xE0 savoir
+      : la vie, la mort, les \xE9toiles et les les plan\xE8tes qui gravitent tout
+      autour. Cependant, la plan\xE8te naine Arcopa-8 se diff\xE9rencie de la plan\xE8te
+      Terre. Il s'agit plus pr\xE9cis\xE9ment d'une lune parmi tant d'autres qui
+      orbitent autour de la g\xE9ante gazeuse Sigma B-113. Par ailleurs, son orbite
+      g\xE9ostationnaire a pour cons\xE9quence de la plonger dans l'obscurit\xE9
+      la plus totale.\n\nLes extr\xE9mit\xE9s de la plan\xE8te subissent des variations
+      climatiques extr\xEAmes, alternant entre fortes chaleurs et froid glacial.
+      Le d\xE9veloppement de la vie y est alors impossible.\n\nN\xE9anmoins, gr\xE2ce
+      \xE0 la protection g\xE9othermique de la g\xE9ante gazeuse, Arcopa-8 poss\xE8de
+      des zones temp\xE9r\xE9es. Malgr\xE9 l'obscurit\xE9 omnipr\xE9sente, la vie
+      a pu s'y d\xE9velopper. La flore a su s'adapter \xE0 cet environnement hostile
+      et a d\xE9velopp\xE9 des propri\xE9t\xE9s bioluminescentes.\n\nL'environnement
+      est principalement constitu\xE9 d'immenses for\xEAts primaires, de grottes,
+      de structures rocheuses ; le tout surplomb\xE9 par des falaises.  La gravit\xE9
+      fluctue anormalement, notamment \xE0 cause de son orbite qui alterne entre
+      le vide, Sigma-B113 et son \xE9toile. Il en r\xE9sulte la formation de cavit\xE9s
+      souterraines chaotiques, engendr\xE9es par des lacs visqueux en l\xE9vitation.  "
+    m_Metadata:
+      m_Items:
+      - id: 4
+  - m_Id: 7342848648024064
+    m_Localized: vide
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7356427241656320
+    m_Localized: clic gauche pour ramasser
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7357730990723072
+    m_Localized: "clic gauche pour l\xE2cher"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7357957009182720
+    m_Localized: clic droit pour lancer
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7361547371155456
+    m_Localized: "Aucune sonde r\xE9cup\xE9r\xE9e pour le moment."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7396911318175744
+    m_Localized: Evelyn Harper
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7397017849303040
+    m_Localized: Hawking
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7397065899249664
+    m_Localized: "Chim\xE8res"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7399548889468928
+    m_Localized: Inconnu
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7403557767483392
+    m_Localized: "Nom : \u2026...................Evelyn Harper.\r\n\xC2ge : \u2026\u2026\u2026\u2026\u2026\u2026\u2026.34
+      ans.\r\nTaille : \u2026\u2026\u2026\u2026....\u2026.1m74.\r\nPoids : \u2026\u2026\u2026\u2026\u2026\u2026.
+      61 kg.\r\nSexe : \u2026.................. F\xE9minin.\r\n\rRace : \u2026..................
+      Humaine.\r\n\r\nAlli\xE9s & rivaux :\r\nEvelyn n'a pas d'attaches en particulier,
+      que ce soit amicales ou raivales.\n\r\nPr\xE9f\xE9rences :\r\nEvelyn aime \xE9tudier
+      les organismes vivants pour en apprendre un maximum de choses. Elle d\xE9teste
+      lorsqu'elle ne les comprend pas. \n\r\nMotivations & objectifs :\r\nElle souhaite
+      faire des recherches biologiques, au point d'aller jusqu'au fin fond de la
+      galaxie pour d\xE9couvrir de nouvelles esp\xE8ces avanc\xE9es.\r\n\r\nForces
+      et faiblesses :\r\nElle garde toujours la t\xEAte froide pour \xE9valuer la
+      situation au lieu de se laisser emporter par ses instincs de survie.\n\r\nPires
+      cauchemars  :\r\nMourir sans avoir pu accomplir quoi que ce soit.\n\r\nLeitmotiv
+      :\n \"Si c'est vivant, il me faut l'analyser !\""
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7411555386658816
+    m_Localized: "Nom :  \u2026\u2026................H0.K1N.G1-942, abr\xE9g\xE9
+      \u201CHawking\u201D.\r\n\xC2ge : \u2026\u2026\u2026\u2026\u2026\u2026\u2026..2
+      ans.\r\nTaille :  \u2026\u2026\u2026\u2026\u2026\u2026.50 cm.\r\nPoids : \u2026\u2026\u2026\u2026\u2026\u2026.
+      16 kg.\r\nSexe : \u2026....................Voix masculine.\r\n\rRace : \u2026....................Robot.\r\n\r\nAlli\xE9s
+      & rivaux :\r\nCr\xE9\xE9 par une corporation, Hawking a \xE9t\xE9 design\xE9
+      pour aider ses futurs associ\xE9s, il n'a donc aucun rival.\n\r\nPr\xE9f\xE9rences
+      :\r\nIl appr\xE9cie r\xE9soudre des \xE9quations complexes, mais il est plut\xF4t
+      r\xE9tissant \xE0 l'id\xE9e de jouer avec les lois de la physique.\n\r\nMotivations
+      & objectifs :\r\nLa mission qui lui est assign\xE9e consiste \xE0 conforter
+      Evelyn Harper dans ses recherches. Son objectif est notamment focalis\xE9 sur
+      le traitement et la collecte de donn\xE9es.\r\n\r\nForces et faiblesses :\r\nHawkingpeut
+      facilement traiter une quantit\xE9 astronomique de donn\xE9es en un rien de
+      temps. Cependant, il se d\xE9place lentement, ce qui le rend vuln\xE9rable
+      en cas de fuite.\r\n\r\nPires cauchemars  :\r\n\xCAtre \xE9teint de force puis
+      \xEAtre jet\xE9 au fond d'un placard.\n\r\nLeitmotiv :\n \u201CAnomalie d\xE9tect\xE9e\u2026\u201D\r"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7418938095702016
+    m_Localized: "Nom :  ......................Inconnu\n\xC2ge : \u2026\u2026\u2026\u2026\u2026\u2026\u2026.Inconnu\nTaille 
+      \u2026\u2026\u2026\u2026\u2026\u2026..3m environ\nPoids : \u2026\u2026\u2026...........180
+      kg environ\nSexe :\u2026...................\r.Inconnu\n\rRace : \u2026...................Faune
+      end\xE9mique d'Arcopa-8.\r\n\r\nAlli\xE9s & rivaux :\r\nLes chim\xE8res vivent
+      en symbiose avec la flore et n'h\xE9sitent pas \xE0 attaquer quiconque souihaitant
+      d\xE9truire leur habitat.\r\n\r\nPr\xE9f\xE9rences :\r\nElles chassent leur
+      proie en meute, en cherchant \xE0 les tourmenter jusqu'\xE0 l'\xE9puisement.
+      Elles aiment rapporter les restes dans leur tani\xE8re.\n\nMotivations & objectifs
+      :\r\nLa curiosit\xE9 et la soif de savoir inconnu.\r\n\r\nForces et faiblesses
+      :\r\nPr\xE9dateurs ultimes, les chim\xE8res sont dot\xE9es d'une force extraordinaire,
+      d'une grande intelligence ainsi que de la capacit\xE9 d'imiter et de refl\xE9ter
+      son environnement.\r\n\nPires cauchemars  :\r\nLa destruction de leur tani\xE8re.\n\r\nLeitmotiv
+      :\n\u201DCe sont des monstres ?\u201D"
+    m_Metadata:
+      m_Items: []
   references:
     version: 1
     00000000:
@@ -104,3 +237,7 @@ MonoBehaviour:
       type: {class: SmartFormatTag, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
         m_Entries: 00d01c6ca60e0000
+    00000004:
+      type: {class: SmartFormatTag, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_Entries: 00108e0d3ea01300

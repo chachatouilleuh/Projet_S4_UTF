@@ -1,5 +1,19 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!244 &-9146521948477354439
+AudioMixerEffectController:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  m_EffectID: 5edee2da9d7d9d841a360d96abca5c7a
+  m_EffectName: Attenuation
+  m_MixLevel: 740d7ccf0a6d12742be2043271d28f38
+  m_Parameters: []
+  m_SendTarget: {fileID: 0}
+  m_EnableWetMix: 0
+  m_Bypass: 0
 --- !u!243 &-7503986996335943215
 AudioMixerGroupController:
   m_ObjectHideFlags: 0
@@ -15,6 +29,25 @@ AudioMixerGroupController:
   m_Send: 00000000000000000000000000000000
   m_Effects:
   - {fileID: -440739731985394077}
+  m_UserColorIndex: 0
+  m_Mute: 0
+  m_Solo: 0
+  m_BypassEffects: 0
+--- !u!243 &-5456376786962142680
+AudioMixerGroupController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Voices
+  m_AudioMixer: {fileID: 24100000}
+  m_GroupID: 224f8d20fa1029448bc7e584087a849a
+  m_Children: []
+  m_Volume: 1ca40920d4477894b82122c758daa756
+  m_Pitch: fed1f81703ff62b40838ec0ad012daac
+  m_Send: 00000000000000000000000000000000
+  m_Effects:
+  - {fileID: -9146521948477354439}
   m_UserColorIndex: 0
   m_Mute: 0
   m_Solo: 0
@@ -74,6 +107,7 @@ AudioMixerController:
     - c410f98633011cf4781a1068318429ba
     - c27fbad04707ffd4f982d5a1a30c1102
     - 6fb8408a487f7da479d5ebb8cee7f986
+    - 224f8d20fa1029448bc7e584087a849a
     name: View
   m_CurrentViewIndex: 0
   m_TargetSnapshot: {fileID: 24500006}
@@ -89,6 +123,7 @@ AudioMixerGroupController:
   m_Children:
   - {fileID: -7503986996335943215}
   - {fileID: 7498302692019875478}
+  - {fileID: -5456376786962142680}
   m_Volume: 0081e48390cabf444ac13aef296866ee
   m_Pitch: 5c363d41495794140ae05fa357f0ccd7
   m_Send: 00000000000000000000000000000000
@@ -122,6 +157,7 @@ AudioMixerSnapshotController:
   m_AudioMixer: {fileID: 24100000}
   m_SnapshotID: 4f61ba205fafb6848b95cbce520a4fc3
   m_FloatValues:
+    1ca40920d4477894b82122c758daa756: 9.925883
     e3c77b8b2c701a64b90c87ceb436513b: 0
   m_TransitionOverrides: {}
 --- !u!243 &7498302692019875478

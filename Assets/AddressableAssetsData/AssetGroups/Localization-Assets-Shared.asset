@@ -20,7 +20,8 @@ MonoBehaviour:
   - m_GUID: fe6eed3fc5b727a4ba2c1f9dfd35e83b
     m_Address: UI Text Shared Data
     m_ReadOnly: 0
-    m_SerializedLabels: []
+    m_SerializedLabels:
+    - Locale
     m_mainAssetType: UnityEngine.Localization.Tables.SharedTableData, Unity.Localization,
       Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
     m_MainAsset: {fileID: 0}

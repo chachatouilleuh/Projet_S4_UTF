@@ -1,38 +1,64 @@
-using System.Collections;
-using System.Collections.Generic;
+using Packages.Mini_First_Person_Controller.Scripts;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using UnityEngine.Serialization;
 
 public class CanvasManager : MonoBehaviour
 {
     //private SceneManager sceneManager;
 
-    [SerializeField, Tooltip("les canvas à assigner")] private GameObject Accueil, MainMenu, Options, LoadScreen, MenuIngame ;
-
-    private bool m_accueilOpen;
-    private bool m_mainMenuOpen, m_optionsOpen, m_loadScreenOpen, m_menuIngameOpen, m_optionsIngameOpen;
+    [SerializeField, Tooltip("les canvas à assigner")] private GameObject Accueil, MainMenu, Options, LoadScreen, HUD, HUDBlur, Planet, Probes, Records, Characters;
     
+    private bool m_accueilOpen, m_mainMenuOpen, m_optionsOpen, m_loadScreenOpen, m_optionsIngameOpen, m_hudOpen, m_planetOpen, m_probesOpen, m_recordsOpen, m_charactersOpen;
+    private Scene scene;
 
     // INITIALISE LES VALEURS
     private void Awake()
     {
-        OpenAccueil();
+        scene = UnityEngine.SceneManagement.SceneManager.GetActiveScene();
+        switch (scene.name)
+        {
+            case "Menu":
+                OpenAccueil();
+                break;
+            
+            case "Alpha":
+                OpenHUD();
+                break;
+        }
     }
 
     // OPEN/CLOSE CANVAS ACCORDING TO LANGUAGE SELECTION
 
     void Update()
     {
-        
-
-        if (m_accueilOpen)
+        switch (scene.name)
         {
-            if (Input.anyKey)
-            {
-                OpenAccueil();
-                OpenMainMenu();
-            }
+            case "Menu":
+                if (m_accueilOpen)
+                {
+                    if (Input.anyKey)
+                    {
+                        OpenAccueil();
+                        OpenMainMenu();
+                    }
+                }
+                break;
+            
+            case "Alpha":
+                if (FirstPersonLook.m_isOption == false)
+                {
+                    ResetLoreCanvas();
+                    HUDBlur.SetActive(false);
+                }
+                else if(m_optionsOpen)
+                {
+                    HUDBlur.SetActive(false); 
+                }
+                else
+                {
+                    HUDBlur.SetActive(true);
+                }
+                break;
         }
     }
     public void OpenAccueil()
@@ -92,19 +118,115 @@ public class CanvasManager : MonoBehaviour
         }
     }
     
-    public void OpenMenuIngame()
+    public void OpenHUD()
     {
-        if (!m_menuIngameOpen)
+        if (!m_hudOpen)
         {
-            MenuIngame.SetActive(true);
-            m_menuIngameOpen = true;
+            HUD.SetActive(true);
+            m_hudOpen = true;
         }
         else
         {
-            MenuIngame.SetActive(false);
-            m_menuIngameOpen = false;
+            HUD.SetActive(false);
+            m_hudOpen = false;
         }
     }
+    public void OpenPlanet()
+    {
+        if (!m_planetOpen)
+        {
+            Planet.SetActive(true);
+            Probes.SetActive(false);
+            Records.SetActive(false);
+            Characters.SetActive(false);
+            
+            m_planetOpen = true;
+            m_probesOpen = false;
+            m_recordsOpen = false;
+            m_charactersOpen = false;
+            
+        }
+        else
+        {
+            Planet.SetActive(false);
+            m_planetOpen = false;
+        }
+    }
+    public void OpenProbes()
+    {
+        if (!m_probesOpen)
+        {
+            Planet.SetActive(false);
+            Probes.SetActive(true);
+            Records.SetActive(false);
+            Characters.SetActive(false);
+            
+            m_planetOpen = false;
+            m_probesOpen = true;
+            m_recordsOpen = false;
+            m_charactersOpen = false;
+        }
+        else
+        {
+            Probes.SetActive(false);
+            m_probesOpen = false;
+        }
+    }
+    public void OpenRecords()
+    {
+        if (!m_recordsOpen)
+        {
+            Planet.SetActive(false);
+            Probes.SetActive(false);
+            Records.SetActive(true);
+            Characters.SetActive(false);
+            
+            m_planetOpen = false;
+            m_probesOpen = false;
+            m_recordsOpen = true;
+            m_charactersOpen = false;
+        }
+        else
+        {
+            Records.SetActive(false);
+            m_recordsOpen = false;
+        }
+    }
+    public void OpenCharacters()
+    {
+        if (!m_charactersOpen)
+        {
+            Planet.SetActive(false);
+            Probes.SetActive(false);
+            Records.SetActive(false);
+            Characters.SetActive(true);
+            
+            m_planetOpen = false;
+            m_probesOpen = false;
+            m_recordsOpen = false;
+            m_charactersOpen = true;
+        }
+        else
+        {
+            Characters.SetActive(false);
+            m_charactersOpen = false;
+        }
+    }
+
+    public void ResetLoreCanvas()
+    {
+        Planet.SetActive(false);
+        Probes.SetActive(false);
+        Records.SetActive(false);
+        Characters.SetActive(false);
+
+        m_planetOpen = false;
+        m_probesOpen = false;
+        m_recordsOpen = false;
+        m_charactersOpen = false;
+    }
+    
+    
 
     // A voir si l'on fait une option différente
 

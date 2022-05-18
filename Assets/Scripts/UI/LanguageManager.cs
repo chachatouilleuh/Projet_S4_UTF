@@ -7,8 +7,6 @@ public class LanguageManager : MonoBehaviour
 {
     [SerializeField, Tooltip("la langue selectionee")] private int m_language;
     IEnumerator Start() {
-    
-        // ReSharper disable once HeapView.BoxingAllocation
         yield return LocalizationSettings.InitializationOperation;
     }
 

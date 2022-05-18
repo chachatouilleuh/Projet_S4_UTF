@@ -1,11 +1,6 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.Diagnostics;
 using System.Linq;
-using System.Security.Policy;
+using Packages.Mini_First_Person_Controller.Scripts;
 using UnityEngine;
-using UnityEngine.Serialization;
 using Debug = UnityEngine.Debug;
 
 public class GravZone : MonoBehaviour
@@ -26,14 +21,16 @@ public class GravZone : MonoBehaviour
     private bool m_plusZ;
     [SerializeField, Tooltip("Add force to -Z")]
     private bool m_minusZ;
-
-    [SerializeField, Tooltip("Force applied to rigidbody, about 15 to propel")]
-    private float m_intensity = 0f;
+    
+    public float m_intensity;
     
     [Header("Disabling gravity")]
     
     [SerializeField, Tooltip("Things are floating")]
     private bool m_noForce;
+
+    [SerializeField, Tooltip("layer player")]
+    private LayerMask m_playerLayer;
 
     private void OnTriggerStay(Collider other)
     {
@@ -47,12 +44,29 @@ public class GravZone : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (m_noForce) other.attachedRigidbody.useGravity = false;
+        if (m_noForce)
+        {
+            other.attachedRigidbody.useGravity = false;
+            if ((m_playerLayer.value & (1 << other.gameObject.layer)) > 0)
+            {
+                other.gameObject.GetComponent<FirstPersonMovement>().enabled = false;
+            }
+        }
+
+
     }
 
     private void OnTriggerExit(Collider other)
-    { 
-        if (m_noForce) other.attachedRigidbody.useGravity = true;
+    {
+        if (m_noForce)
+        {
+            other.attachedRigidbody.useGravity = true;
+            if ((m_playerLayer.value & (1 << other.gameObject.layer)) > 0)
+            {
+                other.gameObject.GetComponent<FirstPersonMovement>().enabled = true;
+            }
+        }
+
     }
     
     private static int Truth(params bool[] booleans)
@@ -62,12 +76,7 @@ public class GravZone : MonoBehaviour
     
     private void Start()
     {
-        if (Truth(m_noForce, m_plusX, m_minusX, m_plusY, m_minusY, m_plusZ, m_minusZ) > 1)
-        {
-            Debug.LogWarning($"{this}: Multiples properties are ticked");
-            return;
-        }
-        else if (Truth(m_noForce, m_plusX, m_minusX, m_plusY, m_minusY, m_plusZ, m_minusZ) < 1)
+        if (Truth(m_noForce, m_plusX, m_minusX, m_plusY, m_minusY, m_plusZ, m_minusZ) < 1)
         {
             Debug.LogWarning($"{this}: No property ticked");
             return;

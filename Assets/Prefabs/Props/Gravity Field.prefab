@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 6190789697353038590}
   - component: {fileID: 6190789697353038591}
   - component: {fileID: 6190789697353038587}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Gravity Field
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29,7 +29,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6190789697353038589}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -6.893272, y: -1.1959337, z: 11.696224}
+  m_LocalPosition: {x: -1.8932719, y: 3.8040662, z: 6.696224}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -162,55 +162,55 @@ MonoBehaviour:
   - m_Vertices: 0b0000000e00000012000000
   m_SharedTextures: []
   m_Positions:
-  - {x: 0, y: 0, z: 0}
-  - {x: 10, y: 0, z: 0}
-  - {x: 0, y: 10, z: 0}
-  - {x: 10, y: 10, z: 0}
-  - {x: 10, y: 0, z: 0}
-  - {x: 10, y: 0, z: -10}
-  - {x: 10, y: 10, z: 0}
-  - {x: 10, y: 10, z: -10}
-  - {x: 10, y: 0, z: -10}
-  - {x: 0, y: 0, z: -10}
-  - {x: 10, y: 10, z: -10}
-  - {x: 0, y: 10, z: -10}
-  - {x: 0, y: 0, z: -10}
-  - {x: 0, y: 0, z: 0}
-  - {x: 0, y: 10, z: -10}
-  - {x: 0, y: 10, z: 0}
-  - {x: 0, y: 10, z: 0}
-  - {x: 10, y: 10, z: 0}
-  - {x: 0, y: 10, z: -10}
-  - {x: 10, y: 10, z: -10}
-  - {x: 0, y: 0, z: -10}
-  - {x: 10, y: 0, z: -10}
-  - {x: 0, y: 0, z: 0}
-  - {x: 10, y: 0, z: 0}
+  - {x: -5, y: -5, z: 5}
+  - {x: 5, y: -5, z: 5}
+  - {x: -5, y: 5, z: 5}
+  - {x: 5, y: 5, z: 5}
+  - {x: 5, y: -5, z: 5}
+  - {x: 5, y: -5, z: -5}
+  - {x: 5, y: 5, z: 5}
+  - {x: 5, y: 5, z: -5}
+  - {x: 5, y: -5, z: -5}
+  - {x: -5, y: -5, z: -5}
+  - {x: 5, y: 5, z: -5}
+  - {x: -5, y: 5, z: -5}
+  - {x: -5, y: -5, z: -5}
+  - {x: -5, y: -5, z: 5}
+  - {x: -5, y: 5, z: -5}
+  - {x: -5, y: 5, z: 5}
+  - {x: -5, y: 5, z: 5}
+  - {x: 5, y: 5, z: 5}
+  - {x: -5, y: 5, z: -5}
+  - {x: 5, y: 5, z: -5}
+  - {x: -5, y: -5, z: -5}
+  - {x: 5, y: -5, z: -5}
+  - {x: -5, y: -5, z: 5}
+  - {x: 5, y: -5, z: 5}
   m_Textures0:
-  - {x: 0, y: 0}
-  - {x: -10, y: 0}
-  - {x: 0, y: 10}
-  - {x: -10, y: 10}
-  - {x: 0, y: 0}
-  - {x: -10, y: 0}
-  - {x: 0, y: 10}
-  - {x: -10, y: 10}
-  - {x: 10, y: 0}
-  - {x: 0, y: 0}
-  - {x: 10, y: 10}
-  - {x: 0, y: 10}
-  - {x: 10, y: 0}
-  - {x: 0, y: 0}
-  - {x: 10, y: 10}
-  - {x: 0, y: 10}
-  - {x: 0, y: 0}
-  - {x: 10, y: 0}
-  - {x: 0, y: -10}
-  - {x: 10, y: -10}
-  - {x: 0, y: -10}
-  - {x: -10, y: -10}
-  - {x: 0, y: 0}
-  - {x: -10, y: 0}
+  - {x: 5, y: -5}
+  - {x: -5, y: -5}
+  - {x: 5, y: 5}
+  - {x: -5, y: 5}
+  - {x: 5, y: -5}
+  - {x: -5, y: -5}
+  - {x: 5, y: 5}
+  - {x: -5, y: 5}
+  - {x: 5, y: -5}
+  - {x: -5, y: -5}
+  - {x: 5, y: 5}
+  - {x: -5, y: 5}
+  - {x: 5, y: -5}
+  - {x: -5, y: -5}
+  - {x: 5, y: 5}
+  - {x: -5, y: 5}
+  - {x: -5, y: 5}
+  - {x: 5, y: 5}
+  - {x: -5, y: -5}
+  - {x: 5, y: -5}
+  - {x: 5, y: -5}
+  - {x: -5, y: -5}
+  - {x: 5, y: 5}
+  - {x: -5, y: 5}
   m_Textures2: []
   m_Textures3: []
   m_Tangents:
@@ -350,7 +350,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 36fafa6840fc9a64fab622a0961ec90b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_plusX: 0
+  m_minusX: 0
+  m_plusY: 0
+  m_minusY: 0
+  m_plusZ: 0
+  m_minusZ: 0
+  m_intensity: 0
   m_noForce: 0
-  m_addForce: 0
-  m_invertForce: 0
-  m_force: 0
+  m_playerLayer:
+    serializedVersion: 2
+    m_Bits: 8

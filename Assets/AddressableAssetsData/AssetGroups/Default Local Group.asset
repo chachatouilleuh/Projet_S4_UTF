@@ -16,15 +16,7 @@ MonoBehaviour:
   m_Data:
     m_SerializedData: []
   m_GUID: 666a8cda95c91b34195ea3a33d1221c9
-  m_SerializeEntries:
-  - m_GUID: ffd4f2e46447a2c47beb0b186d84bd61
-    m_Address: Assets/Scenes/MenuTest_Profiles/Main Camera Profile.asset
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    m_mainAssetType: UnityEngine.Rendering.PostProcessing.PostProcessProfile, Unity.Postprocessing.Runtime,
-      Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-    m_MainAsset: {fileID: 0}
-    m_TargetAsset: {fileID: 0}
+  m_SerializeEntries: []
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: eacbb8a394492764aaa118df0cdf2ea5, type: 2}
   m_SchemaSet:
