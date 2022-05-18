@@ -20,6 +20,8 @@ public class Inventory : MonoBehaviour
 
         [SerializeField, Tooltip("inventaire")]
         public List<KeyType> m_inventaire = new List<KeyType>();
+        
+        [SerializeField, Tooltip("canvas affiché")] private GameObject m_infoCube;
 
         private void Update()
         {
@@ -39,6 +41,7 @@ public class Inventory : MonoBehaviour
                             {
                                 m_inventaire.Add(o_probes);
                                 Destroy(hit.transform.gameObject);
+                                m_infoCube.SetActive(false);
                             }
                         }
                     }

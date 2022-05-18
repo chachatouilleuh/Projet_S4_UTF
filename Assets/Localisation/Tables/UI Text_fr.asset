@@ -138,11 +138,11 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 7356427241656320
-    m_Localized: clic gauche pour ramasser
+    m_Localized: cliquer pour ramasser
     m_Metadata:
       m_Items: []
   - m_Id: 7357730990723072
-    m_Localized: "clic gauche pour l\xE2cher"
+    m_Localized: "cliquer pour l\xE2cher"
     m_Metadata:
       m_Items: []
   - m_Id: 7357957009182720

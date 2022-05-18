@@ -149,11 +149,11 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 7356427241656320
-    m_Localized: left click to pick-up
+    m_Localized: click to pick-up
     m_Metadata:
       m_Items: []
   - m_Id: 7357730990723072
-    m_Localized: left click to drop
+    m_Localized: click to drop
     m_Metadata:
       m_Items: []
   - m_Id: 7357957009182720
@@ -191,8 +191,8 @@ MonoBehaviour:
       going to the farthest reaches of the galaxy to find species that can advance
       humanity.\r\n\r\nStrengths & Flaws:\r\nShe always keeps a cool head in order
       to understand a situation before letting her survival instinct guide her.\r\n\r\nWorst
-      Nightmares:\r\nTo die without having accomplished anything.\r\n\r\nMotto:\n
-      \"If it lives, I have to analyze it !"
+      Nightmares:\r\nTo die without having accomplished anything.\r\n\r\nMotto:\n\"If
+      it lives, I have to analyze it !"
     m_Metadata:
       m_Items: []
   - m_Id: 7411555386658816
