@@ -47,12 +47,16 @@ public class GravZone : MonoBehaviour
         if (m_noForce)
         {
             other.attachedRigidbody.useGravity = false;
+        }
+
+        if (m_minusX || m_minusZ || m_plusX || m_plusZ)
+        { 
             if ((m_playerLayer.value & (1 << other.gameObject.layer)) > 0)
             {
+                Debug.Log("oui");
                 other.gameObject.GetComponent<FirstPersonMovement>().enabled = false;
             }
         }
-
 
     }
 
@@ -61,8 +65,12 @@ public class GravZone : MonoBehaviour
         if (m_noForce)
         {
             other.attachedRigidbody.useGravity = true;
+        }
+        if (m_minusX || m_minusZ || m_plusX || m_plusZ)
+        {
             if ((m_playerLayer.value & (1 << other.gameObject.layer)) > 0)
             {
+                Debug.Log("non");
                 other.gameObject.GetComponent<FirstPersonMovement>().enabled = true;
             }
         }
