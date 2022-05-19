@@ -358,3 +358,6 @@ MonoBehaviour:
   m_minusZ: 0
   m_intensity: 0
   m_noForce: 0
+  m_playerLayer:
+    serializedVersion: 2
+    m_Bits: 8
