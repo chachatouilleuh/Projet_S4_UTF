@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 7320306334300234702}
   - component: {fileID: 5924811069268618347}
   - component: {fileID: 8493189728397301921}
+  - component: {fileID: -1725970170353290079}
   m_Layer: 0
   m_Name: Ceiling tile
   m_TagString: Untagged
@@ -81,3 +82,17 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &-1725970170353290079
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7988580342756915572}
+  m_Material: {fileID: 13400000, guid: 8e23f725ec0b2de4bb06d4efca9f2e86, type: 2}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -6325427625362556066, guid: 0ce2b7c67ccdbd24381df2af52d06783, type: 3}

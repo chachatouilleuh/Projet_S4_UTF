@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 7926749150737628241}
   - component: {fileID: 6462282627450106868}
   - component: {fileID: 9100178933525481278}
+  - component: {fileID: 4832122215956739136}
   m_Layer: 0
   m_Name: Bended Wall Tile
   m_TagString: Untagged
@@ -81,3 +82,17 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &4832122215956739136
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7298831921762019051}
+  m_Material: {fileID: 13400000, guid: 8e23f725ec0b2de4bb06d4efca9f2e86, type: 2}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 3757928975130107571, guid: 1937139b90b73b2428a9b969bd8ec73a, type: 3}
