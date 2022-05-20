@@ -6,9 +6,9 @@ public class CanvasManager : MonoBehaviour
 {
     //private SceneManager sceneManager;
 
-    [SerializeField, Tooltip("les canvas à assigner")] private GameObject Accueil, MainMenu, Options, LoadScreen, HUD, HUDBlur, Planet, Probes, Records, Characters;
+    [SerializeField, Tooltip("les canvas à assigner")] private GameObject Accueil, MainMenu, Options, LoadScreen, HUD, HUDBlur, HUDBroken, HUDBrokenInside, Planet, Probes, Records, Characters;
     
-    private bool m_accueilOpen, m_mainMenuOpen, m_optionsOpen, m_loadScreenOpen, m_optionsIngameOpen, m_hudOpen, m_planetOpen, m_probesOpen, m_recordsOpen, m_charactersOpen;
+    private bool m_accueilOpen, m_mainMenuOpen, m_optionsOpen, m_loadScreenOpen, m_hudOpen, m_planetOpen, m_probesOpen, m_recordsOpen, m_charactersOpen;
     private Scene scene;
 
     // INITIALISE LES VALEURS
@@ -49,10 +49,20 @@ public class CanvasManager : MonoBehaviour
                 {
                     ResetLoreCanvas();
                     HUDBlur.SetActive(false);
+                    if (SetActiveTrigger.m_isbroken)
+                    {
+                        HUDBroken.SetActive(true);
+                        HUDBrokenInside.SetActive(false);
+                    }
                 }
                 else if(m_optionsOpen)
                 {
-                    HUDBlur.SetActive(false); 
+                    HUDBlur.SetActive(false);
+                    if (SetActiveTrigger.m_isbroken)
+                    {
+                        HUDBroken.SetActive(false);
+                        HUDBrokenInside.SetActive(true);
+                    }
                 }
                 else
                 {
@@ -244,59 +254,6 @@ public class CanvasManager : MonoBehaviour
     //    }
     //}
 
-    //__________________________________________________________________//
 
-    // CHECKPOINT
 
-    //public int checkpoint;
-
-    //private void Start()
-    //{
-    // Sauvegarde de valeurs entre scènes
-    // Checkpoint au niveau 1 au lancement du jeu
-
-    //checkpoint = PlayerPrefs.GetInt("level",1);
-    //PlayerPrefs.SetInt("level", 1);
-
-    //En fonction de la valeur du checkpoint, charger un canvas particulier
-
-    //     if(Accueil != null)
-    //     {
-    //         if(checkpoint == 1){
-    //             Accueil.SetActive(true);
-    //         }
-    //         else if (checkpoint == 2){
-    //             Niveau_2.SetActive(true);
-    //         }
-    //         else if (checkpoint == 3){
-    //             Niveau_3.SetActive(true);
-    //         }
-    //         else if (checkpoint == 4){
-    //             Niveau_4.SetActive(true);
-    //         }
-    //     }
-    //}
-
-    //__________________________________________________________________//
-
-    // BACK BUTTON
-
-    // public void BackButton()
-    // {
-    //     if (checkpoint == 2)
-    //     {
-    //         Accueil.SetActive(true);
-    //         CloseNiveau2();
-    //     }
-    //     else if (checkpoint == 3)
-    //     {
-    //         Accueil.SetActive(true);
-    //         CloseNiveau3();
-    //     }
-    //     else if (checkpoint == 4)
-    //     {
-    //         Accueil.SetActive(true);
-    //         CloseNiveau4();
-    //     }
-    // }
 }
