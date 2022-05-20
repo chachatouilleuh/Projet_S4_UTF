@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 5497732228705616855}
   - component: {fileID: 5497732228705616854}
   - component: {fileID: 5497732228705616853}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: Gravity_High_push
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4816,7 +4816,7 @@ GameObject:
   - component: {fileID: 8063683013541912046}
   - component: {fileID: 8551870574077287368}
   - component: {fileID: 7236855282786378695}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: Gravity_High_push
   m_TagString: Untagged
   m_Icon: {fileID: 0}

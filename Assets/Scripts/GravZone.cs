@@ -32,6 +32,9 @@ public class GravZone : MonoBehaviour
     [SerializeField, Tooltip("layer player")]
     private LayerMask m_playerLayer;
 
+    [SerializeField, Tooltip("fx lié")] 
+    private ParticleSystem m_particlesSystem;
+
     private void OnTriggerStay(Collider other)
     {
         if (m_plusX) other.attachedRigidbody.AddForce(Vector3.right * m_intensity);

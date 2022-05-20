@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 5683356222517027357}
   - component: {fileID: 2689219078314305856}
   - component: {fileID: 6555402077759964413}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: Gravity_spin
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4833,7 +4833,7 @@ GameObject:
   - component: {fileID: 8657312651988670382}
   - component: {fileID: 8657312651988670383}
   - component: {fileID: 8657312651988670376}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: Gravity_spin
   m_TagString: Untagged
   m_Icon: {fileID: 0}
