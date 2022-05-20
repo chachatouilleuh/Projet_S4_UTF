@@ -3,11 +3,13 @@ using UnityEngine;
 public class TriggerSound : MonoBehaviour
 {
     private AudioSource m_audiosourceTrigger;
+    
+    [SerializeField, Tooltip("layer du player")] private LayerMask m_playerLayer;
     [SerializeField, Tooltip("le sfx open hud a jouer")] private AudioClip m_clipToPlay;
     
     [SerializeField, Tooltip("le son est deja joue")] private bool alreadyPlayed;
     
-    [SerializeField, Tooltip("layer du player")] private LayerMask m_playerLayer;
+    
     
     private void Start()
     {

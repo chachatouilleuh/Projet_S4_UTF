@@ -22,7 +22,7 @@ public class SnapObjects : MonoBehaviour
     [SerializeField, Tooltip("animation de la plaque")]
     private Animator m_animator;
 
-    private string m_openTriggerName = "Active";
+    private string m_openTriggerName = "Activate";
     private int m_openHash;
 
     private void Awake()

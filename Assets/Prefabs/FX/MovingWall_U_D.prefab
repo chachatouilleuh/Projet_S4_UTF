@@ -1,0 +1,279 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1530013075512329313
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1530013075512329319}
+  - component: {fileID: 1530013075512329318}
+  - component: {fileID: 1530013075512329317}
+  - component: {fileID: 1530013075512329316}
+  - component: {fileID: 1530013075512329315}
+  m_Layer: 0
+  m_Name: MovingWall_U_D
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1530013075512329319
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1530013075512329313}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 17.69, y: 4.1, z: 54.59}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1530013076661373762}
+  - {fileID: 8025182893569437862}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1530013075512329318
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1530013075512329313}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d6ee375c01c3754092bcd25096894ee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MaxNumParticles: 30000
+  bounds:
+    m_Center: {x: 0, y: 0, z: 0}
+    m_Extent: {x: 0, y: 0, z: 0}
+  EnableDownscale: 0
+  DownscaleFactor: 0.99
+  timestep: 0.4735379
+  reflectionProbeSRP: {fileID: 0}
+  timeStepMax: 1
+  maxFramesInFlight: 3
+  simTimePerSec: 14.7
+  iterationsPerFrame: 6
+  gridResolution: 128
+  emitterDensity: 1
+  runSimulation: 1
+  solverParameters: {fileID: 1530013075512329316}
+  materialParameters: {fileID: 1530013075512329317}
+  containerSize: {x: 7.8266373, y: 6.834856, z: 1.3326539}
+  containerPos: {x: 8.82, y: 3.05, z: 57.29}
+  fluidInitialVelocity: {x: 0, y: 0, z: 0}
+  manipulatorManager: {fileID: 1530013075512329315}
+  sdfColliders: []
+  manipulators:
+  - {fileID: 1530013076661373763}
+  - {fileID: 8025182893569437861}
+  avgFrameRate: 0
+  deltaTime: 0
+  smoothDeltaTime: 0
+  forceTextureUpdate: 0
+  useFixedTimestep: 0
+--- !u!114 &1530013075512329317
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1530013075512329313}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9d9f4948168ee245b0a8e48922540ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  FluidMaterial: {fileID: 2100000, guid: 212140388bc74764ba19ea2bbe4ce94c, type: 2}
+  UpscaleMaterial: {fileID: 2100000, guid: 374557399a8cb1b499aee6a0cc226496, type: 2}
+  Color: {r: 0, g: 0.09115248, b: 0.103773594, a: 1}
+  ReflectionColor: {r: 1, g: 1, b: 1, a: 1}
+  SmoothnessOld: 0.96
+  Roughness: 0.1
+  Metalness: 0.3
+  Opacity: 100
+  Shadowing: 0
+  RefractionDistortion: 0
+  ParticleScale: 1.5
+  FoamIntensity: 0.124
+  FoamAmount: 0
+  BlurRadius: 0.1
+  BilateralWeight: 2.5
+  ObjectVersion: 2
+--- !u!114 &1530013075512329316
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1530013075512329313}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c41726db1b415f54e8b6014432341744, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Gravity: {x: 0, y: 0, z: 0}
+  FluidStiffness: 50.2
+  FluidStiffnessPower: 3
+  ParticleDensity: 0.31
+  MaximumVelocity: 2.26
+  Viscosity: 1
+--- !u!114 &1530013075512329315
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1530013075512329313}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fe820c5af7ce834bb279013a71dd089, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Elements: 0
+  ConstAdditionalData: []
+  ConstDataID: 
+--- !u!1 &1530013076661373761
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1530013076661373762}
+  - component: {fileID: 1530013076661373763}
+  m_Layer: 0
+  m_Name: ZibraLiquid Emitter 7
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1530013076661373762
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1530013076661373761}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 1.52, z: 0}
+  m_LocalScale: {x: 8.1337, y: 1.7470244, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1530013075512329319}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1530013076661373763
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1530013076661373761}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c2263de80c2afd4f991283956e5e954, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ConstAdditionalData: []
+  ManipType: 1
+  isInitialized: 0
+  AdditionalData: {x: 0, y: 0, z: 0, w: 0}
+  ParticlesPerSec: 2000
+  VelocityMagnitudeOld: 0
+  CustomEmitterTransformOld: {fileID: 0}
+  InitialVelocity: {x: 0, y: 0, z: 0}
+  PositionClampBehavior: 0
+  ObjectVersion: 2
+--- !u!1 &8025182893569437863
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8025182893569437862}
+  - component: {fileID: 8025182893569437861}
+  - component: {fileID: 8025182893569437860}
+  - component: {fileID: 8025182893569437867}
+  m_Layer: 0
+  m_Name: ZibraLiquid Force Field 9
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8025182893569437862
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8025182893569437863}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.31, y: 2.96, z: -0.22}
+  m_LocalScale: {x: 3.7917476, y: 0.50299513, z: 0.55282}
+  m_Children: []
+  m_Father: {fileID: 1530013075512329319}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8025182893569437861
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8025182893569437863}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ad548a36b2073645a9674dba048a263, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ConstAdditionalData: []
+  ManipType: 3
+  isInitialized: 0
+  AdditionalData: {x: 0, y: 1, z: 0, w: 1}
+  Type: 0
+  Shape: 1
+  Strength: 1
+  DistanceDecay: 0
+--- !u!65 &8025182893569437860
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8025182893569437863}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.049627, y: 2.840342, z: 2.2824688}
+  m_Center: {x: -0.072533496, y: -0.44348946, z: 0.2962359}
+--- !u!95 &8025182893569437867
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8025182893569437863}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 33079fbf3e026e6489b64905a34adaa1, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

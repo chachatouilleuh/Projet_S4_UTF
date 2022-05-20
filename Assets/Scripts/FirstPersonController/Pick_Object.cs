@@ -79,6 +79,8 @@ public class Pick_Object : MonoBehaviour
                     {
                         m_rigidbody.isKinematic = false;
                         m_collider.enabled = true;
+                        
+                        m_rigidbody.AddForce(m_hand.transform.forward * m_punch);
 
                         m_rigidbody = null;
                         m_collider = null;
@@ -88,37 +90,37 @@ public class Pick_Object : MonoBehaviour
                     }
                 }
             }
-            if (Input.GetMouseButtonDown(1))
-            {
-                if (Physics.Raycast(pickupRay, out hit, m_distanceDrop, m_collisionLayer))
-                {
-                    if (m_rigidbody)
-                    {
-                        // m_rigidbody.isKinematic = false;
-                        m_collider.enabled = true;
-
-                        m_rigidbody = null;
-                        m_collider = null;
-
-                        m_isHolding = false;
-                        m_infoDropthrow.SetActive(false);
-                    }
-                }
-                else
-                {
-                    m_rigidbody.isKinematic = false;
-                    m_collider.enabled = true;
-
-                    m_rigidbody.AddForce(m_hand.transform.forward * m_punch);
-
-                    m_rigidbody = null;
-                    m_collider = null;
-
-                    m_isHolding = false;
-                    m_infoDropthrow.SetActive(false);
-                }
-
-            }
+            // if (Input.GetMouseButtonDown(1))
+            // {
+            //     if (Physics.Raycast(pickupRay, out hit, m_distanceDrop, m_collisionLayer))
+            //     {
+            //         if (m_rigidbody)
+            //         {
+            //             // m_rigidbody.isKinematic = false;
+            //             m_collider.enabled = true;
+            //
+            //             m_rigidbody = null;
+            //             m_collider = null;
+            //
+            //             m_isHolding = false;
+            //             m_infoDropthrow.SetActive(false);
+            //         }
+            //     }
+            //     else
+            //     {
+            //         m_rigidbody.isKinematic = false;
+            //         m_collider.enabled = true;
+            //
+            //         m_rigidbody.AddForce(m_hand.transform.forward * m_punch);
+            //
+            //         m_rigidbody = null;
+            //         m_collider = null;
+            //
+            //         m_isHolding = false;
+            //         m_infoDropthrow.SetActive(false);
+            //     }
+            //
+            // }
 
             if (m_rigidbody)
             {
