@@ -25,6 +25,9 @@ public class SnapObjects : MonoBehaviour
     private string m_openTriggerName = "Activate";
     private int m_openHash;
 
+    [SerializeField, Tooltip("le vfx a jouer")]
+    private ParticleSystem Electricity;
+
     private void Awake()
     {
         if (m_animator == null)
@@ -50,6 +53,7 @@ public class SnapObjects : MonoBehaviour
                 m_activate = true;
                 m_animator?.SetTrigger(m_openHash);
                 other.GetComponent<Rigidbody>().isKinematic = true;
+                Electricity.Play();
             }
 
             Plate myPlates = GetComponent<Plate>();
