@@ -5,12 +5,7 @@ using UnityEngine;
 public class LaunchAnim : MonoBehaviour
 {
     [SerializeField, Tooltip("l'animator controller")] private Animator m_animatorToSet;
-    //private int m_animToHash;
-    
-    //private void Start()
-    //{
-    //    m_animToHash = Animator.StringToHash("Activated");
-    //}
+
 
     private void Update()
     {
