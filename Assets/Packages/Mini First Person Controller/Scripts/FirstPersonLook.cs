@@ -31,7 +31,7 @@ namespace Packages.Mini_First_Person_Controller.Scripts
         void Update()
         {
             // Get smooth velocity.
-            if (!m_isOption)
+            if (!m_isOption || Cutscene.m_isCutscene == false)
             {
                 Vector2 mouseDelta = new Vector2(Input.GetAxisRaw("Mouse X"), Input.GetAxisRaw("Mouse Y"));
                 Vector2 rawFrameVelocity = Vector2.Scale(mouseDelta, Vector2.one * sensitivity);
@@ -41,6 +41,7 @@ namespace Packages.Mini_First_Person_Controller.Scripts
                 transform.localRotation = Quaternion.AngleAxis(-velocity.y, Vector3.right);
                 character.localRotation = Quaternion.AngleAxis(velocity.x, Vector3.up);
             }
+            
             else
             {
                 transform.localRotation = Quaternion.AngleAxis(-velocity.y, Vector3.right);

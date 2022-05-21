@@ -4,8 +4,6 @@ using UnityEngine.Audio;
 
 public class TriggerSound : MonoBehaviour
 {
-    
-    
     [SerializeField, Tooltip("layer du player")] private LayerMask m_playerLayer;
     [SerializeField, Tooltip("le sfx a jouer")] private AudioMixerGroup m_audioMixer;
     [SerializeField, Tooltip("le sfx a jouer")] private AudioClip m_clipToPlay;

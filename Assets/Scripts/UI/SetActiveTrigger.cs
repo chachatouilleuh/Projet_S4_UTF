@@ -8,24 +8,26 @@ public class SetActiveTrigger : MonoBehaviour
     [SerializeField, Tooltip("le game object � activer / desactiver")] private GameObject m_objectToActivate;
 
     [SerializeField, Tooltip("les interrupteurs")] private bool m_interrupteurOn, m_isHUDBroken;
-
+    [SerializeField, Tooltip("le temps avant d'apparaitre/disparaitre")]private float m_waitBefore;
     public static bool m_isbroken;
 
 
 
-    private void OnTriggerEnter(Collider other)
+    IEnumerator OnTriggerEnter(Collider other)
     {
         if ((m_playerLayer.value & (1 << other.gameObject.layer)) > 0)
         {
             if (m_interrupteurOn)
             {
+                yield return new WaitForSeconds(m_waitBefore);
                 m_objectToActivate.SetActive(false);
-                m_interrupteurOn = false;
+                //m_interrupteurOn = false;
             }
             else
             {
+                yield return new WaitForSeconds(m_waitBefore);
                 m_objectToActivate.SetActive(true);
-                m_interrupteurOn = true;
+                //m_interrupteurOn = true;
             }
 
             if (m_isHUDBroken)
