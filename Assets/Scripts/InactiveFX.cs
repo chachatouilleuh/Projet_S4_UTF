@@ -11,12 +11,13 @@ public class InactiveFX : MonoBehaviour
     [SerializeField, Tooltip("active au lancement")]
     private bool m_activeFX;
     
-    private void Awake()
+    private void Start()
     {
         for (int i = 0; i < m_listFX.Count; i++)
         {
-            Debug.Log("5");
+            
             m_listFX[i].GetComponent<ParticleSystem>().Stop();
+            Debug.Log("5");
         }
     }
     
