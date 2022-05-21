@@ -5,11 +5,12 @@ using UnityEngine;
 public class SetActiveTrigger : MonoBehaviour
 {
     [SerializeField, Tooltip("layer du player")] private LayerMask m_playerLayer;
-    [SerializeField, Tooltip("le game object à activer / desactiver")] private GameObject m_objectToActivate;
+    [SerializeField, Tooltip("le game object ï¿½ activer / desactiver")] private GameObject m_objectToActivate;
 
     [SerializeField, Tooltip("les interrupteurs")] private bool m_interrupteurOn, m_isHUDBroken;
 
     public static bool m_isbroken;
+
 
 
     private void OnTriggerEnter(Collider other)

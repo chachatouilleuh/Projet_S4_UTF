@@ -19,7 +19,7 @@ public class SceneManager : MonoBehaviour
     
     public void OpenGameScene()
     {
-        UnityEngine.SceneManagement.SceneManager.LoadScene (sceneName:"Alpha");
+        UnityEngine.SceneManagement.SceneManager.LoadScene (sceneName:"Playtest");
         FirstPersonLook.m_isOption = false;
     }
 
