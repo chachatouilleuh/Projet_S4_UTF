@@ -23,6 +23,8 @@ MonoBehaviour:
     - id: 3
     - id: 4
     - id: 5
+    - id: 6
+    - id: 7
   m_TableData:
   - m_Id: 158794043392
     m_Localized: Press any key
@@ -191,8 +193,8 @@ MonoBehaviour:
       going to the farthest reaches of the galaxy to find species that can advance
       humanity.\r\n\r\nStrengths & Flaws:\r\nShe always keeps a cool head in order
       to understand a situation before letting her survival instinct guide her.\r\n\r\nWorst
-      Nightmares:\r\nTo die without having accomplished anything.\r\n\r\nMotto:\n
-      \"If it lives, I have to analyze it !"
+      Nightmares:\r\nTo die without having accomplished anything.\r\n\r\nMotto:\n\"If
+      it lives, I have to analyze it !"
     m_Metadata:
       m_Items: []
   - m_Id: 7411555386658816
@@ -226,6 +228,358 @@ MonoBehaviour:
       ?\u201D"
     m_Metadata:
       m_Items: []
+  - m_Id: 18674337182285824
+    m_Localized: '-Hawking : Hello Evelyn Harper, we just landed on the planet Arcopa-8.
+      I just woke you up from a cryogenic 22 light-year travel. Please stay calm
+      and save your energy for your mission. Let me remind you that you signed a
+      contract with the 3.S.A agency which binds you unconditionnally to accomplish
+      confidential tasks. Your main mission is to collect 3 probes that remain defective.
+      You have to find them and bring them back to me.
+
+      My name is Hawking
+      and It will be a pleasure to help you.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18674414437171200
+    m_Localized: '-Evelyn : Wow calm down, It''s a lot to take... I''m just waking
+      up'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18674857972236288
+    m_Localized: It seems to be the entrance of a big network of caves, but i go
+      any further, maybe I should set a camp here and rest for the night... I need
+      to warn Hawking.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18674832286318592
+    m_Localized: Okay, that's one out of 3 !
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18674816721256448
+    m_Localized: Here you are little probe
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18674797498761216
+    m_Localized: The gravity of this planet is definitely interesting
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18674772148387840
+    m_Localized: It looks really deep... and the other side is out of reach, How
+      can I cross that cliff ?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18674744138825728
+    m_Localized: Looks like a dead end, I'm sure I can find a way to climb that wall
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18674726535331840
+    m_Localized: '-Evelyn : I like these well equipped exosuits'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18674706201346048
+    m_Localized: '-Hawking : If it''s too dark, You can switch on and off your headlamp
+      by pressing E.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18674685951246336
+    m_Localized: '-Evelyn : Wow, that''s... that''s pretty dark here. I knew it but
+      didn''t expect that much... '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18674659036397568
+    m_Localized: '-Hawking : Good ! Let me open the doors.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18674612647395328
+    m_Localized: '-Evelyn : Okay, it''s now or never... Let''s go !'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18674592716062720
+    m_Localized: '-Hawking : Transfering data to your exosuit. Press Tab to activate
+      and deactivate your HUD. You can now start your mission, I''ll stay here.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18674560117932032
+    m_Localized: '-Evelyn : Hmm harder than I thought but better than nothing...
+      show me, I''ll do my best to find them all'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18674544448012288
+    m_Localized: '-Hawking : As I told you, no transmission is possible. Therefore,
+      I can give you the exact location of their initial landing areas. Is it convenient
+      for you?'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18674524399239168
+    m_Localized: '-Evelyn : Well, I''ve had better starts... but get straight to
+      the point please. can you locate the probes or any signal ?'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18674505646505984
+    m_Localized: '-Hawking : Sorry... I sometimes forget I''m not human. But you
+      also need to know that I''ve detected anomalies, we crossed an electromagnetic
+      forcefield which results in the impossibility of using frequency transmissions.
+      We can no longer get in touch with the 3.S.A. agency. We must accomplish this
+      mission on our own.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18675951200796672
+    m_Localized: 'Okay, I can''t hang around here... I gotta get back to camp fast
+      ! '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18675933425336320
+    m_Localized: That probe wasn't supposed to be here... maybe there are survivors
+      after all
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18675913787604992
+    m_Localized: Oh god... that's... pure evil... wh-what happend to them ?!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18675897459179520
+    m_Localized: I knew I could restore the power, but if there's still energy inside,
+      that means what happened here is all fresh
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18675881252388864
+    m_Localized: Looks like an abandoned basement, I clearly wasn't the first to
+      come here
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18675846557106176
+    m_Localized: What? How can this be there ? I thought I was the first human sent
+      on this planet
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18675827254919168
+    m_Localized: '-Hawking : I will stay here to analyze the environment, and more
+      specifically these flowers, I need to ascertain their anomalies.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18675793008427008
+    m_Localized: '-Evelyn : Alright !'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18675771005108224
+    m_Localized: '-Hawking : I''m not a 100% sure, but this signal has the same properties
+      as this probe.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18675755075141632
+    m_Localized: '-Evelyn : Hmm, didn''t you say "no transmission possible" earlier
+      ?'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18675732748861440
+    m_Localized: '-Hawking : The other initial landing areas couldn''t have been
+      inside these caves. However, I detect a very low probe signal from there.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18675712695894016
+    m_Localized: '-Evelyn : Thanks, should I know anything else ?'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18675694404534272
+    m_Localized: '-Hawking : Of course. Data transfer in progress... You can now
+      access the file in the "Probe" section of your HUD'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18675675232370688
+    m_Localized: '-Evelyn : I hope so... can you analyze this probe and tell me what''s
+      inside ? '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18675654348931072
+    m_Localized: '-Hawking : I''m invaluable, humans will fix that error, I don''t
+      want to be left in the closet.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18675635646529536
+    m_Localized: '-Evelyn : Okay, at least, humans will have work to do, if they
+      want to fix you'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18675611579613184
+    m_Localized: '-Hawking : My motion sensors are confused when gravity changes,
+      I always detect anomalies, I cannot calculate the exact force of these flowers'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18675588750016512
+    m_Localized: '-Evelyn : But you''re levitating, right'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18675566989967360
+    m_Localized: '-Hawking : I know i''m a robot, but i still hate when gravity is
+      fluctuating'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18677239909089280
+    m_Localized: '-Chimaera : *game ends with the words*    E V E L E E E N     E
+      V E L E E E N    P L E A  A S E   E V E L E E E N     E V E L E E E N    P
+      L E A  A S E*screen fades to black and we hear Evelyn agonizing scream*'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18677224507604992
+    m_Localized: '* Evelyn tries to break free but gets stabbed and cannot move anymore,
+      Mimic says words from different audios from the game*    '
+    m_Metadata:
+      m_Items:
+      - id: 7
+  - m_Id: 18677208502140928
+    m_Localized: '-Chimaera :  *with evelyn voice*   G E T   T O   T H E   S H I
+      P  G E T   T O   T H E   S H I P   ....       O F F     M E E E E  *extend
+      the E and end up screeching*'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18677189904596992
+    m_Localized: '*Chimaera pounces on Evelyn* Evelyn : *pained huffs under the weight* 
+      Urgh, get off me...!'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18677175287447552
+    m_Localized: ' -Evelyn : *blinds mimick with torch // whispering to herself*
+      I gotta get to the ship quick !  *Meanwhile Mimic screeches*'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18677150146789376
+    m_Localized: '-Chimaera :  *falls silent then with Evelyn''s voice with a high
+      pitched screech*      H A W K E E N     H A W K E E N '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18677134053244928
+    m_Localized: '-Evelyn : What the hell, is that Hawking''s voice ?'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18677119482232832
+    m_Localized: '-Chimaera :  *mimicking Evelyn''s voice*  T R Y I N G  *gurggles,
+      then mimicking Hawking*    S T  A Y   C A A A L M'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18677103082504192
+    m_Localized: '-Evelyn : *silence, then confused* Uh ?... *creeped out* Is it
+      trying to talk ?'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18677087932678144
+    m_Localized: '-Chimaera :  *strangle voice*     I T '' S   C O R E      *gurggling
+      noises sounding like ''IS'' ''*     ,,, M I S S...   I N G,,,'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18677074309578752
+    m_Localized: '-Evelyn : *inhales sharply / gasps in horror*'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18677060858445824
+    m_Localized: '-Chimaera : *ininetilligible gurgles* '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18677044269973504
+    m_Localized: 'Evelyn : *releived* Finally !'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18677011831226368
+    m_Localized: '-Evelyn : *urgent* Hawking ! I''m here ! *interact with Hawking''s
+      corpse*  Hawking ! Hey !... Are... Are you kidding me ? !Its core... is missing...!
+      *hears the folliage ruffle, the grunts of mimics behind* Damn it ! I... I gotta
+      get to the capsule !'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18676994861072384
+    m_Localized: '-Evelyn : *alarmed* Hawking ? Hawking ! Hang in there ! I''m on
+      my way ! *with urgency, to herself* I need to hurry up'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18676978838831104
+    m_Localized: '-Hawking : *screaming* Professor Harper ! Help ! No ! Please stop
+      it ! Professor Harp..;! Evelyn please ! No ! Not the...! Stop it ! *scream
+      dies out*'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18676964594974720
+    m_Localized: What is that ? It's moving real fast, they'll reach the camp before
+      I do
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18676941501136896
+    m_Localized: It's getting closer, I can feel it, common Evelyn, run !
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18676925529227264
+    m_Localized: It's the same sound from the records, I gotta get out of here
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18676909876084736
+    m_Localized: Oh oh, Maybe I shouldn't have done that, this is not gonna be good
+      !
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18676895313461248
+    m_Localized: 'I don''t have the choice I gotta cut the flowers to get to that
+      last probe... '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18676861113106432
+    m_Localized: It's too late, Hawking was right, I can feel the spores having an
+      effect on me !
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18676846323990528
+    m_Localized: Oh man ! the... the drop litterally broke my exosuit, I dont have
+      any other choice... I gotta continue without it...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18676832021413888
+    m_Localized: Argh my head... What is this place ? How long I've been here ?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18676817618173952
+    m_Localized: What ? The voices comes from under the lake !
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18676802980052992
+    m_Localized: I'm getting closer, I'm here, you're not alone, hold on !
+    m_Metadata:
+      m_Items:
+      - id: 6
+  - m_Id: 18676787192692736
+    m_Localized: Did you hear that ? There are survivors... I gotta go, I gotta go
+      find them, I'll be back, stay here!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18676769475952640
+    m_Localized: '-Hawking : Data transfer in progress... I can''t believe you a
+      100% because I discovered that the spores of the flowers can affect your metabolism,
+      I don''t know what effects it causes precisely, but it can be hallucinations...
+      Transfer completed.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18676750555447296
+    m_Localized: '-Evelyn : Take it ! ... You don''t believe me, do you ? I can prove
+      this, I found some records on the way, they''re a bit broken, but I''m telling
+      you I can hear human voices   '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18676731425226752
+    m_Localized: '-Hawking : Give me the probe, I will transfer the data to your
+      HUD.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18676713020620800
+    m_Localized: '-Evelyn :  I''m not ! I know what I saw, I can''t believe 3.S.A
+      fooled us... They knew, they had to know something... '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18676659098648576
+    m_Localized: '-Evelyn : Hawking, when I''ve been down there, I found... I found
+      another spaceship and a cold blood scene.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18676677469700096
+    m_Localized: '-Hawking : Impossible. the 3.S.A told us we were the first to come
+      here. You might be hallucinating.'
+    m_Metadata:
+      m_Items: []
   references:
     version: 1
     00000000:
@@ -252,3 +606,11 @@ MonoBehaviour:
       type: {class: SmartFormatTag, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
         m_Entries: 00108e0d3ea01300
+    00000006:
+      type: {class: SmartFormatTag, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_Entries: 00802a0f745a4200
+    00000007:
+      type: {class: SmartFormatTag, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_Entries: 00802a34d65a4200
