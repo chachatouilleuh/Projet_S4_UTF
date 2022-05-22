@@ -8,7 +8,7 @@ public class SetActiveTrigger : MonoBehaviour
     [SerializeField, Tooltip("le game object � activer / desactiver")] private GameObject m_objectToActivate;
 
     [SerializeField, Tooltip("les interrupteurs")] private bool m_interrupteurOn, m_isHUDBroken;
-    [SerializeField, Tooltip("le temps avant d'apparaitre/disparaitre")]private float m_waitBefore;
+    [SerializeField, Tooltip("le temps avant d'apparaitre/disparaitre")]private float m_waitBeforeShow;
     public static bool m_isbroken;
 
 
@@ -19,13 +19,13 @@ public class SetActiveTrigger : MonoBehaviour
         {
             if (m_interrupteurOn)
             {
-                yield return new WaitForSeconds(m_waitBefore);
+                yield return new WaitForSeconds(m_waitBeforeShow);
                 m_objectToActivate.SetActive(false);
                 //m_interrupteurOn = false;
             }
             else
             {
-                yield return new WaitForSeconds(m_waitBefore);
+                yield return new WaitForSeconds(m_waitBeforeShow);
                 m_objectToActivate.SetActive(true);
                 //m_interrupteurOn = true;
             }
