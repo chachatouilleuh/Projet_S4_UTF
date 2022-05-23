@@ -13,11 +13,9 @@ public class InactiveFX : MonoBehaviour
     
     private void Start()
     {
-        for (int i = 0; i < m_listFX.Count; i++)
+        if(!m_activeFX)
         {
-            
-            m_listFX[i].GetComponent<ParticleSystem>().Stop();
-            Debug.Log("5");
+            StartCoroutine(DelayStop());
         }
     }
     
@@ -36,6 +34,16 @@ public class InactiveFX : MonoBehaviour
             Debug.Log("5");
             m_listFX[i].GetComponent<ParticleSystem>().Stop();
                     
+        }
+    }
+    IEnumerator DelayStop()
+    {
+        yield return new WaitForSeconds(0.1f);
+
+        for (int i = 0; i < m_listFX.Count; i++)
+        {
+            m_listFX[i].GetComponent<ParticleSystem>().Stop();
+            Debug.Log("5");
         }
     }
 }
