@@ -71,8 +71,8 @@ MonoBehaviour:
   - m_From: Main Camera
     m_To: Cut2 Cam3
     m_Blend:
-      m_Style: 1
-      m_Time: 1
+      m_Style: 4
+      m_Time: 3
       m_CustomCurve:
         serializedVersion: 2
         m_Curve: []
@@ -82,7 +82,7 @@ MonoBehaviour:
   - m_From: Cut2 Cam3
     m_To: Cut2 Cam2
     m_Blend:
-      m_Style: 6
+      m_Style: 2
       m_Time: 3
       m_CustomCurve:
         serializedVersion: 2
@@ -93,7 +93,7 @@ MonoBehaviour:
   - m_From: Cut2 Cam2
     m_To: Cut2 Cam1
     m_Blend:
-      m_Style: 3
+      m_Style: 2
       m_Time: 3
       m_CustomCurve:
         serializedVersion: 2
@@ -101,10 +101,10 @@ MonoBehaviour:
         m_PreInfinity: 0
         m_PostInfinity: 0
         m_RotationOrder: 0
-  - m_From: Cut1 Cam1
+  - m_From: Cut2 Cam1
     m_To: Main Camera
     m_Blend:
-      m_Style: 5
+      m_Style: 3
       m_Time: 3
       m_CustomCurve:
         serializedVersion: 2
