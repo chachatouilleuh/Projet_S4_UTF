@@ -5,13 +5,13 @@ namespace Packages.Mini_First_Person_Controller.Scripts
     public class FirstPersonLook : MonoBehaviour
     {
         [SerializeField] Transform character;
-        public float sensitivity = 2;
-        public float smoothing = 1.5f;
+        [SerializeField, Tooltip("la sensibilité de la cam")] private float sensitivity = 2;
+        [SerializeField, Tooltip("la smoothness de la cam")] private float smoothing = 1.5f;
 
         [Tooltip("le mode option est activé ou non")]
         public static bool m_isOption;
+        
         [SerializeField, Tooltip("le canvas du pointeur à assigner")] private GameObject Pointeur;
-
         
         Vector2 velocity;
         Vector2 frameVelocity;
@@ -31,7 +31,7 @@ namespace Packages.Mini_First_Person_Controller.Scripts
         void Update()
         {
             // Get smooth velocity.
-            if (!m_isOption)
+            if (!m_isOption && Cutscene.m_isCutscene == false)
             {
                 Vector2 mouseDelta = new Vector2(Input.GetAxisRaw("Mouse X"), Input.GetAxisRaw("Mouse Y"));
                 Vector2 rawFrameVelocity = Vector2.Scale(mouseDelta, Vector2.one * sensitivity);
@@ -41,6 +41,7 @@ namespace Packages.Mini_First_Person_Controller.Scripts
                 transform.localRotation = Quaternion.AngleAxis(-velocity.y, Vector3.right);
                 character.localRotation = Quaternion.AngleAxis(velocity.x, Vector3.up);
             }
+            
             else
             {
                 transform.localRotation = Quaternion.AngleAxis(-velocity.y, Vector3.right);

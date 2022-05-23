@@ -10,6 +10,7 @@ public class FadeInOut : MonoBehaviour
     
     [SerializeField, Tooltip("le canvas noir de transition")] private MaskableGraphic m_blackCanvas ;
     [SerializeField, Tooltip("le temps de fade")]private float m_fadeTime;
+    [SerializeField, Tooltip("le temps d'attente")]private float m_waitBeforePlay;
     
     
     [SerializeField, Tooltip("fade est déjà joué")]private bool m_alreadyFaded;
@@ -18,7 +19,7 @@ public class FadeInOut : MonoBehaviour
     [SerializeField, Tooltip("le canvas des sous-titres")] private GameObject m_subtitleCanvas ;
     [SerializeField, Tooltip("le texte des sous-titres")] TMP_Text m_textToDisplay;
     
-    [SerializeField, Tooltip("le temps de fade")]private float m_subtitleTime;
+    [SerializeField, Tooltip("le temps d'apparition des sous-titres")]private float m_subtitleTime;
     [SerializeField, Tooltip("pause à chaque point")]private float dotPause;
     [SerializeField, Tooltip("pause à chaque virgule")]private float commaPause;
     [SerializeField, Tooltip("pause à chaque espace")]private float spacePause;
@@ -31,7 +32,7 @@ public class FadeInOut : MonoBehaviour
     private void Start()
     {
         m_subtitleCanvas.SetActive(false);
-        m_blackCanvas.CrossFadeAlpha(0, 1f, false);
+        m_blackCanvas.CrossFadeAlpha(0, m_fadeTime, false);
     }
     
     void Update()
@@ -59,8 +60,9 @@ public class FadeInOut : MonoBehaviour
             {
                 FadeIn();
             }
+            m_alreadyPlayed = true;
         }
-        m_alreadyPlayed = true;
+        
     }
     IEnumerator HideSubtitles()
     {
@@ -70,8 +72,8 @@ public class FadeInOut : MonoBehaviour
     
     IEnumerator FadeOut()
     {
-        yield return new WaitForSeconds(m_fadeTime);
-        m_blackCanvas.CrossFadeAlpha(0, 2.5f, false);
+        yield return new WaitForSeconds(m_waitBeforePlay);
+        m_blackCanvas.CrossFadeAlpha(0, m_fadeTime, false);
         m_alreadyFaded = true;
     }
     
@@ -83,7 +85,6 @@ public class FadeInOut : MonoBehaviour
 
     IEnumerator TypeSentence (string sentence){
         m_textToDisplay.text ="";
-        Debug.Log("je suis entré dans la fonction de typeSentence");
         foreach (char letter in sentence.ToCharArray()){
             m_textToDisplay.text += letter;
             yield return StartCoroutine(PauseBetweenChars(letter));
@@ -92,7 +93,6 @@ public class FadeInOut : MonoBehaviour
 
     private IEnumerator PauseBetweenChars(char letter)
     {
-        Debug.Log("je suis entré dans la fonction de pauses");
         switch (letter)
         {
             case '.':
