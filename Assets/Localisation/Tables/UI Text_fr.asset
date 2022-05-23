@@ -49,7 +49,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 15783062982656
-    m_Localized: 'volume effets sonores:'
+    m_Localized: 'Volume effets sonores:'
     m_Metadata:
       m_Items: []
   - m_Id: 15950566707200
@@ -581,6 +581,176 @@ MonoBehaviour:
   - m_Id: 18676659098648576
     m_Localized: "-Evelyn : Hawking, quand je suis all\xE9 l\xE0-bas, j'ai ... J'ai
       trouv\xE9 un autre vaisseau spatial et une sc\xE8ne gla\xE7ante."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18925025815789568
+    m_Localized: Il y a quelqu'un ?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18925255021920256
+    m_Localized: "Pourquoi je parle \xE0 voix haute ? C'est simple, je suis une biophysicienne
+      t\xE9m\xE9raire"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18925378363817984
+    m_Localized: Evelyn, t'es une femme forte, rien ne peut t'arriver
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18925491643580416
+    m_Localized: "Cette flore est \xE9trange, je devrais plut\xF4t m'en m\xE9fier"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18925587005276160
+    m_Localized: "Je sais pas si je trouve \xE7a plut\xF4t beau ou d\xE9gueu"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18925689514065920
+    m_Localized: "C'est fascinant de voir une telle bioluminescence malgr\xE9 l'absence
+      de lumi\xE8re"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18925833965895680
+    m_Localized: "Cette fleur a clairement une influence sur la gravit\xE9"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18926030867496960
+    m_Localized: Ces spores se comportent vraiment bizarrement
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18926126996750336
+    m_Localized: "On dirait que les spores sont attir\xE9es par quelque chose, comme
+      une \xE9trange force, \xE0 moins qu'elles soient vivantes"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18926227257393152
+    m_Localized: "J'vais clairement \xE9viter de respirer \xE7a !"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18926319972483072
+    m_Localized: "Qu-Quoi ?! C'est moi ou je m'envole l\xE0 ?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18926420199571456
+    m_Localized: "Arf, J'arrive m\xEAme plus \xE0 sauter, je me sens si lourde !"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18926505423634432
+    m_Localized: "D'accord... ils auraient pu tout simplement dire virage \xE0 gauche
+      !"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18926640379559936
+    m_Localized: "Ok la prochaine fois j'mettrais un panneau virage \xE0 droite !"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18926752556220416
+    m_Localized: "Oula j'mattendais pas \xE0 me faire tirer en arri\xE8re !"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18926855429914624
+    m_Localized: "Oula, c'\xE9tait violent !"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18926957905149952
+    m_Localized: "J'ai l'impression de flotter, il ne doit plus y avoir de gravit\xE9
+      ici"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18927063131848704
+    m_Localized: "Ah, je devrais peut-\xEAtre commencer \xE0 m'y habituer"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18927172557045760
+    m_Localized: J'me ferais pas avoir cette fois-ci !
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18927267620945920
+    m_Localized: "Euh... Comment je suis cens\xE9e franchir ce foutu mur d'eau ?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18927388425289728
+    m_Localized: "J'finirais \xE9touff\xE9e en quelques secondes dans ce lac visqueux"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18927499968610304
+    m_Localized: "Cette force alt\xE8re \xE9trangement autant les grosses que les
+      petites quantit\xE9s d'eau"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18927590200672256
+    m_Localized: "C'est clairement intriguant, mais j'vais plut\xF4t \xE9viter d'\xE9clater
+      ces bulles"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18927692818513920
+    m_Localized: On dirait un genre d'ascenceur aquatique
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18927801945915392
+    m_Localized: "C'est quoi \xE7a ?! De toute \xE9vidence j'vais pas faire confiance
+      \xE0 cette chose, qu'elle soit vivante ou non!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18927907176808448
+    m_Localized: "J'esp\xE8re que ce n'est pas l'eau de la plan\xE8te, parce que
+      clairement, personne voudra boire \xE7a!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18927992581226496
+    m_Localized: "Je devrais plut\xF4t observer son comportement"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18928099292708864
+    m_Localized: C'est promis, si cette chose est vivante, je l'analyserais
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18928166837780480
+    m_Localized: Ok, maintenant je sais quoi faire
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18928248987418624
+    m_Localized: "L'enregistrement est trop d\xE9t\xE9rior\xE9 pour comprendre ce
+      qui se dit, mais tout laisse \xE0 croire que je ne suis pas la premi\xE8re
+      \xE0 \xEAtre envoy\xE9e sur cette plan\xE8te"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18928343246012416
+    m_Localized: "Difficile \xE0 d\xE9crire... cette voix me glace le sang"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18928453078056960
+    m_Localized: "Wow, c'est bien pire que ce que je pensais, je ne suis clairement
+      pas seule ici... J'veux pas crever l\xE0 moi"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18928570120110080
+    m_Localized: "\xE7a s'est pass\xE9 juste apr\xE8s le crash. J'ai bien peur que
+      personne ne pouvait survivre de toute fa\xE7on... J'ai plut\xF4t int\xE9ret
+      \xE0 vite finir cette mission si je veux rester en vie"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18928662088613888
+    m_Localized: "On dirait un enregistrement, je pense qu'il y moyen que je puisse
+      l'\xE9couter en le t\xE9l\xE9chargeant dans mon HUD"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18928763355889664
+    m_Localized: "Tiens, un autre enregistrement, j'en apprendrais peut-\xEAtre plus
+      sur ce qu'il s'est pass\xE9 ici"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18928864925155328
+    m_Localized: "Cet enregistrement est sacr\xE9ment endommag\xE9, voyons voir si
+      je peux toujours lire son contenu"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18929073835048960
+    m_Localized: "Cet enregistrement n'a pas \xE9t\xE9 pos\xE9 l\xE0 par hasard,
+      comme si quelqu'un voulait le cacher"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18936960623935488
+    m_Localized: 'Volume voix:'
     m_Metadata:
       m_Items: []
   references:

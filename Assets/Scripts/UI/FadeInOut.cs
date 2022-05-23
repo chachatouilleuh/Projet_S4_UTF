@@ -16,7 +16,7 @@ public class FadeInOut : MonoBehaviour
     [SerializeField, Tooltip("fade est déjà joué")]private bool m_alreadyFaded;
 
     
-    [SerializeField, Tooltip("le canvas des sous-titres")] private GameObject m_subtitleCanvas ;
+    [SerializeField, Tooltip("le canvas des sous-titres")] private GameObject m_subtitleGameObject ;
     [SerializeField, Tooltip("le texte des sous-titres")] TMP_Text m_textToDisplay;
     
     [SerializeField, Tooltip("le temps d'apparition des sous-titres")]private float m_subtitleTime;
@@ -31,8 +31,10 @@ public class FadeInOut : MonoBehaviour
     
     private void Start()
     {
-        m_subtitleCanvas.SetActive(false);
-        m_blackCanvas.CrossFadeAlpha(0, m_fadeTime, false);
+        if (!m_isDialogue)
+        {
+            m_blackCanvas.CrossFadeAlpha(0, m_fadeTime, false);
+        }
     }
     
     void Update()
@@ -51,7 +53,7 @@ public class FadeInOut : MonoBehaviour
             {
                 if (Underlining.m_sub == 0)
                 {
-                    m_subtitleCanvas.SetActive(true);
+                    m_subtitleGameObject.SetActive(true);
                     StartCoroutine(TypeSentence(m_textToDisplay.text));
                     StartCoroutine(HideSubtitles());
                 }  
@@ -67,7 +69,7 @@ public class FadeInOut : MonoBehaviour
     IEnumerator HideSubtitles()
     {
         yield return new WaitForSeconds(m_subtitleTime);
-        m_subtitleCanvas.SetActive(false);
+        m_subtitleGameObject.SetActive(false);
     }
     
     IEnumerator FadeOut()
