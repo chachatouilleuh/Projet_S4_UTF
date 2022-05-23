@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 926449934471795525}
   - component: {fileID: 8180324925805478834}
   - component: {fileID: 5150678283555462326}
+  - component: {fileID: 2323871774984563657}
   m_Layer: 0
   m_Name: Mobile
   m_TagString: Untagged
@@ -117,7 +118,9 @@ MonoBehaviour:
   m_key: []
   m_animator: {fileID: 8180324925805478834}
   m_secondsWait: 0
+  m_waitCut: 0
   m_moveALot: 0
+  m_isSingle: 0
   m_audioMixer: {fileID: 0}
   m_clipToPlay: {fileID: 0}
 --- !u!95 &8180324925805478834
@@ -146,18 +149,18 @@ AudioSource:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 753904891321863006}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 0.192
+  m_Volume: 0.01
   m_Pitch: 1
   Loop: 0
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
-  Priority: 128
+  Priority: 256
   DopplerLevel: 1
   MinDistance: 1
   MaxDistance: 500
@@ -235,6 +238,19 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!65 &2323871774984563657
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 753904891321863006}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 3.8999999, y: 3.9000008, z: 0.15926851}
+  m_Center: {x: 0, y: 0, z: 0.020365782}
 --- !u!1 &4657456555690293148
 GameObject:
   m_ObjectHideFlags: 0
