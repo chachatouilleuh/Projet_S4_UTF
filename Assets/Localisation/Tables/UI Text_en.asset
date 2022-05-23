@@ -241,8 +241,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 18674414437171200
-    m_Localized: '-Evelyn : Wow calm down, It''s a lot to take... I''m just waking
-      up'
+    m_Localized: '-Evelyn : Wow calm down, I''m just waking up !'
     m_Metadata:
       m_Items: []
   - m_Id: 18674857972236288
@@ -277,8 +276,8 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 18674706201346048
-    m_Localized: '-Hawking : If it''s too dark, You can switch on and off your headlamp
-      by pressing E.'
+    m_Localized: '-Hawking : You can switch on and off your headlamp by pressing
+      E.'
     m_Metadata:
       m_Items: []
   - m_Id: 18674685951246336
@@ -287,7 +286,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 18674659036397568
-    m_Localized: '-Hawking : Good ! Let me open the doors.'
+    m_Localized: '-Hawking : Let me open the doors.'
     m_Metadata:
       m_Items: []
   - m_Id: 18674612647395328

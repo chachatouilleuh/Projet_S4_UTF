@@ -233,8 +233,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 18674414437171200
-    m_Localized: "-Evelyn : Attends attends... \xE7a fait beaucoup d'infos l\xE0...
-      j'viens \xE0 peine de me r\xE9veiller"
+    m_Localized: "-Evelyn : Attends attends... j'viens \xE0 peine de me r\xE9veiller"
     m_Metadata:
       m_Items: []
   - m_Id: 18674505646505984
@@ -274,7 +273,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 18674659036397568
-    m_Localized: "-Hawking : Re\xE7u ! Ouverture des portes."
+    m_Localized: '-Hawking : Ouverture des portes.'
     m_Metadata:
       m_Items: []
   - m_Id: 18674685951246336

@@ -188,15 +188,15 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 18674685951246336
-    m_Key: E Headlamp A
+    m_Key: Headlamp A
     m_Metadata:
       m_Items: []
   - m_Id: 18674706201346048
-    m_Key: H Headlamp A
+    m_Key: Headlamp B
     m_Metadata:
       m_Items: []
   - m_Id: 18674726535331840
-    m_Key: E Headlamp B
+    m_Key: Headlamp C
     m_Metadata:
       m_Items: []
   - m_Id: 18674744138825728

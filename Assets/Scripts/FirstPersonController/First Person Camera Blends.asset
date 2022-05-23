@@ -16,8 +16,8 @@ MonoBehaviour:
   - m_From: Main Camera
     m_To: Cut1 Cam1
     m_Blend:
-      m_Style: 0
-      m_Time: 1
+      m_Style: 6
+      m_Time: 3
       m_CustomCurve:
         serializedVersion: 2
         m_Curve: []
