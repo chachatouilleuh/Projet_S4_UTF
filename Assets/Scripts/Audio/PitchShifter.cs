@@ -63,7 +63,6 @@ public class PitchShifter : MonoBehaviour
         {
             m_normalSpeed =  value;
             m_currentSpeed = m_normalSpeed;
-            Debug.Log(m_normalSpeed);
         }
     }
     private void OnTriggerEnter(Collider other)
