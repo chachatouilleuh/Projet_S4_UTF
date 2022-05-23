@@ -1,9 +1,5 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using Packages.Mini_First_Person_Controller.Scripts;
 using UnityEngine;
-using UnityEngine.Audio;
 
 public class SwitchHUD : MonoBehaviour
 {
