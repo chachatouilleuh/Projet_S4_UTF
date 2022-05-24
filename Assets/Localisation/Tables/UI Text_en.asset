@@ -25,6 +25,7 @@ MonoBehaviour:
     - id: 5
     - id: 6
     - id: 7
+    - id: 8
   m_TableData:
   - m_Id: 158794043392
     m_Localized: Press any key
@@ -405,14 +406,15 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 18675588750016512
-    m_Localized: '-Evelyn : But you''re levitating, right'
+    m_Localized: '-Evelyn : But you''re levitating, right ?'
     m_Metadata:
       m_Items: []
   - m_Id: 18675566989967360
     m_Localized: '-Hawking : I know i''m a robot, but i still hate when gravity is
       fluctuating'
     m_Metadata:
-      m_Items: []
+      m_Items:
+      - id: 8
   - m_Id: 18677239909089280
     m_Localized: '-Chimaera : *game ends with the words*    E V E L E E E N     E
       V E L E E E N    P L E A  A S E   E V E L E E E N     E V E L E E E N    P
@@ -773,3 +775,7 @@ MonoBehaviour:
       type: {class: SmartFormatTag, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
         m_Entries: 00802a34d65a4200
+    00000008:
+      type: {class: SmartFormatTag, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_Entries: 00806a4854594200

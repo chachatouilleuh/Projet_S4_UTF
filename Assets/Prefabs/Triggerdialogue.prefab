@@ -380,7 +380,8 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 8
   m_isDialogue: 1
-  m_blackCanvas: {fileID: 4445908071298082645}
+  m_blackGameObject: {fileID: 2402056785014715717}
+  m_black: {fileID: 4445908071298082645}
   m_fadeTime: 2
   m_waitBeforePlay: 0
   m_alreadyFaded: 0

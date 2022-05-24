@@ -7,13 +7,14 @@ public class FadeInOut : MonoBehaviour
 {
     [SerializeField, Tooltip("layer du player")] private LayerMask m_playerLayer;
     [SerializeField, Tooltip("canvas est un dialogue")] private bool m_isDialogue;
-    
-    [SerializeField, Tooltip("le canvas noir de transition")] private MaskableGraphic m_blackCanvas ;
+
+    [SerializeField, Tooltip("le canvas des sous-titres")] private GameObject m_blackGameObject;
+    [SerializeField, Tooltip("le canvas noir de transition")] private MaskableGraphic m_black ;
     [SerializeField, Tooltip("le temps de fade")]private float m_fadeTime;
     [SerializeField, Tooltip("le temps d'attente")]private float m_waitBeforePlay;
     
     
-    [SerializeField, Tooltip("fade est déjà joué")]private bool m_alreadyFaded;
+    private bool m_alreadyFaded;
 
     
     [SerializeField, Tooltip("le canvas des sous-titres")] private GameObject m_subtitleGameObject ;
@@ -25,7 +26,7 @@ public class FadeInOut : MonoBehaviour
     [SerializeField, Tooltip("pause à chaque espace")]private float spacePause;
     [SerializeField, Tooltip("pause entre caractères")]private float normalPause;
     
-    [SerializeField, Tooltip("le canvas est déjà affiché")] private bool m_alreadyPlayed;
+    private bool m_alreadyPlayed;
    
     
     
@@ -33,17 +34,17 @@ public class FadeInOut : MonoBehaviour
     {
         if (!m_isDialogue)
         {
-            m_blackCanvas.CrossFadeAlpha(0, m_fadeTime, false);
+            m_black.CrossFadeAlpha(0, m_fadeTime, false);
         }
     }
     
-    void Update()
-    {
-        if(m_alreadyPlayed)
-        {
-            StartCoroutine(FadeOut());
-        }
-    }
+    //void Update()
+    //{
+    //    if(m_alreadyPlayed)
+    //    {
+    //        StartCoroutine(FadeOut());
+    //    }
+    //}
     
     private void OnTriggerEnter(Collider other)
     {
@@ -60,7 +61,9 @@ public class FadeInOut : MonoBehaviour
             }
             else
             {
-                FadeIn();
+                m_blackGameObject.SetActive(true);
+                StartCoroutine(FadeIn());
+                
             }
             m_alreadyPlayed = true;
         }
@@ -75,14 +78,17 @@ public class FadeInOut : MonoBehaviour
     IEnumerator FadeOut()
     {
         yield return new WaitForSeconds(m_waitBeforePlay);
-        m_blackCanvas.CrossFadeAlpha(0, m_fadeTime, false);
+        m_black.CrossFadeAlpha(0, m_fadeTime, false);
         m_alreadyFaded = true;
+        m_blackGameObject.SetActive(false);
     }
     
-    void FadeIn()
+    IEnumerator FadeIn()
     {
+        yield return new WaitForSeconds(m_waitBeforePlay);
         m_fadeTime += Time.deltaTime;
-        m_blackCanvas.CrossFadeAlpha(1, 0.5f, false);
+        m_black.CrossFadeAlpha(1, 0.5f, false);
+        StartCoroutine(FadeOut());
     }
 
     IEnumerator TypeSentence (string sentence){
