@@ -21,7 +21,7 @@ public class CanvasManager : MonoBehaviour
                 OpenAccueil();
                 break;
             
-            case "Alpha":
+            case "Playtest":
                 OpenHUD();
                 break;
         }
@@ -44,7 +44,7 @@ public class CanvasManager : MonoBehaviour
                 }
                 break;
             
-            case "Alpha":
+            case "Playtest":
                 if (FirstPersonLook.m_isOption == false)
                 {
                     ResetLoreCanvas();
@@ -55,18 +55,14 @@ public class CanvasManager : MonoBehaviour
                         HUDBrokenInside.SetActive(false);
                     }
                 }
-                else if(m_optionsOpen)
-                {
-                    HUDBlur.SetActive(false);
-                    if (SetActiveTrigger.m_isbroken)
-                    {
-                        HUDBroken.SetActive(false);
-                        HUDBrokenInside.SetActive(true);
-                    }
-                }
                 else
                 {
                     HUDBlur.SetActive(true);
+                    if (SetActiveTrigger.m_isbroken)
+                    {
+                        HUDBroken.SetActive(true);
+                        HUDBrokenInside.SetActive(true);
+                    }
                 }
                 break;
         }
@@ -236,23 +232,6 @@ public class CanvasManager : MonoBehaviour
         m_charactersOpen = false;
     }
     
-    
-
-    // A voir si l'on fait une option différente
-
-    //public void OpenOptionsIngame()
-    //{
-    //    if (!m_optionsIngameOpen)
-    //    {
-    //        OptionsIngame.SetActive(true);
-    //        m_optionsIngameOpen = true;
-    //    }
-    //    else
-    //    {
-    //        OptionsIngame.SetActive(false);
-    //        m_optionsIngameOpen = false;
-    //    }
-    //}
 
 
 

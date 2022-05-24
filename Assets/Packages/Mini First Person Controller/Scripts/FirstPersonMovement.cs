@@ -41,11 +41,10 @@ namespace Packages.Mini_First_Person_Controller.Scripts
             Vector2 targetVelocity =new Vector2( Input.GetAxis("Horizontal") * targetMovingSpeed, Input.GetAxis("Vertical") * targetMovingSpeed);
 
             // Apply movement.
-            if (FirstPersonLook.m_isOption == false)
+            if (FirstPersonLook.m_isOption == false && Cutscene.m_isCutscene == false)
             {
                 rigidbody.velocity = transform.rotation * new Vector3(targetVelocity.x, rigidbody.velocity.y, targetVelocity.y);
             }
-            
         }
     }
 }
