@@ -15,7 +15,6 @@ GameObject:
   - component: {fileID: 6190789697353038591}
   - component: {fileID: 6190789697353038587}
   - component: {fileID: 4953593347223229999}
-  - component: {fileID: 7140552641757975156}
   m_Layer: 0
   m_Name: Gravity Field
   m_TagString: Untagged
@@ -380,22 +379,3 @@ MonoBehaviour:
     m_Bits: 8
   m_audioMixer: {fileID: 24300002, guid: dbda88f07e9e9474a8053013f5393918, type: 2}
   m_newSpeed: 0.75
---- !u!114 &7140552641757975156
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6190789697353038589}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 22b4285abce593b4eb2495e57d421915, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_playerLayer:
-    serializedVersion: 2
-    m_Bits: 0
-  m_audioMixer: {fileID: 0}
-  m_clipToPlay: {fileID: 0}
-  m_isMusic: 0
-  alreadyPlayed: 0

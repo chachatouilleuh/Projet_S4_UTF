@@ -25,6 +25,7 @@ MonoBehaviour:
     - id: 5
     - id: 6
     - id: 7
+    - id: 8
   m_TableData:
   - m_Id: 158794043392
     m_Localized: Press any key
@@ -241,8 +242,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 18674414437171200
-    m_Localized: '-Evelyn : Wow calm down, It''s a lot to take... I''m just waking
-      up'
+    m_Localized: '-Evelyn : Wow calm down, I''m just waking up !'
     m_Metadata:
       m_Items: []
   - m_Id: 18674857972236288
@@ -277,8 +277,8 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 18674706201346048
-    m_Localized: '-Hawking : If it''s too dark, You can switch on and off your headlamp
-      by pressing E.'
+    m_Localized: '-Hawking : You can switch on and off your headlamp by pressing
+      E.'
     m_Metadata:
       m_Items: []
   - m_Id: 18674685951246336
@@ -287,7 +287,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 18674659036397568
-    m_Localized: '-Hawking : Good ! Let me open the doors.'
+    m_Localized: '-Hawking : Let me open the door.'
     m_Metadata:
       m_Items: []
   - m_Id: 18674612647395328
@@ -406,14 +406,15 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 18675588750016512
-    m_Localized: '-Evelyn : But you''re levitating, right'
+    m_Localized: '-Evelyn : But you''re levitating, right ?'
     m_Metadata:
       m_Items: []
   - m_Id: 18675566989967360
     m_Localized: '-Hawking : I know i''m a robot, but i still hate when gravity is
       fluctuating'
     m_Metadata:
-      m_Items: []
+      m_Items:
+      - id: 8
   - m_Id: 18677239909089280
     m_Localized: '-Chimaera : *game ends with the words*    E V E L E E E N     E
       V E L E E E N    P L E A  A S E   E V E L E E E N     E V E L E E E N    P
@@ -580,6 +581,166 @@ MonoBehaviour:
       here. You might be hallucinating.'
     m_Metadata:
       m_Items: []
+  - m_Id: 18925025815789568
+    m_Localized: Heeeeeey ?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18925255021920256
+    m_Localized: Why am I talking to myself outloud ? simple... I'm a fearless biophysicist
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18925378363817984
+    m_Localized: Evelyn, you're a strong woman, nothing's gonna happen to you
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18925491643580416
+    m_Localized: The flora here is intriguing but I should be careful
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18925587005276160
+    m_Localized: Hmm I don't know whether it's beautiful or awful...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18925689514065920
+    m_Localized: 'This bioluminescence despite the lack of light is fascinating '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18925833965895680
+    m_Localized: Clearly, this flower has a great influence on gravity
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18926030867496960
+    m_Localized: These spores have a quite unusual behavior
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18926126996750336
+    m_Localized: The spores are drawn by something, they're either attracted to a
+      weird force or there's life inside
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18926227257393152
+    m_Localized: I clearly don't wanna inhale that !
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18926319972483072
+    m_Localized: wh-what ?! I'm litteraly flying right now ?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18926420199571456
+    m_Localized: Argh, I feel so heavy, I can't even jump !
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18926505423634432
+    m_Localized: Okay so basically I'd say turn left !
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18926640379559936
+    m_Localized: Well next time I'll put a road sign saying "Turn right" !
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18926752556220416
+    m_Localized: Evelyn meets gravity field back
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18926855429914624
+    m_Localized: W-waiiiiit ! That was harsh
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18926957905149952
+    m_Localized: 'Looks like I''m floating, just like there is no gravity force '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18927063131848704
+    m_Localized: Well I must get used to that
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18927172557045760
+    m_Localized: This time, I won't be fooled, I know what to do
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18927267620945920
+    m_Localized: Wait, how am I gonna cross that chaotic waterdoor ?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18927388425289728
+    m_Localized: With such viscosity, it'll only take a couple of seconds in that
+      lake for me to choke
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18927499968610304
+    m_Localized: Even tiny amounts of water are altered by that weird force
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18927590200672256
+    m_Localized: nuh uh, I don't wanna pop that bubble
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18927692818513920
+    m_Localized: It's a kind of water elevator, right ?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18927801945915392
+    m_Localized: 'What is it ?! It seems alive but I clearly don''t want to trust
+      that '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18927907176808448
+    m_Localized: Is that water ? 'cause I don't want to drink that, no one would
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18927992581226496
+    m_Localized: 'I should observe its behavior '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18928099292708864
+    m_Localized: I swear if it's alive I'll have to analyze it later
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18928166837780480
+    m_Localized: Okay this time I know what to do
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18928248987418624
+    m_Localized: The record is too damaged to understand that dialogue, but at least
+      I guess I wasn't the first human sent on this planet
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18928343246012416
+    m_Localized: I don't know what to say... This voice is... blood-curdling
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18928453078056960
+    m_Localized: Hey, it's worse than I expected, there's definitely something out
+      there... I don't wanna die here
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18928570120110080
+    m_Localized: This happened right after the crash. No one could have survived...
+      I've gotta end this mission if I want to stay alive
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18928662088613888
+    m_Localized: It looks like a record, I think I can upload it to my HUD to listen
+      to what's inside
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18928763355889664
+    m_Localized: Another record, maybe I'll know a bit more about what happened
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18928864925155328
+    m_Localized: This record is way too  damaged, but let me see if I can still read
+      the datas
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18929073835048960
+    m_Localized: This record was brought here, somebody wanted to keep it a secret
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18936960623935488
+    m_Localized: 'Voices Volume:'
+    m_Metadata:
+      m_Items: []
   references:
     version: 1
     00000000:
@@ -614,3 +775,7 @@ MonoBehaviour:
       type: {class: SmartFormatTag, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
         m_Entries: 00802a34d65a4200
+    00000008:
+      type: {class: SmartFormatTag, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_Entries: 00806a4854594200

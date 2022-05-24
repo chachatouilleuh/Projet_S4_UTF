@@ -218,6 +218,7 @@ MonoBehaviour:
   m_volume: {fileID: 0}
   m_musicSlider: {fileID: 0}
   m_sfxSlider: {fileID: 0}
+  m_voicesSlider: {fileID: 0}
   m_luminositySlider: {fileID: 0}
 --- !u!1 &854819550510243270
 GameObject:
@@ -521,5 +522,21 @@ MonoBehaviour:
     source: {fileID: 0}
   - objectName: Record_4
     clip: {fileID: 8300000, guid: 664fc0eac2774784ab65ede724ac6a07, type: 3}
+    volume: 1
+    source: {fileID: 0}
+  - objectName: React_1
+    clip: {fileID: 8300000, guid: 5599494bb8b096c49bcfd3b67c8378a6, type: 3}
+    volume: 1
+    source: {fileID: 0}
+  - objectName: React_2
+    clip: {fileID: 8300000, guid: 0ae77cc42fa23d14bb8be66c5ac4c0e8, type: 3}
+    volume: 1
+    source: {fileID: 0}
+  - objectName: React_3
+    clip: {fileID: 8300000, guid: 99314316c751d0448abdfd75afb0b4c8, type: 3}
+    volume: 1
+    source: {fileID: 0}
+  - objectName: React_4
+    clip: {fileID: 8300000, guid: 1e06841642437a248b96e4f8c91c9e90, type: 3}
     volume: 1
     source: {fileID: 0}
