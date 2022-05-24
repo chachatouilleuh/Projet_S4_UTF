@@ -11,6 +11,8 @@ GameObject:
   - component: {fileID: 8397476006382538558}
   - component: {fileID: 4838564173564805275}
   - component: {fileID: 7260646144023458897}
+  - component: {fileID: 6182540870355845215}
+  - component: {fileID: -4949890629223489566}
   m_Layer: 0
   m_Name: Mud Long Bridge
   m_TagString: Untagged
@@ -81,3 +83,33 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &6182540870355845215
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9205924175552468356}
+  m_Material: {fileID: 13400000, guid: c8d81949a943e66478d76d9b362c4777, type: 2}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 5422114768561353501, guid: 11fb5e4025620aa4aa8cede757df4098, type: 3}
+--- !u!54 &-4949890629223489566
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9205924175552468356}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
