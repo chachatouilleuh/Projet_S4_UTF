@@ -49,7 +49,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 15783062982656
-    m_Localized: 'Volume effets sonores:'
+    m_Localized: 'Volume effets :'
     m_Metadata:
       m_Items: []
   - m_Id: 15950566707200
@@ -171,53 +171,47 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 7403557767483392
-    m_Localized: "Nom : \u2026...................Evelyn Harper.\r\n\xC2ge : \u2026\u2026\u2026\u2026\u2026\u2026\u2026.34
-      ans.\r\nTaille : \u2026\u2026\u2026\u2026....\u2026.1m74.\r\nPoids : \u2026\u2026\u2026\u2026\u2026\u2026.
-      61 kg.\r\nSexe : \u2026.................. F\xE9minin.\r\n\rRace : \u2026..................
-      Humaine.\r\n\r\nAlli\xE9s & rivaux :\r\nEvelyn n'a pas d'attaches en particulier,
-      que ce soit amicales ou raivales.\n\r\nPr\xE9f\xE9rences :\r\nEvelyn aime \xE9tudier
-      les organismes vivants pour en apprendre un maximum de choses. Elle d\xE9teste
-      lorsqu'elle ne les comprend pas. \n\r\nMotivations & objectifs :\r\nElle souhaite
-      faire des recherches biologiques, au point d'aller jusqu'au fin fond de la
-      galaxie pour d\xE9couvrir de nouvelles esp\xE8ces avanc\xE9es.\r\n\r\nForces
-      et faiblesses :\r\nElle garde toujours la t\xEAte froide pour \xE9valuer la
-      situation au lieu de se laisser emporter par ses instincs de survie.\n\r\nPires
-      cauchemars  :\r\nMourir sans avoir pu accomplir quoi que ce soit.\n\r\nLeitmotiv
-      :\n \"Si c'est vivant, il me faut l'analyser !\""
+    m_Localized: "Evelyn Harper\n34 ans\n1m74\n61 kg\nF\xE9minin\nHumaine\n\r\nAlli\xE9s
+      & rivaux :\r\nEvelyn n'a pas d'attaches en particulier, que ce soit amicales
+      ou raivales.\n\r\nPr\xE9f\xE9rences :\r\nEvelyn aime \xE9tudier les organismes
+      vivants pour en apprendre un maximum de choses. Elle d\xE9teste lorsqu'elle
+      ne les comprend pas. \n\r\nMotivations & objectifs :\r\nElle souhaite faire
+      des recherches biologiques, au point d'aller jusqu'au fin fond de la galaxie
+      pour d\xE9couvrir de nouvelles esp\xE8ces avanc\xE9es.\r\n\r\nForces et faiblesses
+      :\r\nElle garde toujours la t\xEAte froide pour \xE9valuer la situation au
+      lieu de se laisser emporter par ses instincs de survie.\n\r\nPires cauchemars 
+      :\r\nMourir sans avoir pu accomplir quoi que ce soit.\n\r\nLeitmotiv :\n \"Si
+      c'est vivant, il me faut l'analyser !\""
     m_Metadata:
       m_Items: []
   - m_Id: 7411555386658816
-    m_Localized: "Nom :  \u2026\u2026................H0.K1N.G1-942, abr\xE9g\xE9
-      \u201CHawking\u201D.\r\n\xC2ge : \u2026\u2026\u2026\u2026\u2026\u2026\u2026..2
-      ans.\r\nTaille :  \u2026\u2026\u2026\u2026\u2026\u2026.50 cm.\r\nPoids : \u2026\u2026\u2026\u2026\u2026\u2026.
-      16 kg.\r\nSexe : \u2026....................Voix masculine.\r\n\rRace : \u2026....................Robot.\r\n\r\nAlli\xE9s
-      & rivaux :\r\nCr\xE9\xE9 par une corporation, Hawking a \xE9t\xE9 design\xE9
-      pour aider ses futurs associ\xE9s, il n'a donc aucun rival.\n\r\nPr\xE9f\xE9rences
-      :\r\nIl appr\xE9cie r\xE9soudre des \xE9quations complexes, mais il est plut\xF4t
-      r\xE9tissant \xE0 l'id\xE9e de jouer avec les lois de la physique.\n\r\nMotivations
-      & objectifs :\r\nLa mission qui lui est assign\xE9e consiste \xE0 conforter
-      Evelyn Harper dans ses recherches. Son objectif est notamment focalis\xE9 sur
-      le traitement et la collecte de donn\xE9es.\r\n\r\nForces et faiblesses :\r\nHawkingpeut
-      facilement traiter une quantit\xE9 astronomique de donn\xE9es en un rien de
-      temps. Cependant, il se d\xE9place lentement, ce qui le rend vuln\xE9rable
-      en cas de fuite.\r\n\r\nPires cauchemars  :\r\n\xCAtre \xE9teint de force puis
-      \xEAtre jet\xE9 au fond d'un placard.\n\r\nLeitmotiv :\n \u201CAnomalie d\xE9tect\xE9e\u2026\u201D\r"
+    m_Localized: "H0.K1N.G1-942, abr\xE9g\xE9 \u201CHawking\u201D\n2 ans\n50 cm\n16
+      kg\nVoix masculine\nRobot\n\r\nAlli\xE9s & rivaux :\r\nCr\xE9\xE9 par une corporation,
+      Hawking a \xE9t\xE9 design\xE9 pour aider ses futurs associ\xE9s, il n'a donc
+      aucun rival.\n\r\nPr\xE9f\xE9rences :\r\nIl appr\xE9cie r\xE9soudre des \xE9quations
+      complexes, mais il est plut\xF4t r\xE9tissant \xE0 l'id\xE9e de jouer avec
+      les lois de la physique.\n\r\nMotivations & objectifs :\r\nLa mission qui lui
+      est assign\xE9e consiste \xE0 conforter Evelyn Harper dans ses recherches.
+      Son objectif est notamment focalis\xE9 sur le traitement et la collecte de
+      donn\xE9es.\r\n\r\nForces et faiblesses :\r\nHawkingpeut facilement traiter
+      une quantit\xE9 astronomique de donn\xE9es en un rien de temps. Cependant,
+      il se d\xE9place lentement, ce qui le rend vuln\xE9rable en cas de fuite.\r\n\r\nPires
+      cauchemars  :\r\n\xCAtre \xE9teint de force puis \xEAtre jet\xE9 au fond d'un
+      placard.\n\r\nLeitmotiv :\n \u201CAnomalie d\xE9tect\xE9e\u2026\u201D\r"
     m_Metadata:
       m_Items: []
   - m_Id: 7418938095702016
-    m_Localized: "Nom :  ......................Inconnu\n\xC2ge : \u2026\u2026\u2026\u2026\u2026\u2026\u2026.Inconnu\nTaille 
-      \u2026\u2026\u2026\u2026\u2026\u2026..3m environ\nPoids : \u2026\u2026\u2026...........180
-      kg environ\nSexe :\u2026...................\r.Inconnu\n\rRace : \u2026...................Faune
-      end\xE9mique d'Arcopa-8.\r\n\r\nAlli\xE9s & rivaux :\r\nLes chim\xE8res vivent
-      en symbiose avec la flore et n'h\xE9sitent pas \xE0 attaquer quiconque souihaitant
-      d\xE9truire leur habitat.\r\n\r\nPr\xE9f\xE9rences :\r\nElles chassent leur
-      proie en meute, en cherchant \xE0 les tourmenter jusqu'\xE0 l'\xE9puisement.
-      Elles aiment rapporter les restes dans leur tani\xE8re.\n\nMotivations & objectifs
-      :\r\nLa curiosit\xE9 et la soif de savoir inconnu.\r\n\r\nForces et faiblesses
-      :\r\nPr\xE9dateurs ultimes, les chim\xE8res sont dot\xE9es d'une force extraordinaire,
-      d'une grande intelligence ainsi que de la capacit\xE9 d'imiter et de refl\xE9ter
-      son environnement.\r\n\nPires cauchemars  :\r\nLa destruction de leur tani\xE8re.\n\r\nLeitmotiv
-      :\n\u201DCe sont des monstres ?\u201D"
+    m_Localized: "Inconnu\nInconnu\n3m environ\n180 kg environ\nInconnu\nFaune end\xE9mique
+      d'Arcopa-8.\r\n\r\nAlli\xE9s & rivaux :\r\nLes chim\xE8res vivent en symbiose
+      avec la flore et n'h\xE9sitent pas \xE0 attaquer quiconque souihaitant d\xE9truire
+      leur habitat.\r\n\r\nPr\xE9f\xE9rences :\r\nElles chassent leur proie en meute,
+      en cherchant \xE0 les tourmenter jusqu'\xE0 l'\xE9puisement. Elles aiment rapporter
+      les restes dans leur tani\xE8re.\n\nMotivations & objectifs :\r\nLa curiosit\xE9
+      et la soif de savoir inconnu.\r\n\r\nForces et faiblesses :\r\nPr\xE9dateurs
+      ultimes, les chim\xE8res sont dot\xE9es d'une force extraordinaire, d'une grande
+      intelligence ainsi que de la capacit\xE9 d'imiter et de refl\xE9ter son environnement.\r\n\nPires
+      cauchemars  :\r\nLa destruction de leur tani\xE8re.\n\r\nLeitmotiv :\n\u201DCe
+      sont des monstres ?\u201D"
     m_Metadata:
       m_Items: []
   - m_Id: 18674337182285824
@@ -339,8 +333,8 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 18675654348931072
     m_Localized: "-Hawking : Je suis irrempla\xE7able, bien s\xFBr que les humains
-      corrigeront cette erreur, je n'ai pas l'intentation d'\xEAtre jet\xE9 au fond
-      d'un placard"
+      corrigeront cette erreur, je n'ai pas l'intention d'\xEAtre jet\xE9 au fond
+      du placard"
     m_Metadata:
       m_Items: []
   - m_Id: 18675675232370688
@@ -569,18 +563,18 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 18676713020620800
     m_Localized: "-Evelyn : Je n'ai pas hallucin\xE9 ! Je sais ce que j'ai vu, je
-      ne peux pas croire que 3.S.A. nous ait tromp\xE9s... Ils devaient \xEAtre au
-      courant de quelque chose... "
+      ne peux pas croire que la 3.S.A. nous ait tromp\xE9s... Ils devaient \xEAtre
+      au courant de quelque chose... "
     m_Metadata:
       m_Items: []
   - m_Id: 18676677469700096
-    m_Localized: "-Hawking : Impossible. Le 3.S.A nous a dit que nous \xE9tions les
+    m_Localized: "-Hawking : Impossible. La 3.S.A nous a dit que nous \xE9tions les
       premiers \xE0 venir ici. Vous devez avoir des hallucinations."
     m_Metadata:
       m_Items: []
   - m_Id: 18676659098648576
-    m_Localized: "-Evelyn : Hawking, quand je suis all\xE9 l\xE0-bas, j'ai ... J'ai
-      trouv\xE9 un autre vaisseau spatial et une sc\xE8ne gla\xE7ante."
+    m_Localized: "-Evelyn : Hawking, quand je suis all\xE9e l\xE0-bas, J'ai trouv\xE9
+      un autre vaisseau spatial et une sc\xE8ne gla\xE7ante."
     m_Metadata:
       m_Items: []
   - m_Id: 18925025815789568
@@ -751,6 +745,33 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 18936960623935488
     m_Localized: 'Volume voix:'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19641862865592320
+    m_Localized: "Data n\xB01[...]5\r\nSonde xperimentale Arcopa A1.87 operationelle
+      [...] atterissage, les donn\xE9es d\xE9montrent un v\xE9ritable [...] dans
+      l'air, [...]  des signes indicatifs [...]. La flore agit de fa\xE7on ind\xE9pendante
+      [...]t [...] Effets localis\xE9s sur la gravit\xE9 [...]\r\nN\xE9cessit\xE9
+      d'approfondir [...]erches."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19672797719863296
+    m_Localized: "Da[...]ta n[....]\xB079\r\nSonde exp\xE9rimentale A.1.94 en servic[...]
+      Sc[...]entifiques ont trouv\xE9 [...], tr\xE8s intriguantes. Elles paraissent
+      [...]. Dr Ludvic les appelle les C[...]e. [...] en symbiose [...]ec leur env[...],
+      un membre de l'\xE9quipage ress[...] inc[...]ble capacit\xE9 d'im[...]ter les
+      sons et les vo[...]x"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19674056237555712
+    m_Localized: "D[...]ta n\xB032\r\n[...] Erreur [...] Data \xE9cra[...]e\r\n\r\nC'est
+      probablement ma derni\xE8re [...] \r\n[...] j'ai dormi[...] le nid des Chim\xE8res.
+      A[...]  clairement sous-estim\xE9 le[...]telligence, [...] Elles ont probablement
+      [...] que les humains. Nous avons \xE9t\xE9 trahis [...] la 3.S.A savait [...]e.\r\nIls
+      nous ont envoy\xE9s pour[...]es \xE9value[...] notre mort[...] le prix \xE0
+      payer pour l'expansion des ressour[...]s [...]\r\nJe parie qu'ils sont pr\xEAt
+      \xE0 [...]utre groupe p[...]r des res[...]ltats.\r\nA ceux qui \xE9couteront
+      ce massage,, n'esp\xE9rez pas surv[...]ve, cette plan\xE8te [...] maudite."
     m_Metadata:
       m_Items: []
   references:

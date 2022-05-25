@@ -583,6 +583,18 @@ MonoBehaviour:
     m_Key: Voices Volume
     m_Metadata:
       m_Items: []
+  - m_Id: 19641862865592320
+    m_Key: Probe 1 Content
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19672797719863296
+    m_Key: Probe 2 Content
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19674056237555712
+    m_Key: Probe 3 Content
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

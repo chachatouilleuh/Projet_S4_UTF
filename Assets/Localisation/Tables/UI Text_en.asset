@@ -184,28 +184,70 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 7403557767483392
-    m_Localized: "Complete Name:.......Evelyn Harper.\r\nAge: \u2026\u2026\u2026\u2026\u2026\u2026\u2026.....34
-      years old.\r\nHeight: \u2026\u2026\u2026\u2026\u2026\u2026...174 cm.\r\nWeight:
-      \u2026\u2026\u2026\u2026\u2026\u2026.. 61 kg.\r\nGender: \u2026..................Female.\r\n\rSpecies:
-      \u2026..................Human.\r\n\r\nBonds & Rivalries:\r\nShe has no particular
-      ties, nor any rivals.\r\n\r\nLikes & Dislikes:\r\nShe loves to study living
-      things, wants to know everything about them, and she loathes failing to understand
-      things.\r\n\r\nMotivations & Goals:\r\nShe wants to make biological discoveries,
-      going to the farthest reaches of the galaxy to find species that can advance
-      humanity.\r\n\r\nStrengths & Flaws:\r\nShe always keeps a cool head in order
-      to understand a situation before letting her survival instinct guide her.\r\n\r\nWorst
-      Nightmares:\r\nTo die without having accomplished anything.\r\n\r\nMotto:\n\"If
-      it lives, I have to analyze it !"
+    m_Localized: 'Evelyn Harper
+
+      34 years old
+
+      174 cm
+
+      61 kg
+
+      Female
+
+      Human
+
+      
+
+      Bonds
+      & Rivalries:
+
+      She has no particular ties, nor any rivals.
+
+      
+
+      Likes
+      & Dislikes:
+
+      She loves to study living things, wants to know everything
+      about them, and she loathes failing to understand things.
+
+      
+
+      Motivations
+      & Goals:
+
+      She wants to make biological discoveries, going to the farthest
+      reaches of the galaxy to find species that can advance humanity.
+
+      
+
+      Strengths
+      & Flaws:
+
+      She always keeps a cool head in order to understand a situation
+      before letting her survival instinct guide her.
+
+      
+
+      Worst Nightmares:
+
+      To
+      die without having accomplished anything.
+
+      
+
+      Motto:
+
+      "If
+      it lives, I have to analyze it !'
     m_Metadata:
       m_Items: []
   - m_Id: 7411555386658816
-    m_Localized: "Complete Name: \u2026..H0.K1N.G1-942, abbreviated \u201CHawking\u201D.\r\nAge:
-      \u2026\u2026\u2026\u2026\u2026\u2026\u2026.... 2 years old.\r\nHeight:  \u2026\u2026\u2026\u2026\u2026\u2026.
-      50 cm.\r\nWeight: \u2026\u2026\u2026\u2026\u2026\u2026. 16 kg.\r\nGender: \u2026..................Male
-      voice.\r\n\rSpecies: \u2026.................Robot.\r\n\nBonds & Rivalries:\r\nIt
-      is a robot created by a corporation to assist the people with whom it is associated,
-      so it has no rival.\r\n\r\nLikes & Dislikes:\r\nHe enjoys solving complex problems,
-      and does not like to deal with information that circumvents the laws of physics.\r\n\r\nMotivations
+    m_Localized: "H0.K1N.G1-942, abbreviated \u201CHawking\u201D\n2 years old\n50
+      cm\n16 kg\nMale voice\nRobot\n\nBonds & Rivalries:\r\nIt is a robot created
+      by a corporation to assist the people with whom it is associated, so it has
+      no rival.\r\n\r\nLikes & Dislikes:\r\nHe enjoys solving complex problems, and
+      does not like to deal with information that circumvents the laws of physics.\r\n\r\nMotivations
       & Goals:\r\nHe is assigned to a mission, to help Evelyn in her research, his
       goal is to retrieve the various information given to him, and to extract data
       from it.\r\n\r\nStrengths & Flaws:\r\nHawking can analyze very large amounts
@@ -215,11 +257,9 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 7418938095702016
-    m_Localized: "Complete Name:  \u2026.Unknown\r\nAge: \u2026\u2026\u2026\u2026\u2026\u2026\u2026.....Unknown\r\nHeight:
-      \u2026\u2026\u2026\u2026\u2026\u2026.. 300 cm on average\r\nWeight: \u2026\u2026\u2026...\u2026\u2026...180
-      kg on average\r\nGender: \u2026...................\rUnknown\n\rSpecies: \u2026..................Endemic
-      fauna of Arcopa-8.\r\n\r\nBonds & Rivalries:\r\nThey live in symbiosis with
-      the flora, but they violently attack anyone who damages their habitat.\r\n\r\nLikes
+    m_Localized: "Unknown\r\nUnknown\r\n300 cm on average\r\n180 kg on average\r\nUnknown\nEndemic
+      fauna of Arcopa-8\n\r\nBonds & Rivalries:\r\nThey live in symbiosis with the
+      flora, but they violently attack anyone who damages their habitat.\r\n\r\nLikes
       & Dislikes:\r\nThey like to play with their prey in groups, tormenting them
       before finishing them off, they like to take remains back to their nests.\r\n\r\nMotivations
       & Goals:\r\nCuriosity and understanding what it doesn\u2019t know.\r\n\r\nStrengths
@@ -572,8 +612,8 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 18676659098648576
-    m_Localized: '-Evelyn : Hawking, when I''ve been down there, I found... I found
-      another spaceship and a cold blood scene.'
+    m_Localized: '-Evelyn : Hawking, when I was down there, I found another spaceship
+      and a cold blood scene.'
     m_Metadata:
       m_Items: []
   - m_Id: 18676677469700096
@@ -739,6 +779,32 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 18936960623935488
     m_Localized: 'Voices Volume:'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19641862865592320
+    m_Localized: "Entry n\xB01[...]5\r\nExperimental Probe Arcopa A1.87 operational
+      [...] landed, results shows a great [...] in the air, [...]  indicates signs
+      of [...]. Flora acts as independ[...]t [...] Affects local gravity factors
+      [...]\r\nNeed further in[...]stigation ."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19672797719863296
+    m_Localized: "En[...]try n[....]\xB079\r\nExperimental Probe A.1.94 in servic[...]
+      Sc[...]entists have found [...], very intriguiging. They seems to [...]. Dr
+      Ludvic calls them the C[...]e. [...] symbiotic and protec[...]ve of their env[...],
+      one of the crew members repor[...] inc[...]ble capacity to mi[...]ck sounds
+      and voi[...]es"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19674056237555712
+    m_Localized: "E[...]ry n\xB032\r\n[...] Error message [...] Data overwri[...]n\r\n\r\nThis
+      is probably my last entry [...] \r\n[...] have step[...] into the Chimaeras'
+      nest. W[...]  greatly underestimated their [...]telligence, [...] they probably
+      are even [...] than humans. We have been betrayed [...] the 3SA knew [...]e.\r\nThey
+      sent us to evalu[...]e them [...] our death [...] price for them to pay to
+      expend their ressour[...]s [...]\r\nBet they would send [...]nother to gather
+      [...]r res[...]lts.\r\nTo anyone reading this message, do not hope to surv[...]ve,
+      this planet [...] insane."
     m_Metadata:
       m_Items: []
   references:
