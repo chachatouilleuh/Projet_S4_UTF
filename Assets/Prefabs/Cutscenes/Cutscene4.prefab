@@ -2333,7 +2333,7 @@ MonoBehaviour:
   m_secondCharacterAnimator: {fileID: 0}
   m_cutsceneNumber: 4
   m_waitBeforeStart: 0
-  m_waitBeforeEnd: 55.5
+  m_waitBeforeEnd: 56
   m_alreadyPlayed: 0
 --- !u!95 &3874648588291102941
 Animator:

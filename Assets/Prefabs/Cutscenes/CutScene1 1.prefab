@@ -1209,10 +1209,10 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 8
   m_isDialogue: 1
-  m_blackCanvas: {fileID: 728046245911773062}
+  m_blackGameObject: {fileID: 0}
+  m_black: {fileID: 0}
   m_fadeTime: 10
   m_waitBeforePlay: 0
-  m_alreadyFaded: 0
   m_subtitleGameObject: {fileID: 538841067675008142}
   m_textToDisplay: {fileID: 3951014723676306655}
   m_subtitleTime: 10
@@ -1220,7 +1220,6 @@ MonoBehaviour:
   commaPause: 0.2
   spacePause: 0.1
   normalPause: 0.04
-  m_alreadyPlayed: 0
 --- !u!114 &9087509060933868455
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1271,7 +1270,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 57e656b77158db34696298f279250cfd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_playerLayer:
+    serializedVersion: 2
+    m_Bits: 0
   m_triggerNumber: 5
+  m_movingAtStart: 0
+  m_triggerGroup: {fileID: 0}
 --- !u!1 &4635324234063082360
 GameObject:
   m_ObjectHideFlags: 0
@@ -1378,18 +1382,17 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 8
   m_isDialogue: 1
-  m_blackCanvas: {fileID: 728046245911773062}
+  m_blackGameObject: {fileID: 0}
+  m_black: {fileID: 0}
   m_fadeTime: 10
   m_waitBeforePlay: 0
-  m_alreadyFaded: 0
   m_subtitleGameObject: {fileID: 4878110380679652241}
   m_textToDisplay: {fileID: 2102608733110775797}
-  m_subtitleTime: 10
+  m_subtitleTime: 5
   dotPause: 0.3
   commaPause: 0.2
   spacePause: 0.1
   normalPause: 0.04
-  m_alreadyPlayed: 0
 --- !u!114 &4227969359376209764
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1440,7 +1443,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 57e656b77158db34696298f279250cfd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_playerLayer:
+    serializedVersion: 2
+    m_Bits: 0
   m_triggerNumber: 11
+  m_movingAtStart: 0
+  m_triggerGroup: {fileID: 0}
 --- !u!1 &4878110380679652241
 GameObject:
   m_ObjectHideFlags: 0
@@ -1716,10 +1724,10 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 8
   m_isDialogue: 1
-  m_blackCanvas: {fileID: 728046245911773062}
+  m_blackGameObject: {fileID: 0}
+  m_black: {fileID: 0}
   m_fadeTime: 10
   m_waitBeforePlay: 0
-  m_alreadyFaded: 0
   m_subtitleGameObject: {fileID: 3773293823867588442}
   m_textToDisplay: {fileID: 2460678415005155479}
   m_subtitleTime: 10
@@ -1727,7 +1735,6 @@ MonoBehaviour:
   commaPause: 0.2
   spacePause: 0.1
   normalPause: 0.04
-  m_alreadyPlayed: 0
 --- !u!114 &1274118014110844289
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1778,7 +1785,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 57e656b77158db34696298f279250cfd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_playerLayer:
+    serializedVersion: 2
+    m_Bits: 0
   m_triggerNumber: 6
+  m_movingAtStart: 0
+  m_triggerGroup: {fileID: 0}
 --- !u!1 &5451708940841784177
 GameObject:
   m_ObjectHideFlags: 0
@@ -1885,10 +1897,10 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 8
   m_isDialogue: 1
-  m_blackCanvas: {fileID: 728046245911773062}
+  m_blackGameObject: {fileID: 0}
+  m_black: {fileID: 0}
   m_fadeTime: 10
   m_waitBeforePlay: 0
-  m_alreadyFaded: 0
   m_subtitleGameObject: {fileID: 8688569168217479401}
   m_textToDisplay: {fileID: 2627232015743897424}
   m_subtitleTime: 10
@@ -1896,7 +1908,6 @@ MonoBehaviour:
   commaPause: 0.2
   spacePause: 0.1
   normalPause: 0.04
-  m_alreadyPlayed: 0
 --- !u!114 &4031836452979993794
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1947,7 +1958,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 57e656b77158db34696298f279250cfd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_playerLayer:
+    serializedVersion: 2
+    m_Bits: 0
   m_triggerNumber: 7
+  m_movingAtStart: 0
+  m_triggerGroup: {fileID: 0}
 --- !u!1 &5668032809801272706
 GameObject:
   m_ObjectHideFlags: 0
@@ -2174,10 +2190,10 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 8
   m_isDialogue: 1
-  m_blackCanvas: {fileID: 728046245911773062}
+  m_blackGameObject: {fileID: 0}
+  m_black: {fileID: 0}
   m_fadeTime: 5
   m_waitBeforePlay: 0
-  m_alreadyFaded: 0
   m_subtitleGameObject: {fileID: 560134427180140644}
   m_textToDisplay: {fileID: 6436163026554962978}
   m_subtitleTime: 140
@@ -2185,7 +2201,6 @@ MonoBehaviour:
   commaPause: 0.2
   spacePause: 0.1
   normalPause: 0.04
-  m_alreadyPlayed: 0
 --- !u!114 &1700945487557356353
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2259,7 +2274,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 57e656b77158db34696298f279250cfd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_playerLayer:
+    serializedVersion: 2
+    m_Bits: 0
   m_triggerNumber: 1
+  m_movingAtStart: 0
+  m_triggerGroup: {fileID: 0}
 --- !u!1 &5966833538892553227
 GameObject:
   m_ObjectHideFlags: 0
@@ -2764,10 +2784,10 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 8
   m_isDialogue: 1
-  m_blackCanvas: {fileID: 728046245911773062}
+  m_blackGameObject: {fileID: 0}
+  m_black: {fileID: 0}
   m_fadeTime: 10
   m_waitBeforePlay: 0
-  m_alreadyFaded: 0
   m_subtitleGameObject: {fileID: 4179000042868230806}
   m_textToDisplay: {fileID: 6302715572022249446}
   m_subtitleTime: 10
@@ -2775,7 +2795,6 @@ MonoBehaviour:
   commaPause: 0.2
   spacePause: 0.1
   normalPause: 0.04
-  m_alreadyPlayed: 0
 --- !u!114 &6129188839941215792
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2826,7 +2845,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 57e656b77158db34696298f279250cfd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_playerLayer:
+    serializedVersion: 2
+    m_Bits: 0
   m_triggerNumber: 8
+  m_movingAtStart: 0
+  m_triggerGroup: {fileID: 0}
 --- !u!1 &7070624831987409527
 GameObject:
   m_ObjectHideFlags: 0
@@ -2933,10 +2957,10 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 8
   m_isDialogue: 1
-  m_blackCanvas: {fileID: 728046245911773062}
+  m_blackGameObject: {fileID: 0}
+  m_black: {fileID: 0}
   m_fadeTime: 5
   m_waitBeforePlay: 0
-  m_alreadyFaded: 0
   m_subtitleGameObject: {fileID: 7261969720970564335}
   m_textToDisplay: {fileID: 3541721455800900023}
   m_subtitleTime: 140
@@ -2944,7 +2968,6 @@ MonoBehaviour:
   commaPause: 0.2
   spacePause: 0.1
   normalPause: 0.04
-  m_alreadyPlayed: 0
 --- !u!114 &2110827676812432750
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2995,7 +3018,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 57e656b77158db34696298f279250cfd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_playerLayer:
+    serializedVersion: 2
+    m_Bits: 0
   m_triggerNumber: 3
+  m_movingAtStart: 0
+  m_triggerGroup: {fileID: 0}
 --- !u!1 &7225221577936660273
 GameObject:
   m_ObjectHideFlags: 0
@@ -3102,10 +3130,10 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 8
   m_isDialogue: 1
-  m_blackCanvas: {fileID: 728046245911773062}
+  m_blackGameObject: {fileID: 0}
+  m_black: {fileID: 0}
   m_fadeTime: 5
   m_waitBeforePlay: 0
-  m_alreadyFaded: 0
   m_subtitleGameObject: {fileID: 2391715530921034781}
   m_textToDisplay: {fileID: 6088149180975870594}
   m_subtitleTime: 140
@@ -3113,7 +3141,6 @@ MonoBehaviour:
   commaPause: 0.2
   spacePause: 0.1
   normalPause: 0.04
-  m_alreadyPlayed: 0
 --- !u!114 &2764972476823792366
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3164,7 +3191,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 57e656b77158db34696298f279250cfd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_playerLayer:
+    serializedVersion: 2
+    m_Bits: 0
   m_triggerNumber: 2
+  m_movingAtStart: 0
+  m_triggerGroup: {fileID: 0}
 --- !u!1 &7261969720970564335
 GameObject:
   m_ObjectHideFlags: 0
@@ -3440,10 +3472,10 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 8
   m_isDialogue: 1
-  m_blackCanvas: {fileID: 728046245911773062}
+  m_blackGameObject: {fileID: 0}
+  m_black: {fileID: 0}
   m_fadeTime: 10
   m_waitBeforePlay: 0
-  m_alreadyFaded: 0
   m_subtitleGameObject: {fileID: 5966833538892553227}
   m_textToDisplay: {fileID: 7429716487820085873}
   m_subtitleTime: 10
@@ -3451,7 +3483,6 @@ MonoBehaviour:
   commaPause: 0.2
   spacePause: 0.1
   normalPause: 0.04
-  m_alreadyPlayed: 0
 --- !u!114 &1690736064384360698
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3502,7 +3533,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 57e656b77158db34696298f279250cfd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_playerLayer:
+    serializedVersion: 2
+    m_Bits: 0
   m_triggerNumber: 10
+  m_movingAtStart: 0
+  m_triggerGroup: {fileID: 0}
 --- !u!1 &7621286177571894832
 GameObject:
   m_ObjectHideFlags: 0
@@ -3812,10 +3848,10 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 8
   m_isDialogue: 1
-  m_blackCanvas: {fileID: 728046245911773062}
+  m_blackGameObject: {fileID: 0}
+  m_black: {fileID: 0}
   m_fadeTime: 10
   m_waitBeforePlay: 0
-  m_alreadyFaded: 0
   m_subtitleGameObject: {fileID: 7621286177571894832}
   m_textToDisplay: {fileID: 5448713966999359001}
   m_subtitleTime: 10
@@ -3823,7 +3859,6 @@ MonoBehaviour:
   commaPause: 0.2
   spacePause: 0.1
   normalPause: 0.04
-  m_alreadyPlayed: 0
 --- !u!114 &8537746709526469332
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3874,7 +3909,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 57e656b77158db34696298f279250cfd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_playerLayer:
+    serializedVersion: 2
+    m_Bits: 0
   m_triggerNumber: 4
+  m_movingAtStart: 0
+  m_triggerGroup: {fileID: 0}
 --- !u!1 &8648009565189799764
 GameObject:
   m_ObjectHideFlags: 0
@@ -3981,10 +4021,10 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 8
   m_isDialogue: 1
-  m_blackCanvas: {fileID: 728046245911773062}
+  m_blackGameObject: {fileID: 0}
+  m_black: {fileID: 0}
   m_fadeTime: 10
   m_waitBeforePlay: 0
-  m_alreadyFaded: 0
   m_subtitleGameObject: {fileID: 5983013960964498781}
   m_textToDisplay: {fileID: 6154372147862290933}
   m_subtitleTime: 10
@@ -3992,7 +4032,6 @@ MonoBehaviour:
   commaPause: 0.2
   spacePause: 0.1
   normalPause: 0.04
-  m_alreadyPlayed: 0
 --- !u!114 &1515026079948813070
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4043,7 +4082,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 57e656b77158db34696298f279250cfd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_playerLayer:
+    serializedVersion: 2
+    m_Bits: 0
   m_triggerNumber: 9
+  m_movingAtStart: 0
+  m_triggerGroup: {fileID: 0}
 --- !u!1 &8688569168217479401
 GameObject:
   m_ObjectHideFlags: 0

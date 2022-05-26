@@ -196,14 +196,14 @@ MonoBehaviour:
 
       Human
 
-      
+
 
       Bonds
       & Rivalries:
 
       She has no particular ties, nor any rivals.
 
-      
+
 
       Likes
       & Dislikes:
@@ -211,7 +211,7 @@ MonoBehaviour:
       She loves to study living things, wants to know everything
       about them, and she loathes failing to understand things.
 
-      
+
 
       Motivations
       & Goals:
@@ -219,7 +219,7 @@ MonoBehaviour:
       She wants to make biological discoveries, going to the farthest
       reaches of the galaxy to find species that can advance humanity.
 
-      
+
 
       Strengths
       & Flaws:
@@ -227,19 +227,19 @@ MonoBehaviour:
       She always keeps a cool head in order to understand a situation
       before letting her survival instinct guide her.
 
-      
+
 
       Worst Nightmares:
 
       To
       die without having accomplished anything.
 
-      
+
 
       Motto:
 
-      "If
-      it lives, I have to analyze it !'
+      "If it lives,
+      I have to analyze it !'
     m_Metadata:
       m_Items: []
   - m_Id: 7411555386658816
@@ -566,8 +566,8 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 18676846323990528
-    m_Localized: Oh man ! the... the drop litterally broke my exosuit, I dont have
-      any other choice... I gotta continue without it...
+    m_Localized: The drop litterally broke my exosuit, I dont have any other choice...
+      I gotta continue without it...
     m_Metadata:
       m_Items: []
   - m_Id: 18676832021413888
@@ -575,14 +575,14 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 18676817618173952
-    m_Localized: What ? The voices comes from under the lake !
+    m_Localized: What ? The voices are coming from under the lake !
     m_Metadata:
       m_Items: []
   - m_Id: 18676802980052992
     m_Localized: I'm getting closer, I'm here, you're not alone, hold on !
     m_Metadata:
       m_Items:
-      - id: 6
+      - id: 9
   - m_Id: 18676787192692736
     m_Localized: Did you hear that ? There are survivors... I gotta go, I gotta go
       find them, I'll be back, stay here!
@@ -845,3 +845,7 @@ MonoBehaviour:
       type: {class: SmartFormatTag, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
         m_Entries: 00806a4854594200
+    00000009:
+      type: {class: SmartFormatTag, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_Entries: 00802a0f745a4200
