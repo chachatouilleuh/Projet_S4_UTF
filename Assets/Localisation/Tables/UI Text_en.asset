@@ -26,6 +26,7 @@ MonoBehaviour:
     - id: 6
     - id: 7
     - id: 8
+    - id: 9
   m_TableData:
   - m_Id: 158794043392
     m_Localized: Press any key
@@ -184,28 +185,70 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 7403557767483392
-    m_Localized: "Complete Name:.......Evelyn Harper.\r\nAge: \u2026\u2026\u2026\u2026\u2026\u2026\u2026.....34
-      years old.\r\nHeight: \u2026\u2026\u2026\u2026\u2026\u2026...174 cm.\r\nWeight:
-      \u2026\u2026\u2026\u2026\u2026\u2026.. 61 kg.\r\nGender: \u2026..................Female.\r\n\rSpecies:
-      \u2026..................Human.\r\n\r\nBonds & Rivalries:\r\nShe has no particular
-      ties, nor any rivals.\r\n\r\nLikes & Dislikes:\r\nShe loves to study living
-      things, wants to know everything about them, and she loathes failing to understand
-      things.\r\n\r\nMotivations & Goals:\r\nShe wants to make biological discoveries,
-      going to the farthest reaches of the galaxy to find species that can advance
-      humanity.\r\n\r\nStrengths & Flaws:\r\nShe always keeps a cool head in order
-      to understand a situation before letting her survival instinct guide her.\r\n\r\nWorst
-      Nightmares:\r\nTo die without having accomplished anything.\r\n\r\nMotto:\n\"If
-      it lives, I have to analyze it !"
+    m_Localized: 'Evelyn Harper
+
+      34 years old
+
+      174 cm
+
+      61 kg
+
+      Female
+
+      Human
+
+
+
+      Bonds
+      & Rivalries:
+
+      She has no particular ties, nor any rivals.
+
+
+
+      Likes
+      & Dislikes:
+
+      She loves to study living things, wants to know everything
+      about them, and she loathes failing to understand things.
+
+
+
+      Motivations
+      & Goals:
+
+      She wants to make biological discoveries, going to the farthest
+      reaches of the galaxy to find species that can advance humanity.
+
+
+
+      Strengths
+      & Flaws:
+
+      She always keeps a cool head in order to understand a situation
+      before letting her survival instinct guide her.
+
+
+
+      Worst Nightmares:
+
+      To
+      die without having accomplished anything.
+
+
+
+      Motto:
+
+      "If it lives,
+      I have to analyze it !'
     m_Metadata:
       m_Items: []
   - m_Id: 7411555386658816
-    m_Localized: "Complete Name: \u2026..H0.K1N.G1-942, abbreviated \u201CHawking\u201D.\r\nAge:
-      \u2026\u2026\u2026\u2026\u2026\u2026\u2026.... 2 years old.\r\nHeight:  \u2026\u2026\u2026\u2026\u2026\u2026.
-      50 cm.\r\nWeight: \u2026\u2026\u2026\u2026\u2026\u2026. 16 kg.\r\nGender: \u2026..................Male
-      voice.\r\n\rSpecies: \u2026.................Robot.\r\n\nBonds & Rivalries:\r\nIt
-      is a robot created by a corporation to assist the people with whom it is associated,
-      so it has no rival.\r\n\r\nLikes & Dislikes:\r\nHe enjoys solving complex problems,
-      and does not like to deal with information that circumvents the laws of physics.\r\n\r\nMotivations
+    m_Localized: "H0.K1N.G1-942, abbreviated \u201CHawking\u201D\n2 years old\n50
+      cm\n16 kg\nMale voice\nRobot\n\nBonds & Rivalries:\r\nIt is a robot created
+      by a corporation to assist the people with whom it is associated, so it has
+      no rival.\r\n\r\nLikes & Dislikes:\r\nHe enjoys solving complex problems, and
+      does not like to deal with information that circumvents the laws of physics.\r\n\r\nMotivations
       & Goals:\r\nHe is assigned to a mission, to help Evelyn in her research, his
       goal is to retrieve the various information given to him, and to extract data
       from it.\r\n\r\nStrengths & Flaws:\r\nHawking can analyze very large amounts
@@ -215,11 +258,9 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 7418938095702016
-    m_Localized: "Complete Name:  \u2026.Unknown\r\nAge: \u2026\u2026\u2026\u2026\u2026\u2026\u2026.....Unknown\r\nHeight:
-      \u2026\u2026\u2026\u2026\u2026\u2026.. 300 cm on average\r\nWeight: \u2026\u2026\u2026...\u2026\u2026...180
-      kg on average\r\nGender: \u2026...................\rUnknown\n\rSpecies: \u2026..................Endemic
-      fauna of Arcopa-8.\r\n\r\nBonds & Rivalries:\r\nThey live in symbiosis with
-      the flora, but they violently attack anyone who damages their habitat.\r\n\r\nLikes
+    m_Localized: "Unknown\r\nUnknown\r\n300 cm on average\r\n180 kg on average\r\nUnknown\nEndemic
+      fauna of Arcopa-8\n\r\nBonds & Rivalries:\r\nThey live in symbiosis with the
+      flora, but they violently attack anyone who damages their habitat.\r\n\r\nLikes
       & Dislikes:\r\nThey like to play with their prey in groups, tormenting them
       before finishing them off, they like to take remains back to their nests.\r\n\r\nMotivations
       & Goals:\r\nCuriosity and understanding what it doesn\u2019t know.\r\n\r\nStrengths
@@ -416,59 +457,55 @@ MonoBehaviour:
       m_Items:
       - id: 8
   - m_Id: 18677239909089280
-    m_Localized: '-Chimaera : *game ends with the words*    E V E L E E E N     E
-      V E L E E E N    P L E A  A S E   E V E L E E E N     E V E L E E E N    P
-      L E A  A S E*screen fades to black and we hear Evelyn agonizing scream*'
+    m_Localized: '-Chimaera :  E V E L E E E N     E V E L E E E N    P L E A  A
+      S E   E V E L E E E N     E V E L E E E N    P L E A  A S E'
     m_Metadata:
       m_Items: []
   - m_Id: 18677224507604992
-    m_Localized: '* Evelyn tries to break free but gets stabbed and cannot move anymore,
-      Mimic says words from different audios from the game*    '
+    m_Localized: '-Chimaera :  G E T   T O   T H E   S H I P      O F F  M E    
+      M E'
     m_Metadata:
       m_Items:
       - id: 7
   - m_Id: 18677208502140928
     m_Localized: '-Chimaera :  *with evelyn voice*   G E T   T O   T H E   S H I
-      P  G E T   T O   T H E   S H I P   ....       O F F     M E E E E  *extend
-      the E and end up screeching*'
+      P  G E T   T O   T H E   S H I P '
     m_Metadata:
       m_Items: []
   - m_Id: 18677189904596992
-    m_Localized: '*Chimaera pounces on Evelyn* Evelyn : *pained huffs under the weight* 
-      Urgh, get off me...!'
+    m_Localized: 'Evelyn :  Urgh, get off me...!'
     m_Metadata:
       m_Items: []
   - m_Id: 18677175287447552
-    m_Localized: ' -Evelyn : *blinds mimick with torch // whispering to herself*
-      I gotta get to the ship quick !  *Meanwhile Mimic screeches*'
+    m_Localized: ' -Evelyn :  I gotta get to the ship quick ! '
     m_Metadata:
       m_Items: []
   - m_Id: 18677150146789376
-    m_Localized: '-Chimaera :  *falls silent then with Evelyn''s voice with a high
-      pitched screech*      H A W K E E N     H A W K E E N '
+    m_Localized: '-Chimaera :   H A W K E E N     H A W K E E N  .... P R O F E S
+      S O R  H A R P E R'
     m_Metadata:
       m_Items: []
   - m_Id: 18677134053244928
-    m_Localized: '-Evelyn : What the hell, is that Hawking''s voice ?'
+    m_Localized: '-Evelyn : Is that Hawking''s voice ?'
     m_Metadata:
-      m_Items: []
+      m_Items:
+      - id: 9
   - m_Id: 18677119482232832
     m_Localized: '-Chimaera :  *mimicking Evelyn''s voice*  T R Y I N G  *gurggles,
       then mimicking Hawking*    S T  A Y   C A A A L M'
     m_Metadata:
       m_Items: []
   - m_Id: 18677103082504192
-    m_Localized: '-Evelyn : *silence, then confused* Uh ?... *creeped out* Is it
-      trying to talk ?'
+    m_Localized: '-Evelyn : Uh ?...  Is it trying to talk ? ... What the hell !'
     m_Metadata:
       m_Items: []
   - m_Id: 18677087932678144
-    m_Localized: '-Chimaera :  *strangle voice*     I T '' S   C O R E      *gurggling
-      noises sounding like ''IS'' ''*     ,,, M I S S...   I N G,,,'
+    m_Localized: '-Chimaera :  *strangle voice*     I T '' S   C O R E      IS''
+      ''     ,,, M I S S...   I N G,,,'
     m_Metadata:
       m_Items: []
   - m_Id: 18677074309578752
-    m_Localized: '-Evelyn : *inhales sharply / gasps in horror*'
+    m_Localized: '-Evelyn : *gasps in horror*'
     m_Metadata:
       m_Items: []
   - m_Id: 18677060858445824
@@ -476,25 +513,23 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 18677044269973504
-    m_Localized: 'Evelyn : *releived* Finally !'
+    m_Localized: 'Evelyn : Finally !'
     m_Metadata:
       m_Items: []
   - m_Id: 18677011831226368
-    m_Localized: '-Evelyn : *urgent* Hawking ! I''m here ! *interact with Hawking''s
-      corpse*  Hawking ! Hey !... Are... Are you kidding me ? !Its core... is missing...!
-      *hears the folliage ruffle, the grunts of mimics behind* Damn it ! I... I gotta
-      get to the capsule !'
+    m_Localized: '-Evelyn :  Hawking ! I''m here !  Hawking ! Hey !... Are... Are
+      you kidding me ? !Its core... is missing...!  Damn it ! I... I gotta get to
+      the ship !'
     m_Metadata:
       m_Items: []
   - m_Id: 18676994861072384
-    m_Localized: '-Evelyn : *alarmed* Hawking ? Hawking ! Hang in there ! I''m on
-      my way ! *with urgency, to herself* I need to hurry up'
+    m_Localized: '-Evelyn : Hawking ? Hawking ! Hang in there ! I''m on my way ! 
+      I need to hurry up'
     m_Metadata:
       m_Items: []
   - m_Id: 18676978838831104
-    m_Localized: '-Hawking : *screaming* Professor Harper ! Help ! No ! Please stop
-      it ! Professor Harp..;! Evelyn please ! No ! Not the...! Stop it ! *scream
-      dies out*'
+    m_Localized: '-Hawking : Professor Harper ! Help ! No ! Please stop it ! Professor
+      Harp..;! Evelyn please ! No ! Not the...! Stop it ! *scream dies out*'
     m_Metadata:
       m_Items: []
   - m_Id: 18676964594974720
@@ -526,8 +561,8 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 18676846323990528
-    m_Localized: Oh man ! the... the drop litterally broke my exosuit, I dont have
-      any other choice... I gotta continue without it...
+    m_Localized: The drop litterally broke my exosuit, I dont have any other choice...
+      I gotta continue without it...
     m_Metadata:
       m_Items: []
   - m_Id: 18676832021413888
@@ -535,14 +570,14 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 18676817618173952
-    m_Localized: What ? The voices comes from under the lake !
+    m_Localized: What ? The voices are coming from under the lake !
     m_Metadata:
       m_Items: []
   - m_Id: 18676802980052992
     m_Localized: I'm getting closer, I'm here, you're not alone, hold on !
     m_Metadata:
       m_Items:
-      - id: 6
+      - id: 10
   - m_Id: 18676787192692736
     m_Localized: Did you hear that ? There are survivors... I gotta go, I gotta go
       find them, I'll be back, stay here!
@@ -572,8 +607,8 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 18676659098648576
-    m_Localized: '-Evelyn : Hawking, when I''ve been down there, I found... I found
-      another spaceship and a cold blood scene.'
+    m_Localized: '-Evelyn : Hawking, when I was down there, I found another spaceship
+      and a cold blood scene.'
     m_Metadata:
       m_Items: []
   - m_Id: 18676677469700096
@@ -741,6 +776,32 @@ MonoBehaviour:
     m_Localized: 'Voices Volume:'
     m_Metadata:
       m_Items: []
+  - m_Id: 19641862865592320
+    m_Localized: "Entry n\xB01[...]5\r\nExperimental Probe Arcopa A1.87 operational
+      [...] landed, results shows a great [...] in the air, [...]  indicates signs
+      of [...]. Flora acts as independ[...]t [...] Affects local gravity factors
+      [...]\r\nNeed further in[...]stigation ."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19672797719863296
+    m_Localized: "En[...]try n[....]\xB079\r\nExperimental Probe A.1.94 in servic[...]
+      Sc[...]entists have found [...], very intriguiging. They seems to [...]. Dr
+      Ludvic calls them the C[...]e. [...] symbiotic and protec[...]ve of their env[...],
+      one of the crew members repor[...] inc[...]ble capacity to mi[...]ck sounds
+      and voi[...]es"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19674056237555712
+    m_Localized: "E[...]ry n\xB032\r\n[...] Error message [...] Data overwri[...]n\r\n\r\nThis
+      is probably my last entry [...] \r\n[...] have step[...] into the Chimaeras'
+      nest. W[...]  greatly underestimated their [...]telligence, [...] they probably
+      are even [...] than humans. We have been betrayed [...] the 3SA knew [...]e.\r\nThey
+      sent us to evalu[...]e them [...] our death [...] price for them to pay to
+      expend their ressour[...]s [...]\r\nBet they would send [...]nother to gather
+      [...]r res[...]lts.\r\nTo anyone reading this message, do not hope to surv[...]ve,
+      this planet [...] insane."
+    m_Metadata:
+      m_Items: []
   references:
     version: 1
     00000000:
@@ -779,3 +840,11 @@ MonoBehaviour:
       type: {class: SmartFormatTag, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
         m_Entries: 00806a4854594200
+    00000009:
+      type: {class: SmartFormatTag, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_Entries: 0080aa24c15a4200
+    0000000A:
+      type: {class: SmartFormatTag, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_Entries: 00802a0f745a4200

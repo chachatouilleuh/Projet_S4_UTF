@@ -6,17 +6,17 @@ public class SetMotionMultiplier : MonoBehaviour
     [SerializeField, Tooltip("layer du player")] private LayerMask m_playerLayer;
     private Animator m_animator;
     [SerializeField, Tooltip("l'animator du trigger")] private float m_triggerNumber;
-    [SerializeField, Tooltip("l'animator du trigger")] public static bool m_movingAtStart;
+    [SerializeField, Tooltip("l'animator du trigger")] private bool m_movingAtStart;
+    [SerializeField, Tooltip("l'animator du trigger")] private GameObject m_triggerGroup;
 
-    private bool m_alreadyPlayed;
-
+    private bool m_startMoving;
     // Start is called before the first frame update
     void Start()
     {
         m_animator = GetComponent<Animator>();
 
-        if (m_movingAtStart)
-        {
+        //if (m_movingAtStart)
+        //{
             switch (m_triggerNumber)
             {
                 case 1:
@@ -71,20 +71,26 @@ public class SetMotionMultiplier : MonoBehaviour
                     m_animator.SetBool("Trigger13", true);
                     break;
             }
-        }
+        //}
     }
 
     private void OnTriggerEnter(Collider other)
     {
-        if ((m_playerLayer.value & (1 << other.gameObject.layer)) > 0 && !m_alreadyPlayed)
+        if ((m_playerLayer.value & (1 << other.gameObject.layer)) > 0)
         {
-            m_movingAtStart = true;
+            m_triggerGroup.SetActive(true);
+            m_startMoving = true;
         }
     }
 
     private void Update()
     {
-        if (m_movingAtStart)
+        if (m_triggerGroup == null)
+        {
+            return;
+        }
+
+        if (m_startMoving)
         {
             switch (m_triggerNumber)
             {

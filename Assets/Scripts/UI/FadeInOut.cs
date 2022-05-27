@@ -46,7 +46,7 @@ public class FadeInOut : MonoBehaviour
     //    }
     //}
     
-    private void OnTriggerEnter(Collider other)
+    private IEnumerator OnTriggerEnter(Collider other)
     {
         if ((m_playerLayer.value & (1 << other.gameObject.layer)) > 0 && !m_alreadyPlayed)
         {
@@ -54,6 +54,7 @@ public class FadeInOut : MonoBehaviour
             {
                 if (Underlining.m_sub == 0)
                 {
+                    yield return new WaitForSeconds(m_waitBeforePlay);
                     m_subtitleGameObject.SetActive(true);
                     StartCoroutine(TypeSentence(m_textToDisplay.text));
                     StartCoroutine(HideSubtitles());
