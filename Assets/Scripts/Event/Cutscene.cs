@@ -9,10 +9,10 @@ public class Cutscene : MonoBehaviour
     [SerializeField, Tooltip("le numéro de la cutscene")] private int m_cutsceneNumber;
     [SerializeField, Tooltip("l'attente avant de lancer la cutscene")] private float m_waitBeforeStart;
     [SerializeField, Tooltip("layer du player")] private float m_waitBeforeEnd;
-    
-    [SerializeField, Tooltip("le son est deja joue")] private bool m_alreadyPlayed;
 
+    private bool m_alreadyPlayed;
     public static bool m_isCutscene;
+    
     private void Start()
     {
         switch (m_cutsceneNumber)

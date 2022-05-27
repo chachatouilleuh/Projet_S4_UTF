@@ -26,6 +26,7 @@ MonoBehaviour:
     - id: 6
     - id: 7
     - id: 8
+    - id: 9
   m_TableData:
   - m_Id: 158794043392
     m_Localized: Press any key
@@ -456,59 +457,55 @@ MonoBehaviour:
       m_Items:
       - id: 8
   - m_Id: 18677239909089280
-    m_Localized: '-Chimaera : *game ends with the words*    E V E L E E E N     E
-      V E L E E E N    P L E A  A S E   E V E L E E E N     E V E L E E E N    P
-      L E A  A S E*screen fades to black and we hear Evelyn agonizing scream*'
+    m_Localized: '-Chimaera :  E V E L E E E N     E V E L E E E N    P L E A  A
+      S E   E V E L E E E N     E V E L E E E N    P L E A  A S E'
     m_Metadata:
       m_Items: []
   - m_Id: 18677224507604992
-    m_Localized: '* Evelyn tries to break free but gets stabbed and cannot move anymore,
-      Mimic says words from different audios from the game*    '
+    m_Localized: '-Chimaera :  G E T   T O   T H E   S H I P      O F F  M E    
+      M E'
     m_Metadata:
       m_Items:
       - id: 7
   - m_Id: 18677208502140928
     m_Localized: '-Chimaera :  *with evelyn voice*   G E T   T O   T H E   S H I
-      P  G E T   T O   T H E   S H I P   ....       O F F     M E E E E  *extend
-      the E and end up screeching*'
+      P  G E T   T O   T H E   S H I P '
     m_Metadata:
       m_Items: []
   - m_Id: 18677189904596992
-    m_Localized: '*Chimaera pounces on Evelyn* Evelyn : *pained huffs under the weight* 
-      Urgh, get off me...!'
+    m_Localized: 'Evelyn :  Urgh, get off me...!'
     m_Metadata:
       m_Items: []
   - m_Id: 18677175287447552
-    m_Localized: ' -Evelyn : *blinds mimick with torch // whispering to herself*
-      I gotta get to the ship quick !  *Meanwhile Mimic screeches*'
+    m_Localized: ' -Evelyn :  I gotta get to the ship quick ! '
     m_Metadata:
       m_Items: []
   - m_Id: 18677150146789376
-    m_Localized: '-Chimaera :  *falls silent then with Evelyn''s voice with a high
-      pitched screech*      H A W K E E N     H A W K E E N '
+    m_Localized: '-Chimaera :   H A W K E E N     H A W K E E N  .... P R O F E S
+      S O R  H A R P E R'
     m_Metadata:
       m_Items: []
   - m_Id: 18677134053244928
-    m_Localized: '-Evelyn : What the hell, is that Hawking''s voice ?'
+    m_Localized: '-Evelyn : Is that Hawking''s voice ?'
     m_Metadata:
-      m_Items: []
+      m_Items:
+      - id: 9
   - m_Id: 18677119482232832
     m_Localized: '-Chimaera :  *mimicking Evelyn''s voice*  T R Y I N G  *gurggles,
       then mimicking Hawking*    S T  A Y   C A A A L M'
     m_Metadata:
       m_Items: []
   - m_Id: 18677103082504192
-    m_Localized: '-Evelyn : *silence, then confused* Uh ?... *creeped out* Is it
-      trying to talk ?'
+    m_Localized: '-Evelyn : Uh ?...  Is it trying to talk ? ... What the hell !'
     m_Metadata:
       m_Items: []
   - m_Id: 18677087932678144
-    m_Localized: '-Chimaera :  *strangle voice*     I T '' S   C O R E      *gurggling
-      noises sounding like ''IS'' ''*     ,,, M I S S...   I N G,,,'
+    m_Localized: '-Chimaera :  *strangle voice*     I T '' S   C O R E      IS''
+      ''     ,,, M I S S...   I N G,,,'
     m_Metadata:
       m_Items: []
   - m_Id: 18677074309578752
-    m_Localized: '-Evelyn : *inhales sharply / gasps in horror*'
+    m_Localized: '-Evelyn : *gasps in horror*'
     m_Metadata:
       m_Items: []
   - m_Id: 18677060858445824
@@ -516,25 +513,23 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 18677044269973504
-    m_Localized: 'Evelyn : *releived* Finally !'
+    m_Localized: 'Evelyn : Finally !'
     m_Metadata:
       m_Items: []
   - m_Id: 18677011831226368
-    m_Localized: '-Evelyn : *urgent* Hawking ! I''m here ! *interact with Hawking''s
-      corpse*  Hawking ! Hey !... Are... Are you kidding me ? !Its core... is missing...!
-      *hears the folliage ruffle, the grunts of mimics behind* Damn it ! I... I gotta
-      get to the capsule !'
+    m_Localized: '-Evelyn :  Hawking ! I''m here !  Hawking ! Hey !... Are... Are
+      you kidding me ? !Its core... is missing...!  Damn it ! I... I gotta get to
+      the ship !'
     m_Metadata:
       m_Items: []
   - m_Id: 18676994861072384
-    m_Localized: '-Evelyn : *alarmed* Hawking ? Hawking ! Hang in there ! I''m on
-      my way ! *with urgency, to herself* I need to hurry up'
+    m_Localized: '-Evelyn : Hawking ? Hawking ! Hang in there ! I''m on my way ! 
+      I need to hurry up'
     m_Metadata:
       m_Items: []
   - m_Id: 18676978838831104
-    m_Localized: '-Hawking : *screaming* Professor Harper ! Help ! No ! Please stop
-      it ! Professor Harp..;! Evelyn please ! No ! Not the...! Stop it ! *scream
-      dies out*'
+    m_Localized: '-Hawking : Professor Harper ! Help ! No ! Please stop it ! Professor
+      Harp..;! Evelyn please ! No ! Not the...! Stop it ! *scream dies out*'
     m_Metadata:
       m_Items: []
   - m_Id: 18676964594974720
@@ -582,7 +577,7 @@ MonoBehaviour:
     m_Localized: I'm getting closer, I'm here, you're not alone, hold on !
     m_Metadata:
       m_Items:
-      - id: 9
+      - id: 10
   - m_Id: 18676787192692736
     m_Localized: Did you hear that ? There are survivors... I gotta go, I gotta go
       find them, I'll be back, stay here!
@@ -846,6 +841,10 @@ MonoBehaviour:
       data:
         m_Entries: 00806a4854594200
     00000009:
+      type: {class: SmartFormatTag, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_Entries: 0080aa24c15a4200
+    0000000A:
       type: {class: SmartFormatTag, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
         m_Entries: 00802a0f745a4200

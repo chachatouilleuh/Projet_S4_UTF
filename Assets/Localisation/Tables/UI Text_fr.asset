@@ -411,54 +411,51 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 18677239909089280
-    m_Localized: "-Chim\xE8re :  *le jeu se finit sur ces mots*  A   L'A I D E....   
-      E V E L I I I N *lecran noir, on entend le cri d'agonie d'Evelyn*"
+    m_Localized: "-Chim\xE8re :  E V E L I I I N   E V E L I I I N   A   L'A I D
+      E....    E V E L I I I N   E V E L I I I N  A   L'A I D E"
     m_Metadata:
       m_Items: []
   - m_Id: 18677224507604992
-    m_Localized: "* Evelyn essaye de s'\xE9chapper mais se fait transpercer et ne
-      peut plus bouger, le Mimic dit des mots des diff\xE9rents audios du jeu, sans
-      r\xE9elle coh\xE9rence*    "
+    m_Localized: "-Chim\xE8re :   A T T E I G N E     L E    V A I S S E A U U U     
+      L A C H E  M O  I       M O  I"
     m_Metadata:
       m_Items: []
   - m_Id: 18677208502140928
     m_Localized: "-Chim\xE8re :  *avec la voix d'Evelyn*  A T T E I G N E     L E   
-      V A I S S E A U U U    ....       L A C H E   M O I I I  ..."
+      V A I S S E A U U U"
     m_Metadata:
       m_Items: []
   - m_Id: 18677189904596992
-    m_Localized: "* la chim\xE8re bondit sur Evelyn*  Evelyn : *Hal\xE8te sous le
-      poids*  Urgh, l\xE2che moi...!"
+    m_Localized: " Evelyn : Argh, l\xE2che moi...!"
     m_Metadata:
       m_Items: []
   - m_Id: 18677175287447552
-    m_Localized: " -Evelyn : *aveugle le mimic avec une torche // chuchotant \xE0
-      elle m\xEAme*  Il faut que j'atteigne le vaisseau !  *le mimic hurle / crisse*"
+    m_Localized: ' -Evelyn :  Il faut que j''atteigne le vaisseau ! '
     m_Metadata:
       m_Items: []
   - m_Id: 18677150146789376
-    m_Localized: "-Chim\xE8re : *silencieux, puis imitant Evelyn avec un timbre tr\xE8s
-      aigu*      H A W K I I I I N"
+    m_Localized: "-Chim\xE8re :      H A W K I I I I N    H A W K I I I I N   P R
+      O F E S S E U R    H A R P E R"
     m_Metadata:
       m_Items: []
   - m_Id: 18677134053244928
-    m_Localized: "-Evelyn : Qu'est ce que c'est que \xE7a, la voix d'Hawking ?"
+    m_Localized: '-Evelyn : Mais... c''est la voix d''Hawking ?'
     m_Metadata:
       m_Items: []
   - m_Id: 18677119482232832
-    m_Localized: "-Chim\xE8re : *imitant la voix d'Evelyn* E S S A \xCF \xCF E  
-      *dire A et I en 2 sons distincts*  *gargouille puis en imitant la voix d''Hawking*   
-      R E E E S T E E E Z                     C A L M E"
+    m_Localized: "-Chim\xE8re : *imitant la voix d'Evelyn* E S S A Y Y E    *gargouille
+      puis en imitant la voix d''Hawking*    R E E E S T E E E Z                    
+      C A L M E"
     m_Metadata:
       m_Items: []
   - m_Id: 18677103082504192
-    m_Localized: "-Evelyn : *silence, puis confusion* Quoi ?... *effray\xE9e* Est
-      que \xE7a essaye de parler ?"
+    m_Localized: '-Evelyn :  Quoi ?... On dirait qu''il parle ?! ... C''est quoi
+      ce bordel !?'
     m_Metadata:
       m_Items: []
   - m_Id: 18677087932678144
-    m_Localized: "-Chim\xE8re : *d'une voix \xE9trangl\xE9e* B O I T E   N O I R
-      E  *gurggling noises sounding like 'IS' '*  ,,, D I S... P A R U E,,,"
+    m_Localized: "-Chim\xE8re : *d'une voix \xE9trangl\xE9e* S O N   C OE U R...  
+      E S T,,,  D E... TRUIT"
     m_Metadata:
       m_Items: []
   - m_Id: 18677074309578752
@@ -470,15 +467,13 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 18677044269973504
-    m_Localized: '-Evelyn : *avec soulagement* Enfin !'
+    m_Localized: '-Evelyn :  Enfin !'
     m_Metadata:
       m_Items: []
   - m_Id: 18677011831226368
-    m_Localized: "-Evelyn : *ton urgent* Hawking !Je suis l\xE0 ! *Interagir avec
-      le corps d'Hawking*  Hawking ! Hey !... C'est... c'est un blague !? La bo\xEEte
-      noire interne, elle a disparue...! *le feuillage bruissent en arri\xE8re plan,
-      suivit des grognements des mimics*  Bordel ! Faut que je retourne \xE0 la capsule
-      !"
+    m_Localized: "-Evelyn : Hawking !Je suis l\xE0 !  Hawking ! Hey !... C'est...
+      c'est un blague !? Son coeur est d\xE9truit...!  Bordel ! Faut que je retourne
+      \xE0 la capsule !"
     m_Metadata:
       m_Items: []
   - m_Id: 18676994861072384
