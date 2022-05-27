@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Audio;
 
 public class platforms : MonoBehaviour, Iplatforms
 {
@@ -19,6 +20,8 @@ public class platforms : MonoBehaviour, Iplatforms
     [SerializeField, Tooltip("temps avant que la platforme monte/descende")]
     private float m_secondsWait;
 
+    [SerializeField, Tooltip("temps avant cut son")] private float m_waitCut;
+
     [SerializeField, Tooltip("la plateforme bouge x fois ?")]
     private bool m_moveALot;
     
@@ -26,6 +29,13 @@ public class platforms : MonoBehaviour, Iplatforms
     private string m_closeTriggerName = "Active";
     private int m_openHash;
     private int m_closeHash;
+
+    [SerializeField] private bool m_isSingle; 
+
+    [SerializeField, Tooltip("le sfx a jouer")] private AudioMixerGroup m_audioMixer;
+    [SerializeField, Tooltip("le sfx a jouer")] private AudioClip m_clipToPlay;
+
+    private AudioSource m_audiosourceTrigger;
 
     private void Awake()
     {
@@ -40,8 +50,12 @@ public class platforms : MonoBehaviour, Iplatforms
 
         m_openHash = Animator.StringToHash(m_openTriggerName);
         m_closeHash = Animator.StringToHash(m_closeTriggerName);
+
+        m_audiosourceTrigger = gameObject.GetComponent<AudioSource>();
+        m_audiosourceTrigger.outputAudioMixerGroup = m_audioMixer;
+        m_audiosourceTrigger.clip = m_clipToPlay;
     }
-    
+
     private void OnEnable()
     {
         m_triggeredEvent.onTriggered += HandleTriggerEvent;
@@ -80,11 +94,17 @@ public class platforms : MonoBehaviour, Iplatforms
         if (!m_moveALot)
         {
             m_animator?.SetTrigger(m_openHash);
+            m_audiosourceTrigger.Play();
+            if(m_isSingle)
+            {
+                StartCoroutine(StopSound());
+            }
         }
         else
         {
             LaunchMove();
-            InvokeRepeating("LaunchMove", 0f, m_secondsWait + 4); 
+            InvokeRepeating("LaunchMove", 0f, m_secondsWait + 4);
+            m_audiosourceTrigger.Play();
         }
     }
 
@@ -100,5 +120,11 @@ public class platforms : MonoBehaviour, Iplatforms
         yield return new WaitForSeconds(m_secondsWait);
         
         m_animator?.SetTrigger(m_closeHash);
+    }
+
+    IEnumerator StopSound()
+    {
+        yield return new WaitForSeconds(m_waitCut);
+        m_audiosourceTrigger.Stop();
     }
 }

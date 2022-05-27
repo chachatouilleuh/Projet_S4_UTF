@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 5083947327031253995}
   - component: {fileID: 5083947327031253992}
   - component: {fileID: 5083947327031253993}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: Gravity_Zero_zone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4825,7 +4825,7 @@ GameObject:
   - component: {fileID: 2369395995020013408}
   - component: {fileID: 3415558050375423630}
   - component: {fileID: 6943969285524046210}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: Gravity_Zero_zone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
