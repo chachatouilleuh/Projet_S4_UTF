@@ -31,7 +31,6 @@ public class InactiveFX : MonoBehaviour
     {
         for (int i = 0; i < m_listFX.Count; i++)
         {
-            Debug.Log("5");
             m_listFX[i].GetComponent<ParticleSystem>().Stop();
                     
         }
@@ -43,7 +42,6 @@ public class InactiveFX : MonoBehaviour
         for (int i = 0; i < m_listFX.Count; i++)
         {
             m_listFX[i].GetComponent<ParticleSystem>().Stop();
-            Debug.Log("5");
         }
     }
 }

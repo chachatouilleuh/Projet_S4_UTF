@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Audio;
@@ -20,6 +21,8 @@ public class Lock : MonoBehaviour, ILock
         [SerializeField, Tooltip("le sfx a jouer")] private AudioClip m_clipToPlay;
 
         private AudioSource m_audiosourceTrigger;
+
+        private bool m_activeAudio = false;
 
         private void OnEnable()
         {
@@ -51,10 +54,10 @@ public class Lock : MonoBehaviour, ILock
                 }
             }
             // ouvre la porte
-            // transform.position += new Vector3(0, 4, 0);
             m_animator?.SetTrigger(m_openHash);
             m_audiosourceTrigger.Play();
         }
+
 
         private void Awake()
         {
