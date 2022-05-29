@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 8180324925805478834}
   - component: {fileID: 5150678283555462326}
   - component: {fileID: 2323871774984563657}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Mobile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -260,7 +260,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5469987486388956454}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Moving_Platform
   m_TagString: Untagged
   m_Icon: {fileID: 0}

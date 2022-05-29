@@ -6,15 +6,15 @@ using UnityEngine.Audio;
 public class EnergyCube : MonoBehaviour
 {
     //Coroutine
-    [SerializeField, Tooltip("temps avant de detruire objet")] private float m_SecondsWait;
+    [SerializeField, Tooltip("temps avant de rejouer le son")] private float m_SecondsWait;
+    private Coroutine m_soundCor;
     
+    //son
     [SerializeField, Tooltip("layer ground")] private LayerMask m_groundLayer;
     [SerializeField, Tooltip("le sfx a jouer")] private AudioMixerGroup m_audioMixer;
     [SerializeField, Tooltip("le sfx a jouer")] private AudioClip m_clipToPlay;
-
+    [SerializeField, Tooltip("can audio ?")] private bool m_canAudio;
     private AudioSource m_audiosourceTrigger;
-
-    private Coroutine m_soundCor;
 
     private void OnDisable()
     {
@@ -36,16 +36,20 @@ public class EnergyCube : MonoBehaviour
     {
         if ((m_groundLayer.value & (1 << collision.gameObject.layer)) > 0)
         {
-            
-            m_soundCor = StartCoroutine(WaitForSound());
+            if (m_canAudio)
+            {
+                m_soundCor = StartCoroutine(WaitForSound());
+                m_canAudio = false;
+            }
         }
     }
 
     IEnumerator WaitForSound()
     {
-        Debug.Log("2");
         m_audiosourceTrigger.Play();
 
         yield return new WaitForSeconds(m_SecondsWait);
+
+        m_canAudio = true;
     }
 }
