@@ -1,5 +1,8 @@
+using System;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Audio;
+
 public class Lock : MonoBehaviour, ILock
     {
         [SerializeField, Tooltip("trigger de l'event")]
@@ -13,6 +16,13 @@ public class Lock : MonoBehaviour, ILock
 
         private string m_openTriggerName = "Open";
         private int m_openHash;
+        
+        [SerializeField, Tooltip("le sfx a jouer")] private AudioMixerGroup m_audioMixer;
+        [SerializeField, Tooltip("le sfx a jouer")] private AudioClip m_clipToPlay;
+
+        private AudioSource m_audiosourceTrigger;
+
+        private bool m_activeAudio = false;
 
         private void OnEnable()
         {
@@ -44,9 +54,10 @@ public class Lock : MonoBehaviour, ILock
                 }
             }
             // ouvre la porte
-            // transform.position += new Vector3(0, 4, 0);
             m_animator?.SetTrigger(m_openHash);
+            m_audiosourceTrigger.Play();
         }
+
 
         private void Awake()
         {
@@ -60,5 +71,9 @@ public class Lock : MonoBehaviour, ILock
             }
 
             m_openHash = Animator.StringToHash(m_openTriggerName);
+            
+            m_audiosourceTrigger = gameObject.GetComponent<AudioSource>();
+            m_audiosourceTrigger.outputAudioMixerGroup = m_audioMixer;
+            m_audiosourceTrigger.clip = m_clipToPlay;
         }
     }

@@ -32,7 +32,7 @@ public class Inventory : MonoBehaviour
                 {
                     if((m_layerProbes.value & (1 << hit.transform.gameObject.layer)) > 0)
                     {
-                        Probes myProbes = hit.transform.gameObject.GetComponent<Probes>();
+                        Probes myProbes = hit.transform.gameObject.GetComponentInChildren<Probes>();
                         if (myProbes != null && myProbes.GetProbes(out KeyType o_probes))
                         {
                             if (!m_inventaire.Contains(o_probes))
@@ -43,7 +43,7 @@ public class Inventory : MonoBehaviour
                         }
                     }
                 }
-            
+
                 else if(Physics.Raycast(pickupRay, out hit, m_distance, m_layerLock))
                 {
                     if ((m_layerLock.value & (1 << hit.transform.gameObject.layer)) > 0)

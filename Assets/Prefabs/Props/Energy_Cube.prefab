@@ -42,8 +42,8 @@ Light:
   serializedVersion: 10
   m_Type: 2
   m_Shape: 0
-  m_Color: {r: 0, g: 0.9754145, b: 1, a: 1}
-  m_Intensity: 1
+  m_Color: {r: 0.011881431, g: 0.8396226, b: 0.5966451, a: 1}
+  m_Intensity: 0.5
   m_Range: 5
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -221,8 +221,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   outlineMode: 0
-  outlineColor: {r: 0, g: 0.9820709, b: 1, a: 1}
-  outlineWidth: 10
+  outlineColor: {r: 0, g: 0.7830189, b: 0.5222333, a: 1}
+  outlineWidth: 2
   precomputeOutline: 0
   bakeKeys: []
   bakeValues: []
