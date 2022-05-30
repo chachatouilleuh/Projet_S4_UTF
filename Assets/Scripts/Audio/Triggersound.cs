@@ -10,13 +10,23 @@ public class TriggerSound : MonoBehaviour
     [SerializeField, Tooltip("le sfx a jouer")] private AudioClip m_clipToPlay;
     [SerializeField, Tooltip("le son est une musique")] private bool m_isMusic;
     [SerializeField, Tooltip("le son est deja joue")] private bool alreadyPlayed;
+    [SerializeField, Tooltip("il y a déjà une audiosource dans le game object")] private bool m_addAudioSource;
     [SerializeField, Tooltip("le temps d'attente avant de play")]private float m_waitBeforePlay;
+
     
     private AudioSource m_audiosourceTrigger;
 
     private void Start()
     {
-        m_audiosourceTrigger = gameObject.AddComponent<AudioSource>();
+        if (m_addAudioSource)
+        {
+            m_audiosourceTrigger = gameObject.AddComponent<AudioSource>();
+        }
+        else
+        {
+            m_audiosourceTrigger = gameObject.GetComponent<AudioSource>();
+        }
+     
         m_audiosourceTrigger.outputAudioMixerGroup = m_audioMixer;
         m_audiosourceTrigger.clip = m_clipToPlay;
     }

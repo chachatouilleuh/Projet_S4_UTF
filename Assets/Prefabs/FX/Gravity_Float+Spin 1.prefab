@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2490177595768124770}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: Gravity_Float+Spin 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -43,7 +43,7 @@ GameObject:
   - component: {fileID: 2092648580600374237}
   - component: {fileID: 6118724874417929085}
   - component: {fileID: 1433130093771435600}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: Float
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4865,7 +4865,7 @@ GameObject:
   - component: {fileID: 8308346987116615870}
   - component: {fileID: 5238665385259881335}
   - component: {fileID: 1384661702920660107}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: Spin
   m_TagString: Untagged
   m_Icon: {fileID: 0}
