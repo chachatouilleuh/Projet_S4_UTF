@@ -10,6 +10,7 @@ public class FadeInOut : MonoBehaviour
 
     [SerializeField, Tooltip("le canvas des sous-titres")] private GameObject m_blackGameObject;
     [SerializeField, Tooltip("le canvas noir de transition")] private MaskableGraphic m_black ;
+    [SerializeField, Tooltip("canvas est un dialogue")] private bool m_isEnding;
     [SerializeField, Tooltip("le temps de fade")]private float m_fadeTime;
     [SerializeField, Tooltip("le temps d'attente")]private float m_waitBeforePlay;
     
@@ -27,6 +28,7 @@ public class FadeInOut : MonoBehaviour
     [SerializeField, Tooltip("pause entre caractères")]private float normalPause;
     
     private bool m_alreadyPlayed;
+    
    
     
     
@@ -38,13 +40,6 @@ public class FadeInOut : MonoBehaviour
         }
     }
     
-    //void Update()
-    //{
-    //    if(m_alreadyPlayed)
-    //    {
-    //        StartCoroutine(FadeOut());
-    //    }
-    //}
     
     private IEnumerator OnTriggerEnter(Collider other)
     {
@@ -88,8 +83,12 @@ public class FadeInOut : MonoBehaviour
     {
         yield return new WaitForSeconds(m_waitBeforePlay);
         m_fadeTime += Time.deltaTime;
-        m_black.CrossFadeAlpha(1, 0.5f, false);
-        StartCoroutine(FadeOut());
+        m_black.CrossFadeAlpha(1, m_fadeTime, false);
+        
+        if(!m_isEnding)
+        {
+            StartCoroutine(FadeOut());
+        }
     }
 
     IEnumerator TypeSentence (string sentence){
