@@ -29,7 +29,7 @@ public class CameraShake : MonoBehaviour
 
     private void HandleTriggerEvent()
     {
-        m_shakeCam = StartCoroutine(Shake(4f, 4f));
+        m_shakeCam = StartCoroutine(Shake(4f, 0.1f));
     }
 
     public IEnumerator Shake(float duration, float magnitude)
