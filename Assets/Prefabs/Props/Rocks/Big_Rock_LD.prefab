@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 8343432673389834030}
   - component: {fileID: 4928636028715458699}
   - component: {fileID: 7170574014012068929}
+  - component: {fileID: -6443966644917453526}
   m_Layer: 0
   m_Name: Big_Rock_LD
   m_TagString: Untagged
@@ -81,3 +82,17 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &-6443966644917453526
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8683506756241438100}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -866884628027251215, guid: 709ed756904d2d84eb33a723a5ff8151, type: 3}
