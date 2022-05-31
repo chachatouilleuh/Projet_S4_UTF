@@ -22,11 +22,13 @@ public class Raycast : MonoBehaviour
             {
                 m_curTarget = hit.transform.gameObject;
                 m_curTarget.GetComponent<Outline>().enabled = true;
+                // m_curTarget.GetComponentInChildren<Outline>().enabled = true;
                 m_infoCube.SetActive(true);
             }
             else
             {
                 m_curTarget.GetComponent<Outline>().enabled = false;
+                // m_curTarget.GetComponentInChildren<Outline>().enabled = false;
                 m_infoCube.SetActive(false);
             }
 
@@ -38,6 +40,7 @@ public class Raycast : MonoBehaviour
                 return;
             }
             m_curTarget.GetComponent<Outline>().enabled = false;
+            // m_curTarget.GetComponentInChildren<Outline>().enabled = false;
             m_infoCube.SetActive(false);
         }
     }

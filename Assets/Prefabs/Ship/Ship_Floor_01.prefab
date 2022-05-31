@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 9084509612470924145}
   - component: {fileID: 6482472160951764923}
   - component: {fileID: 8950448488637402941}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Ship_Floor_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -89,7 +89,7 @@ MeshCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4825222607685822062}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: c8d81949a943e66478d76d9b362c4777, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
