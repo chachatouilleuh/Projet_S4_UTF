@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 6489587431413507241}
   - component: {fileID: 2386818491793180759}
   - component: {fileID: 2101227010317269365}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Record
   m_TagString: Pickable_Object
   m_Icon: {fileID: 0}
@@ -129,9 +129,9 @@ GameObject:
   - component: {fileID: 4563448362337376602}
   - component: {fileID: 3507547940821863437}
   - component: {fileID: 7102708112832202419}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: records_final
-  m_TagString: Pickable_Object
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
