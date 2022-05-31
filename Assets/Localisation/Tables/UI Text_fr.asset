@@ -416,13 +416,12 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 18677224507604992
-    m_Localized: "-Chim\xE8re :   A T T E I G N E     L E    V A I S S E A U U U     
-      L A C H E  M O  I       M O  I"
+    m_Localized: "-Chim\xE8re :   L A C H E  M O  I       M O  I"
     m_Metadata:
       m_Items: []
   - m_Id: 18677208502140928
-    m_Localized: "-Chim\xE8re :  *avec la voix d'Evelyn*  A T T E I G N E     L E   
-      V A I S S E A U U U"
+    m_Localized: "-Chim\xE8re : A T T E I G N E   L E  V A I S S E A U   A T T E
+      I G N E   L E  V A I S S E A U  "
     m_Metadata:
       m_Items: []
   - m_Id: 18677189904596992
@@ -434,8 +433,8 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 18677150146789376
-    m_Localized: "-Chim\xE8re :      H A W K I I I I N    H A W K I I I I N   P R
-      O F E S S E U R    H A R P E R"
+    m_Localized: "-Chim\xE8re :  H A W K I I I I N   H A W K I I I I N...                
+      P R O F E S S E U R    H A R P E R"
     m_Metadata:
       m_Items: []
   - m_Id: 18677134053244928
@@ -443,19 +442,17 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 18677119482232832
-    m_Localized: "-Chim\xE8re : *imitant la voix d'Evelyn* E S S A Y Y E    *gargouille
-      puis en imitant la voix d''Hawking*    R E E E S T E E E Z                    
-      C A L M E"
+    m_Localized: "-Chim\xE8re : R E S T E Z  C A A A L M E"
     m_Metadata:
       m_Items: []
   - m_Id: 18677103082504192
-    m_Localized: '-Evelyn :  Quoi ?... On dirait qu''il parle ?! ... C''est quoi
-      ce bordel !?'
+    m_Localized: '-Evelyn :  On dirait qu''il parle ?! ... C''est quoi ce bordel
+      !?'
     m_Metadata:
       m_Items: []
   - m_Id: 18677087932678144
-    m_Localized: "-Chim\xE8re : *d'une voix \xE9trangl\xE9e* S O N   C OE U R...  
-      E S T,,,  D E... TRUIT"
+    m_Localized: "-Chim\xE8re : *Gargouillements inintelligibles*  S O N   C OE U
+      R...   E S T  D E T R U I T"
     m_Metadata:
       m_Items: []
   - m_Id: 18677074309578752
@@ -767,6 +764,45 @@ MonoBehaviour:
       payer pour l'expansion des ressour[...]s [...]\r\nJe parie qu'ils sont pr\xEAt
       \xE0 [...]utre groupe p[...]r des res[...]ltats.\r\nA ceux qui \xE9couteront
       ce massage,, n'esp\xE9rez pas surv[...]ve, cette plan\xE8te [...] maudite."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 21519646235430912
+    m_Localized: "Equipe UTF \n\n\nCharly Despeyroux\r\n\nLead UI/UX\r\nLead Sound
+      Designer\r\nAuteur Compositeur\nNarrative Designer & Traducteur\nUI & Audio
+      D\xE9veloppeur\nArtist\re VFX & Shader \nConcepteur de cin\xE9matiques & Level
+      Design Scenarist\re\nAsset Integrateur\n\n\nGianni Ser\xE8ne\r\n\nLead Narrative
+      Design\r\nLead Rigging/Skinning\r\nArtist\re 3D \nArtist\re Texture\nAsset
+      Integrateur\r\nGameplay Programmer\r\n\n\nMaxime Delhomme\r\n\nLead Integrateur\r\nLead
+      Gameplay D\xE9veloppeur\nEvent D\xE9veloppeur\nLevel Designer\r\nArtist\re
+      Level \nArtist\re VFX \nAssistant\r 3D \n\n\nRose Valety\r\n\nLead Directeur\r
+      Artistique\nConcept Artist\re\nGraphist\re\nIllustratrice\nNarrative Designer
+      & Traductrice\r\nArtist\re 2D \nAnimateur 3D\r\nAssistant\re 3D \n\n\nUlysse
+      Galin\xE9\r\n\nLead Artist\re 3D \nCharacter Artist\re\nArtist\re Textures\nIntegrateurr\r\nAssistant
+      VFX "
+    m_Metadata:
+      m_Items: []
+  - m_Id: 21523258097405952
+    m_Localized: "Bande son Originale\n\n\nArcopa 8\r\n\nCompos\xE9e et \xE9crite
+      par Charly Despeyroux\r\nPerform\xE9e par Jean-Louis Franzie\r\nOeuvre d\xE9pos\xE9e
+      aupr\xE8s de la Sacem"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 21524218525913088
+    m_Localized: "Un grand merci \xE0\n\n\nNotre \xE9quipe p\xE9dagogique,\r\nNos
+      playtesteurs (nous vous adressons tout notre amour),\nToute personne ayant
+      particip\xE9 de pr\xE8s ou de loin au projet  !"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 21525114064343040
+    m_Localized: "Nous tenons \xE0 remercier tout particuli\xE8rement:\n\n\nH\xE9l\xE8ne
+      Sellier\r\n\nPour son aide tout au long du p\xE9riple narratif que fut ce projet
+      \r\n\n\nMarc Dacosta\r\n\nPour le mastering de la chanson Arcopa 8\nAinsi que
+      pour son courage et ses conseils pendant les temps de crises\n\n\nFranzie\r
+      Jean-Louis\n\nPour avoir donn\xE9 sa merveilleuse voix au projet Arcopa"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 21809956605792256
+    m_Localized: Appuyez sur n'importe quelle touche pour revenir au menu principal
     m_Metadata:
       m_Items: []
   references:

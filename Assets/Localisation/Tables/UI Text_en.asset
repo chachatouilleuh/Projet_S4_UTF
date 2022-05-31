@@ -27,6 +27,7 @@ MonoBehaviour:
     - id: 7
     - id: 8
     - id: 9
+    - id: 10
   m_TableData:
   - m_Id: 158794043392
     m_Localized: Press any key
@@ -53,7 +54,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 15783062982656
-    m_Localized: 'Sound Effects Volume:'
+    m_Localized: 'Effects Volume:'
     m_Metadata:
       m_Items: []
   - m_Id: 15950566707200
@@ -457,19 +458,18 @@ MonoBehaviour:
       m_Items:
       - id: 8
   - m_Id: 18677239909089280
-    m_Localized: '-Chimaera :  E V E L E E E N     E V E L E E E N    P L E A  A
-      S E   E V E L E E E N     E V E L E E E N    P L E A  A S E'
+    m_Localized: '-Chimaera :  E V E L E E N     E V E L E E E N    P L E A S E  
+      E V E L E E N     E V E L E E E N    P L E A S E'
     m_Metadata:
       m_Items: []
   - m_Id: 18677224507604992
-    m_Localized: '-Chimaera :  G E T   T O   T H E   S H I P      O F F  M E    
-      M E'
+    m_Localized: '-Chimaera :  O F F  M E     M E'
     m_Metadata:
       m_Items:
       - id: 7
   - m_Id: 18677208502140928
-    m_Localized: '-Chimaera :  *with evelyn voice*   G E T   T O   T H E   S H I
-      P  G E T   T O   T H E   S H I P '
+    m_Localized: '-Chimaera : G E T  T O  T H E   S H I P  G E T  T O  T H E   S
+      H I P '
     m_Metadata:
       m_Items: []
   - m_Id: 18677189904596992
@@ -481,8 +481,8 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 18677150146789376
-    m_Localized: '-Chimaera :   H A W K E E N     H A W K E E N  .... P R O F E S
-      S O R  H A R P E R'
+    m_Localized: '-Chimaera : H A W K E E N   H A W K E E N...              P R O
+      F E S S O R   H A R P E R'
     m_Metadata:
       m_Items: []
   - m_Id: 18677134053244928
@@ -491,17 +491,16 @@ MonoBehaviour:
       m_Items:
       - id: 9
   - m_Id: 18677119482232832
-    m_Localized: '-Chimaera :  *mimicking Evelyn''s voice*  T R Y I N G  *gurggles,
-      then mimicking Hawking*    S T  A Y   C A A A L M'
+    m_Localized: '-Chimaera : S T A Y   C A A A L M'
     m_Metadata:
       m_Items: []
   - m_Id: 18677103082504192
-    m_Localized: '-Evelyn : Uh ?...  Is it trying to talk ? ... What the hell !'
+    m_Localized: '-Evelyn : Is it trying to talk ? ... What the hell !'
     m_Metadata:
       m_Items: []
   - m_Id: 18677087932678144
-    m_Localized: '-Chimaera :  *strangle voice*     I T '' S   C O R E      IS''
-      ''     ,,, M I S S...   I N G,,,'
+    m_Localized: '-Chimaera :  *ininetilligible gurgles*  I T '' S   C O R E... 
+      I T '' S  M I S S I N G'
     m_Metadata:
       m_Items: []
   - m_Id: 18677074309578752
@@ -518,10 +517,11 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 18677011831226368
     m_Localized: '-Evelyn :  Hawking ! I''m here !  Hawking ! Hey !... Are... Are
-      you kidding me ? !Its core... is missing...!  Damn it ! I... I gotta get to
-      the ship !'
+      you kidding me ? Its core... it''s missing...!  Damn it !  I gotta get to the
+      capsule !'
     m_Metadata:
-      m_Items: []
+      m_Items:
+      - id: 10
   - m_Id: 18676994861072384
     m_Localized: '-Evelyn : Hawking ? Hawking ! Hang in there ! I''m on my way ! 
       I need to hurry up'
@@ -577,7 +577,7 @@ MonoBehaviour:
     m_Localized: I'm getting closer, I'm here, you're not alone, hold on !
     m_Metadata:
       m_Items:
-      - id: 10
+      - id: 11
   - m_Id: 18676787192692736
     m_Localized: Did you hear that ? There are survivors... I gotta go, I gotta go
       find them, I'll be back, stay here!
@@ -802,6 +802,62 @@ MonoBehaviour:
       this planet [...] insane."
     m_Metadata:
       m_Items: []
+  - m_Id: 21519646235430912
+    m_Localized: "UTF Team\r\n\n\nCharly Despeyroux\r\n\nLead UI/UX\r\nLead Sound
+      Designer\r\nSongwritter & Composer\r\nNarrative Designer & Translator\r\nUI
+      & Audio Programmer\r\nVFX & Shader Artist\r\nCinematic Conceptor & Level Design
+      Scenarist\r\nAsset Integrator\r\n\n\nGianni Ser\xE8ne\r\n\nLead Narrative Design\r\nLead
+      Rigging/Skinning\r\n3D Artist\r\nTexture Artist\r\nAsset Integrator\r\nGameplay
+      Programmer\r\n\n\nMaxime Delhomme\r\n\nLead Integrator\r\nLead Gameplay Programmer\r\nEvent
+      Programmer\r\nLevel Designer\r\nLevel Artist\r\nVFX Artist\r\n3D Assistant\r\n\n\nRose
+      Valety\r\n\nLead Artistic Direction\r\nConcept Artist\r\nGraphist\r\nIllustrator\r\nNarrative
+      Designer & Translator\r\n2D Artist\r\n3D Animator\r\n3D Assistant\r\n\n\nUlysse
+      Galin\xE9\r\n\nLead 3D Artist\r\nCharacter Artist\r\nTexture Artist\r\nIntegrator\r\nVFX
+      Assistant"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 21523258097405952
+    m_Localized: 'Original Songs
+
+
+
+      Arcopa 8
+
+
+      Composed and Written by
+      Charly Despeyroux
+
+      Performed by Jean-Louis Franzie
+
+      Licensed courtesy
+      of Sacem France'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 21524218525913088
+    m_Localized: 'Big Thanks To
+
+
+
+      Our Pedagogic Team,
+
+      Our Playtesters
+      (we love you very much)
+
+      Every Person involved in our Project !'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 21525114064343040
+    m_Localized: "Special Thanks To\r\n\n\nH\xE9l\xE8ne Sellier\r\n\nFor her help
+      through the beginning of our narrative journey\r\n\n\nMarc Dacosta\r\n\nFor
+      mastering our recordings\r\nand all his support and engagement during our struggles\r\n\n\nAnd
+      the astonishing Franzie Jean-Louis \n\nFor giving her beautiful voice to the
+      game Arcopa\r"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 21809956605792256
+    m_Localized: Press any key to return to the main menu
+    m_Metadata:
+      m_Items: []
   references:
     version: 1
     00000000:
@@ -845,6 +901,10 @@ MonoBehaviour:
       data:
         m_Entries: 0080aa24c15a4200
     0000000A:
+      type: {class: SmartFormatTag, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_Entries: 0080aaafa45a4200
+    0000000B:
       type: {class: SmartFormatTag, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
         m_Entries: 00802a0f745a4200
