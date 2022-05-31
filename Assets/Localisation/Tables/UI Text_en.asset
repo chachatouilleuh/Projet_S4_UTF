@@ -858,6 +858,10 @@ MonoBehaviour:
     m_Localized: Press any key to return to the main menu
     m_Metadata:
       m_Items: []
+  - m_Id: 21872112965263360
+    m_Localized: Loading
+    m_Metadata:
+      m_Items: []
   references:
     version: 1
     00000000:

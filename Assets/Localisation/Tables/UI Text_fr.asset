@@ -805,6 +805,10 @@ MonoBehaviour:
     m_Localized: Appuyez sur n'importe quelle touche pour revenir au menu principal
     m_Metadata:
       m_Items: []
+  - m_Id: 21872112965263360
+    m_Localized: Chargement
+    m_Metadata:
+      m_Items: []
   references:
     version: 1
     00000000:
