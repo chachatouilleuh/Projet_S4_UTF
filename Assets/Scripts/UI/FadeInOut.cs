@@ -77,15 +77,16 @@ public class FadeInOut : MonoBehaviour
         m_black.CrossFadeAlpha(0, m_fadeTime, false);
         m_alreadyFaded = true;
         m_blackGameObject.SetActive(false);
+        
     }
-    
+
     IEnumerator FadeIn()
     {
         yield return new WaitForSeconds(m_waitBeforePlay);
         m_fadeTime += Time.deltaTime;
         m_black.CrossFadeAlpha(1, m_fadeTime, false);
-        
-        if(!m_isEnding)
+
+        if (!m_isEnding)
         {
             StartCoroutine(FadeOut());
         }

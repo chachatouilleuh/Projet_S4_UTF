@@ -789,7 +789,7 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 21524218525913088
     m_Localized: "Un grand merci \xE0\n\n\nNotre \xE9quipe p\xE9dagogique,\r\nNos
-      playtesteurs (nous vous adressons tout notre amour),\r\nToutes personnes ayant
+      playtesteurs (nous vous adressons tout notre amour),\nToute personne ayant
       particip\xE9 de pr\xE8s ou de loin au projet  !"
     m_Metadata:
       m_Items: []

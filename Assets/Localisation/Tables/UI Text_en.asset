@@ -517,8 +517,8 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 18677011831226368
     m_Localized: '-Evelyn :  Hawking ! I''m here !  Hawking ! Hey !... Are... Are
-      you kidding me ? Its core... it''s missing...!  Damn it ! I... I gotta get
-      to the capsule !'
+      you kidding me ? Its core... it''s missing...!  Damn it !  I gotta get to the
+      capsule !'
     m_Metadata:
       m_Items:
       - id: 10
@@ -824,13 +824,13 @@ MonoBehaviour:
       Arcopa 8
 
 
-      Composed and Written
-      by Charly Despeyroux
+      Composed and Written by
+      Charly Despeyroux
 
       Performed by Jean-Louis Franzie
 
-      Licensed
-      courtesy of Sacem France'
+      Licensed courtesy
+      of Sacem France'
     m_Metadata:
       m_Items: []
   - m_Id: 21524218525913088
@@ -841,16 +841,17 @@ MonoBehaviour:
       Our Pedagogic Team,
 
       Our Playtesters
-      (we love you very much),
+      (we love you very much)
 
-      and Every Person involved in our Project !'
+      Every Person involved in our Project !'
     m_Metadata:
       m_Items: []
   - m_Id: 21525114064343040
     m_Localized: "Special Thanks To\r\n\n\nH\xE9l\xE8ne Sellier\r\n\nFor her help
       through the beginning of our narrative journey\r\n\n\nMarc Dacosta\r\n\nFor
-      mastering our recordings\r\nand all his support and engagement during our struggles\r\n\n\nFranzie\r
-      Jean-Louis\n\nFor giving her beautiful voice to the game Arcopa\r"
+      mastering our recordings\r\nand all his support and engagement during our struggles\r\n\n\nAnd
+      the astonishing Franzie Jean-Louis \n\nFor giving her beautiful voice to the
+      game Arcopa\r"
     m_Metadata:
       m_Items: []
   references:

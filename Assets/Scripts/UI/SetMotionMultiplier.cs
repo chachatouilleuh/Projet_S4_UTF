@@ -70,6 +70,10 @@ public class SetMotionMultiplier : MonoBehaviour
                 case 13:
                     m_animator.SetBool("Trigger13", true);
                     break;
+                
+                case 14:
+                    m_animator.SetBool("Trigger14", true);
+                    break;
             }
         //}
     }
@@ -144,6 +148,10 @@ public class SetMotionMultiplier : MonoBehaviour
 
                 case 13:
                     m_animator.SetBool("Trigger13", true);
+                    break;
+                
+                case 14:
+                    m_animator.SetBool("Trigger14", true);
                     break;
             }
         }
