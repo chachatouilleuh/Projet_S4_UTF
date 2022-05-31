@@ -11,6 +11,12 @@ public class CameraShake : MonoBehaviour
 
     private Coroutine m_shakeCam;
 
+    [SerializeField, Tooltip("curve shake")]
+    private AnimationCurve m_curve;
+
+    [SerializeField, Tooltip("duration shake")]
+    private float m_duration;
+
     private void OnEnable()
     {
         m_triggeredEvent.onTrigger += HandleTriggerEvent;
@@ -29,27 +35,26 @@ public class CameraShake : MonoBehaviour
 
     private void HandleTriggerEvent()
     {
-        m_shakeCam = StartCoroutine(Shake(4f, 4f));
+        m_shakeCam = StartCoroutine(Shake(4f, 0.1f));
     }
 
     public IEnumerator Shake(float duration, float magnitude)
     {
-        Vector3 originalPos = transform.localPosition;
+        Vector3 startPosition = transform.localPosition;
 
         float elapsed = 0.0f;
 
         while (elapsed < duration)
         {
-            float x = Random.Range(-1f, 1f) * magnitude;
-            float y = Random.Range(-1f, 1f) * magnitude;
-
-            transform.localPosition = new Vector3(x, y, originalPos.z);
-
             elapsed += Time.deltaTime;
+
+            float Strength = m_curve.Evaluate(elapsed / duration);
+
+            transform.localPosition = startPosition + Random.insideUnitSphere * Strength;
             
             yield return null;
         }
 
-        transform.localPosition = originalPos;
+        transform.localPosition = startPosition;
     }
 }

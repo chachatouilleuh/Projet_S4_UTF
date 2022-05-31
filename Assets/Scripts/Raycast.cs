@@ -11,8 +11,6 @@ public class Raycast : MonoBehaviour
     [SerializeField, Tooltip("canvas affiché")] private GameObject m_infoCube;
     void Update()
     {
-        
-        
         Ray pickupRay = new Ray(fpsCam.transform.position, fpsCam.transform.forward * m_distance);
         RaycastHit hit;
 
