@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
@@ -15,6 +16,15 @@ public class FoeAI : MonoBehaviour
     
     [SerializeField, Tooltip("appel du trigger")]
     private Event m_triggeredEvent;
+    
+    //animation
+    [SerializeField, Tooltip("animator")] 
+    private Animator m_animator;
+
+    private string m_activeBoolName = "Crawl";
+    private int m_activeHash;
+    
+    
 
     private void OnEnable()
     {
@@ -27,8 +37,23 @@ public class FoeAI : MonoBehaviour
         m_triggeredEvent.onTrigger -= HandleTriggerEvent;
     }
 
+    private void Awake()
+    {
+        if (m_animator == null)
+        {
+            m_animator = GetComponent<Animator>();
+            if (m_animator == null)
+            {
+                throw new System.ArgumentNullException();
+            }
+        }
+
+        m_activeHash = Animator.StringToHash(m_activeBoolName);
+    }
+
     private void HandleTriggerEvent()
     {
         m_agentAI.SetDestination(m_waypointList[m_indexWaypoint].position);
+        m_animator?.SetTrigger(m_activeHash);
     }
 }
