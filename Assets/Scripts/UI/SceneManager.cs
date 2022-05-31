@@ -12,11 +12,6 @@ public class SceneManager : MonoBehaviour
         FirstPersonLook.m_isOption = false;
     }
 
-    public void OpenCredits()
-    {
-        UnityEngine.SceneManagement.SceneManager.LoadScene (sceneName:"Credits");
-    }
-    
     public void OpenGameScene()
     {
         UnityEngine.SceneManagement.SceneManager.LoadScene (sceneName:"Playtest");

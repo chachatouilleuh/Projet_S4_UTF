@@ -54,7 +54,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 15783062982656
-    m_Localized: 'Sound Effects Volume:'
+    m_Localized: 'Effects Volume:'
     m_Metadata:
       m_Items: []
   - m_Id: 15950566707200
@@ -852,6 +852,10 @@ MonoBehaviour:
       mastering our recordings\r\nand all his support and engagement during our struggles\r\n\n\nAnd
       the astonishing Franzie Jean-Louis \n\nFor giving her beautiful voice to the
       game Arcopa\r"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 21809956605792256
+    m_Localized: Press any key to return to the main menu
     m_Metadata:
       m_Items: []
   references:

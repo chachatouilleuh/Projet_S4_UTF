@@ -470,7 +470,7 @@ MonoBehaviour:
     m_TableReference:
       m_TableCollectionName: GUID:fe6eed3fc5b727a4ba2c1f9dfd35e83b
     m_TableEntryReference:
-      m_KeyId: 5098025799962624
+      m_KeyId: 12665671700480
       m_Key: 
   m_FormatArguments: []
   m_UpdateString:
@@ -606,7 +606,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &6919208555139725146
 RectTransform:
   m_ObjectHideFlags: 0

@@ -801,6 +801,10 @@ MonoBehaviour:
       Jean-Louis\n\nPour avoir donn\xE9 sa merveilleuse voix au projet Arcopa"
     m_Metadata:
       m_Items: []
+  - m_Id: 21809956605792256
+    m_Localized: Appuyez sur n'importe quelle touche pour revenir au menu principal
+    m_Metadata:
+      m_Items: []
   references:
     version: 1
     00000000:
