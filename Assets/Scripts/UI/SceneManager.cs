@@ -3,7 +3,6 @@ using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
 using TMPro;
-using System.Collections.Generic;
 
 [System.Serializable]
 public class SceneManager : MonoBehaviour
@@ -12,73 +11,127 @@ public class SceneManager : MonoBehaviour
 
     [SerializeField, Tooltip("le background de chargement")] private GameObject m_backgroundLoad;
     [SerializeField, Tooltip("la barre de chargement")] private Slider m_progressBar;
-    [SerializeField, Tooltip("la barre de chargement")] private List<AsyncOperation> l_scenesLoading = new List<AsyncOperation>();
-    private float m_totalSceneProgress;
-
+    [SerializeField, Tooltip("la texte de chargement")] private TextMeshProUGUI m_progressText;
+    [SerializeField, Tooltip("la texte de chargement")] private TextMeshProUGUI m_loreText;
+    [SerializeField, Tooltip("l'operation de chargement")] private AsyncOperation m_loadOperation;
+    //private float m_totalSceneProgress;
+    private float m_progress;
 
     public void OpenMenuScene()
     {
         m_backgroundLoad.SetActive(true);
-        l_scenesLoading.Add(UnityEngine.SceneManagement.SceneManager.UnloadSceneAsync(sceneName: "Playtest"));
-        l_scenesLoading.Add(UnityEngine.SceneManagement.SceneManager.LoadSceneAsync(sceneName: "Menu", UnityEngine.SceneManagement.LoadSceneMode.Additive));
         FirstPersonLook.m_isOption = false;
-
-        StartCoroutine(GetLoadingProgress());
+        Cursor.lockState = CursorLockMode.Confined;
+        StartCoroutine(LoadMenuScene());
     }
 
     public void OpenGameScene()
     {
         m_backgroundLoad.SetActive(true);
-        l_scenesLoading.Add(UnityEngine.SceneManagement.SceneManager.UnloadSceneAsync(sceneName: "Menu"));
-        l_scenesLoading.Add(UnityEngine.SceneManagement.SceneManager.LoadSceneAsync(sceneName: "Playtest", UnityEngine.SceneManagement.LoadSceneMode.Additive));
         FirstPersonLook.m_isOption = false;
-
-        StartCoroutine(GetLoadingProgress());
+        StartCoroutine(TypeSentence(m_loreText.text));
+        StartCoroutine(LoadGameScene());
     }
 
-    public void QuitApplication()
+    private void QuitApplication()
     {
         Application.Quit();
         PlayerPrefs.DeleteAll();
     }
 
-    public IEnumerator GetLoadingProgress()
+    private IEnumerator LoadMenuScene()
     {
-        for(int i=0; i<l_scenesLoading.Count; i++)
+        m_loadOperation = UnityEngine.SceneManagement.SceneManager.LoadSceneAsync(sceneName: "Menu");
+        m_loadOperation.allowSceneActivation = false;
+        
+        while (!m_loadOperation.isDone)
         {
-            while (l_scenesLoading[i].isDone)
+            m_progress = Mathf.Clamp01(m_loadOperation.progress);
+            m_progressBar.value = m_progress;
+            m_progressText.text = (m_progress * 100).ToString("F0") + "%";
+
+            if (m_loadOperation.progress >= 0.9f)
             {
-                m_totalSceneProgress = 0;
+                m_progressBar.value = 1;
                 
-                foreach(AsyncOperation operation in l_scenesLoading)
+                if (Underlining.m_lang == 0)
                 {
-                    m_totalSceneProgress += operation.progress;
+                    m_progressText.text = "Press any key to continue";
+                }
+                else
+                {
+                    m_progressText.text = "Appuyez sur n'importe quelle touche pour continuer";
                 }
 
-                m_totalSceneProgress = (m_totalSceneProgress / l_scenesLoading.Count) * 100f;
-
-                m_progressBar.value = Mathf.RoundToInt(m_totalSceneProgress);
-                
-                yield return null;
+                if (Input.anyKeyDown)
+                {
+                    m_loadOperation.allowSceneActivation = true;
+                }
             }
+            yield return null;
         }
-        m_backgroundLoad.SetActive(false);
-        
-        UnityEngine.SceneManagement.SceneManager.UnloadSceneAsync(sceneName: "Menu");
-        //UnityEngine.SceneManagement.SceneManager.UnloadSceneAsync(sceneName: "Playtest");
     }
     
-    public void LoadingUpdater(float value )
+    private IEnumerator LoadGameScene()
     {
-        foreach(AsyncOperation operation in l_scenesLoading)
+        m_loadOperation = UnityEngine.SceneManagement.SceneManager.LoadSceneAsync(sceneName: "Playtest");
+        m_loadOperation.allowSceneActivation = false;
+        
+        while (!m_loadOperation.isDone)
         {
-            m_totalSceneProgress += operation.progress;
-            value = m_totalSceneProgress;
-            //m_progressBar.value = Mathf.RoundToInt(value);
+            m_progress = Mathf.Clamp01(m_loadOperation.progress);
+
+            m_progressBar.value = m_progress;
+            m_progressText.text = (m_progress * 100).ToString("F0") + "%";
+ 
+            if (m_loadOperation.progress >= 0.9f)
+            {
+                m_progressBar.value = 1;
+                
+                if (Underlining.m_lang == 0)
+                {
+                    m_progressText.text = "Press any key to continue";
+                }
+                else
+                {
+                    m_progressText.text = "Appuyez sur n'importe quelle touche pour continuer";
+                }
+
+                if (Input.anyKeyDown)
+                {
+                    m_loadOperation.allowSceneActivation = true;
+                }
+            }
+            yield return null;
         }
-        m_progressBar.value = Mathf.RoundToInt(value);
-        //m_totalSceneProgress = value;
+        
     }
     
+    IEnumerator TypeSentence (string sentence)
+    {
+        m_loreText.text = "";
+        foreach (char letter in sentence.ToCharArray()){
+            m_loreText.text += letter;
+            yield return StartCoroutine(PauseBetweenChars(letter));
+        }
+    }
     
+    private IEnumerator PauseBetweenChars(char letter)
+    {
+        switch (letter)
+        {
+            case '.':
+                yield return new WaitForSeconds(0.6f);
+                break;
+            case ',':
+                yield return new WaitForSeconds(0.2f);
+                break;
+            case ' ':
+                yield return new WaitForSeconds(0.2f);
+                break;
+            default:
+                yield return new WaitForSeconds(0.04f);
+                break;
+        }
+    }
 }

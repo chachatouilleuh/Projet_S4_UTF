@@ -29,9 +29,7 @@ public class FadeInOut : MonoBehaviour
     
     private bool m_alreadyPlayed;
     
-   
-    
-    
+
     private void Start()
     {
         if (!m_isDialogue)
