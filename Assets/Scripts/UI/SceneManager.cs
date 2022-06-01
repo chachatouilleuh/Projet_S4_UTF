@@ -1,26 +1,37 @@
 using Packages.Mini_First_Person_Controller.Scripts;
 using UnityEngine;
+using System.Collections;
+using UnityEngine.UI;
+using TMPro;
 
 [System.Serializable]
 public class SceneManager : MonoBehaviour
 {
     // SCENE TRANSITION
-    
+
+    [SerializeField, Tooltip("le background de chargement")] private GameObject m_backgroundLoad;
+    [SerializeField, Tooltip("la barre de chargement")] private Slider m_progressBar;
+    private float m_totalSceneProgress;
+
+
     public void OpenMenuScene()
     {
-        UnityEngine.SceneManagement.SceneManager.LoadScene (sceneName:"Menu");
+        m_backgroundLoad.SetActive(true);
+        Loadscreen.l_scenesLoading.Add(UnityEngine.SceneManagement.SceneManager.UnloadSceneAsync(sceneName: "Playtest"));
+        Loadscreen.l_scenesLoading.Add(UnityEngine.SceneManagement.SceneManager.LoadSceneAsync(sceneName: "Menu", UnityEngine.SceneManagement.LoadSceneMode.Additive));
         FirstPersonLook.m_isOption = false;
+
+        StartCoroutine(GetLoadingProgress());
     }
 
-    public void OpenCredits()
-    {
-        UnityEngine.SceneManagement.SceneManager.LoadScene (sceneName:"Credits");
-    }
-    
     public void OpenGameScene()
     {
-        UnityEngine.SceneManagement.SceneManager.LoadScene (sceneName:"Playtest");
+        m_backgroundLoad.SetActive(true);
+        UnityEngine.SceneManagement.SceneManager.UnloadSceneAsync(sceneName: "Menu");
+        UnityEngine.SceneManagement.SceneManager.LoadSceneAsync(sceneName: "Playtest", UnityEngine.SceneManagement.LoadSceneMode.Additive);
         FirstPersonLook.m_isOption = false;
+
+        StartCoroutine(GetLoadingProgress());
     }
 
     public void QuitApplication()
@@ -28,64 +39,29 @@ public class SceneManager : MonoBehaviour
         Application.Quit();
         PlayerPrefs.DeleteAll();
     }
-    //__________________________________________________________________//
-    
-    // RESET 
-    
-    // public void ResetSave()
-    // {
-    //     PlayerPrefs.DeleteKey("level");
-    // }
-    
-    //__________________________________________________________________//
-    
-    //PAUSE
-    
-    // public void PauseGame ()
-    // {
-    //     Time.timeScale = 0;
-    //     AudioListener.pause = true;
-    // }
-    //
-    // public void ResumeGame ()
-    // {
-    //     Time.timeScale = 1;
-    //     AudioListener.pause = false;
-    // }
 
-    
-    
-    //__________________________________________________________________//
-    
-    // CHECKPOINT
-    
-    // Lecture du checkpoint
-    // public int checkpoint;
-    
-    // private void Start()
-    // {
-    //     chercher le premier checkpoint au lancement du jeu 
-    //     checkpoint = PlayerPrefs.GetInt("level", 1);
-    // }
-    
-    // Passer au checkpoint suivant
-    // public void LevelUp(){
-    //
-    //     if (checkpoint == 1){
-    //         PlayerPrefs.SetInt("level", 2);
-    //     }
-    //
-    //     else if (checkpoint == 2){
-    //         PlayerPrefs.SetInt("level", 3);
-    //     }
-    //
-    //     else if (checkpoint == 3){
-    //         PlayerPrefs.SetInt("level", 4);
-    //     }   
-    //
-    //     else if (checkpoint == 4){
-    //         PlayerPrefs.SetInt("level", 5);
-    //     }  
-    // }
-    
+    private IEnumerator GetLoadingProgress()
+    {
+        
+
+        for(int i=0; i<Loadscreen.l_scenesLoading.Count; i++)
+        {
+            while (!Loadscreen.l_scenesLoading[i].isDone)
+            {
+                m_totalSceneProgress = 0;
+                
+                foreach(AsyncOperation operation in Loadscreen.l_scenesLoading)
+                {
+                    m_totalSceneProgress += operation.progress;
+                }
+
+
+                m_totalSceneProgress = (m_totalSceneProgress / Loadscreen.l_scenesLoading.Count) * 100f;
+
+                m_progressBar.value = Mathf.RoundToInt(m_totalSceneProgress);
+                yield return null;
+            }
+        }
+        m_backgroundLoad.SetActive(false);
+    }
 }
