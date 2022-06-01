@@ -4,7 +4,7 @@ using UnityEngine.SceneManagement;
 
 public class Loadscreen : MonoBehaviour
 {
-    public static List<AsyncOperation> l_scenesLoading = new List<AsyncOperation>();
+    //public static List<AsyncOperation> l_scenesLoading = new List<AsyncOperation>();
 
     //private void Awake()
     //{

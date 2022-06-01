@@ -28,6 +28,7 @@ MonoBehaviour:
     - id: 8
     - id: 9
     - id: 10
+    - id: 11
   m_TableData:
   - m_Id: 158794043392
     m_Localized: Press any key
@@ -577,7 +578,7 @@ MonoBehaviour:
     m_Localized: I'm getting closer, I'm here, you're not alone, hold on !
     m_Metadata:
       m_Items:
-      - id: 11
+      - id: 12
   - m_Id: 18676787192692736
     m_Localized: Did you hear that ? There are survivors... I gotta go, I gotta go
       find them, I'll be back, stay here!
@@ -862,6 +863,27 @@ MonoBehaviour:
     m_Localized: Loading
     m_Metadata:
       m_Items: []
+  - m_Id: 22165417724162048
+    m_Localized: 'In the 26th century, after the conquest of Mars, Human society
+      has considerably expanded . Humanity has emancipated itself from its lack of
+      resources and overpopulation by conquering other space systems.
+
+
+
+      With
+      new technological means, reaching distant exoplanets has become an easy task.
+      When Sigma-B113 was discovered, and more precisely one of its moons, Arcopa-8,
+      environmental analyses were automatically carried out.
+
+
+
+      These analyses
+      were promising for the future, with potentially breathable air for humans and
+      a rich and atypical flora. This brings us to the story of the game, when humans
+      are sent to this planet to collect data directly on the ground.'
+    m_Metadata:
+      m_Items:
+      - id: 11
   references:
     version: 1
     00000000:
@@ -909,6 +931,10 @@ MonoBehaviour:
       data:
         m_Entries: 0080aaafa45a4200
     0000000B:
+      type: {class: SmartFormatTag, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_Entries: 0030bf7954bf4e00
+    0000000C:
       type: {class: SmartFormatTag, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
         m_Entries: 00802a0f745a4200
