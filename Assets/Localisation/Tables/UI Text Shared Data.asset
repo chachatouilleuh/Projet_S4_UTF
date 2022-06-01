@@ -619,6 +619,10 @@ MonoBehaviour:
     m_Key: Loading
     m_Metadata:
       m_Items: []
+  - m_Id: 22165417724162048
+    m_Key: Lore Intro 1
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:
