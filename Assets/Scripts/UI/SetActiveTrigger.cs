@@ -20,14 +20,12 @@ public class SetActiveTrigger : MonoBehaviour
             if (m_interrupteurOn)
             {
                 yield return new WaitForSeconds(m_waitBeforeShow);
-                m_objectToActivate.SetActive(false);
-                //m_interrupteurOn = false;
+                m_objectToActivate.SetActive(false); 
             }
             else
             {
                 yield return new WaitForSeconds(m_waitBeforeShow);
                 m_objectToActivate.SetActive(true);
-                //m_interrupteurOn = true;
             }
 
             if (m_isHUDBroken)

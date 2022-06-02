@@ -534,8 +534,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 18676964594974720
-    m_Localized: What is that ? It's moving real fast, they'll reach the camp before
-      I do
+    m_Localized: It's the same sound from the records, I gotta get out of here
     m_Metadata:
       m_Items: []
   - m_Id: 18676941501136896
@@ -543,7 +542,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 18676925529227264
-    m_Localized: It's the same sound from the records, I gotta get out of here
+    m_Localized: What is that ? they'll reach the camp before I do
     m_Metadata:
       m_Items: []
   - m_Id: 18676909876084736

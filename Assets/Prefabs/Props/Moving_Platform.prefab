@@ -120,7 +120,7 @@ MonoBehaviour:
   m_moveALot: 0
   m_isSingle: 1
   m_audioMixer: {fileID: 7498302692019875478, guid: dbda88f07e9e9474a8053013f5393918, type: 2}
-  m_clipToPlay: {fileID: 8300000, guid: 9ee2eb1f5886fbf4680cd6b50db51c14, type: 3}
+  m_clipToPlay: {fileID: 8300000, guid: 475c6fa592863e0459eeec908de5d36a, type: 3}
 --- !u!95 &8180324925805478834
 Animator:
   serializedVersion: 3
@@ -151,8 +151,8 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
-  m_Volume: 0.3
+  m_PlayOnAwake: 0
+  m_Volume: 0.5
   m_Pitch: 1
   Loop: 0
   Mute: 0

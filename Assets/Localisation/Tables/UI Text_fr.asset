@@ -485,8 +485,8 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 18676964594974720
-    m_Localized: "Qu'est-ce que c'est que \xE7a ? \xC7a va tr\xE8s vite, ils vont
-      atteindre le camp avant moi."
+    m_Localized: "C'est le m\xEAme son que sur les enregistrements, je dois sortir
+      d'ici."
     m_Metadata:
       m_Items: []
   - m_Id: 18676941501136896
@@ -494,7 +494,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 18676925529227264
-    m_Localized: "C'est le m\xEAme son que sur les disques, je dois sortir d'ici."
+    m_Localized: "C'est quoi \xE7a ? ils vont atteindre le camp avant moi."
     m_Metadata:
       m_Items: []
   - m_Id: 18676909876084736
