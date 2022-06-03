@@ -6,7 +6,7 @@ public class CanvasManager : MonoBehaviour
 {
     //private SceneManager sceneManager;
 
-    [SerializeField, Tooltip("les canvas à assigner")] private GameObject Accueil, MainMenu, Options, LoadScreen, HUD, HUDBlur, HUDBroken, HUDBrokenInside, Planet, Probes, Records, Characters;
+    [SerializeField, Tooltip("les canvas à assigner")] private GameObject Accueil, MainMenu, Options, LoadScreen, HUD, HUDBlur, HUDBroken, HUDBrokenInside, Planet, Probes, Records, Characters, Pointeur;
     
     private bool m_accueilOpen, m_mainMenuOpen, m_optionsOpen, m_loadScreenOpen, m_hudOpen, m_planetOpen, m_probesOpen, m_recordsOpen, m_charactersOpen;
     private Scene scene;
@@ -65,6 +65,15 @@ public class CanvasManager : MonoBehaviour
                     }
                 }
                 break;
+        }
+
+        if (Cutscene.m_isCutscene)
+        {
+            Pointeur.SetActive(false);
+        }
+        else
+        {
+            Pointeur.SetActive(true);
         }
     }
     public void OpenAccueil()

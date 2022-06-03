@@ -97,7 +97,7 @@ public class platforms : MonoBehaviour, Iplatforms
             m_audiosourceTrigger.Play();
             if(m_isSingle)
             {
-                StartCoroutine(StopSound());
+                //StartCoroutine(StopSound());
             }
         }
         else
@@ -122,9 +122,9 @@ public class platforms : MonoBehaviour, Iplatforms
         m_animator?.SetTrigger(m_closeHash);
     }
 
-    IEnumerator StopSound()
-    {
-        yield return new WaitForSeconds(m_waitCut);
-        m_audiosourceTrigger.Stop();
-    }
+    // IEnumerator StopSound()
+    // {
+    //     yield return new WaitForSeconds(m_waitCut);
+    //     m_audiosourceTrigger.Stop();
+    // }
 }

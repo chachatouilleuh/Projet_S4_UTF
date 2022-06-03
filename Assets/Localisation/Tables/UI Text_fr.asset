@@ -485,8 +485,8 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 18676964594974720
-    m_Localized: "Qu'est-ce que c'est que \xE7a ? \xC7a va tr\xE8s vite, ils vont
-      atteindre le camp avant moi."
+    m_Localized: "C'est le m\xEAme son que sur les enregistrements, je dois sortir
+      d'ici."
     m_Metadata:
       m_Items: []
   - m_Id: 18676941501136896
@@ -494,7 +494,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 18676925529227264
-    m_Localized: "C'est le m\xEAme son que sur les disques, je dois sortir d'ici."
+    m_Localized: "C'est quoi \xE7a ? ils vont atteindre le camp avant moi."
     m_Metadata:
       m_Items: []
   - m_Id: 18676909876084736
@@ -807,6 +807,21 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 21872112965263360
     m_Localized: Chargement
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22165417724162048
+    m_Localized: "Au 26\xE8me si\xE8cle l'esp\xE8ce humaine s'est consid\xE9rablement
+      \xE9tendue : Apr\xE8s la conqu\xEAte de Mars, l'humanit\xE9 s'est tourn\xE9e
+      vers les autres syst\xE8mes solaires pour pallier son probl\xE8me de surpopulation
+      ainsi que l'\xE9puisement des ressources naturelles de la Terre.\r\n\n\nAvec
+      le d\xE9veloppement de nouvelles technologies, les exoplan\xE8tes les plus
+      lointaines sont d\xE9sormais faciles \xE0 atteindre. Lors de la d\xE9couverte
+      de la g\xE9ante gazeuse Sigma B-113 et plus pr\xE9cis\xE9ment d'une de ses
+      lunes, Arcopa-8, des analyses environnementales ont rapidement \xE9t\xE9 men\xE9es
+      \xE0 son sujet.\r\n\n\nCes recherches s'annon\xE7aient prometteuses pour l'avenir
+      de l'humanit\xE9 : L'air semblait respirable et une flore atypique s'y \xE9tait
+      largement d\xE9velopp\xE9e. A pr\xE9sent, les humains envoient des agents directement
+      sur le terrain pour collecter des donn\xE9es.   "
     m_Metadata:
       m_Items: []
   references:

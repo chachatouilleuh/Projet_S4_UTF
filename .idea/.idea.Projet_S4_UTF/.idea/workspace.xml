@@ -7,9 +7,14 @@
     <list default="true" id="0fc66d80-fe43-4822-bfa1-f1116b040ede" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Projet_S4_UTF/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Projet_S4_UTF/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/AddressableAssetsData/AddressableAssetSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddressableAssetsData/AddressableAssetSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Props/Moving_Platform.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Props/Moving_Platform.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Playtest.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Playtest.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Post Process/InGamePostProcess Profile 1.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Post Process/InGamePostProcess Profile 1.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Localisation/Tables/UI Text_en.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Localisation/Tables/UI Text_en.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Packages/Mini First Person Controller/Scripts/FirstPersonLook.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Packages/Mini First Person Controller/Scripts/FirstPersonLook.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Packages/TextMesh Pro/Fonts/ShareTechMono-Regular SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Packages/TextMesh Pro/Fonts/ShareTechMono-Regular SDF.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Canvas/Loading Screen.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Canvas/Loading Screen.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Menu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Menu.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/FadeInOut.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/FadeInOut.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/SceneManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/SceneManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/ApiUpdaterCheck.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/ApiUpdaterCheck.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Logs/AssetImportWorker0-prev.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/AssetImportWorker0-prev.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Logs/AssetImportWorker0.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/AssetImportWorker0.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-AssetImportWorker0.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/shadercompiler-AssetImportWorker0.log" afterDir="false" />
@@ -54,7 +59,11 @@
   </component>
   <component name="PropertiesComponent">
     <property name="Discover.Launch.Via.Unity" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="rider.run.widget.enabled.cache" value="false" />
+    <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Standalone Player" type="RunUnityExe" factoryName="Unity Executable">
@@ -110,6 +119,7 @@
       <workItem from="1652950747581" duration="659000" />
       <workItem from="1652961892509" duration="264000" />
       <workItem from="1652963928779" duration="889000" />
+      <workItem from="1654078765152" duration="2379000" />
     </task>
     <servers />
   </component>

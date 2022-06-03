@@ -25,6 +25,7 @@ namespace Packages.Mini_First_Person_Controller.Scripts
         void Start()
         {
             // Lock the mouse cursor to the game screen.
+            Cursor.visible = false;
             Cursor.lockState = CursorLockMode.Locked;
         }
 
@@ -54,12 +55,14 @@ namespace Packages.Mini_First_Person_Controller.Scripts
                 if (!m_isOption)
                 {
                     m_isOption = true;
+                    Cursor.visible = true;
                     Cursor.lockState = CursorLockMode.Confined;
                     DeactivatePointeur();
                 }
                 else
                 {
                     m_isOption = false;
+                    Cursor.visible = false;
                     Cursor.lockState = CursorLockMode.Locked;
                     DeactivatePointeur();
                 }
