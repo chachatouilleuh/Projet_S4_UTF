@@ -23,6 +23,7 @@ MonoBehaviour:
     - id: 3
     - id: 4
     - id: 5
+    - id: 6
   m_TableData:
   - m_Id: 158794043392
     m_Localized: Appuyez sur une touche
@@ -93,7 +94,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 5090037995458560
-    m_Localized: Charger partie
+    m_Localized: Recommencer
     m_Metadata:
       m_Items: []
   - m_Id: 5097741719752704
@@ -258,10 +259,11 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 18674592716062720
     m_Localized: "-Hawking : Je transf\xE8re ces donn\xE9es dans votre combinaison
-      intelligente. Appuyez sur Tab pour activer ou d\xE9sactiver votre ATH. Vous
+      intelligente.  Appuyez sur Tab pour activer ou d\xE9sactiver votre ATH. Vous
       pouvez commencer d\xE8s \xE0 pr\xE9sent votre mission, je vous attendrais ici."
     m_Metadata:
-      m_Items: []
+      m_Items:
+      - id: 6
   - m_Id: 18674612647395328
     m_Localized: '-Evelyn : Bon, c''est maintenant ou jamais... c''est parti!'
     m_Metadata:
@@ -474,14 +476,13 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 18676994861072384
-    m_Localized: "-Evelyn : *alarm\xE9e* Hawking ? Hawking ! Tiens bon ! J'arrive
-      ! *\xE0 elle m\xEAme d'un ton urgent* Il faut que je fonce"
+    m_Localized: '-Evelyn : Hawking ? Hawking ! Tiens bon ! J''arrive !  Il faut
+      que je fonce'
     m_Metadata:
       m_Items: []
   - m_Id: 18676978838831104
-    m_Localized: "-Hawking : *criant* Professeur Harper ! A l'aide ! Non ! Arr\xEAtez
-      piti\xE9 ! Professeur Harp..;! Evelyn \xE0 l'aide ! Non ! Pas le...! Arretez
-      ! *les cris deviennent silencieux*"
+    m_Localized: "-Hawking : Professeur Harper ! A l'aide ! Non ! Arr\xEAtez piti\xE9
+      ! Professeur Harp..! Evelyn \xE0 l'aide ! Non ! Pas le...! Arretez !"
     m_Metadata:
       m_Items: []
   - m_Id: 18676964594974720
@@ -824,6 +825,22 @@ MonoBehaviour:
       sur le terrain pour collecter des donn\xE9es.   "
     m_Metadata:
       m_Items: []
+  - m_Id: 23307970205847552
+    m_Localized: "Apppuyez sur Tab pour activer/d\xE9sactiver votre ATH"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23311109432676352
+    m_Localized: "Apppuyez sur E pour activer/d\xE9sactiver votre lampe frontale"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23456480058281984
+    m_Localized: "Cr\xE9dits"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23465003932585984
+    m_Localized: Appuyez sur Shift pour courir
+    m_Metadata:
+      m_Items: []
   references:
     version: 1
     00000000:
@@ -850,3 +867,7 @@ MonoBehaviour:
       type: {class: SmartFormatTag, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
         m_Entries: 00802abdad594200
+    00000006:
+      type: {class: SmartFormatTag, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_Entries: 00802a7171584200

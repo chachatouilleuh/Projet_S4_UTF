@@ -8,6 +8,9 @@ public class QuitCredit : MonoBehaviour
     {
         if (Input.anyKey)
         {
+            Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
+            PlayerPrefs.DeleteAll();
             UnityEngine.SceneManagement.SceneManager.LoadScene (sceneName:"Menu");
         }
     }

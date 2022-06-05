@@ -19,6 +19,7 @@ public class CanvasManager : MonoBehaviour
         {
             case "Menu":
                 OpenAccueil();
+                Cursor.visible = true;
                 break;
             
             case "Playtest":

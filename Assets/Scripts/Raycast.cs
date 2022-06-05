@@ -35,6 +35,7 @@ public class Raycast : MonoBehaviour
         {
             if (m_curTarget == null)
             {
+                m_infoCube.SetActive(false);
                 return;
             }
             m_curTarget.GetComponent<Outline>().enabled = false;
