@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4354693057286092870}
   - component: {fileID: 846995408858822627}
   - component: {fileID: 3181184693911044905}
-  - component: {fileID: 366761077601597335}
+  - component: {fileID: 5257725050203468902}
   m_Layer: 0
   m_Name: Floor Long Bridge
   m_TagString: Untagged
@@ -82,8 +82,8 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &366761077601597335
-MeshCollider:
+--- !u!65 &5257725050203468902
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -92,7 +92,6 @@ MeshCollider:
   m_Material: {fileID: 13400000, guid: c8d81949a943e66478d76d9b362c4777, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 5422114768561353501, guid: 11fb5e4025620aa4aa8cede757df4098, type: 3}
+  serializedVersion: 2
+  m_Size: {x: 2.0000002, y: 7.9664392, z: 0.5408049}
+  m_Center: {x: 0, y: 0, z: 0.27060083}
