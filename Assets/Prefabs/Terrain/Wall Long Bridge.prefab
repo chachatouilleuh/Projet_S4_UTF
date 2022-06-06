@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 3210698685973561844}
   - component: {fileID: 1954961244570750545}
   - component: {fileID: 4379079579283454619}
-  - component: {fileID: -4630030064422757934}
+  - component: {fileID: 103865769105019608}
   m_Layer: 0
   m_Name: Wall Long Bridge
   m_TagString: Untagged
@@ -82,17 +82,16 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &-4630030064422757934
-MeshCollider:
+--- !u!65 &103865769105019608
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2865804340662426446}
-  m_Material: {fileID: 13400000, guid: c8d81949a943e66478d76d9b362c4777, type: 2}
+  m_Material: {fileID: 13400000, guid: 8e23f725ec0b2de4bb06d4efca9f2e86, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 5422114768561353501, guid: 11fb5e4025620aa4aa8cede757df4098, type: 3}
+  serializedVersion: 2
+  m_Size: {x: 2.0000002, y: 7.9664392, z: 0.5367774}
+  m_Center: {x: 0, y: 0, z: 0.26858705}
