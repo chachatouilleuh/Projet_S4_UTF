@@ -21,7 +21,7 @@ public class SceneManager : MonoBehaviour
     {
         m_backgroundLoad.SetActive(true);
         FirstPersonLook.m_isOption = false;
-        Cursor.lockState = CursorLockMode.Confined;
+        Cursor.visible = true;
         StartCoroutine(LoadMenuScene());
     }
 
@@ -41,6 +41,8 @@ public class SceneManager : MonoBehaviour
 
     private IEnumerator LoadMenuScene()
     {
+        PlayerPrefs.DeleteKey("probeCount");
+        PlayerPrefs.DeleteKey("recordCount");
         m_loadOperation = UnityEngine.SceneManagement.SceneManager.LoadSceneAsync(sceneName: "Menu");
         m_loadOperation.allowSceneActivation = false;
         
@@ -74,6 +76,8 @@ public class SceneManager : MonoBehaviour
     
     private IEnumerator LoadGameScene()
     {
+        PlayerPrefs.DeleteKey("probeCount");
+        PlayerPrefs.DeleteKey("recordCount");
         m_loadOperation = UnityEngine.SceneManagement.SceneManager.LoadSceneAsync(sceneName: "Playtest");
         m_loadOperation.allowSceneActivation = false;
         

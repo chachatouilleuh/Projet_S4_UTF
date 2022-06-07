@@ -29,6 +29,7 @@ MonoBehaviour:
     - id: 9
     - id: 10
     - id: 11
+    - id: 12
   m_TableData:
   - m_Id: 158794043392
     m_Localized: Press any key
@@ -100,7 +101,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 5090037995458560
-    m_Localized: Load game
+    m_Localized: Reload game
     m_Metadata:
       m_Items: []
   - m_Id: 5097741719752704
@@ -289,9 +290,9 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 18674857972236288
-    m_Localized: It seems to be the entrance of a big network of caves, but i go
-      any further, maybe I should set a camp here and rest for the night... I need
-      to warn Hawking.
+    m_Localized: It seems to be the entrance of a big network of caves, but before
+      i go any further, maybe I should set a camp here and rest for the night...
+      I need to warn Hawking.
     m_Metadata:
       m_Items: []
   - m_Id: 18674832286318592
@@ -338,10 +339,11 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 18674592716062720
-    m_Localized: '-Hawking : Transfering data to your exosuit. Press Tab to activate
+    m_Localized: '-Hawking : Transfering data to your exosuit.  Press Tab to activate
       and deactivate your HUD. You can now start your mission, I''ll stay here.'
     m_Metadata:
-      m_Items: []
+      m_Items:
+      - id: 12
   - m_Id: 18674560117932032
     m_Localized: '-Evelyn : Hmm harder than I thought but better than nothing...
       show me, I''ll do my best to find them all'
@@ -530,7 +532,7 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 18676978838831104
     m_Localized: '-Hawking : Professor Harper ! Help ! No ! Please stop it ! Professor
-      Harp..;! Evelyn please ! No ! Not the...! Stop it ! *scream dies out*'
+      Harp! Evelyn please ! No ! Not the...! Stop it !'
     m_Metadata:
       m_Items: []
   - m_Id: 18676964594974720
@@ -577,7 +579,7 @@ MonoBehaviour:
     m_Localized: I'm getting closer, I'm here, you're not alone, hold on !
     m_Metadata:
       m_Items:
-      - id: 12
+      - id: 13
   - m_Id: 18676787192692736
     m_Localized: Did you hear that ? There are survivors... I gotta go, I gotta go
       find them, I'll be back, stay here!
@@ -591,7 +593,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 18676750555447296
-    m_Localized: '-Evelyn : Take it ! ... You don''t believe me, do you ? I can prove
+    m_Localized: '-Evelyn : Take it ! You don''t believe me, do you ? I can prove
       this, I found some records on the way, they''re a bit broken, but I''m telling
       you I can hear human voices   '
     m_Metadata:
@@ -603,7 +605,7 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 18676713020620800
     m_Localized: '-Evelyn :  I''m not ! I know what I saw, I can''t believe 3.S.A
-      fooled us... They knew, they had to know something... '
+      fooled us. They knew, they had to know something... '
     m_Metadata:
       m_Items: []
   - m_Id: 18676659098648576
@@ -883,6 +885,22 @@ MonoBehaviour:
     m_Metadata:
       m_Items:
       - id: 11
+  - m_Id: 23307970205847552
+    m_Localized: Press Tab to activate/deactivate your HUD
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23311109432676352
+    m_Localized: Press E to switch on/off your headlamp
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23456480058281984
+    m_Localized: Credits
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23465003932585984
+    m_Localized: Press Shift to run
+    m_Metadata:
+      m_Items: []
   references:
     version: 1
     00000000:
@@ -934,6 +952,10 @@ MonoBehaviour:
       data:
         m_Entries: 0030bf7954bf4e00
     0000000C:
+      type: {class: SmartFormatTag, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_Entries: 00802a7171584200
+    0000000D:
       type: {class: SmartFormatTag, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
         m_Entries: 00802a0f745a4200
