@@ -639,6 +639,10 @@ MonoBehaviour:
     m_Key: Press Shift
     m_Metadata:
       m_Items: []
+  - m_Id: 24321796070051840
+    m_Key: Press Space
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:
