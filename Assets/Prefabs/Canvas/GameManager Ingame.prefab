@@ -511,7 +511,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6281742697345216901}
   - component: {fileID: 6281742697345216900}
-  - component: {fileID: 1719862194647289422}
+  - component: {fileID: 5726790751042950253}
   m_Layer: 0
   m_Name: TextManager
   m_TagString: Untagged
@@ -546,7 +546,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_language: 0
---- !u!114 &1719862194647289422
+--- !u!114 &5726790751042950253
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

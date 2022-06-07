@@ -115,7 +115,7 @@ public class platforms : MonoBehaviour, Iplatforms
 
     IEnumerator AnimationPlatform()
     {
-        m_animator?.SetTrigger(m_openHash);
+        m_animator?.SetTrigger(m_closeHash);
         
         yield return new WaitForSeconds(m_secondsWait);
         
