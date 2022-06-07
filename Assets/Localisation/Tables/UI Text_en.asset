@@ -810,12 +810,11 @@ MonoBehaviour:
       & Audio Programmer\r\nVFX & Shader Artist\r\nCinematic Conceptor & Level Design
       Scenarist\r\nAsset Integrator\r\n\n\nGianni Ser\xE8ne\r\n\nLead Narrative Design\r\nLead
       Rigging/Skinning\r\n3D Artist\r\nTexture Artist\r\nAsset Integrator\r\nGameplay
-      Programmer\r\n\n\nMaxime Delhomme\r\n\nLead Integrator\r\nLead Gameplay Programmer\r\nEvent
-      Programmer\r\nLevel Designer\r\nLevel Artist\r\nVFX Artist\r\n3D Assistant\r\n\n\nRose
-      Valety\r\n\nLead Artistic Direction\r\nConcept Artist\r\nGraphist\r\nIllustrator\r\nNarrative
-      Designer & Translator\r\n2D Artist\r\n3D Animator\r\n3D Assistant\r\n\n\nUlysse
-      Galin\xE9\r\n\nLead 3D Artist\r\nCharacter Artist\r\nTexture Artist\r\nIntegrator\r\nVFX
-      Assistant"
+      Programmer\r\n\n\nMaxime Delhomme\r\n\nLead Integrator\r\nLead Gameplay Programmer\r\nLevel
+      Designer\r\nLevel Artist\r\nVFX Artist\r\n3D Assistant\r\n\n\nRose Valety\r\n\nLead
+      Artistic Direction\r\nConcept Artist\r\n2D Artist\r\nNarrative Designer & Translator\r\n3D
+      Animator\r\n3D Assistant\r\n\n\nUlysse Galin\xE9\r\n\nLead 3D Artist\r\nCharacter
+      Artist\r\nTexture Artist\r\nIntegrator\r\nVFX Assistant"
     m_Metadata:
       m_Items: []
   - m_Id: 21523258097405952
@@ -899,6 +898,10 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 23465003932585984
     m_Localized: Press Shift to run
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24321796070051840
+    m_Localized: Press Space to skip cinematic
     m_Metadata:
       m_Items: []
   references:

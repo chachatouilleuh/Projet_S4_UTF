@@ -774,12 +774,11 @@ MonoBehaviour:
       Design Scenarist\re\nAsset Integrateur\n\n\nGianni Ser\xE8ne\r\n\nLead Narrative
       Design\r\nLead Rigging/Skinning\r\nArtist\re 3D \nArtist\re Texture\nAsset
       Integrateur\r\nGameplay Programmer\r\n\n\nMaxime Delhomme\r\n\nLead Integrateur\r\nLead
-      Gameplay D\xE9veloppeur\nEvent D\xE9veloppeur\nLevel Designer\r\nArtist\re
-      Level \nArtist\re VFX \nAssistant\r 3D \n\n\nRose Valety\r\n\nLead Directeur\r
-      Artistique\nConcept Artist\re\nGraphist\re\nIllustratrice\nNarrative Designer
-      & Traductrice\r\nArtist\re 2D \nAnimateur 3D\r\nAssistant\re 3D \n\n\nUlysse
-      Galin\xE9\r\n\nLead Artist\re 3D \nCharacter Artist\re\nArtist\re Textures\nIntegrateurr\r\nAssistant
-      VFX "
+      Gameplay D\xE9veloppeur\nLevel Designer\r\nArtist\re Level \nArtist\re VFX
+      \nAssistant\r 3D \n\n\nRose Valety\r\n\nLead Directeur\r Artistique\nConcept
+      Artist\re\nArtist\re 2D \nNarrative Designer & Traductrice\r\nAnimateur 3D\r\nAssistant\re
+      3D \n\n\nUlysse Galin\xE9\r\n\nLead Artist\re 3D \nCharacter Artist\re\nArtist\re
+      Textures\nIntegrateurr\r\nAssistant VFX "
     m_Metadata:
       m_Items: []
   - m_Id: 21523258097405952
@@ -839,6 +838,10 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 23465003932585984
     m_Localized: Appuyez sur Shift pour courir
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24321796070051840
+    m_Localized: "Appuyez sur Espace pour passer la cin\xE9matique"
     m_Metadata:
       m_Items: []
   references:
