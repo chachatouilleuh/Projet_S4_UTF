@@ -93,7 +93,7 @@ public class platforms : MonoBehaviour, Iplatforms
 
         if (!m_moveALot)
         {
-            m_animator?.SetTrigger(m_openHash);
+            m_animator?.SetTrigger(m_closeHash);
             m_audiosourceTrigger.Play();
             if(m_isSingle)
             {
@@ -119,7 +119,7 @@ public class platforms : MonoBehaviour, Iplatforms
         
         yield return new WaitForSeconds(m_secondsWait);
         
-        m_animator?.SetTrigger(m_closeHash);
+        m_animator?.SetTrigger(m_openHash);
     }
 
     // IEnumerator StopSound()
