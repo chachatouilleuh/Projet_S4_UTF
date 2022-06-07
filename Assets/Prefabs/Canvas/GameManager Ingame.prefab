@@ -166,6 +166,7 @@ MonoBehaviour:
   Probes: {fileID: 0}
   Records: {fileID: 0}
   Characters: {fileID: 0}
+  Pointeur: {fileID: 0}
 --- !u!114 &6281742696143655544
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -178,6 +179,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e4ba516af21a02c4c97c5ad1169974c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_backgroundLoad: {fileID: 0}
+  m_progressBar: {fileID: 0}
+  m_progressText: {fileID: 0}
+  m_loreText: {fileID: 0}
 --- !u!114 &6281742696143655542
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -506,6 +511,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6281742697345216901}
   - component: {fileID: 6281742697345216900}
+  - component: {fileID: 1719862194647289422}
   m_Layer: 0
   m_Name: TextManager
   m_TagString: Untagged
@@ -540,3 +546,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_language: 0
+--- !u!114 &1719862194647289422
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6281742697345216902}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c93c74ca8e1b690478d62e2e1104072e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_tutoTab: {fileID: 0}
+  m_tutoLamp: {fileID: 0}
+  m_tutoShift: {fileID: 0}
+  m_tutoSkip: {fileID: 0}
