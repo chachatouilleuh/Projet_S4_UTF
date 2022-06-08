@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 2786004001862378905}
   - component: {fileID: 318296422621084714}
   - component: {fileID: 1992257237614406566}
+  - component: {fileID: 5350758438037662749}
   m_Layer: 5
   m_Name: Arrows Right
   m_TagString: Untagged
@@ -111,6 +112,35 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &5350758438037662749
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 511531462952259361}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 4894927606463583529}
+          m_TargetAssemblyTypeName: ShowHide, Assembly-CSharp
+          m_MethodName: ShowOrHide
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &4894927605445973727
 GameObject:
   m_ObjectHideFlags: 0
@@ -3058,6 +3088,7 @@ GameObject:
   - component: {fileID: 7766555463895372609}
   - component: {fileID: 9049073141192230185}
   - component: {fileID: 3278213368978537319}
+  - component: {fileID: 6198596277836352965}
   m_Layer: 5
   m_Name: Arrows Left
   m_TagString: Untagged
@@ -3156,6 +3187,35 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &6198596277836352965
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7764458025905276631}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 4894927605942890721}
+          m_TargetAssemblyTypeName: ShowHide, Assembly-CSharp
+          m_MethodName: ShowOrHide
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &7859972877681719717
 GameObject:
   m_ObjectHideFlags: 0

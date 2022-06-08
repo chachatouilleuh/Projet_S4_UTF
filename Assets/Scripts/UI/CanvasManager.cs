@@ -10,7 +10,7 @@ public class CanvasManager : MonoBehaviour
     
     private bool m_accueilOpen, m_mainMenuOpen, m_optionsOpen, m_loadScreenOpen, m_hudOpen, m_planetOpen, m_probesOpen, m_recordsOpen, m_charactersOpen;
     private Scene scene;
-
+    
     // INITIALISE LES VALEURS
     private void Awake()
     {
@@ -241,8 +241,4 @@ public class CanvasManager : MonoBehaviour
         m_recordsOpen = false;
         m_charactersOpen = false;
     }
-    
-
-
-
 }

@@ -106,7 +106,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 5097850431918080
-    m_Localized: Messages
+    m_Localized: Enregistrements
     m_Metadata:
       m_Items: []
   - m_Id: 5098025799962624
@@ -397,8 +397,8 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 18675913787604992
-    m_Localized: "Oh mon dieu... c'est... le mal absolu... qu'est-ce qui leur est
-      arriv\xE9 ? !"
+    m_Localized: "Oh mon dieu... c'est... atroce... qu'est-ce qui leur est arriv\xE9
+      ? !"
     m_Metadata:
       m_Items: []
   - m_Id: 18675951200796672
