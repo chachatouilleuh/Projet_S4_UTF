@@ -8,9 +8,10 @@ public class OpenDoor : MonoBehaviour
 	
 	[SerializeField] private Animator m_animator;
 	
-	private void  OnTriggerEnter(Collider other){
-		if((m_playerLayer.value & (1 << other.gameObject.layer)) > 0){
-			Debug.Log("coucou");
+	private IEnumerator  OnTriggerEnter(Collider other){
+		if((m_playerLayer.value & (1 << other.gameObject.layer)) > 0)
+		{
+			yield return new WaitForSeconds(2);
 			m_animator.SetBool("isOpen", true);
 		}
 	}

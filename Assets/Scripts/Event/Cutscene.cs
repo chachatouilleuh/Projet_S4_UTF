@@ -151,9 +151,15 @@ public class Cutscene : MonoBehaviour
 
     IEnumerator SkipCutscene()
     {
-        
         switch (m_cutsceneNumber)
         {
+            case 1:
+                m_animator.SetBool("skip",true);
+                StopCutscene();
+                yield return new WaitForSeconds(1);
+                gameObject.transform.parent.gameObject.transform.parent.gameObject.SetActive(false);
+                break;
+            
             case 3:
                 m_animator.SetBool("skip",true);
                 StopCutscene();

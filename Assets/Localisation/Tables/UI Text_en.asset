@@ -739,7 +739,7 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 18928248987418624
     m_Localized: The record is too damaged to understand that dialogue, but at least
-      I guess I wasn't the first human sent on this planet
+      I wasn't the first human sent on this planet
     m_Metadata:
       m_Items: []
   - m_Id: 18928343246012416
@@ -747,8 +747,8 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 18928453078056960
-    m_Localized: Hey, it's worse than I expected, there's definitely something out
-      there... I don't wanna die here
+    m_Localized: It's worse than I expected, there's definitely something out there...
+      I don't wanna die here
     m_Metadata:
       m_Items: []
   - m_Id: 18928570120110080

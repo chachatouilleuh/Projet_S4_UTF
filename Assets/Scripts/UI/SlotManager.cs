@@ -7,11 +7,13 @@ public class SlotManager : MonoBehaviour
     [SerializeField, Tooltip("les slots probes à assigner")] private GameObject CharaLore1, CharaLore2, CharaLore3, CharaUnknown, CharaChimere ;
     [SerializeField, Tooltip("le nombre de sondes récupérées ")] private int m_probeCount;
     [SerializeField, Tooltip("le nombre de records récupérés ")] private int m_recordCount;
+    
 
     private void Awake()
     {
         m_probeCount = PlayerPrefs.GetInt("probeCount");
         m_recordCount = PlayerPrefs.GetInt("recordCount");
+        
         
         OpenCharaLore1();
         
@@ -44,6 +46,7 @@ public class SlotManager : MonoBehaviour
                 OpenLore1();
                 ProbeSlot2.SetActive(true);
                 ProbeSlot3.SetActive(true);
+                CharaUnknown.SetActive(false);
                 CharaChimere.SetActive(true);
                 break;
         }

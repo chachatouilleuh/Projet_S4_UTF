@@ -35,8 +35,9 @@ public class SceneManager : MonoBehaviour
 
     private void QuitApplication()
     {
-        Application.Quit();
         PlayerPrefs.DeleteAll();
+        Application.Quit();
+        
     }
 
     private IEnumerator LoadMenuScene()
@@ -125,13 +126,13 @@ public class SceneManager : MonoBehaviour
         switch (letter)
         {
             case '.':
-                yield return new WaitForSeconds(0.6f);
+                yield return new WaitForSeconds(1f);
                 break;
             case ',':
-                yield return new WaitForSeconds(0.2f);
+                yield return new WaitForSeconds(0.5f);
                 break;
             case ' ':
-                yield return new WaitForSeconds(0.2f);
+                yield return new WaitForSeconds(0.1f);
                 break;
             default:
                 yield return new WaitForSeconds(0.04f);
