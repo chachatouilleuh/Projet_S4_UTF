@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 3896147377390419812}
   - component: {fileID: 1293960449468664750}
   - component: {fileID: 5343997392077036675}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Floor Great Plate
   m_TagString: Untagged
   m_Icon: {fileID: 0}
