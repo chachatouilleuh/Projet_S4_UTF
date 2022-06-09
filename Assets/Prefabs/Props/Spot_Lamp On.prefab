@@ -197,6 +197,7 @@ GameObject:
   - component: {fileID: 4720038547142778315}
   - component: {fileID: 121727003401739246}
   - component: {fileID: 5441404789666708141}
+  - component: {fileID: 8257005465134851906}
   m_Layer: 0
   m_Name: Spot_Lamp On
   m_TagString: Untagged
@@ -269,3 +270,17 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &8257005465134851906
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5600668187106288780}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 1675964348684373062, guid: f91b5f010a8d4ea488025c6acc8a8b4e, type: 3}
