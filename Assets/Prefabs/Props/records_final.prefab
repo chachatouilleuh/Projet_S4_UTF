@@ -240,7 +240,7 @@ MonoBehaviour:
   m_playerLayer:
     serializedVersion: 2
     m_Bits: 8
-  m_objectToActivate: {fileID: 7048742296661646624}
+  m_objectToActivate: {fileID: 7674083983061313621}
   m_interrupteurOn: 1
   m_isHUDBroken: 0
-  m_waitBeforeShow: 3
+  m_waitBeforeShow: 10
