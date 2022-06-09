@@ -37,6 +37,9 @@ public class platforms : MonoBehaviour, Iplatforms
 
     private AudioSource m_audiosourceTrigger;
 
+    [SerializeField] private Material[] m_platOn;
+    [SerializeField] private Material m_platOff;
+
     private void Awake()
     {
         if (m_animator == null)
@@ -90,7 +93,7 @@ public class platforms : MonoBehaviour, Iplatforms
                 return;
             }
         }
-
+        
         if (!m_moveALot)
         {
             m_animator?.SetTrigger(m_closeHash);
@@ -99,12 +102,15 @@ public class platforms : MonoBehaviour, Iplatforms
             {
                 //StartCoroutine(StopSound());
             }
+            gameObject.GetComponent<MeshRenderer>().materials = m_platOn;
         }
         else
         {
             LaunchMove();
             InvokeRepeating("LaunchMove", 0f, m_secondsWait + 4);
             m_audiosourceTrigger.Play();
+            Debug.Log($"Platform On");
+            gameObject.GetComponent<MeshRenderer>().materials = m_platOn;
         }
     }
 
