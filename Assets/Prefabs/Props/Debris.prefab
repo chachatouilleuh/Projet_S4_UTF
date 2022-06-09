@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4645220479018173068}
   - component: {fileID: 8635926060878302505}
   - component: {fileID: 5781513298799262179}
-  - component: {fileID: 7270548365112196649}
+  - component: {fileID: 8601309687137731852}
   m_Layer: 0
   m_Name: Debris
   m_TagString: Untagged
@@ -82,16 +82,16 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &7270548365112196649
+--- !u!65 &8601309687137731852
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5421476085618432054}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: 8e23f725ec0b2de4bb06d4efca9f2e86, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 6.5408387, y: 3, z: 0.17500049}
-  m_Center: {x: 0.000003819261, y: -0.0000000039117283, z: 0.08750388}
+  m_Center: {x: 0.0000000045636828, y: -0.0000000039117283, z: 0.08750388}
