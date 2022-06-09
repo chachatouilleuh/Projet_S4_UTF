@@ -11,12 +11,11 @@ GameObject:
   - component: {fileID: 912359285140494362}
   - component: {fileID: 1426398857093124417}
   - component: {fileID: 3459850827352518794}
-  - component: {fileID: 7002141366097568299}
+  - component: {fileID: 2323871774984563657}
   - component: {fileID: 926449934471795525}
   - component: {fileID: 8180324925805478834}
   - component: {fileID: 5150678283555462326}
-  - component: {fileID: 2323871774984563657}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Mobile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -64,9 +63,9 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 70590036bc9e80940b66b18910600024, type: 2}
-  - {fileID: 2100000, guid: 70590036bc9e80940b66b18910600024, type: 2}
-  - {fileID: 2100000, guid: 70590036bc9e80940b66b18910600024, type: 2}
+  - {fileID: 2100000, guid: b21ebbc3792f48c41bfda4519823b025, type: 2}
+  - {fileID: 2100000, guid: b21ebbc3792f48c41bfda4519823b025, type: 2}
+  - {fileID: 2100000, guid: b21ebbc3792f48c41bfda4519823b025, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -88,20 +87,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &7002141366097568299
-MeshCollider:
+--- !u!65 &2323871774984563657
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 753904891321863006}
-  m_Material: {fileID: 13400000, guid: c8d81949a943e66478d76d9b362c4777, type: 2}
+  m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 5060444177187149915, guid: e04d23aacfe6fca48b989fb15105b654, type: 3}
+  serializedVersion: 2
+  m_Size: {x: 3.8999999, y: 3.9000008, z: 0.15926851}
+  m_Center: {x: 0, y: 0, z: 0.020365782}
 --- !u!114 &926449934471795525
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -120,9 +118,14 @@ MonoBehaviour:
   m_secondsWait: 0
   m_waitCut: 0
   m_moveALot: 0
-  m_isSingle: 0
-  m_audioMixer: {fileID: 0}
-  m_clipToPlay: {fileID: 0}
+  m_isSingle: 1
+  m_audioMixer: {fileID: 7498302692019875478, guid: dbda88f07e9e9474a8053013f5393918, type: 2}
+  m_clipToPlay: {fileID: 8300000, guid: 475c6fa592863e0459eeec908de5d36a, type: 3}
+  m_platOn:
+  - {fileID: 2100000, guid: 70590036bc9e80940b66b18910600024, type: 2}
+  - {fileID: 2100000, guid: 70590036bc9e80940b66b18910600024, type: 2}
+  - {fileID: 2100000, guid: 70590036bc9e80940b66b18910600024, type: 2}
+  m_platOff: {fileID: 2100000, guid: b21ebbc3792f48c41bfda4519823b025, type: 2}
 --- !u!95 &8180324925805478834
 Animator:
   serializedVersion: 3
@@ -149,21 +152,21 @@ AudioSource:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 753904891321863006}
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
-  m_Volume: 0.01
+  m_PlayOnAwake: 0
+  m_Volume: 1
   m_Pitch: 1
   Loop: 0
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
-  Priority: 256
+  Priority: 0
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 500
+  MaxDistance: 10
   Pan2D: 0
   rolloffMode: 0
   BypassEffects: 0
@@ -198,7 +201,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 0
+      value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -213,7 +216,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 0
+      value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -238,19 +241,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!65 &2323871774984563657
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 753904891321863006}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 3.8999999, y: 3.9000008, z: 0.15926851}
-  m_Center: {x: 0, y: 0, z: 0.020365782}
 --- !u!1 &4657456555690293148
 GameObject:
   m_ObjectHideFlags: 0
@@ -260,7 +250,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5469987486388956454}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Moving_Platform
   m_TagString: Untagged
   m_Icon: {fileID: 0}

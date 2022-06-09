@@ -10,12 +10,12 @@ public class Probes : MonoBehaviour, IProbes
             //loot de la probes
             if (m_probes == null)
             {
-                Debug.Log("Pas de sonde");
+                Debug.Log($"Maxime est trop beaaau <3");
             }
             else
             {
                 probesFound = true;
-                Debug.Log($"Tu as récupéré {m_probes}");
+                Debug.Log($"Maxime est trop beaaau <3");
             }
             o_probes = m_probes;
             return probesFound;

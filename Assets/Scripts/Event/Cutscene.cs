@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using UnityEngine;
 
@@ -37,7 +38,7 @@ public class Cutscene : MonoBehaviour
                 m_secondCharacterAnimator.GetBool("cutscene4H");
                 break;
             
-            case 5:
+            case 5: 
                 m_animator.GetBool("cutscene5");
                 m_secondCharacterAnimator.GetBool("cutscene5H");
                 break;
@@ -135,5 +136,46 @@ public class Cutscene : MonoBehaviour
                 m_secondCharacterAnimator.SetBool("cutscene6H",false);
                 break;
         }
+    }
+
+    private void Update()
+    {
+        if (m_isCutscene)
+        {
+            if (Input.GetKeyDown(KeyCode.Space))
+            {
+                StartCoroutine(SkipCutscene());
+            }
+        }
+    }
+
+    IEnumerator SkipCutscene()
+    {
+        switch (m_cutsceneNumber)
+        {
+            case 1:
+                m_animator.SetBool("skip",true);
+                StopCutscene();
+                yield return new WaitForSeconds(1);
+                gameObject.transform.parent.gameObject.transform.parent.gameObject.SetActive(false);
+                break;
+            
+            case 3:
+                m_animator.SetBool("skip",true);
+                StopCutscene();
+                yield return new WaitForSeconds(1);
+                gameObject.transform.parent.gameObject.transform.parent.gameObject.SetActive(false);
+                break;
+                
+            case 4:
+                m_animator.SetBool("skip",true);
+                StopCutscene();
+                yield return new WaitForSeconds(1);
+                gameObject.transform.parent.gameObject.transform.parent.gameObject.SetActive(false);
+                break;
+            
+        }
+        yield return new WaitForSeconds(10);
+        m_animator.SetBool("skip",false);
     }
 }

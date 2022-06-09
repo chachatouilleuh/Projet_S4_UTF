@@ -1,91 +1,142 @@
 using Packages.Mini_First_Person_Controller.Scripts;
 using UnityEngine;
+using System.Collections;
+using UnityEngine.UI;
+using TMPro;
 
 [System.Serializable]
 public class SceneManager : MonoBehaviour
 {
     // SCENE TRANSITION
-    
+
+    [SerializeField, Tooltip("le background de chargement")] private GameObject m_backgroundLoad;
+    [SerializeField, Tooltip("la barre de chargement")] private Slider m_progressBar;
+    [SerializeField, Tooltip("la texte de chargement")] private TextMeshProUGUI m_progressText;
+    [SerializeField, Tooltip("la texte de chargement")] private TextMeshProUGUI m_loreText;
+    [SerializeField, Tooltip("l'operation de chargement")] private AsyncOperation m_loadOperation;
+    //private float m_totalSceneProgress;
+    private float m_progress;
+
     public void OpenMenuScene()
     {
-        UnityEngine.SceneManagement.SceneManager.LoadScene (sceneName:"Menu");
+        m_backgroundLoad.SetActive(true);
         FirstPersonLook.m_isOption = false;
+        Cursor.visible = true;
+        StartCoroutine(LoadMenuScene());
     }
 
-    public void OpenCredits()
-    {
-        UnityEngine.SceneManagement.SceneManager.LoadScene (sceneName:"Credits");
-    }
-    
     public void OpenGameScene()
     {
-        UnityEngine.SceneManagement.SceneManager.LoadScene (sceneName:"Playtest");
+        m_backgroundLoad.SetActive(true);
         FirstPersonLook.m_isOption = false;
+        StartCoroutine(TypeSentence(m_loreText.text));
+        StartCoroutine(LoadGameScene());
     }
 
-    public void QuitApplication()
+    private void QuitApplication()
     {
-        Application.Quit();
         PlayerPrefs.DeleteAll();
+        Application.Quit();
+        
     }
-    //__________________________________________________________________//
-    
-    // RESET 
-    
-    // public void ResetSave()
-    // {
-    //     PlayerPrefs.DeleteKey("level");
-    // }
-    
-    //__________________________________________________________________//
-    
-    //PAUSE
-    
-    // public void PauseGame ()
-    // {
-    //     Time.timeScale = 0;
-    //     AudioListener.pause = true;
-    // }
-    //
-    // public void ResumeGame ()
-    // {
-    //     Time.timeScale = 1;
-    //     AudioListener.pause = false;
-    // }
 
+    private IEnumerator LoadMenuScene()
+    {
+        PlayerPrefs.DeleteKey("probeCount");
+        PlayerPrefs.DeleteKey("recordCount");
+        m_loadOperation = UnityEngine.SceneManagement.SceneManager.LoadSceneAsync(sceneName: "Menu");
+        m_loadOperation.allowSceneActivation = false;
+        
+        while (!m_loadOperation.isDone)
+        {
+            m_progress = Mathf.Clamp01(m_loadOperation.progress);
+            m_progressBar.value = m_progress;
+            m_progressText.text = (m_progress * 100).ToString("F0") + "%";
+
+            if (m_loadOperation.progress >= 0.9f)
+            {
+                m_progressBar.value = 1;
+                
+                if (Underlining.m_lang == 0)
+                {
+                    m_progressText.text = "Press any key to continue";
+                }
+                else
+                {
+                    m_progressText.text = "Appuyez sur n'importe quelle touche pour continuer";
+                }
+
+                if (Input.anyKeyDown)
+                {
+                    m_loadOperation.allowSceneActivation = true;
+                }
+            }
+            yield return null;
+        }
+    }
     
+    private IEnumerator LoadGameScene()
+    {
+        PlayerPrefs.DeleteKey("probeCount");
+        PlayerPrefs.DeleteKey("recordCount");
+        m_loadOperation = UnityEngine.SceneManagement.SceneManager.LoadSceneAsync(sceneName: "Playtest");
+        m_loadOperation.allowSceneActivation = false;
+        
+        while (!m_loadOperation.isDone)
+        {
+            m_progress = Mathf.Clamp01(m_loadOperation.progress);
+
+            m_progressBar.value = m_progress;
+            m_progressText.text = (m_progress * 100).ToString("F0") + "%";
+ 
+            if (m_loadOperation.progress >= 0.9f)
+            {
+                m_progressBar.value = 1;
+                
+                if (Underlining.m_lang == 0)
+                {
+                    m_progressText.text = "Press any key to continue";
+                }
+                else
+                {
+                    m_progressText.text = "Appuyez sur n'importe quelle touche pour continuer";
+                }
+
+                if (Input.anyKeyDown)
+                {
+                    m_loadOperation.allowSceneActivation = true;
+                }
+            }
+            yield return null;
+        }
+        
+    }
     
-    //__________________________________________________________________//
+    IEnumerator TypeSentence (string sentence)
+    {
+        m_loreText.text = "";
+        foreach (char letter in sentence.ToCharArray()){
+            m_loreText.text += letter;
+            yield return StartCoroutine(PauseBetweenChars(letter));
+        }
+    }
     
-    // CHECKPOINT
-    
-    // Lecture du checkpoint
-    // public int checkpoint;
-    
-    // private void Start()
-    // {
-    //     chercher le premier checkpoint au lancement du jeu 
-    //     checkpoint = PlayerPrefs.GetInt("level", 1);
-    // }
-    
-    // Passer au checkpoint suivant
-    // public void LevelUp(){
-    //
-    //     if (checkpoint == 1){
-    //         PlayerPrefs.SetInt("level", 2);
-    //     }
-    //
-    //     else if (checkpoint == 2){
-    //         PlayerPrefs.SetInt("level", 3);
-    //     }
-    //
-    //     else if (checkpoint == 3){
-    //         PlayerPrefs.SetInt("level", 4);
-    //     }   
-    //
-    //     else if (checkpoint == 4){
-    //         PlayerPrefs.SetInt("level", 5);
-    //     }  
-    // }
-    
+    private IEnumerator PauseBetweenChars(char letter)
+    {
+        switch (letter)
+        {
+            case '.':
+                yield return new WaitForSeconds(1f);
+                break;
+            case ',':
+                yield return new WaitForSeconds(0.5f);
+                break;
+            case ' ':
+                yield return new WaitForSeconds(0.1f);
+                break;
+            default:
+                yield return new WaitForSeconds(0.04f);
+                break;
+        }
+    }
 }

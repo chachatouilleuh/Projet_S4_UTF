@@ -19,9 +19,10 @@
     </file-type-list>
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.localization@0.8.1-preview/Editor/Asset Pipeline/LocalizationBuildPlayer.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.localization@0.8.1-preview/Runtime/Component Localizers/LocalizeStringEvent.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.render-pipelines.universal@10.7.0/Runtime/ScriptableRendererData.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/inventory/Lightning.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.cinemachine@2.6.11/Runtime/Behaviours/CinemachineBrain.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/inventory/ILightning.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -35,7 +36,7 @@
     <property name="Discover.Launch.Via.Unity" value="true" />
     <property name="rider.run.widget.enabled.cache" value="false" />
   </component>
-  <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
+  <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor &amp; Play">
     <configuration name="Standalone Player" type="RunUnityExe" factoryName="Unity Executable">
       <option name="EXE_PATH" value="$USER_HOME$/Downloads/Build/Projet_UTF.exe" />
       <option name="PROGRAM_PARAMETERS" value="" />
@@ -89,6 +90,8 @@
       <workItem from="1652950747581" duration="659000" />
       <workItem from="1652961892509" duration="264000" />
       <workItem from="1652963928779" duration="889000" />
+      <workItem from="1654078765152" duration="2379000" />
+      <workItem from="1654777016520" duration="1398000" />
     </task>
     <servers />
   </component>
