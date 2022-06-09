@@ -11,8 +11,9 @@ GameObject:
   - component: {fileID: 1731626774436139012}
   - component: {fileID: 3718743909228122788}
   - component: {fileID: 6871288223129047460}
+  - component: {fileID: 9117443102823084151}
   m_Layer: 8
-  m_Name: Sphere (3)
+  m_Name: Diode
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -81,6 +82,21 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &9117443102823084151
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1318016128593382755}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed5b5338639626b45b80abd8d73e405f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_diodeOn: {fileID: 2100000, guid: b56e7ac578ce9b643a5ca39a8726bf95, type: 2}
+  m_diodeOff: {fileID: 2100000, guid: 9d3091c158b3ed849b6dbcc074f72a4f, type: 2}
+  m_isOpening: {fileID: 5949300366190434902}
 --- !u!1 &3272035342872567988
 GameObject:
   m_ObjectHideFlags: 0
@@ -132,6 +148,7 @@ MonoBehaviour:
   m_triggeredEvent: {fileID: 0}
   m_keyNeed: []
   m_animator: {fileID: 2425737189200534883}
+  isOpening: 0
   m_audioMixer: {fileID: 7498302692019875478, guid: dbda88f07e9e9474a8053013f5393918, type: 2}
   m_clipToPlay: {fileID: 0}
 --- !u!95 &2425737189200534883
@@ -325,8 +342,9 @@ GameObject:
   - component: {fileID: 4890874817233942455}
   - component: {fileID: 8378684203216509623}
   - component: {fileID: 4396489639283305552}
+  - component: {fileID: 3615343172898172381}
   m_Layer: 8
-  m_Name: Sphere (2)
+  m_Name: Diode
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -395,6 +413,21 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &3615343172898172381
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4264522710455878424}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed5b5338639626b45b80abd8d73e405f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_diodeOn: {fileID: 2100000, guid: b56e7ac578ce9b643a5ca39a8726bf95, type: 2}
+  m_diodeOff: {fileID: 2100000, guid: 9d3091c158b3ed849b6dbcc074f72a4f, type: 2}
+  m_isOpening: {fileID: 5949300366190434902}
 --- !u!1 &5381283991606584698
 GameObject:
   m_ObjectHideFlags: 0
@@ -406,8 +439,9 @@ GameObject:
   - component: {fileID: 8400297259576441596}
   - component: {fileID: 8062100006568030862}
   - component: {fileID: 5881183395451311030}
+  - component: {fileID: 5488043492629671352}
   m_Layer: 8
-  m_Name: Sphere (1)
+  m_Name: Diode
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -476,6 +510,21 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &5488043492629671352
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5381283991606584698}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed5b5338639626b45b80abd8d73e405f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_diodeOn: {fileID: 2100000, guid: b56e7ac578ce9b643a5ca39a8726bf95, type: 2}
+  m_diodeOff: {fileID: 2100000, guid: 9d3091c158b3ed849b6dbcc074f72a4f, type: 2}
+  m_isOpening: {fileID: 5949300366190434902}
 --- !u!1 &5491984280852214539
 GameObject:
   m_ObjectHideFlags: 0
@@ -710,8 +759,9 @@ GameObject:
   - component: {fileID: 2487819829515101703}
   - component: {fileID: 7438969600502955868}
   - component: {fileID: 2481424121118460867}
+  - component: {fileID: 5482740009697497436}
   m_Layer: 8
-  m_Name: Sphere
+  m_Name: Diode
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -780,6 +830,21 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &5482740009697497436
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7360663816643715880}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed5b5338639626b45b80abd8d73e405f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_diodeOn: {fileID: 2100000, guid: b56e7ac578ce9b643a5ca39a8726bf95, type: 2}
+  m_diodeOff: {fileID: 2100000, guid: 9d3091c158b3ed849b6dbcc074f72a4f, type: 2}
+  m_isOpening: {fileID: 5949300366190434902}
 --- !u!1 &8652647542807422511
 GameObject:
   m_ObjectHideFlags: 0

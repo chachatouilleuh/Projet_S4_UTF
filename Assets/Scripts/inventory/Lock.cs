@@ -16,6 +16,7 @@ public class Lock : MonoBehaviour, ILock
 
         private string m_openTriggerName = "Open";
         private int m_openHash;
+        public bool isOpening;
         
         [SerializeField, Tooltip("le sfx a jouer")] private AudioMixerGroup m_audioMixer;
         [SerializeField, Tooltip("le sfx a jouer")] private AudioClip m_clipToPlay;
@@ -56,11 +57,13 @@ public class Lock : MonoBehaviour, ILock
             // ouvre la porte
             m_animator?.SetTrigger(m_openHash);
             m_audiosourceTrigger.Play();
+            isOpening = true;
         }
-
 
         private void Awake()
         {
+            isOpening = false;
+            
             if (m_animator == null)
             {
                 m_animator = GetComponent<Animator>();

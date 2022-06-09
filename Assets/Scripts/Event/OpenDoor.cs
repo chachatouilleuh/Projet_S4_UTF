@@ -7,7 +7,7 @@ public class OpenDoor : MonoBehaviour
 	[SerializeField] private LayerMask m_playerLayer;
 	
 	[SerializeField] private Animator m_animator;
-	
+
 	private IEnumerator  OnTriggerEnter(Collider other){
 		if((m_playerLayer.value & (1 << other.gameObject.layer)) > 0)
 		{

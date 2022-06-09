@@ -63,9 +63,9 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 70590036bc9e80940b66b18910600024, type: 2}
-  - {fileID: 2100000, guid: 70590036bc9e80940b66b18910600024, type: 2}
-  - {fileID: 2100000, guid: 70590036bc9e80940b66b18910600024, type: 2}
+  - {fileID: 2100000, guid: b21ebbc3792f48c41bfda4519823b025, type: 2}
+  - {fileID: 2100000, guid: b21ebbc3792f48c41bfda4519823b025, type: 2}
+  - {fileID: 2100000, guid: b21ebbc3792f48c41bfda4519823b025, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -121,6 +121,11 @@ MonoBehaviour:
   m_isSingle: 1
   m_audioMixer: {fileID: 7498302692019875478, guid: dbda88f07e9e9474a8053013f5393918, type: 2}
   m_clipToPlay: {fileID: 8300000, guid: 475c6fa592863e0459eeec908de5d36a, type: 3}
+  m_platOn:
+  - {fileID: 2100000, guid: 70590036bc9e80940b66b18910600024, type: 2}
+  - {fileID: 2100000, guid: 70590036bc9e80940b66b18910600024, type: 2}
+  - {fileID: 2100000, guid: 70590036bc9e80940b66b18910600024, type: 2}
+  m_platOff: {fileID: 2100000, guid: b21ebbc3792f48c41bfda4519823b025, type: 2}
 --- !u!95 &8180324925805478834
 Animator:
   serializedVersion: 3
