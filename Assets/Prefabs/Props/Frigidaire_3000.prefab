@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 6598759782286549897}
   - component: {fileID: 7799208272897895468}
   - component: {fileID: 5465309272806856934}
+  - component: {fileID: 1586560687100520722}
   m_Layer: 0
   m_Name: Frigidaire_3000
   m_TagString: Untagged
@@ -81,3 +82,16 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &1586560687100520722
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5825495882684086579}
+  m_Material: {fileID: 13400000, guid: 8e23f725ec0b2de4bb06d4efca9f2e86, type: 2}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.2000006, y: 1.0823057, z: 2.0300007}
+  m_Center: {x: 0.00000002053131, y: -0.016153634, z: 1.0150002}
