@@ -11,8 +11,8 @@ GameObject:
   - component: {fileID: 1283793446599261141}
   - component: {fileID: 2773980714466210928}
   - component: {fileID: 115932002743091386}
-  - component: {fileID: 4229710199739115862}
-  m_Layer: 0
+  - component: {fileID: 3865298360979485233}
+  m_Layer: 10
   m_Name: Floor Medium Plate
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -82,8 +82,8 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &4229710199739115862
-MeshCollider:
+--- !u!65 &3865298360979485233
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -92,7 +92,6 @@ MeshCollider:
   m_Material: {fileID: 13400000, guid: c8d81949a943e66478d76d9b362c4777, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 6146770469628650885, guid: 59dd474f85196274898d816aacea0a9b, type: 3}
+  serializedVersion: 2
+  m_Size: {x: 7.0000005, y: 7.0000024, z: 1.0622939}
+  m_Center: {x: 0, y: 4.2022575e-16, z: 0.52957064}

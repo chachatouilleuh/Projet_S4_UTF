@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 976511498685997549}
   - component: {fileID: 3056170914645513511}
   - component: {fileID: 5482331438039112683}
+  - component: {fileID: 5510108951107012693}
   m_Layer: 0
   m_Name: Mud Medium Plate
   m_TagString: Untagged
@@ -96,3 +97,16 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 6146770469628650885, guid: 59dd474f85196274898d816aacea0a9b, type: 3}
+--- !u!65 &5510108951107012693
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3560464052737815794}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 7.0000005, y: 7.0000024, z: 1.022215}
+  m_Center: {x: 0, y: 1.3544819e-16, z: 0.5095312}

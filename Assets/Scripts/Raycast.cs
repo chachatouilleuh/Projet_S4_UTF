@@ -11,8 +11,6 @@ public class Raycast : MonoBehaviour
     [SerializeField, Tooltip("canvas affiché")] private GameObject m_infoCube;
     void Update()
     {
-        
-        
         Ray pickupRay = new Ray(fpsCam.transform.position, fpsCam.transform.forward * m_distance);
         RaycastHit hit;
 
@@ -37,6 +35,7 @@ public class Raycast : MonoBehaviour
         {
             if (m_curTarget == null)
             {
+                m_infoCube.SetActive(false);
                 return;
             }
             m_curTarget.GetComponent<Outline>().enabled = false;

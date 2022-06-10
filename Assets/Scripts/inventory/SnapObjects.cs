@@ -1,5 +1,8 @@
+using System;
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.Audio;
 public class SnapObjects : MonoBehaviour
 {
 
@@ -27,6 +30,12 @@ public class SnapObjects : MonoBehaviour
 
     [SerializeField, Tooltip("le vfx a jouer")]
     private ParticleSystem Electricity;
+    
+    //Son
+    [SerializeField, Tooltip("le sfx a jouer")] private AudioMixerGroup m_audioMixer;
+    [SerializeField, Tooltip("le sfx a jouer")] private AudioClip m_clipToPlay;
+
+    private AudioSource m_audiosourceTrigger;
 
     private void Awake()
     {
@@ -39,6 +48,10 @@ public class SnapObjects : MonoBehaviour
             }
         }
         m_openHash = Animator.StringToHash(m_openTriggerName);
+        
+        m_audiosourceTrigger = gameObject.GetComponent<AudioSource>();
+        m_audiosourceTrigger.outputAudioMixerGroup = m_audioMixer;
+        m_audiosourceTrigger.clip = m_clipToPlay;
     }
     
     private void OnTriggerStay(Collider other)
@@ -47,13 +60,23 @@ public class SnapObjects : MonoBehaviour
         {
             if (!m_activate)
             {
+                //cube
                 other.transform.position = m_snapPoint.position;
                 other.transform.rotation = m_snapPoint.rotation;
                 other.gameObject.layer = 0;
-                m_activate = true;
-                m_animator?.SetTrigger(m_openHash);
                 other.GetComponent<Rigidbody>().isKinematic = true;
+                
+                //active la plate
+                m_activate = true;
+                
+                //active anim
+                m_animator?.SetTrigger(m_openHash);
+
+                //vfx
                 Electricity.Play();
+                
+                //sfx
+                m_audiosourceTrigger.Play();
             }
 
             Plate myPlates = GetComponent<Plate>();

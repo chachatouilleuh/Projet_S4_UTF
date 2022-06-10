@@ -9,6 +9,7 @@ public class TriggerSound : MonoBehaviour
     [SerializeField, Tooltip("le sfx a jouer")] private AudioMixerGroup m_audioMixer;
     [SerializeField, Tooltip("le sfx a jouer")] private AudioClip m_clipToPlay;
     [SerializeField, Tooltip("le son est une musique")] private bool m_isMusic;
+    [SerializeField, Tooltip("le son est une musique")] private bool m_isLake;
     [SerializeField, Tooltip("le son est deja joue")] private bool alreadyPlayed;
     [SerializeField, Tooltip("il y a déjà une audiosource dans le game object")] private bool m_addAudioSource;
     [SerializeField, Tooltip("le temps d'attente avant de play")]private float m_waitBeforePlay;
@@ -21,10 +22,12 @@ public class TriggerSound : MonoBehaviour
         if (m_addAudioSource)
         {
             m_audiosourceTrigger = gameObject.AddComponent<AudioSource>();
+            m_audiosourceTrigger.playOnAwake = false;
         }
         else
         {
             m_audiosourceTrigger = gameObject.GetComponent<AudioSource>();
+            m_audiosourceTrigger.playOnAwake = false;
         }
      
         m_audiosourceTrigger.outputAudioMixerGroup = m_audioMixer;
@@ -43,9 +46,19 @@ public class TriggerSound : MonoBehaviour
             }
             else
             {
-                if(!alreadyPlayed)
-                m_audiosourceTrigger.Play();
-                alreadyPlayed = true;  
+                if (!alreadyPlayed)
+                {
+                  m_audiosourceTrigger.Play();
+                  if (m_isLake)
+                  {
+                      alreadyPlayed = false;
+                  }
+                  else
+                  {
+                      alreadyPlayed = true;
+                  }
+                }
+                
             }
         }
     }

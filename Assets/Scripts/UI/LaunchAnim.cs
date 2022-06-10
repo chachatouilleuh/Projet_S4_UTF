@@ -1,4 +1,3 @@
-using System;
 using System.Collections;
 using Packages.Mini_First_Person_Controller.Scripts;
 using UnityEngine;

@@ -37,6 +37,9 @@ public class platforms : MonoBehaviour, Iplatforms
 
     private AudioSource m_audiosourceTrigger;
 
+    [SerializeField] private Material[] m_platOn;
+    [SerializeField] private Material m_platOff;
+
     private void Awake()
     {
         if (m_animator == null)
@@ -90,21 +93,24 @@ public class platforms : MonoBehaviour, Iplatforms
                 return;
             }
         }
-
+        
         if (!m_moveALot)
         {
-            m_animator?.SetTrigger(m_openHash);
+            m_animator?.SetTrigger(m_closeHash);
             m_audiosourceTrigger.Play();
             if(m_isSingle)
             {
-                StartCoroutine(StopSound());
+                //StartCoroutine(StopSound());
             }
+            gameObject.GetComponent<MeshRenderer>().materials = m_platOn;
         }
         else
         {
             LaunchMove();
             InvokeRepeating("LaunchMove", 0f, m_secondsWait + 4);
             m_audiosourceTrigger.Play();
+            Debug.Log($"Platform On");
+            gameObject.GetComponent<MeshRenderer>().materials = m_platOn;
         }
     }
 
@@ -115,16 +121,16 @@ public class platforms : MonoBehaviour, Iplatforms
 
     IEnumerator AnimationPlatform()
     {
-        m_animator?.SetTrigger(m_openHash);
+        m_animator?.SetTrigger(m_closeHash);
         
         yield return new WaitForSeconds(m_secondsWait);
         
-        m_animator?.SetTrigger(m_closeHash);
+        m_animator?.SetTrigger(m_openHash);
     }
 
-    IEnumerator StopSound()
-    {
-        yield return new WaitForSeconds(m_waitCut);
-        m_audiosourceTrigger.Stop();
-    }
+    // IEnumerator StopSound()
+    // {
+    //     yield return new WaitForSeconds(m_waitCut);
+    //     m_audiosourceTrigger.Stop();
+    // }
 }

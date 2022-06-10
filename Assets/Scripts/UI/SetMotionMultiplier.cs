@@ -6,7 +6,7 @@ public class SetMotionMultiplier : MonoBehaviour
     [SerializeField, Tooltip("layer du player")] private LayerMask m_playerLayer;
     private Animator m_animator;
     [SerializeField, Tooltip("l'animator du trigger")] private float m_triggerNumber;
-    [SerializeField, Tooltip("l'animator du trigger")] private bool m_movingAtStart;
+    //[SerializeField, Tooltip("l'animator du trigger")] private bool m_movingAtStart;
     [SerializeField, Tooltip("l'animator du trigger")] private GameObject m_triggerGroup;
 
     private bool m_startMoving;
@@ -69,6 +69,10 @@ public class SetMotionMultiplier : MonoBehaviour
 
                 case 13:
                     m_animator.SetBool("Trigger13", true);
+                    break;
+                
+                case 14:
+                    m_animator.SetBool("Trigger14", true);
                     break;
             }
         //}
@@ -144,6 +148,10 @@ public class SetMotionMultiplier : MonoBehaviour
 
                 case 13:
                     m_animator.SetBool("Trigger13", true);
+                    break;
+                
+                case 14:
+                    m_animator.SetBool("Trigger14", true);
                     break;
             }
         }

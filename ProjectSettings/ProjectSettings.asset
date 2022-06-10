@@ -12,9 +12,9 @@ PlayerSettings:
   targetDevice: 2
   useOnDemandResources: 0
   accelerometerFrequency: 60
-  companyName: DefaultCompany
-  productName: Arcopa 8
-  defaultCursor: {fileID: 0}
+  companyName: UTF Studio
+  productName: Arcopa
+  defaultCursor: {fileID: 2800000, guid: b6466a2afe4df254990a1f13448ee0bc, type: 3}
   cursorHotspot: {x: 0, y: 0}
   m_SplashScreenBackgroundColor: {r: 0, g: 0, b: 0, a: 1}
   m_ShowUnitySplashScreen: 1
@@ -273,7 +273,7 @@ PlayerSettings:
   - m_BuildTarget: Standalone
     m_Icons:
     - serializedVersion: 2
-      m_Icon: {fileID: 2800000, guid: ab8723fde30852a4396a159d49c4c9e8, type: 3}
+      m_Icon: {fileID: 2800000, guid: 2e0b3e30d07b7e14fa3bc50531e0ec19, type: 3}
       m_Width: 1024
       m_Height: 1024
       m_Kind: 0

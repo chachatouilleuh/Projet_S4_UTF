@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 8298054851480907384}
   - component: {fileID: 4937994103116194269}
   - component: {fileID: 7161761554955113751}
+  - component: {fileID: -8148602182692458949}
   m_Layer: 0
   m_Name: Omega_Turbo_Big_Rock_LD
   m_TagString: Untagged
@@ -81,3 +82,17 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &-8148602182692458949
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8674861148220798146}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 5818342726128640256, guid: d53d5f0faa7f32a42adfcb90422ac5e1, type: 3}
