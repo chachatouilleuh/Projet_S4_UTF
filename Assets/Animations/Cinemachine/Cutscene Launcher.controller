@@ -894,7 +894,7 @@ AnimatorStateMachine:
     m_Position: {x: -540, y: 470, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 6081589113594315407}
-    m_Position: {x: -610, y: 660, z: 0}
+    m_Position: {x: -610, y: 650, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -5429902826807428811}
     m_Position: {x: 40, y: 520, z: 0}
@@ -2047,7 +2047,7 @@ AnimatorState:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Cam 4_2 sub
-  m_Speed: 0.09
+  m_Speed: 0.095
   m_CycleOffset: 0
   m_Transitions:
   - {fileID: -8389732380551335652}
